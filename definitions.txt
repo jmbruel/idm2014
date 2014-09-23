@@ -1,0 +1,6 @@
+//------------------------------------
+:devs: DEVS
+:idm2014: link:http://devlog.cnrs.fr/idm2014orga[IDM'2014]
+:record: link:http://record.toulouse.inra.fr/[RECORD]
+:vle: link:http://www.vle-project.org/wiki/Main_Page[VLE]
+
