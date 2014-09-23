@@ -15,10 +15,10 @@ script:
 #
 # travis login --pro
 # travis encrypt -r jmbruel/PapyrusFAQ GH_TOKEN=<token generated on gitHub> --add env.global
-env:
-  global:
-    secure: cEaBJq02ObnaaiJ3cF0GKd/vbim29+c9KSWQHP0ct1pS/zqrSayx0dS/BLQUvQ0dGJODnjG4CmZlxD2GJGahajpCYWUgOvV9WMQX8Py4JILsP7U13Mj/a3ppxI6KFwK7lMVeO6VMch6ie0wmCvy+IxNMVsN+icaC8Cn9l62AqE4=
-
+#env:
+#  global:
+#    secure: ...
+	
 # if everything OK, then deploy on the web
 after_success: 
 #- bash update.sh
@@ -31,10 +31,10 @@ after_success:
 #go into directory and copy data we're interested in to that directory
 #- pwd
 #/home/travis/build/jmbruel/basics/
-- cp output/*.png travis/output
+- cp output/*.html travis/output
 #- ls -al travis/output
 - cd travis/output
-- git add *.png
+- git add *.html
 - git commit -m "Travis build $TRAVIS_BUILD_NUMBER pushed to basics repository -- [skip ci]"
 - git push -fq origin master  > /dev/null
 - echo -e "Done magic with output\n"
