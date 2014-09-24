@@ -1,6 +1,16 @@
 //------------------------------------
-:devs: DEVS
+:cea: link:http://www-list.cea.fr/[CEA-List]
+:devs: link:http://fr.wikipedia.org/wiki/Discrete_Event_System_Specification[DEVS]
 :idm2014: link:http://devlog.cnrs.fr/idm2014orga[IDM'2014]
+:obeo: link:http://www.obeo.fr/[Obeo]
 :record: link:http://record.toulouse.inra.fr/[RECORD]
 :vle: link:http://www.vle-project.org/wiki/Main_Page[VLE]
 
+//------------------------------------
+:bc: mailto:benoit.combemale@irisa.fr[Benoît Combemale]
+:cb: mailto:cedric.brun@obeo.fr[Cédric Brun]
+:fn: mailto:florian.noyrit@cea.fr[Florian Noyrit]
+:gq: mailto:gauthier.quesnel@toulouse.inra.fr[Gauthier Quesnel]
+:hr: mailto:Helene.Raynal@toulouse.inra.fr[Hélène Raynal]
+:jmb: mailto:bruel@irit.fr[Jean-Michel Bruel]
+:pd: mailto:Pascal.Dayre@enseeiht.fr[Pascal Dayre]

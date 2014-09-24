@@ -1,0 +1,14 @@
+== Frequently Asked Questions
+
+ifdef::slides[:leveloffset: -1]
+
+=== What are the needs in terms of simulations/executions ?
+
+(by xx): answer?
+
+=== Why DEVS? And is it the only target language?
+
+(by xx): answer?
+
+ifdef::slides[:leveloffset: 0]
+
