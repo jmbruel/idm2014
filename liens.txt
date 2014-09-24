@@ -1,0 +1,7 @@
+== References and links
+
+- [[DEVS]] http://fr.wikipedia.org/wiki/Discrete_Event_System_Specification
+- [[Papyrus]] https://www.eclipse.org/papyrus/
+- [[RECORD]] http://record.toulouse.inra.fr/
+- [[Sirius]] https://www.eclipse.org/proposals/modeling.sirius/
+- [[VLE]] http://www.vle-project.org/wiki/
