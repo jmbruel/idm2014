@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Profile xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_7Q2XoEi8EeSCsaveDeLV6g" name="Profile" metaclassReference="_CAuI8Ei9EeSCsaveDeLV6g" metamodelReference="_7Q2XoUi8EeSCsaveDeLV6g">
+  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1NQLkEi-EeSCsaveDeLV6g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <contents xmi:type="ecore:EPackage" xmi:id="_1NQyoEi-EeSCsaveDeLV6g" name="Profile" nsURI="http:///schemas/Profile/_1NOWYEi-EeSCsaveDeLV6g/0" nsPrefix="Profile">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1NSAw0i-EeSCsaveDeLV6g" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1NSAxEi-EeSCsaveDeLV6g" key="Version" value="0.0.1"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1NSAxUi-EeSCsaveDeLV6g" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1NSAxki-EeSCsaveDeLV6g" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1NSAx0i-EeSCsaveDeLV6g" key="Date" value="2014-09-30"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1NSAyEi-EeSCsaveDeLV6g" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_1NQyoUi-EeSCsaveDeLV6g" name="Farm">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1NQyoki-EeSCsaveDeLV6g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_DgGRAEi9EeSCsaveDeLV6g"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_1NQyo0i-EeSCsaveDeLV6g" name="base_Class" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_1NQypUi-EeSCsaveDeLV6g" name="Farmer">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1NQypki-EeSCsaveDeLV6g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_GMatUEi9EeSCsaveDeLV6g"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_1NQyp0i-EeSCsaveDeLV6g" name="base_Class" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_1NQyqUi-EeSCsaveDeLV6g" name="Worker">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1NQyqki-EeSCsaveDeLV6g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_nvJAoEi-EeSCsaveDeLV6g"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_1NQyq0i-EeSCsaveDeLV6g" name="base_Class" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+  </eAnnotations>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_CAuI8Ei9EeSCsaveDeLV6g" alias="Class">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+  </elementImport>
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_7Q2XoUi8EeSCsaveDeLV6g">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_METAMODELS/UML.metamodel.uml#_0"/>
+  </packageImport>
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_7Q2Xoki8EeSCsaveDeLV6g">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_DgGRAEi9EeSCsaveDeLV6g" name="Farm">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_MkTccEi9EeSCsaveDeLV6g" name="base_Class" association="_MkTccUi9EeSCsaveDeLV6g">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_GMatUEi9EeSCsaveDeLV6g" name="Farmer">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_LUEjoEi9EeSCsaveDeLV6g" name="base_Class" association="_LUEjoUi9EeSCsaveDeLV6g">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_LUEjoUi9EeSCsaveDeLV6g" name="E_Farmer_Class1" memberEnd="_LUEjoki9EeSCsaveDeLV6g _LUEjoEi9EeSCsaveDeLV6g">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_LUEjoki9EeSCsaveDeLV6g" name="extension_Farmer" type="_GMatUEi9EeSCsaveDeLV6g" aggregation="composite" association="_LUEjoUi9EeSCsaveDeLV6g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_MkTccUi9EeSCsaveDeLV6g" name="E_Farm_Class1" memberEnd="_MkTccki9EeSCsaveDeLV6g _MkTccEi9EeSCsaveDeLV6g">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_MkTccki9EeSCsaveDeLV6g" name="extension_Farm" type="_DgGRAEi9EeSCsaveDeLV6g" aggregation="composite" association="_MkTccUi9EeSCsaveDeLV6g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_nvJAoEi-EeSCsaveDeLV6g" name="Worker">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_pyaf8Ei-EeSCsaveDeLV6g" name="base_Class" association="_pyaf8Ui-EeSCsaveDeLV6g">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_pyaf8Ui-EeSCsaveDeLV6g" name="E_Worker_Class1" memberEnd="_pyaf8ki-EeSCsaveDeLV6g _pyaf8Ei-EeSCsaveDeLV6g">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_pyaf8ki-EeSCsaveDeLV6g" name="extension_Worker" type="_nvJAoEi-EeSCsaveDeLV6g" aggregation="composite" association="_pyaf8Ui-EeSCsaveDeLV6g"/>
+  </packagedElement>
+</uml:Profile>

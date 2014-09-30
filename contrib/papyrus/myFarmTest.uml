@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Profile="http:///schemas/Profile/_1NOWYEi-EeSCsaveDeLV6g/0" xmlns:Symbols="http://PapyrusInternal/schemas/Symbols/_eij2kEBcEeKj6r7ThQagKA/2" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/Profile/_1NOWYEi-EeSCsaveDeLV6g/0 profil.profile.uml#_1NQyoEi-EeSCsaveDeLV6g http://PapyrusInternal/schemas/Symbols/_eij2kEBcEeKj6r7ThQagKA/2 pathmap://PAPYRUS_INTERNAL_PROFILES/PapyrusInternal.profile.uml#_eikdoEBcEeKj6r7ThQagKA">
+  <uml:Model xmi:id="_CLT9cEi_EeSCsaveDeLV6g" name="Model">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_CLT9cUi_EeSCsaveDeLV6g">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_DEXFUEi_EeSCsaveDeLV6g" name="MyFarm" visibility="package">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_RDX94Ei_EeSCsaveDeLV6g" name="jmb" type="_TrsD8Ei_EeSCsaveDeLV6g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_TrsD8Ei_EeSCsaveDeLV6g" name="Farmer"/>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_MMXLoEi_EeSCsaveDeLV6g">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MM3h8Ei_EeSCsaveDeLV6g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="profil.profile.uml#_1NQyoEi-EeSCsaveDeLV6g"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="profil.profile.uml#_7Q2XoEi8EeSCsaveDeLV6g"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_wwkvcEi_EeSCsaveDeLV6g">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wxMagEi_EeSCsaveDeLV6g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_INTERNAL_PROFILES/PapyrusInternal.profile.uml#_eikdoEBcEeKj6r7ThQagKA"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_INTERNAL_PROFILES/PapyrusInternal.profile.uml#_16oYAD-SEeKj6r7ThQagKA"/>
+    </profileApplication>
+  </uml:Model>
+  <Profile:Farm xmi:id="_O0XvsEi_EeSCsaveDeLV6g" base_Class="_DEXFUEi_EeSCsaveDeLV6g"/>
+  <Profile:Farmer xmi:id="_YPdKEEi_EeSCsaveDeLV6g" base_Class="_TrsD8Ei_EeSCsaveDeLV6g"/>
+  <Symbols:TypeSymbolDefinition xmi:id="_NMrjsEjAEeSCsaveDeLV6g" base_Type="_TrsD8Ei_EeSCsaveDeLV6g" symbolPath="platform:/resource/FarmingModel/stickman.png"/>
+</xmi:XMI>

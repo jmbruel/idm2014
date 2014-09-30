@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/viewpoints/policy/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_CLWZsEi_EeSCsaveDeLV6g" type="CompositeStructure" name="NewDiagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_DEfBIEi_EeSCsaveDeLV6g" type="2073">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_O0jV4Ei_EeSCsaveDeLV6g" source="Stereotype_Annotation">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_O0jV4Ui_EeSCsaveDeLV6g" key="StereotypeWithQualifiedNameList" value=""/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_O0j88Ei_EeSCsaveDeLV6g" key="StereotypeList" value="Profile::Farm"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_O0j88Ui_EeSCsaveDeLV6g" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_O0j88ki_EeSCsaveDeLV6g" key="PropStereoDisplay" value=""/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_O0j880i_EeSCsaveDeLV6g" key="StereotypePropertyLocation" value="Compartment"/>
+    </eAnnotations>
+    <children xmi:type="notation:DecorationNode" xmi:id="_DEfoMEi_EeSCsaveDeLV6g" type="5156"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_DEfoMUi_EeSCsaveDeLV6g" type="7073">
+      <children xmi:type="notation:Shape" xmi:id="_RDZMAEi_EeSCsaveDeLV6g" type="3070">
+        <children xmi:type="notation:DecorationNode" xmi:id="_RDZzEEi_EeSCsaveDeLV6g" type="5126"/>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_RDZzEUi_EeSCsaveDeLV6g" visible="false" type="7077">
+          <styles xmi:type="notation:TitleStyle" xmi:id="_RDZzEki_EeSCsaveDeLV6g"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RDZzE0i_EeSCsaveDeLV6g"/>
+        </children>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_RDpqsEi_EeSCsaveDeLV6g" type="compartment_shape_display">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_qg3E4Ei_EeSCsaveDeLV6g" source="PapyrusCSSForceValue">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qg3r8Ei_EeSCsaveDeLV6g" key="visible" value="true"/>
+          </eAnnotations>
+          <styles xmi:type="notation:TitleStyle" xmi:id="_RDpqsUi_EeSCsaveDeLV6g" showTitle="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RDpqski_EeSCsaveDeLV6g"/>
+        </children>
+        <element xmi:type="uml:Property" href="myFarmTest.uml#_RDX94Ei_EeSCsaveDeLV6g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RDZMAUi_EeSCsaveDeLV6g" x="76" y="180"/>
+      </children>
+      <styles xmi:type="notation:TitleStyle" xmi:id="_DEfoMki_EeSCsaveDeLV6g"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DEfoM0i_EeSCsaveDeLV6g"/>
+    </children>
+    <element xmi:type="uml:Class" href="myFarmTest.uml#_DEXFUEi_EeSCsaveDeLV6g"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DEfBIUi_EeSCsaveDeLV6g" x="188" y="103" width="602" height="338"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_LqXcYEjAEeSCsaveDeLV6g" type="2073">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NM8CYEjAEeSCsaveDeLV6g" source="Stereotype_Annotation">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NM8CYUjAEeSCsaveDeLV6g" key="StereotypeWithQualifiedNameList" value=""/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NM8CYkjAEeSCsaveDeLV6g" key="StereotypeList" value="PapyrusInternal::Symbols::TypeSymbolDefinition"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NM8CY0jAEeSCsaveDeLV6g" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NM8CZEjAEeSCsaveDeLV6g" key="PropStereoDisplay" value=""/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NM8CZUjAEeSCsaveDeLV6g" key="StereotypePropertyLocation" value="Compartment"/>
+    </eAnnotations>
+    <children xmi:type="notation:DecorationNode" xmi:id="_LqXcYkjAEeSCsaveDeLV6g" type="5156"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_LqXcY0jAEeSCsaveDeLV6g" type="7073">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_LqXcZEjAEeSCsaveDeLV6g"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LqXcZUjAEeSCsaveDeLV6g"/>
+    </children>
+    <styles xmi:type="notation:IntValueStyle" xmi:id="_ACdIoEjBEeSCsaveDeLV6g" name="shapeDirection" intValue="2"/>
+    <element xmi:type="uml:Class" href="myFarmTest.uml#_TrsD8Ei_EeSCsaveDeLV6g"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LqXcYUjAEeSCsaveDeLV6g" x="71" y="384"/>
+  </children>
+  <styles xmi:type="notation:StringValueStyle" xmi:id="_CLWZsUi_EeSCsaveDeLV6g" name="diagram_compatibility_version" stringValue="1.0.0"/>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_CLWZski_EeSCsaveDeLV6g"/>
+  <styles xmi:type="style:PapyrusViewStyle" xmi:id="_CLWZs0i_EeSCsaveDeLV6g">
+    <owner xmi:type="uml:Model" href="myFarmTest.uml#_CLT9cEi_EeSCsaveDeLV6g"/>
+  </styles>
+  <element xmi:type="uml:Model" href="myFarmTest.uml#_CLT9cEi_EeSCsaveDeLV6g"/>
+</notation:Diagram>
