@@ -5,3 +5,51 @@
 - In terms of semantic/execution/simulation ...
 - In terms of normative/standard support ...
 - xxx to be completed by {hr} xxx
+
+(added by Pascal) 
+
+Suite à la réunion de prototypage: 3 phases à explorer:
+P1> phase de modélisation (approche graphique concurernte à GVLE?))
+P2> phase génération le code: le format XML ( fichier.VPZ  décrit la structure du modèle et plan d'expérience) 
+à générer du modèle conceptuelle. 
+P3> phase execution exploration: résultat final et valeurs intermédiaires des variables d'état 
+pour se faire une idée de la dynamique du système
+
+Approche langages textuels  à la place d'une approche graphique (grammaire GVLE?).
+En info: on veut écrire en texte et on veut utiliser les graphes pour communiquer.
+
+Comment réduire le fossé entre le modèle conceptuel et le modèle du code pour facilité
+la recherche au fil du temps et éviter d'avoir 2 modèles qui divergent.
+
+Pour répondre:
+- capacité et interoperabilité définie par l'approche DEVS qui se veut générale
+Les capacités de modélisation sont obtenus par le formalisme DEVS
+qui permet d'intégrer une dimension discontinue par une approche événementielle
+entre modèle atomique qui eux peuvent être continus ou être redécoupés
+en sous-modèle si discontinus (comosition de modèles).
+http://www.vle-project.org/wiki/Atomic_model_development
+
+- la sémantique du modèle:
+Tout ça est décrit dans la vidéo de la présentation de Gauthier faite par Hélène:
+http://devlog.cnrs.fr/idm2013
+
+- execution des modèles:
+http://www.vle-project.org/wiki/Executive_model_development
+
+Mes notes pêle-mêle:
+VPZ décrit un système statique mais aussi dynamique:
+pour cliquer l'aspect dynamique, je clique sur "Atomic Model LeafIndexArea): 
+Onglet définition des ports
+Onglet dynamics propre a la science du vivant pour simuler differentes dynamiques (bibliotheque de comportement interne) (cf. diagrame parametrique) (lien avec les ports d'entrees).
+Onglet "variable d'etat" qui varie tout le long de la simulation a la difference des parametres. : les variables d'etat ne sont pas forcement des ports de sortie. (parametrage des vues - temporalité d'observation, sortie memoire pour logciel tel que R, sortie graphique, ..., association des variables d'état aux vues, ...) 
+Onglet compute (lien avec le code C++,  le systeme d'equation pour calcul les variable d'etat, ...): permet de definir des dynamiques qui sont selectionnées ou non par l'onglet dynamics: ca genere le code C++ dans lequel il n'y a pas de structure, juste le comportement.
+
+Un modele de composant puis un fichier cpp (c++) de comportement pour chaque composant:
+Var variableEtat;
+Sync portEntree; // oblige la synchronisation de la variable d'état en fonction du pas des entrées (C'EST ICI que le formalisme DEVS est mis en oeuvre - changement d'état événementiel).
+VLE a partir des SYNC, construit le graphe de dépendance (au moins un arc asynchrone pour éviter un interblocage , pour eviter que tout le monde s'attend.)
+ 
+
+
+- standard support:
+
