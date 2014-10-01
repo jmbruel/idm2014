@@ -1,11 +1,25 @@
 == Expectations
 
-- In terms of modeling capabilities ...
-- In terms of interoperability with other models ...
-- In terms of semantic/execution/simulation ...
-- In terms of normative/standard support ...
-- xxx to be completed by {hr} xxx
+* In terms of modeling capabilities:
+// (from Pascal)
+- this is phase 1 of modeling (close to what {GVLE} does right now)
+- we want to write text and use graphical rendering to communicate
 
+* In terms of interoperability with other models:
+// (from Pascal)
+- {devs} is already a standard?
+* In terms of semantic/execution/simulation:
+// (from Pascal)
+- this is phase 2 (code generation) and 3 (exploration)
+- code generation can lead to +XML+ outputs (+.VPZ+ files that describe model structure + experience plans ?)
+- exploration/execution outputs values (intermediate)
+- http://devlog.cnrs.fr/idm2013 ({gq} presentation)
+- http://www.vle-project.org/wiki/Executive_model_development
+
+* In terms of normative/standard support ...
+* xxx to be completed by {hr} xxx
+
+////////
 (added by Pascal) 
 
 Suite à la réunion de prototypage: 3 phases à explorer:
@@ -53,3 +67,4 @@ VLE a partir des SYNC, construit le graphe de dépendance (au moins un arc async
 
 - standard support:
 
+////////

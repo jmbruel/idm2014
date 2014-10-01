@@ -38,3 +38,4 @@ Package:
 
 DSML Configuration plugin
 
+Feature qui regroupe tous les profils

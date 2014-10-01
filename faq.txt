@@ -4,52 +4,52 @@ ifdef::slides[:leveloffset: -1]
 
 === What are the needs in terms of simulations/executions ?
 
-(by xx): answer?
-(by Pascal): we need to explore complex agro-system dynamic.
+(by {pd}): we need to explore complex agro-system dynamic.
 More information with Helene's presentation http://devlog.cnrs.fr/idm2013 (vidéo, slides)
 
 === Why DEVS? And is it the only target language?
 
-(by xx): answer?
-(by Pascal) DEVS n'est pas un langage cible mais un formalisme mathématique qui permet de modéliser 
+(by {pd}) {DEVS} n'est pas un langage cible mais un formalisme mathématique qui permet de modéliser 
 les systèmes selon le paradigme événementiel discret. C'est le formalisme englobant qui permet de
 formaliser les intéractions entre les sous-composants d'un modèle et ceci de manière hiérarchique 
-(sous-modèle de sous-modèle, etc...). DEVS est implémenté par le langage VLE.
+(sous-modèle de sous-modèle, etc...). {DEVS} est implémenté par le langage {VLE}.
 Les spous-comosants d'un modèle est lui implémenté avec d'autres approches formalisées ou mathémathique 
 pour des systèmes qui ont un comportement "continu", équations au différence (c'est la démo lors de la visio),
 d'autres composants pourraient a priori avoir un comportement décrit par un réseau baysien, etc.
-Par contre, si on se trouve dans un cas discontinu, on retombe dans le formalisme DEVs pour redécouper
-en sous-comosant continu avec la déclaration des événements entre sous-composants (modèle atomique au sens DEVS).
-Donc, le langage VLE implémente ce formalisme DEVS en gérant un bus inter-composants. Il offre des passerelles
+Par contre, si on se trouve dans un cas discontinu, on retombe dans le formalisme {DEVs} pour redécouper
+en sous-comosant continu avec la déclaration des événements entre sous-composants (modèle atomique au sens {DEVS}).
+Donc, le langage {VLE} implémente ce formalisme DEVS en gérant un bus inter-composants. Il offre des passerelles
 vers d'autres logiciels R, etc... et permet de programmer ses propres comportements en langage C++.
 
 Il offre donc un framework: je ne trouve pas dans la doc de description général de ce framework, ni la grammaire du langage.
 Peut-etre qu'Helene a une info, un contact. Par contre:
+
 - interface d'un modèle atomic (VLE-DEVS): http://www.vle-project.org/wiki/Atomic_model_development
 - modèle exécutable: http://www.vle-project.org/wiki/Executive_model_development
 
-Le Langage cible est le langage VLE:
-http://www.vle-project.org/wiki/Main_Page (le projet est sur github)
-http://www.vle-project.org/wiki/Documentation
-http://en.wikipedia.org/wiki/DEVS
-http://www.vle-project.org/wiki/VLE
+Le Langage cible est le langage {VLE}:
 
-DEVS abbreviating Discrete Event System Specification is a modular and hierarchical formalism 
+- http://www.vle-project.org/wiki/Main_Page (le projet est sur github)
+- http://www.vle-project.org/wiki/Documentation
+- http://en.wikipedia.org/wiki/DEVS
+- http://www.vle-project.org/wiki/VLE
+
+{DEVS} abbreviating **D**iscrete **Ev**ent **S**ystem Specification is a modular and hierarchical formalism 
 for modeling and analyzing general systems that can be discrete event systems 
 which might be described by state transition tables, and continuous state systems
 which might be described by differential equations, 
-and hybrid continuous state and discrete event systems. DEVS is a timed event system.
+and hybrid continuous state and discrete event systems. {DEVS} is a timed event system.
 
 
 
-DEVS is a high level formalism that has the ability to encapsulate other formalisms. VLE allows you to use several formalisms in DEVS framework:
+{DEVS} is a high level formalism that has the ability to encapsulate other formalisms. {VLE} allows you to use several formalisms in {DEVS} framework:
 
-    Ordinary Differential Equations: QSS based on quantization and DESS a wrapping of classical numerical schema like Runge-Kunta, by example.
-    Cellular automaton : CellDevs.
-    Difference equation: DifferenceEquation.
-    Petrinet : PetriNet.
-    Discrete and finite state automaton: Moore and Mealy machines, FDDevs and statechart : FSA.
-    Decision making: an extension of execution of activities plan based on conditional, temporal and precedents constraints. 
+- Ordinary Differential Equations: QSS based on quantization and DESS a wrapping of classical numerical schema like Runge-Kunta, by example.
+- Cellular automaton : CellDevs.
+- Difference equation: DifferenceEquation.
+- Petrinet : PetriNet.
+- Discrete and finite state automaton: Moore and Mealy machines, FDDevs and statechart : FSA.
+- Decision making: an extension of execution of activities plan based on conditional, temporal and precedents constraints. 
 
 
 

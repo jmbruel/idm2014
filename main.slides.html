@@ -2439,13 +2439,43 @@ can help in other model-based fields such as scientific activities (Agronomy in 
 <h2>Expectations</h2>
 <ul>
 <li class="">
-In terms of modeling capabilities &#8230;
+In terms of modeling capabilities:
+<ul>
+<li class="">
+this is phase 1 of modeling (close to what <a href="http://www.vle-project.org/wiki/GVLE">GVLE</a> does right now)
 </li>
 <li class="">
-In terms of interoperability with other models &#8230;
+we want to write text and use graphical rendering to communicate
+</li>
+</ul>
 </li>
 <li class="">
-In terms of semantic/execution/simulation &#8230;
+In terms of interoperability with other models:
+<ul>
+<li class="">
+<a href="http://fr.wikipedia.org/wiki/Discrete_Event_System_Specification">DEVS</a> is already a standard?
+</li>
+</ul>
+</li>
+<li class="">
+In terms of semantic/execution/simulation:
+<ul>
+<li class="">
+this is phase 2 (code generation) and 3 (exploration)
+</li>
+<li class="">
+code generation can lead to <code>XML</code> outputs (<code>.VPZ</code> files that describe model structure + experience plans ?)
+</li>
+<li class="">
+exploration/execution outputs values (intermediate)
+</li>
+<li class="">
+<a href="http://devlog.cnrs.fr/idm2013">http://devlog.cnrs.fr/idm2013</a> (<a href="mailto:gauthier.quesnel@toulouse.inra.fr">Gauthier Quesnel</a> presentation)
+</li>
+<li class="">
+<a href="http://www.vle-project.org/wiki/Executive_model_development">http://www.vle-project.org/wiki/Executive_model_development</a>
+</li>
+</ul>
 </li>
 <li class="">
 In terms of normative/standard support &#8230;
@@ -2544,11 +2574,73 @@ PAr9L8j/96+U/w3yCoCXW14B8HLLvwDd67nwZIEPdgAAAABJRU5ErkJggg==" />
 </section>
 <section class="slide">
 <h2>What are the needs in terms of simulations/executions ?</h2>
-<p>(by xx): answer?</p>
+<p>(by <a href="mailto:Pascal.Dayre@enseeiht.fr">Pascal Dayre</a>): we need to explore complex agro-system dynamic.
+More information with Helene&#8217;s presentation <a href="http://devlog.cnrs.fr/idm2013">http://devlog.cnrs.fr/idm2013</a> (vidéo, slides)</p>
 </section>
 <section class="slide">
 <h2>Why DEVS? And is it the only target language?</h2>
-<p>(by xx): answer?</p>
+<p>(by <a href="mailto:Pascal.Dayre@enseeiht.fr">Pascal Dayre</a>) <a href="http://fr.wikipedia.org/wiki/Discrete_Event_System_Specification">DEVS</a> n&#8217;est pas un langage cible mais un formalisme mathématique qui permet de modéliser
+les systèmes selon le paradigme événementiel discret. C&#8217;est le formalisme englobant qui permet de
+formaliser les intéractions entre les sous-composants d&#8217;un modèle et ceci de manière hiérarchique
+(sous-modèle de sous-modèle, etc&#8230;). <a href="http://fr.wikipedia.org/wiki/Discrete_Event_System_Specification">DEVS</a> est implémenté par le langage <a href="http://www.vle-project.org/wiki/Main_Page">VLE</a>.
+Les spous-comosants d&#8217;un modèle est lui implémenté avec d&#8217;autres approches formalisées ou mathémathique
+pour des systèmes qui ont un comportement "continu", équations au différence (c&#8217;est la démo lors de la visio),
+d&#8217;autres composants pourraient a priori avoir un comportement décrit par un réseau baysien, etc.
+Par contre, si on se trouve dans un cas discontinu, on retombe dans le formalisme <a href="http://fr.wikipedia.org/wiki/Discrete_Event_System_Specification">DEVS</a> pour redécouper
+en sous-comosant continu avec la déclaration des événements entre sous-composants (modèle atomique au sens <a href="http://fr.wikipedia.org/wiki/Discrete_Event_System_Specification">DEVS</a>).
+Donc, le langage <a href="http://www.vle-project.org/wiki/Main_Page">VLE</a> implémente ce formalisme DEVS en gérant un bus inter-composants. Il offre des passerelles
+vers d&#8217;autres logiciels R, etc&#8230; et permet de programmer ses propres comportements en langage C++.</p>
+<p>Il offre donc un framework: je ne trouve pas dans la doc de description général de ce framework, ni la grammaire du langage.
+Peut-etre qu&#8217;Helene a une info, un contact. Par contre:</p>
+<ul>
+<li class="">
+interface d&#8217;un modèle atomic (VLE-DEVS): <a href="http://www.vle-project.org/wiki/Atomic_model_development">http://www.vle-project.org/wiki/Atomic_model_development</a>
+</li>
+<li class="">
+modèle exécutable: <a href="http://www.vle-project.org/wiki/Executive_model_development">http://www.vle-project.org/wiki/Executive_model_development</a>
+</li>
+</ul>
+<p>Le Langage cible est le langage <a href="http://www.vle-project.org/wiki/Main_Page">VLE</a>:</p>
+<ul>
+<li class="">
+<a href="http://www.vle-project.org/wiki/Main_Page">http://www.vle-project.org/wiki/Main_Page</a> (le projet est sur github)
+</li>
+<li class="">
+<a href="http://www.vle-project.org/wiki/Documentation">http://www.vle-project.org/wiki/Documentation</a>
+</li>
+<li class="">
+<a href="http://en.wikipedia.org/wiki/DEVS">http://en.wikipedia.org/wiki/DEVS</a>
+</li>
+<li class="">
+<a href="http://www.vle-project.org/wiki/VLE">http://www.vle-project.org/wiki/VLE</a>
+</li>
+</ul>
+<p><a href="http://fr.wikipedia.org/wiki/Discrete_Event_System_Specification">DEVS</a> abbreviating <strong>D</strong>iscrete <strong>Ev</strong>ent <strong>S</strong>ystem Specification is a modular and hierarchical formalism
+for modeling and analyzing general systems that can be discrete event systems
+which might be described by state transition tables, and continuous state systems
+which might be described by differential equations,
+and hybrid continuous state and discrete event systems. <a href="http://fr.wikipedia.org/wiki/Discrete_Event_System_Specification">DEVS</a> is a timed event system.</p>
+<p><a href="http://fr.wikipedia.org/wiki/Discrete_Event_System_Specification">DEVS</a> is a high level formalism that has the ability to encapsulate other formalisms. <a href="http://www.vle-project.org/wiki/Main_Page">VLE</a> allows you to use several formalisms in <a href="http://fr.wikipedia.org/wiki/Discrete_Event_System_Specification">DEVS</a> framework:</p>
+<ul>
+<li class="">
+Ordinary Differential Equations: QSS based on quantization and DESS a wrapping of classical numerical schema like Runge-Kunta, by example.
+</li>
+<li class="">
+Cellular automaton : CellDevs.
+</li>
+<li class="">
+Difference equation: DifferenceEquation.
+</li>
+<li class="">
+Petrinet : PetriNet.
+</li>
+<li class="">
+Discrete and finite state automaton: Moore and Mealy machines, FDDevs and statechart : FSA.
+</li>
+<li class="">
+Decision making: an extension of execution of activities plan based on conditional, temporal and precedents constraints.
+</li>
+</ul>
 </section>
 <section class="slide">
 <h2>References and links</h2>

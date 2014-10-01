@@ -2,6 +2,7 @@
 :cea: link:http://www-list.cea.fr/[CEA-List]
 :devs: link:http://fr.wikipedia.org/wiki/Discrete_Event_System_Specification[DEVS]
 :idm2014: link:http://devlog.cnrs.fr/idm2014orga[IDM'2014]
+:gvle: link:http://www.vle-project.org/wiki/GVLE[GVLE]
 :papyrus: link:https://www.eclipse.org/papyrus/[Papyrus]
 :obeo: link:http://www.obeo.fr/[Obeo]
 :record: link:http://record.toulouse.inra.fr/[RECORD]
