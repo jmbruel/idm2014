@@ -19,10 +19,14 @@ Les spous-comosants d'un modèle est lui implémenté avec d'autres approches fo
 pour des systèmes qui ont un comportement "continu", équations au différence (c'est la démo lors de la visio),
 d'autres composants pourraient a priori avoir un comportement décrit par un réseau baysien, etc.
 Par contre, si on se trouve dans un cas discontinu, on retombe dans le formalisme DEVs pour redécouper
-en sous-comosant continu avec la déclaration des événements entre sous-comosants.
+en sous-comosant continu avec la déclaration des événements entre sous-composants (modèle atomique au sens DEVS).
 Donc, le langage VLE implémente ce formalisme DEVS en gérant un bus inter-composants. Il offre des passerelles
-vers d'autres logiciles R, etc... et permet de programmer ses propres comportements en langage C++.
-Il offre donc un framework:
+vers d'autres logiciels R, etc... et permet de programmer ses propres comportements en langage C++.
+
+Il offre donc un framework: je ne trouve pas dans la doc de description général de ce framework, ni la grammaire du langage.
+Peut-etre qu'Helene a une info, un contact. Par contre:
+- interface d'un modèle atomic (VLE-DEVS): http://www.vle-project.org/wiki/Atomic_model_development
+- modèle exécutable: http://www.vle-project.org/wiki/Executive_model_development
 
 Le Langage cible est le langage VLE:
 http://www.vle-project.org/wiki/Main_Page (le projet est sur github)
