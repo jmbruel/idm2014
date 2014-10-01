@@ -5,10 +5,20 @@ ifdef::slides[:leveloffset: -1]
 === What are the needs in terms of simulations/executions ?
 
 (by xx): answer?
+(by Pascal): we need to explore complex agro-system dynamic.
+More information with Helene's presentation http://devlog.cnrs.fr/idm2013 (vidéo, slides)
 
 === Why DEVS? And is it the only target language?
 
 (by xx): answer?
+(by Pascal) DEVS n'est pas un langage cible mais un formalisme mathématique qui permet de modéliser 
+les systèmes selon le paradigme événementiel discret. D'autres approches sont formalisées 
+par les équations différentielles par exemple pour des systèmes qui ont un comportement "continu",
+d'autres composants pourraient a priori avoir un comportement décrit par un réseau baysien, etc.
+
+Le Langage cible est le langage VLE:
+http://www.vle-project.org/wiki/Main_Page
+
 
 ifdef::slides[:leveloffset: 0]
 
