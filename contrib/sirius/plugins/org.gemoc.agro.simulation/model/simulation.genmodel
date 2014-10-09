@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.gemoc.agro.simulation/src-gen" editDirectory="/org.gemoc.agro.simulation.edit/src-gen"
+    editorDirectory="/org.gemoc.agro.simulation.editor/src-gen" modelPluginID="org.gemoc.agro.simulation"
+    modelName="Simulation" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="7.0" copyrightFields="false"
+    usedGenPackages="../../org.gemoc.agro.activities/model/generated/ActivitiesDSL.genmodel#//activitiesDSL ../../org.gemoc.agro.exploitation/model/exploitation.genmodel#//exploitation"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>simulation.ecore</foreignModel>
+  <genPackages prefix="Simulation" basePackage="org.gemoc.agro" disposableProviderFactory="true"
+      ecorePackage="simulation.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="simulation.ecore#//SchedulingStrategy">
+      <genEnumLiterals ecoreEnumLiteral="simulation.ecore#//SchedulingStrategy/random"/>
+    </genEnums>
+    <genClasses ecoreClass="simulation.ecore#//ClimateDefinition">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simulation.ecore#//ClimateDefinition/name"/>
+    </genClasses>
+    <genClasses ecoreClass="simulation.ecore#//Simulation">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference simulation.ecore#//Simulation/climate"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference simulation.ecore#//Simulation/planning"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference simulation.ecore#//Simulation/exploitation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simulation.ecore#//Simulation/schedulingStrategy"/>
+    </genClasses>
+    <genClasses ecoreClass="simulation.ecore#//ActivityWork">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference simulation.ecore#//ActivityWork/activity"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference simulation.ecore#//ActivityWork/resourceAllocation"/>
+    </genClasses>
+    <genClasses ecoreClass="simulation.ecore#//Climate">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simulation.ecore#//Climate/rain"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simulation.ecore#//Climate/ray"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simulation.ecore#//Climate/ETp"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simulation.ecore#//Climate/temperature"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference simulation.ecore#//Climate/from"/>
+    </genClasses>
+    <genClasses ecoreClass="simulation.ecore#//Day">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference simulation.ecore#//Day/activitiesWork"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simulation.ecore#//Day/month"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simulation.ecore#//Day/day"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference simulation.ecore#//Day/climate"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
