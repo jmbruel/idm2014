@@ -2,6 +2,7 @@
 :cea: link:http://www-list.cea.fr/[CEA-List]
 :devs: link:http://fr.wikipedia.org/wiki/Discrete_Event_System_Specification[DEVS]
 :idm2014: link:http://devlog.cnrs.fr/idm2014orga[IDM'2014]
+:inra: link:http://www.inra.fr/[INRA]
 :gvle: link:http://www.vle-project.org/wiki/GVLE[GVLE]
 :papyrus: link:https://www.eclipse.org/papyrus/[Papyrus]
 :obeo: link:http://www.obeo.fr/[Obeo]
@@ -17,3 +18,6 @@
 :hr: mailto:Helene.Raynal@toulouse.inra.fr[Hélène Raynal]
 :jmb: mailto:bruel@irit.fr[Jean-Michel Bruel]
 :pd: mailto:Pascal.Dayre@enseeiht.fr[Pascal Dayre]
+
+//------------------------------------
+:modelsc: models^sc^

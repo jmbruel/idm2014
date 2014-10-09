@@ -1,0 +1,12 @@
+== Contributions
+
+This section describe the modeling experiments.
+
+=== Approach
+
+There is several way to tackle the problem.
+
+We can follow <<IDM4'12>> metamodeling process:
+
+.A metamodeling environment construction process(XXX) waiting for Benoit's original figure XXX)
+image::idm12.png[]
