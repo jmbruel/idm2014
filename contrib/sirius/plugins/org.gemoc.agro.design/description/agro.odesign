@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="agro" version="8.1.0">
+  <ownedViewpoints name="Design" modelFileExtension="exploitation">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Structure" domainClass="exploitation.Exploitation" enablePopupBars="true">
+      <metamodel href="http://www.gemoc.org/agro/ActivitiesDSL#/"/>
+      <metamodel href="http://www.gemoc.org/exploitation#/"/>
+      <defaultLayer name="Default">
+        <nodeMappings name="ExploitationSurface" semanticCandidatesExpression="var:self" domainClass="exploitation.Exploitation">
+          <style xsi:type="style:GaugeCompositeStyleDescription" showIcon="false" labelExpression="surfaces ratios" sizeComputationExpression="8" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <sections maxValueExpression="[self.surfaces.total->sum()/]" valueExpression="[self.surfaces->select(watered).total->sum()/]" label="Watered">
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+            </sections>
+            <sections maxValueExpression="[self.surfaces.total->sum()/]" valueExpression="[self.surfaces->select(fodder).total->sum()/]" label="Foddered">
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
+            </sections>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="Resource" domainClass="exploitation.Resource">
+          <style xsi:type="style:BundledImageDescription" showIcon="false" resizeKind="NSEW" shape="triangle">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="Surface" domainClass="exploitation.Surface">
+          <style xsi:type="style:SquareDescription" borderSizeComputationExpression="1" showIcon="false" labelExpression="[self.total + 'ha : ' + self.nbFields + ' fields' /]" sizeComputationExpression="[(self.total / 5).floor()/]" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='chocolate']"/>
+          </style>
+          <conditionnalStyles predicateExpression="[watered/]">
+            <style xsi:type="style:SquareDescription" borderSizeComputationExpression="1" showIcon="false" labelExpression="[self.total + 'ha : ' + self.nbFields + ' fields' /]" sizeComputationExpression="[(self.total / 5).floor()/]" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="[fodder/]">
+            <style xsi:type="style:SquareDescription" borderSizeComputationExpression="1" showIcon="false" labelExpression="[self.total + 'ha : ' + self.nbFields + ' fields' /]" sizeComputationExpression="[(self.total / 5).floor()/]" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
+            </style>
+          </conditionnalStyles>
+        </nodeMappings>
+        <edgeMappings name="WorkGroup to Culture" sourceMapping="//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Structure']/@defaultLayer/@containerMappings[name='WorkGroup']" targetMapping="//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Structure']/@defaultLayer/@containerMappings[name='From%20Xtext%20dsl']/@subNodeMappings[name='CultureNode']" targetFinderExpression="feature:cultures">
+          <style sizeComputationExpression="1">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <centerLabelStyleDescription showIcon="false" labelExpression="dedicated to">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="Resource to its kind" sourceMapping="//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Structure']/@defaultLayer/@nodeMappings[name='Resource']" targetMapping="//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Structure']/@defaultLayer/@containerMappings[name='From%20Xtext%20dsl']/@subNodeMappings[name='ResourceKind']" targetFinderExpression="feature:kind">
+          <style lineStyle="dash" sizeComputationExpression="2" routingStyle="tree">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+            <centerLabelStyleDescription showIcon="false">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="Surface Dedicated to Workgroup" sourceMapping="//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Structure']/@defaultLayer/@nodeMappings[name='Surface']" targetMapping="//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Structure']/@defaultLayer/@containerMappings[name='WorkGroup']" targetFinderExpression="feature:dedicatedto">
+          <style lineStyle="dash" sizeComputationExpression="1">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription showIcon="false">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <containerMappings name="WorkGroup" domainClass="exploitation.WorkGroup">
+          <subNodeMappings name="WorkgroupSurface" semanticCandidatesExpression="var:self" domainClass="exploitation.WorkGroup">
+            <style xsi:type="style:GaugeCompositeStyleDescription" showIcon="false" labelExpression="assigned" sizeComputationExpression="6" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <sections maxValueExpression="[self.eContainer(Exploitation).surfaces->select(watered).total->sum()/]" valueExpression="[self.eInverse()->filter(Surface)->select(watered).total->sum()/]" label="W">
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+                <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+              </sections>
+              <sections maxValueExpression="[self.eContainer(Exploitation).surfaces->select(fodder).total->sum()/]" valueExpression="[self.eInverse()->filter(Surface)->select(fodder).total->sum()/]" label="F">
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+                <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
+              </sections>
+              <sections maxValueExpression="[self.eContainer(Exploitation).surfaces->select(not fodder and not watered).total->sum()/]" valueExpression="[self.eInverse()->filter(Surface)->select(not fodder and not watered).total->sum()/]" label="N">
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+                <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='chocolate']"/>
+              </sections>
+            </style>
+          </subNodeMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" labelFormat="bold" showIcon="false" labelAlignment="LEFT">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            <labelBorderStyle href="environment:/viewpoint#//@labelBorderStyles/@labelBorderStyleDescriptions.0"/>
+          </style>
+          <conditionnalStyles predicateExpression="[self.oclIsKindOf(Daily)/]">
+            <style xsi:type="style:WorkspaceImageDescription" labelFormat="bold" showIcon="false" labelAlignment="LEFT" resizeKind="NSEW" workspacePath="/org.gemoc.agro.design/images/web/cow.png">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="[self.oclIsKindOf(Crop)/]">
+            <style xsi:type="style:WorkspaceImageDescription" labelFormat="bold" showIcon="false" labelAlignment="LEFT" resizeKind="NSEW" workspacePath="/org.gemoc.agro.design/images/web/farm2.jpg">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </conditionnalStyles>
+        </containerMappings>
+        <containerMappings name="From Xtext dsl" semanticCandidatesExpression="var:self" domainClass="exploitation.Exploitation">
+          <subNodeMappings name="ResourceKind" domainClass="activitiesDSL.ResourceKind">
+            <style xsi:type="style:BundledImageDescription" labelFormat="bold" showIcon="false" resizeKind="NSEW" shape="triangle">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+            </style>
+          </subNodeMappings>
+          <subNodeMappings name="CultureNode" domainClass="activitiesDSL.Culture">
+            <style xsi:type="style:BundledImageDescription" labelFormat="bold" showIcon="false" sizeComputationExpression="[self.activities->size()/]" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
+            </style>
+          </subNodeMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" arcWidth="6" arcHeight="6" showIcon="false" labelExpression="" roundedCorner="true">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+          </style>
+        </containerMappings>
+        <toolSections name="tools">
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Daily" containerMappings="//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Structure']/@defaultLayer/@containerMappings[name='WorkGroup']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="exploitation.Daily" referenceName="groups">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="Daily"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Crop" containerMappings="//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Structure']/@defaultLayer/@containerMappings[name='WorkGroup']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="exploitation.Crop" referenceName="groups">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="Crop"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Ewe" containerMappings="//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Structure']/@defaultLayer/@containerMappings[name='WorkGroup']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="exploitation.Ewe" referenceName="groups">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="Ewe"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Surface" nodeMappings="//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Structure']/@defaultLayer/@nodeMappings[name='Surface']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="exploitation.Surface" referenceName="surfaces">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="total" valueExpression="20"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="Assign Surface" edgeMappings="//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Structure']/@defaultLayer/@edgeMappings[name='Surface%20Dedicated%20to%20Workgroup']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:source">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="dedicatedto" valueExpression="var:target"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Activities" titleExpression="[name + 'tasks dependencies'/]" initialisation="true" domainClass="activitiesDSL.Culture" enablePopupBars="true">
+      <metamodel href="http://www.gemoc.org/agro/ActivitiesDSL#/"/>
+      <defaultLayer name="Default">
+        <edgeMappings name="ActivityDependency" sourceMapping="//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Activities']/@defaultLayer/@containerMappings[name='ActivityContainer']" targetMapping="//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Activities']/@defaultLayer/@containerMappings[name='ActivityContainer']" targetFinderExpression="feature:prerequisite" sourceFinderExpression="feature:eContainer" domainClass="activitiesDSL.DelaySinceActivy" useDomainElement="true">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <containerMappings name="ActivityContainer" semanticCandidatesExpression="feature:eAllContents" domainClass="activitiesDSL.ExploitationActivity" childrenPresentation="List">
+          <subNodeMappings name="Predicates" semanticCandidatesExpression="feature:eAllContents" domainClass="activitiesDSL.Predicate">
+            <style xsi:type="style:BundledImageDescription" labelExpression="[self.eClass().name/]" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </subNodeMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" arcWidth="10" arcHeight="10" labelFormat="bold" showIcon="false" roundedCorner="true" backgroundStyle="Liquid">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
+          </style>
+        </containerMappings>
+      </defaultLayer>
+    </ownedRepresentations>
+  </ownedViewpoints>
+</description:Group>
