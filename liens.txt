@@ -1,6 +1,8 @@
 == References and links
 
 - [[DEVS]] http://fr.wikipedia.org/wiki/Discrete_Event_System_Specification
+- [[IDM'12]] Bouquin de Benoit
+- [[MDSEP'12]] Bouquib de Jordi
 - [[Papyrus]] https://www.eclipse.org/papyrus/
 - [[RECORD]] http://record.toulouse.inra.fr/
 - [[Sirius]] https://www.eclipse.org/proposals/modeling.sirius/

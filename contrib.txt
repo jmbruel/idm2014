@@ -10,3 +10,11 @@ We can follow <<IDM4'12>> metamodeling process:
 
 .A metamodeling environment construction process(XXX) waiting for Benoit's original figure XXX)
 image::idm12.png[]
+
+We can also follow <<MDSEP'12>>:
+
+. Modeling domain analysis
+. Modeling language design
+. Modeling language validation
+
+//parler du papier de Bran Selic.[JMB]
