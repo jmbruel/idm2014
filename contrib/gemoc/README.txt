@@ -1,1 +1,0 @@
- This use case is based on the Gemoc Studio. It actually uses Sirius and Xtext.
