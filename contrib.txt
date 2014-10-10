@@ -8,8 +8,8 @@ There is several way to tackle the problem.
 
 We can follow <<IDM4'12>> metamodeling process:
 
-.A metamodeling environment construction process(XXX) waiting for Benoit's original figure XXX)
-image::idm12.png[]
+.A metamodeling environment construction process
+image::idm12.png[width:"60%"]
 
 We can also follow <<MDSEP'12>>:
 
