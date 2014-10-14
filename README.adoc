@@ -1,0 +1,7 @@
+idm2014
+=======
+
+Working on the IDM'2014 case study.
+
+This branch is a read-only one for all users (only Travis is supposed to update outputs).
+
