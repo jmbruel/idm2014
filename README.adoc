@@ -5,7 +5,10 @@ Working project on the IDM'2014 case study.
 
 The documentation is available in different format:
 
-- main.html[Plain HTML]
-- main.slides.html[Slides]
+- link:main.html[Plain HTML]
+- link:main.slides.html[Slides]
 
 Contact: mailto:jbruel@gmail.com[JM Bruel]
+
+Continuous Integration now works (last CI status: )
+and the outputs are available link:http://jmbruel.github.io/idm2014/[here].
