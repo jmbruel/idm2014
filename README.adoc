@@ -1,0 +1,11 @@
+idm2014
+=======
+
+Working project on the IDM'2014 case study.
+
+The documentation is available in different format:
+
+- main.html[Plain HTML]
+- main.slides.html[Slides]
+
+Contact: mailto:jbruel@gmail.com[JM Bruel]
