@@ -1,6 +1,4 @@
-language: python
-python:
-- '2.7'
+language: ruby
 install:
 - gem install asciidoctor
 script:
@@ -17,7 +15,7 @@ script:
 # travis encrypt -r jmbruel/PapyrusFAQ GH_TOKEN=<token generated on gitHub> --add env.global
 #env:
 #  global:
-#    secure: ...	
+#    secure: ...
 # if everything OK, then deploy on the web
 after_success:
 #- bash update.sh
