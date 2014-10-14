@@ -6,18 +6,8 @@ script:
 - ls -alF
 - asciidoctor -a icons -a data-uri -b html5 -a toc -a numbered main.asc -o output/main.html
 - ls -al output
-after_success:
-- echo -e "Starting to update gitHub\n"
-- git config --global user.email "jbruel#travis@gmail.com"
-- git config --global user.name "Jean-Michel Bruel"
-- git config --global push.default simple
-- git clone --quiet https://${GH_TOKEN}@github.com/jmbruel/idm2014.git travis > /dev/null
-- cp output/*.html travis/output
-- git add travis/output
-- git commit -m "Travis build $TRAVIS_BUILD_NUMBER pushed to basics repository --
-  [skip ci]"
-- git push -fq origin master  > /dev/null
-- echo -e "Done magic with output\n"
+after_success: ./update-gh-pages.sh
+
 env:
   global:
-    secure: IAvsbHRJbpKxvgyjlwQ7qI1FldSCa9WudNHZc8Yrm/vey/vLO0zrVy3sqfSDkE2NtpD1qf6ZV0efsWdJ/iZcajGxBfw+MhA+muFZ6fLPGx9caiLL86yKiXhFvpXRXcnpKiKy98uyYVkunRG/jcMwWpUdvPVioORHPnvjksJbjig=
+  - secure: JpIaoHIKL4n5K579myLztI6PE3SaAfnlEdpRqjnIop0T3DqtCySDgZzzxi/HizrCtWQvKf4gYpzHWMjFl+yxuaBHBP5O09NZTmPdbxDuLg+UECgRQmOLteoxehBWtoFB2ayLY9kEi0sXhE4OLusLSq4xifQORrAHev5cVLbYRh4=
