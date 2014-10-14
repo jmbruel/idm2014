@@ -4,9 +4,9 @@ install:
 script:
 - asciidoctor --version
 - ls -alF
-- asciidoctor -a icons -a data-uri -b html5 -a toc -a numbered main.asc -o output/main.html
+- asciidoctor -a icons -a data-uri -b html5 -a toc -a numbered -a imagesdir=images main.asc -o output/main.html
 - git clone git://github.com/asciidoctor/asciidoctor-backends.git
-- asciidoctor -a icons -a data-uri -a slides -T asciidoctor-backends/haml/deckjs/ -b deckjs main.asc -o output/main.slides.html
+- asciidoctor -a icons -a data-uri -a slides -T asciidoctor-backends/haml/deckjs/ -b deckjs -a imagesdir=images main.asc -o output/main.slides.html
 - ls -al output
 after_success: ./update-gh-pages.sh
 
