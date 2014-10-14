@@ -17,10 +17,9 @@ script:
 # travis encrypt -r jmbruel/PapyrusFAQ GH_TOKEN=<token generated on gitHub> --add env.global
 #env:
 #  global:
-#    secure: ...
-	
+#    secure: ...	
 # if everything OK, then deploy on the web
-after_success: 
+after_success:
 #- bash update.sh
 - echo -e "Starting to update gitHub\n"
 - git config --global user.email "jbruel#travis@gmail.com"
@@ -38,5 +37,3 @@ after_success:
 - git commit -m "Travis build $TRAVIS_BUILD_NUMBER pushed to basics repository -- [skip ci]"
 - git push -fq origin master  > /dev/null
 - echo -e "Done magic with output\n"
-
-
