@@ -1,0 +1,21 @@
+
+h1. Introduction
+
+This contains an implementation of the "Exploitation" use case through technologies integrated in the  Gemoc Studio. 
+
+Three DSLs are defined and used in an integrated way to provide tooling and analysis capabilities over an exploitation.
+
+h2. Activities DSL
+
+Its purpose is to capture a static definition of the rules related to some cultures : how they are split in activities
+and what might trigger an activity. It also provides a textual syntax (based on Xtext) which makes it 
+easier to specific the requirements and to compose expressions.
+
+h2. Exploitation DSL
+
+It is used to capture the structure of a given exploitation. Its break down in fields, the available resources and how
+the workgroups are setup in the exploitation.
+
+h2. Simulation DSL
+
+It is used to capture simulation settings and result : a calendar of the activities scheduling.
