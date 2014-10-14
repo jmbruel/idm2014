@@ -1,6 +1,6 @@
 language: ruby
 install:
-- gem install asciidoctor
+- gem install asciidoctor tilt haml
 script:
 - asciidoctor --version
 - ls -alF
