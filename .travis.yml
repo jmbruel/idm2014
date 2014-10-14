@@ -13,8 +13,7 @@ after_success:
 - git config --global push.default simple
 - git clone --quiet https://${GH_TOKEN}@github.com/jmbruel/idm2014.git travis > /dev/null
 - cp output/*.html travis/output
-- cd travis/output
-- git add *.html
+- git add travis/output
 - git commit -m "Travis build $TRAVIS_BUILD_NUMBER pushed to basics repository --
   [skip ci]"
 - git push -fq origin master  > /dev/null
