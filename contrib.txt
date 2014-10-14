@@ -25,7 +25,7 @@ ifdef::slides[=== Approach (ctd.)]
 
 Parler du papier de <<Selic07>> pour l'approche profil du {CEA}.
 
-.Tiré de <<<Tatibouet14>>>
+.A profil based approach (taken from <<Tatibouet14>> and inspired by <<Selic07>>)
 image::profil-BS.png[width="80%"]
 
-ifdef::slides[:leveloffset: +1]
+ifdef::slides[:leveloffset: 0]
