@@ -1,7 +1,8 @@
 == References and links
 
 - [[DEVS]] http://fr.wikipedia.org/wiki/Discrete_Event_System_Specification
-- [[IDM'12]] Bouquin de Benoit
+- [[IDM'12]] Ingénierie Dirigée par les Modèles : des concepts a la pratique. Jean-Marc Jézéquel,
+Benoît Combemale, Didier Vojtisek. Ellipses 2012.
 - [[MDSEP'12]] Bouquib de Jordi
 - [[Papyrus]] https://www.eclipse.org/papyrus/
 - [[RECORD]] http://record.toulouse.inra.fr/

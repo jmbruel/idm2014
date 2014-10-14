@@ -2,11 +2,13 @@
 
 This section describe the modeling experiments.
 
+ifdef::slides[:leveloffset: -1]
+
 === Approach
 
 There is several way to tackle the problem.
 
-We can follow <<IDM4'12>> metamodeling process:
+We can follow <<IDM'12>> metamodeling process:
 
 .A metamodeling environment construction process
 image::idm12.png[width:"60%"]
@@ -18,3 +20,5 @@ We can also follow <<MDSEP'12>>:
 . Modeling language validation
 
 //parler du papier de Bran Selic.[JMB]
+
+ifdef::slides[:leveloffset: +1]
