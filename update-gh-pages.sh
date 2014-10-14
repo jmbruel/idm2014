@@ -6,8 +6,8 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
 
   #go to home and setup git
   cd $HOME
-- git config --global user.email "jbruel#travis@gmail.com"
-- git config --global user.name "Jean-Michel Bruel"
+  git config --global user.email "jbruel#travis@gmail.com"
+  git config --global user.name "Jean-Michel Bruel"
 
   #using token clone gh-pages branch
   git clone --quiet --branch=gh-pages https://${GH_TOKEN}@github.com/jmbruel/idm2014.git  gh-pages > /dev/null
