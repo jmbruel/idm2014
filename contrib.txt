@@ -8,17 +8,24 @@ ifdef::slides[:leveloffset: -1]
 
 There is several way to tackle the problem.
 
-We can follow <<IDM'12>> metamodeling process:
+We can follow <<IDM12>> metamodeling process:
 
 .A metamodeling environment construction process
-image::idm12.png[width:"60%"]
+image::idm12.png[width="80%"]
 
-We can also follow <<MDSEP'12>>:
+ifdef::slides[=== Approach (ctd.)]
+
+We can also follow <<MDSEP12>>:
 
 . Modeling domain analysis
 . Modeling language design
 . Modeling language validation
 
-//parler du papier de Bran Selic.[JMB]
+ifdef::slides[=== Approach (ctd.)]
+
+Parler du papier de <<Selic07>> pour l'approche profil du {CEA}.
+
+.Tiré de <<<Tatibouet14>>>
+image::profil-BS.png[width="80%"]
 
 ifdef::slides[:leveloffset: +1]
