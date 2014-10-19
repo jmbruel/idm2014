@@ -20,4 +20,4 @@
 :pd: mailto:Pascal.Dayre@enseeiht.fr[Pascal Dayre]
 
 //------------------------------------
-:modelsc: models^sc^
+:uml: link:http://www.omg.org/spec/UML/[UML]

@@ -2,11 +2,14 @@
 
 This section describe the modeling experiments.
 
+THe basic documents (in addition to the one presented before)
+is the following : link:documents/ModèleExploitationAgricole.pdf[]
+
 ifdef::slides[:leveloffset: -1]
 
-=== Approach
+=== Approaches
 
-There is several way to tackle the problem.
+There are several ways to tackle the problem.
 
 We can follow <<IDM12>> metamodeling process:
 
@@ -25,7 +28,15 @@ ifdef::slides[=== Approach (ctd.)]
 
 Parler du papier de <<Selic07>> pour l'approche profil du {CEA}.
 
+[[Selic07-fig]]
 .A profil based approach (taken from <<Tatibouet14>> and inspired by <<Selic07>>)
 image::profil-BS.png[width="80%"]
 
-ifdef::slides[:leveloffset: 0]
+=== DSL
+
+ifdef::slides[:leveloffset: +1]
+ifndef::slides[:leveloffset: +2]
+
+include::contrib/papyrus/README.txt[]
+
+ifndef::slides[:leveloffset: -2]
