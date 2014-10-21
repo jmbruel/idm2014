@@ -1,0 +1,184 @@
+
+## Règles
+rules { # liste des règles.
+    rule { # définition de la règle.
+        id = "stade1epi";
+        predicates = "stade1epi"; # sa liste de prédicats (AND).
+    }
+    rule {
+        id = "stade1epiPlus7jours";
+        predicates = "stade1epiPlus7jours";
+    }
+    rule {
+        id = "disponibiliteHerbeInf10";
+        predicates = "disponibiliteHerbeInf10";
+    }
+    rule {
+        id = "stadeGonflement";
+        predicates = "stadeGonflement";
+    }
+    rule {
+        id = "stadeGonflementPlus7jours";
+        predicates = "stadeGonflementPlus7jours";
+    }
+    rule {
+        id = "stadeFloraison";
+        predicates = "stadeFloraison";
+    }
+    rule {
+        id = "stadeFloraisonPlus5jours";
+        predicates = "stadeFloraisonPlus5jours";
+    }
+}
+
+## Activités
+activities { # liste des activités.
+    activity { # definition de l'activite 'semisBle'
+        id = "semis"; 
+        temporal {
+            minstart = "2000-10-16"; #jour julien pour le 2000-01-01 + 289
+            #maxfinish = 2500000;  #TODO besoin ?
+        }
+        output = "out_semis";
+    }
+    activity { 
+        id = "desherbageAutomne"; 
+        temporal {
+            minstart = "2000-11-16"; #jour julien pour le 2000-01-01 + 320
+            maxfinish = "2000-12-01";  #jour julien pour le 2000-01-01 + 335
+        }
+        output = "out_desherbageAutomne";
+    }
+    activity { 
+        id = "apport1azote"; 
+        temporal {
+            minstart = "2001-02-22"; #jour julien pour le 2000-01-01 + 418
+            maxfinish = "2001-03-09";  #jour julien pour le 2000-01-01 + 433
+        }
+        output = "out_apportAzote";
+    }
+    activity {
+        id = "apport2azote"; 
+        rules = "stade1epi";
+        rules-fail = "stade1epiPlus7jours";
+        output = "out_apportAzote";
+    }
+    activity {
+        id = "apport3azote"; 
+        rules = "stadeGonflement";
+        rules-fail = "stadeGonflementPlus7jours";
+        output = "out_apportAzote";
+    }
+    activity { 
+        id = "fongicide1"; 
+        temporal {
+            minstart = "2001-04-21"; #jour julien pour le 2000-01-01 + 476
+            maxfinish = "2001-04-26";  #jour julien pour le 2000-01-01 + 481
+        }
+        output = "out_fongicide";
+    }
+    activity {
+        id = "fongicide2"; 
+        rules = "stadeFloraison";
+        rules-fail = "stadeFloraisonPlus5jours";
+        output = "out_fongicide";
+    }
+    activity { 
+        id = "recolte"; 
+        temporal {
+            minstart = "2001-07-21"; #jour julien pour le 2000-01-01 + 567
+            maxfinish = "2001-08-10";  #jour julien pour le 2000-01-01 + 587
+        }
+        output = "out_recolte";
+    }
+    sequence-activity {
+      id-prefix = "annee1coupe";
+      number = 2;          
+      temporal {
+        minstart = "2000-06-02";# 2000-06-02
+        maxfinish = "2000-06-12";# 2000-06-12
+      }
+      temporal-sequence {
+        precedence {
+          type = FS;
+          mintimelag = 42;
+        }
+        precedence {
+          type = FF;
+          maxtimelag = 49;
+        }
+      }
+      output = "out_coupe";
+    }
+    sequence-activity {
+      id-prefix = "annee2coupe";
+      number = 3;          
+      temporal {
+        minstart =  "2001-06-02";# 2001-06-02
+        maxfinish = "2001-06-12";# 2001-06-12
+      }
+      temporal-sequence {
+        precedence {
+          type = FS;
+          mintimelag = 42;
+        }
+        precedence {
+          type = FF;
+          maxtimelag = 49;
+        }
+        
+      }
+      output = "out_coupe";
+    }
+        
+    sequence-activity {
+      id-prefix = "fourrage";         
+      rules = "disponibiliteHerbeInf10";
+      temporal-sequence {
+        precedence {
+          type = FS;
+          mintimelag = 5;
+        }
+      }
+      output = "out_fourrage";
+    }
+}
+
+## Graphe d'activités
+precedences {
+    precedence {
+        type = FS;
+        first = "semis";
+        second = "desherbageAutomne";
+    }
+    precedence {
+        type = FS;
+        first = "semis";
+        second = "apport1azote";
+    }
+    precedence {
+        type = FS;
+        first = "semis";
+        second = "apport2azote";
+    }
+    precedence {
+        type = FS;
+        first = "semis";
+        second = "apport3azote";
+    }
+    precedence {
+        type = FS;
+        first = "semis";
+        second = "fongicide1";
+    }
+    precedence {
+        type = FS;
+        first = "semis";
+        second = "fongicide2";
+    }
+    precedence {
+        type = FS;
+        first = "semis";
+        second = "recolte";
+    }
+}

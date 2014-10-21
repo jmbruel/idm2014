@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE vle_project PUBLIC "-//VLE TEAM//DTD Strict//EN" "http://www.vle-project.org/vle-1.0.0.dtd">
+<vle_project version="1.0" date="Fri, 09 Sep 2011" author="Gauthier Quesnel">
+<structures>
+<model name="modelisad" type="coupled" x="0" y="0" width="1486" height="639"  >
+<submodels>
+<model name="Decision" type="atomic" dynamics="" x="93" y="90" width="100" height="120" >
+<out>
+ <port name="desherberBle" />
+ <port name="fertiliserBle" />
+ <port name="fourrageTroupeau" />
+ <port name="recolterBle" />
+ <port name="recolterLuzerne" />
+ <port name="semerBle" />
+</out>
+</model>
+<model name="OS_DesherberBle" type="atomic" dynamics="" x="677" y="65" width="100" height="30" >
+</model>
+<model name="OS_FertiliserBle" type="atomic" dynamics="" x="674" y="130" width="100" height="30" >
+</model>
+<model name="OS_FourrageTroupeau" type="atomic" dynamics="" x="676" y="208" width="100" height="30" >
+</model>
+<model name="OS_RecolterBle" type="atomic" dynamics="" x="671" y="277" width="100" height="30" >
+</model>
+<model name="OS_RecolterLuzerne" type="atomic" dynamics="" x="673" y="340" width="100" height="30" >
+</model>
+<model name="OS_semerBle" type="atomic" dynamics="" x="380" y="309" width="100" height="30" >
+</model>
+<model name="ResourceManager" type="atomic" dynamics="" x="409" y="84" width="100" height="135" >
+<in>
+ <port name="DesherberBle" />
+ <port name="FertiliserBle" />
+ <port name="FourrageTroupeau" />
+ <port name="RecolterBle" />
+ <port name="RecolterLuzerne" />
+ <port name="SemerBle" />
+</in>
+<out>
+ <port name="DesherberBle" />
+ <port name="FertiliserBle" />
+ <port name="FourrageTroupeau" />
+ <port name="RecolterBle" />
+ <port name="RecolterLuzerne" />
+ <port name="SemerBle" />
+ <port name="ack" />
+</out>
+</model>
+</submodels>
+<connections>
+</connections>
+</model>
+</structures>
+<experiment name="test" duration="1.000000000000000" begin="0.000000000000000" combination="linear" seed="123456789" >
+<replicas seed="581869302" number="10" />
+<views>
+</views>
+</experiment>
+</vle_project>

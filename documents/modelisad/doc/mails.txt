@@ -1,0 +1,151 @@
+*******************************************
+Bonjour à tou(te)s,
+
+1) Il me paraît utile, de manière générale, de distinguer :
+a- la date de début au plus tard
+b- la date de fin (avec, en option, la nuance entre date au plus tôt et date au
+plus tard)
+Sur l'exemple du semis de blé :
+La date de début au plus tard est celle où on décide de remplacer le blé par
+autre chose (sur une parcelle).
+La date de fin est celle où on arrête de semer le blé (sur cette parcelle, qui
+resterait partiellement non semée !).
+
+Dans notre modèle particulier, la distinction est rendue floue par le fait que
+notre sole de blé est réduite à une seule parcelle : votre "Date de fin (DF)",
+c'est la date à laquelle on arrête d'implanter du blé sur la sole destinée au
+blé. C'est-à dire la date au plus tard de début de semis sur la partie non semée
+de la sole.
+
+Pour 'Semer Blé' et 'Récolter Blé', pas de problème, puisque DF est l'infini.
+Mais quelle est, entre a et b, la bonne lecture de DF pour 'Fertiliser' et
+'Désherber' ?
+Pour 'Récolter Luzerne', DF dès que la biomasse a atteint un seuil, mais quelle
+lecture devra-t-on avoir du remplaçant de "A déterminer" ?
+
+2) 3 opérations 'Fertiliser' : DF à trois stades différents, mais vous nous les
+indiquerez, n'est-ce pas ? Idem pour  'Désherber'.
+
+3) Le "Nb d'agriculteurs".
+Le '1' est sans doute un max.
+Mais le '2' est-il un nombre exact ou un max ?
+
+4) "Plusieurs tâches peuvent être réalisées simultanément par les deux
+agriculteurs" : vous voulez-dire "Deux tâches ..." ?
+Autrement dit, on garde qu'un agriculteur ne peut faire qu'une seule chose un
+jour donné (par exemple, pas de désherbage et fertilisation couplés, pas
+désherber le matin et fertiliser l'après-midi).
+
+JPR
+
+*****************************************
+
+Bonjour,
+
+Si on enlève le temps qui sera consacré à la présentation générale des
+plateformes, cela laisse combien de temps exactement (en nombre d’heures) pour
+mettre en place le modèle « from scratch » avec/devant les participants ?
+
+D’un point de vue pratique, est-ce que les participants vont
+
+· eux-mêmes manipuler les plateformes et suivre « en faisant » sur leur ordi
+(option 1)
+
+· ou plutôt suivre sur l’écran le développement du modèle réalisé par le seul
+présentateur (option 2)?
+
+Une option intermédiaire pourrait être d’enregistrer l’écran du présentateur
+pour laisser à la disposition des participants la vidéo leur permettant de
+refaire après-coup l’implémentation, car j’ai peur que l’option 1 ralentisse
+fortement (les fautes de frappe et autre fermetures intempestives de fenêtres
+appelleront des dépannages chronophages)
+
+2^e question : le modèle tel que décrit ci-dessous n’est conceptuellement pas un
+modèle multi-agent puisqu’il n’y a qu’une seule entité décisionnelle (1 seul
+agent agriculteur). Or Cormas est une plateforme destinée à implémenter des
+modèles multi-agent (des interactions entre plusieurs entités décisionnelles).
+Une idée serait alors d’introduire comme agent une exploitation agricole avec
+plusieurs membres ou un ensemble d’exploitations gérer par un seul agriculteur.
+Mais peut-être que cela déplace un peu trop le cadre proposé ? Une autre
+direction serait la représentation explicite du parcellaire avec la donnée d’un
+nombre de parcelles chacune caractérisée par une superficie et une localisation
+(plus ou moins distante de l’exploitation), qui pourrait demander de considérer
+les temps/coûts de déplacement. Mais là-encore est-ce pertinent par rapport à ce
+à quoi est destiné le modèle ?
+
+Désolé de ne pouvoir me joindre aux discussions ce jeudi,
+
+Bien cordialement,
+
+Clp (christophe le page)
+
+*********************************************
+
+Ah ca se précise. A première vue et de mon point de vue.
+- Le nombre d'activités pour le blé et la luzerne (1 semis, 3 ferti, 2
+  desherbages, 1 recolte, 3 coupes) est fixe. Ca facilite record.
+Les activations de ces activités est basée sur somme des temp (<=> stade
+cultural) et les durées des activités peuvent être gérées facilement.  Donc ok.
+- Au contraire, pour le troupeau, la(les) activités d'apport de fourrage ne sont
+  pas dénombrées a priori (côté dynamique moins plaisant pour record).
+- Et comme ca, je ne vois pas a priori comment déclarer des priorités :
+  activités de troupeau > activités de luzerne > activités de blé. Et comment se
+traduisent ces priorités : e.g. au jour j si on a le choix entre des activités
+de troupeau,
+et de luzerne, il faut choisir de faire celles du troupeau (?) ou encore même
+interrompre des activités (?)
+- L'activation des activités peut être décalée (fction du stade cultural et de
+  la concurrence entre blé/luzerne/troupeau) mais pas annulée, c'est pas plus
+mal.
+
+Ronan
+
+**********************************************
+
+Re-Bonjour,
+
+Voici quelques précisions sur le modèle commun. L'objectif est d'avoir un modèle
+suffisamment simple pour que dans chaque atelier qui vont durer chacun 1 jour,
+les participants puissent arriver à une sortie concrète. Donc le modèle en
+question pourrait prendre la forme suivante et reste à discuter avec vous jeudi
+:
+
+- Un agriculteur élève des vaches et cultive du blé et de la luzerne
+
+- Il a des opérations à réaliser pour chacun des 3 ateliers :
+   _Blé_ : semer à partir du 15/10 et cela dure 7 jours / fertiliser  3 fois et
+chaque fois cela dure 5 jours / désherber 2 fois (dates à préciser) et un
+désherbage dure 5 jours / récolter à partir du 14/7 durant 14 jours.  Les dates
+de fertilisation sont déterminées à partir d'un modèle simple qui simule le
+stade de la culture en fonction des températures depuis le semis.
+   _Luzerne_ : réaliser 3 coupes (dates à préciser) et une coupe dure 7 jours
+(comprend la coupe, le séchage, l'endainage et l'enroulage).
+   _Troupeau_ : il peut se nourrir au pâturage. Pour cela la production d'herbe
+est simulée par un modèle basé sur la somme des températures. S'il n'y a pas
+assez d'herbe alors l'agriculteur apporte du fourrage pour 3 jours. Une autre
+option est de prévoir des dates fixes de d'affouragement , sans recours à la
+modélisation de la disponibilité en herbe au pâturage.
+
+La priorité entre les ateliers est : 1. Le troupeau 2. La luzerne et 3. Le blé.
+L'agriculteur étant seul il ne peut que faire une tâche à la fois.
+
+Le pas de temps de simulation serait de 1 jour et la durée du 15/10 année N au
+01/09 année N+1.
+
+La sortie : un calendrier journalier avec les tâches réalisées.
+
+Pour ceux qui ne pourront pas être en visio jeudi, faites nous vos retours d'ici
+là si vous pouvez sur deux points :
+- la faisabilité de développer un tel modèle durant l'atelier (pour rappel les
+  ateliers seront précédés d'une présentation générale de chacune des
+plateformes)
+- ce qui pourrait être présenter par vous en synthèse des journées sur les
+  enrichissements du modèle qui pourraient être facilement mis en oeuvre avec la
+plateforme que vous utilisez.
+
+
+Alexandre and co 
+
+**********************************************
+
+

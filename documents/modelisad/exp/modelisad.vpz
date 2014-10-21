@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE vle_project PUBLIC "-//VLE TEAM//DTD Strict//EN" "http://www.vle-project.org/vle-1.0.0.dtd">
+<vle_project version="1.0" date="Fri, 09 Sep 2011" author="Ronan Trépos">
+<structures>
+<model name="modelisad" type="coupled" x="0" y="0" width="1319" height="663"  >
+<submodels>
+<model name="Decision" type="atomic" dynamics="dynDecision" observables="obsDecision" x="62" y="63" width="100" height="135" >
+<in>
+ <port name="Disponibilite_Herbe" />
+ <port name="Stade_Ble" />
+ <port name="ack" />
+</in>
+<out>
+ <port name="apportAzote" />
+ <port name="coupe" />
+ <port name="desherbageAutomne" />
+ <port name="fongicide" />
+ <port name="fourrage" />
+ <port name="recolte" />
+ <port name="semis" />
+</out>
+</model>
+<model name="SystemeOperant" type="coupled" x="329" y="69" width="100" height="572"  >
+<in>
+ <port name="apportAzote" />
+ <port name="coupe" />
+ <port name="desherbageAutomne" />
+ <port name="fongicide" />
+ <port name="fourrage" />
+ <port name="recolte" />
+ <port name="semis" />
+</in>
+<out>
+ <port name="ack" />
+ <port name="apportAzote" />
+ <port name="coupe" />
+ <port name="desherbageAutomne" />
+ <port name="fongicide" />
+ <port name="fourrage" />
+ <port name="recolte" />
+ <port name="semis" />
+</out>
+<submodels>
+<model name="AllocationRessources" type="atomic" conditions="condAllocationRessources" dynamics="dynAllocationResources" observables="obsAllocationResources" x="151" y="149" width="100" height="150" >
+<in>
+ <port name="apportAzote" />
+ <port name="coupe" />
+ <port name="desherbageAutomne" />
+ <port name="fongicide" />
+ <port name="fourrage" />
+ <port name="recolte" />
+ <port name="semis" />
+</in>
+<out>
+ <port name="ack" />
+ <port name="apportAzote" />
+ <port name="coupe" />
+ <port name="desherbageAutomne" />
+ <port name="fongicide" />
+ <port name="fourrage" />
+ <port name="recolte" />
+ <port name="semis" />
+</out>
+</model>
+<model name="OS_apportAzote" type="atomic" dynamics="dynOS_defaut" x="361" y="69" width="100" height="45" >
+<in>
+ <port name="act" />
+</in>
+<out>
+ <port name="act" />
+</out>
+</model>
+<model name="OS_coupe" type="atomic" dynamics="dynOS_defaut" x="356" y="159" width="100" height="45" >
+<in>
+ <port name="act" />
+</in>
+<out>
+ <port name="act" />
+</out>
+</model>
+<model name="OS_desherbageAutomne" type="atomic" dynamics="dynOS_defaut" x="359" y="216" width="100" height="45" >
+<in>
+ <port name="act" />
+</in>
+<out>
+ <port name="act" />
+</out>
+</model>
+<model name="OS_fongicide" type="atomic" dynamics="dynOS_defaut" x="353" y="267" width="100" height="45" >
+<in>
+ <port name="act" />
+</in>
+<out>
+ <port name="act" />
+</out>
+</model>
+<model name="OS_fourrage" type="atomic" dynamics="dynOS_defaut" x="349" y="337" width="100" height="45" >
+<in>
+ <port name="act" />
+</in>
+<out>
+ <port name="act" />
+</out>
+</model>
+<model name="OS_recolte" type="atomic" dynamics="dynOS_recolte" x="340" y="412" width="100" height="45" >
+<in>
+ <port name="act" />
+</in>
+<out>
+ <port name="act" />
+</out>
+</model>
+<model name="OS_semis" type="atomic" dynamics="dynOS_semis" x="342" y="487" width="100" height="45" >
+<in>
+ <port name="act" />
+</in>
+<out>
+ <port name="act" />
+</out>
+</model>
+</submodels>
+<connections>
+<connection type="output">
+ <origin model="AllocationRessources" port="ack" />
+ <destination model="SystemeOperant" port="ack" />
+</connection>
+<connection type="output">
+ <origin model="OS_apportAzote" port="act" />
+ <destination model="SystemeOperant" port="apportAzote" />
+</connection>
+<connection type="output">
+ <origin model="OS_coupe" port="act" />
+ <destination model="SystemeOperant" port="coupe" />
+</connection>
+<connection type="output">
+ <origin model="OS_desherbageAutomne" port="act" />
+ <destination model="SystemeOperant" port="desherbageAutomne" />
+</connection>
+<connection type="output">
+ <origin model="OS_fongicide" port="act" />
+ <destination model="SystemeOperant" port="fongicide" />
+</connection>
+<connection type="output">
+ <origin model="OS_fourrage" port="act" />
+ <destination model="SystemeOperant" port="fourrage" />
+</connection>
+<connection type="output">
+ <origin model="OS_recolte" port="act" />
+ <destination model="SystemeOperant" port="recolte" />
+</connection>
+<connection type="output">
+ <origin model="OS_semis" port="act" />
+ <destination model="SystemeOperant" port="semis" />
+</connection>
+<connection type="input">
+ <origin model="SystemeOperant" port="apportAzote" />
+ <destination model="AllocationRessources" port="apportAzote" />
+</connection>
+<connection type="input">
+ <origin model="SystemeOperant" port="coupe" />
+ <destination model="AllocationRessources" port="coupe" />
+</connection>
+<connection type="input">
+ <origin model="SystemeOperant" port="desherbageAutomne" />
+ <destination model="AllocationRessources" port="desherbageAutomne" />
+</connection>
+<connection type="input">
+ <origin model="SystemeOperant" port="fongicide" />
+ <destination model="AllocationRessources" port="fongicide" />
+</connection>
+<connection type="input">
+ <origin model="SystemeOperant" port="fourrage" />
+ <destination model="AllocationRessources" port="fourrage" />
+</connection>
+<connection type="input">
+ <origin model="SystemeOperant" port="recolte" />
+ <destination model="AllocationRessources" port="recolte" />
+</connection>
+<connection type="input">
+ <origin model="SystemeOperant" port="semis" />
+ <destination model="AllocationRessources" port="semis" />
+</connection>
+<connection type="internal">
+ <origin model="AllocationRessources" port="apportAzote" />
+ <destination model="OS_apportAzote" port="act" />
+</connection>
+<connection type="internal">
+ <origin model="AllocationRessources" port="coupe" />
+ <destination model="OS_coupe" port="act" />
+</connection>
+<connection type="internal">
+ <origin model="AllocationRessources" port="desherbageAutomne" />
+ <destination model="OS_desherbageAutomne" port="act" />
+</connection>
+<connection type="internal">
+ <origin model="AllocationRessources" port="fongicide" />
+ <destination model="OS_fongicide" port="act" />
+</connection>
+<connection type="internal">
+ <origin model="AllocationRessources" port="fourrage" />
+ <destination model="OS_fourrage" port="act" />
+</connection>
+<connection type="internal">
+ <origin model="AllocationRessources" port="recolte" />
+ <destination model="OS_recolte" port="act" />
+</connection>
+<connection type="internal">
+ <origin model="AllocationRessources" port="semis" />
+ <destination model="OS_semis" port="act" />
+</connection>
+</connections>
+</model>
+<model name="SystemeBiophysique" type="coupled" x="468" y="315" width="100" height="60"  >
+<in>
+ <port name="recolte" />
+ <port name="semis" />
+</in>
+<out>
+ <port name="Disponibilite_Herbe" />
+ <port name="Stade_Ble" />
+</out>
+<submodels>
+<model name="DISPO_HERBE" type="atomic" conditions="condDISPO_HERBE" dynamics="dynSystBiophysique" x="77" y="63" width="100" height="45" >
+<out>
+ <port name="Disponibilite" />
+</out>
+</model>
+<model name="StadePhenologique" type="atomic" conditions="cond_DE_StadePhenologique" dynamics="dynStadePhenologique" observables="obsStadePhenologique" x="272" y="160" width="100" height="90" >
+<in>
+ <port name="perturb" />
+ <port name="update" />
+</in>
+<out>
+ <port name="Som_UD_depuis_epi_1" />
+ <port name="Som_UD_depuis_gonflement" />
+ <port name="Som_UD_depuis_semis" />
+ <port name="Stade" />
+</out>
+</model>
+<model name="UDEV_BLE" type="atomic" conditions="condUDEV_BLE" dynamics="dynSystBiophysique" x="77" y="214" width="100" height="45" >
+<out>
+ <port name="Unite_dev" />
+</out>
+</model>
+</submodels>
+<connections>
+<connection type="output">
+ <origin model="DISPO_HERBE" port="Disponibilite" />
+ <destination model="SystemeBiophysique" port="Disponibilite_Herbe" />
+</connection>
+<connection type="output">
+ <origin model="StadePhenologique" port="Stade" />
+ <destination model="SystemeBiophysique" port="Stade_Ble" />
+</connection>
+<connection type="input">
+ <origin model="SystemeBiophysique" port="recolte" />
+ <destination model="StadePhenologique" port="perturb" />
+</connection>
+<connection type="input">
+ <origin model="SystemeBiophysique" port="semis" />
+ <destination model="StadePhenologique" port="perturb" />
+</connection>
+<connection type="internal">
+ <origin model="UDEV_BLE" port="Unite_dev" />
+ <destination model="StadePhenologique" port="update" />
+</connection>
+</connections>
+</model>
+</submodels>
+<connections>
+<connection type="internal">
+ <origin model="Decision" port="apportAzote" />
+ <destination model="SystemeOperant" port="apportAzote" />
+</connection>
+<connection type="internal">
+ <origin model="Decision" port="coupe" />
+ <destination model="SystemeOperant" port="coupe" />
+</connection>
+<connection type="internal">
+ <origin model="Decision" port="desherbageAutomne" />
+ <destination model="SystemeOperant" port="desherbageAutomne" />
+</connection>
+<connection type="internal">
+ <origin model="Decision" port="fongicide" />
+ <destination model="SystemeOperant" port="fongicide" />
+</connection>
+<connection type="internal">
+ <origin model="Decision" port="fourrage" />
+ <destination model="SystemeOperant" port="fourrage" />
+</connection>
+<connection type="internal">
+ <origin model="Decision" port="recolte" />
+ <destination model="SystemeOperant" port="recolte" />
+</connection>
+<connection type="internal">
+ <origin model="Decision" port="semis" />
+ <destination model="SystemeOperant" port="semis" />
+</connection>
+<connection type="internal">
+ <origin model="SystemeBiophysique" port="Disponibilite_Herbe" />
+ <destination model="Decision" port="Disponibilite_Herbe" />
+</connection>
+<connection type="internal">
+ <origin model="SystemeBiophysique" port="Stade_Ble" />
+ <destination model="Decision" port="Stade_Ble" />
+</connection>
+<connection type="internal">
+ <origin model="SystemeOperant" port="ack" />
+ <destination model="Decision" port="ack" />
+</connection>
+<connection type="internal">
+ <origin model="SystemeOperant" port="recolte" />
+ <destination model="SystemeBiophysique" port="recolte" />
+</connection>
+<connection type="internal">
+ <origin model="SystemeOperant" port="semis" />
+ <destination model="SystemeBiophysique" port="semis" />
+</connection>
+</connections>
+</model>
+</structures>
+<dynamics>
+<dynamic name="dynAllocationResources" library="ResourceManager" model="" package="modelisad" type="local"  />
+<dynamic name="dynDecision" library="Decision" model="" package="modelisad" type="local"  />
+<dynamic name="dynMeteo" library="meteo" model="GenericWithHeader" package="meteo" type="local"  />
+<dynamic name="dynOS_defaut" library="OS_defaut" model="" package="modelisad" type="local"  />
+<dynamic name="dynOS_recolte" library="OS_recolte" model="" package="modelisad" type="local"  />
+<dynamic name="dynOS_semis" library="OS_semis" model="" package="modelisad" type="local"  />
+<dynamic name="dynStadePhenologique" library="StadePhenologique" model="" package="modelisad" type="local"  />
+<dynamic name="dynSystBiophysique" library="meteo" model="GenericWithHeader" package="meteo" type="local"  />
+</dynamics>
+<experiment name="modelisad" duration="730.000000000000000" begin="2451545.000000000000000" combination="linear" seed="123456789" >
+<replicas seed="581869302" number="10" />
+<conditions>
+<condition name="condAllocationRessources" >
+ <port name="resources" >
+<map><key name="agriculteurT1"><map><key name="competences"><set><string>semis</string><string>fongicide</string><string>desherbageAutomne</string><string>recolte</string><string>apportAzote</string><string>fourrage</string><string>coupe</string></set></key><key name="number"><integer>1</integer></key></map></key><key name="agriculteurT2"><map><key name="competences"><set><string>semis</string><string>fongicide</string><string>recolte</string><string>apportAzote</string><string>desherbageAutomne</string><string>coupe</string></set></key><key name="number"><integer>1</integer></key></map></key></map>
+</port>
+</condition>
+<condition name="condDISPO_HERBE" >
+ <port name="begin" >
+<integer>2</integer>
+</port>
+ <port name="column_separator" >
+<string>;</string>
+</port>
+ <port name="columns" >
+<map><key name="Disponibilite"><string>Disponibilite</string></key><key name="Jour"><string>Jour</string></key></map>
+</port>
+ <port name="day_column" >
+<integer>-1</integer>
+</port>
+ <port name="meteo_file" >
+<string>DISPO_HERBE.csv</string>
+</port>
+ <port name="month_column" >
+<integer>-1</integer>
+</port>
+ <port name="time-step" >
+<double>1.000000000000000</double>
+</port>
+ <port name="variables" >
+<set><set><string>Disponibilite</string><double>0.000000000000000</double></set><set><string>Jour</string><double>0.000000000000000</double></set></set>
+</port>
+ <port name="year_column" >
+<integer>-1</integer>
+</port>
+</condition>
+<condition name="condMeteo" >
+ <port name="begin" >
+<integer>2</integer>
+</port>
+ <port name="column_separator" >
+<string> </string>
+</port>
+ <port name="columns" >
+<map><key name="ETP"><string>ETP</string></key><key name="Rad"><string>Rad</string></key><key name="Rain"><string>Rain</string></key><key name="Tmax"><string>Tmax</string></key><key name="Tmin"><string>Tmin</string></key></map>
+</port>
+ <port name="day_column" >
+<integer>-1</integer>
+</port>
+ <port name="meteo_file" >
+<string>MAGNABRI.txt</string>
+</port>
+ <port name="month_column" >
+<integer>1</integer>
+</port>
+ <port name="time-step" >
+<double>1.000000000000000</double>
+</port>
+ <port name="variables" >
+<set><set><string>ETP</string><double>0.000000000000000</double></set><set><string>Tmax</string><double>0.000000000000000</double></set><set><string>Tmin</string><double>0.000000000000000</double></set><set><string>Rain</string><double>0.000000000000000</double></set><set><string>Rad</string><double>0.000000000000000</double></set></set>
+</port>
+ <port name="year_column" >
+<integer>2</integer>
+</port>
+</condition>
+<condition name="condUDEV_BLE" >
+ <port name="begin" >
+<integer>2</integer>
+</port>
+ <port name="column_separator" >
+<string>;</string>
+</port>
+ <port name="columns" >
+<map><key name="Jour"><string>Jour</string></key><key name="Unite_dev"><string>Unite_dev</string></key></map>
+</port>
+ <port name="day_column" >
+<integer>-1</integer>
+</port>
+ <port name="meteo_file" >
+<string>UDEV_BLE.csv</string>
+</port>
+ <port name="month_column" >
+<integer>-1</integer>
+</port>
+ <port name="time-step" >
+<double>1.000000000000000</double>
+</port>
+ <port name="variables" >
+<set><set><string>Jour</string><double>0.000000000000000</double></set><set><string>Unite_dev</string><double>0.000000000000000</double></set></set>
+</port>
+ <port name="year_column" >
+<integer>-1</integer>
+</port>
+</condition>
+<condition name="cond_DE_StadePhenologique" >
+ <port name="mode" >
+<string>name</string>
+</port>
+ <port name="time-step" >
+<map><key name="unit"><string>day</string></key><key name="value"><double>1.000000000000000</double></key></map>
+</port>
+ <port name="variables" >
+<set><set><string>Stade</string><double>0.000000000000000</double></set><set><string>Som_UD_depuis_semis</string><double>0.000000000000000</double></set><set><string>Som_UD_depuis_epi_1</string><double>0.000000000000000</double></set><set><string>Som_UD_depuis_gonflement</string><double>0.000000000000000</double></set></set>
+</port>
+</condition>
+</conditions>
+<views>
+<outputs>
+<output name="vueBle" location="" format="local" plugin="file" >
+<map><key name="julian-day"><boolean>true</boolean></key><key name="locale"><string>C</string></key><key name="type"><string>csv</string></key></map></output>
+
+<output name="vueLuzerne" location="" format="local" plugin="file" >
+<map><key name="julian-day"><boolean>true</boolean></key><key name="locale"><string>C</string></key><key name="type"><string>csv</string></key></map></output>
+
+<output name="vueTotale" location="" format="local" plugin="file" >
+<map><key name="julian-day"><boolean>true</boolean></key><key name="locale"><string>C</string></key><key name="type"><string>csv</string></key></map></output>
+
+<output name="vueTroupeau" location="" format="local" plugin="file" >
+<map><key name="julian-day"><boolean>true</boolean></key><key name="locale"><string>C</string></key><key name="type"><string>csv</string></key></map></output>
+
+</outputs>
+<observables>
+<observable name="obsAllocationResources" >
+<port name="agriculteurT1" >
+ <attachedview name="vueLuzerne" />
+ <attachedview name="vueBle" />
+ <attachedview name="vueTroupeau" />
+ <attachedview name="vueTotale" />
+</port>
+
+<port name="agriculteurT2" >
+ <attachedview name="vueLuzerne" />
+ <attachedview name="vueBle" />
+ <attachedview name="vueTroupeau" />
+ <attachedview name="vueTotale" />
+</port>
+
+</observable>
+
+<observable name="obsDecision" >
+<port name="Activity_annee1coupe_1" >
+ <attachedview name="vueLuzerne" />
+ <attachedview name="vueTotale" />
+</port>
+
+<port name="Activity_annee1coupe_2" >
+ <attachedview name="vueLuzerne" />
+ <attachedview name="vueTotale" />
+</port>
+
+<port name="Activity_annee2coupe_1" >
+ <attachedview name="vueLuzerne" />
+ <attachedview name="vueTotale" />
+</port>
+
+<port name="Activity_annee2coupe_2" >
+ <attachedview name="vueLuzerne" />
+ <attachedview name="vueTotale" />
+</port>
+
+<port name="Activity_annee2coupe_3" >
+ <attachedview name="vueLuzerne" />
+ <attachedview name="vueTotale" />
+</port>
+
+<port name="Activity_apport1azote" >
+ <attachedview name="vueBle" />
+ <attachedview name="vueTotale" />
+</port>
+
+<port name="Activity_apport2azote" >
+ <attachedview name="vueBle" />
+ <attachedview name="vueTotale" />
+</port>
+
+<port name="Activity_apport3azote" >
+ <attachedview name="vueBle" />
+ <attachedview name="vueTotale" />
+</port>
+
+<port name="Activity_desherbageAutomne" >
+ <attachedview name="vueBle" />
+ <attachedview name="vueTotale" />
+</port>
+
+<port name="Activity_fourrage_1" >
+ <attachedview name="vueTroupeau" />
+ <attachedview name="vueTotale" />
+</port>
+
+<port name="Activity_fourrage_2" >
+ <attachedview name="vueTroupeau" />
+ <attachedview name="vueTotale" />
+</port>
+
+<port name="Activity_fourrage_3" >
+ <attachedview name="vueTroupeau" />
+ <attachedview name="vueTotale" />
+</port>
+
+<port name="Activity_recolte" >
+ <attachedview name="vueBle" />
+ <attachedview name="vueTotale" />
+</port>
+
+<port name="Activity_semis" >
+ <attachedview name="vueBle" />
+ <attachedview name="vueTotale" />
+</port>
+
+</observable>
+
+<observable name="obsStadePhenologique" >
+<port name="Stade" >
+ <attachedview name="vueBle" />
+ <attachedview name="vueTotale" />
+</port>
+
+</observable>
+
+</observables>
+<view name="vueBle" output="vueBle" type="timed" timestep="1.000000000000000" />
+
+<view name="vueLuzerne" output="vueLuzerne" type="timed" timestep="1.000000000000000" />
+
+<view name="vueTotale" output="vueTotale" type="timed" timestep="1.000000000000000" />
+
+<view name="vueTroupeau" output="vueTroupeau" type="timed" timestep="1.000000000000000" />
+
+</views>
+</experiment>
+</vle_project>

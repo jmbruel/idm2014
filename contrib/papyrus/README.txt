@@ -10,11 +10,12 @@ by using the profile mechanisms.
 As illustrated in <<Selic07-fig,this figure>>, here is the processus
 we can follow:
 
-. Starting from the expected DSL and a description of the domain model
+. Starting from the expected DSL (most of the time a model^sc^ or a graphical
+  représentation) and a description of the domain model (model^mde^)
 . A domain model is more precisely defined (e.g. a class diagram)
 . The concepts (e.g., `Task` in <<Selic07-fig,this figure>>) are mapped to the
-more suitable UML elements (e.g., `Class` in <<Selic07-fig,this figure>>)
-. If the concepts directly match UML concepts (or if there is a way to slightly modify
+more suitable {uml} elements (e.g., `Class` in <<Selic07-fig,this figure>>)
+. If the concepts directly match {uml} concepts (or if there is a way to slightly modify
   them so that they match) then it is possible to define a profile.
 . Else another solution (e.g., defining a metamodel from scratch) should be studied.
 
@@ -22,20 +23,20 @@ more suitable UML elements (e.g., `Class` in <<Selic07-fig,this figure>>)
 ====
 There are different ways of defining the domain model:
 
-- the domain expert provides the domain model (e.g., UML class diagram)
-- the UML expert translate the concepts from the stakeholders into a domain
+- the domain expert provides the domain model (e.g., {uml} class diagram)
+- the {uml} expert translate the concepts from the stakeholders into a domain
 model
-- the UML expert and the domain expert build a model as close as possible
-of the expected DSL and the UML expert extract the core concepts in a domain
+- the {uml} expert and the domain expert build a model^mde^ as close as possible
+of the expected DSL and the {uml} expert extract the core concepts in a domain
 model
 ====
 
 == Iterative process
 
 The above process is iterative. The constructs are introduced by step.
-The profile is experimented in a model importing the profile so that the user can validate
+The profile is experimented in a model^sc^ importing the profile so that the user can validate
 that the concepts are captured adequatly.
-This is were the UML expert can use tuning possibilities.
+This is were the {uml} expert can use tuning possibilities.
 
 == Improvements
 

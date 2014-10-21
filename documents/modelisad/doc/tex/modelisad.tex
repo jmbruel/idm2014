@@ -1,0 +1,841 @@
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+%
+% Copyright (c)  2008 - Ronan Trépos - rtrpoes@toulouse.inra.fr.fr
+%                       Cours/TP modelisad
+%
+% Permission is granted to copy, distribute and/or modify this document
+% under the terms of the GNU Free Documentation License, Version 1.2
+% or any later version published by the Free Software Foundation;
+% with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+% A copy of the license is included in the section entitled "GNU
+% Free Documentation License".
+%
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+
+\documentclass[slidestop,compress,xcolor=pdftex,dvipsnames,table]{beamer}
+%\documentclass[draft]{beamer}
+\usepackage{pgfpages}
+%\pgfpagesuselayout{8 on 1}[a4paper,border shrink=9mm]
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{txfonts}
+\usetheme{Boadilla}
+\usecolortheme{seahorse}
+\usepackage{xcolor}
+\usepackage{pgf}
+\usepackage{tikz}
+\usetikzlibrary{arrows,automata}
+\graphicspath{{../figures/}}
+\usepackage[frenchb]{babel}
+\usepackage{listings}
+\usepackage{hyperref}
+\NoAutoSpaceBeforeFDP
+\setbeamercovered{dynamic}
+
+\title[Cours/TP Modelisad]{modelisad}
+\subtitle{Plateforme RECORD, modélisation de la décision}
+\author[]{Ronan  Trépos -- Patrick Chabrier}
+\institute[LISIC, INRA]{
+UBIA \emph{(Unité de Biométrie et Intelligence Artificielle)}}
+\date{}
+\titlegraphic{
+\includegraphics[width=3.5cm]{figures/yellowvle}
+}
+
+\lstset{extendedchars=true,inputencoding=latin9, numbers=none,
+numberstyle=\tiny\sl, stepnumber=1, numbersep=5pt,
+basicstyle=\ttfamily\scriptsize, commentstyle=\ttfamily\color{red}}
+
+\DeclareGraphicsRule{*}{mps}{*}{}
+
+\AtBeginSection[] {
+\begin{frame}{Plan}
+ \begin{columns}[t]
+  \begin{column}{5cm}
+   \small \tableofcontents[sections={1-4},currentsection,hideothersubsections]
+  \end{column}
+  \begin{column}{5cm}
+   \small \tableofcontents[sections={4-8},currentsection,hideothersubsections]
+  \end{column}
+ \end{columns}
+\end{frame}
+}
+
+\begin{document}
+
+\begin{frame}
+ \titlepage
+\end{frame}
+
+\begin{frame}
+ \frametitle{Plan}
+ \tableofcontents[hideallsubsections]
+\end{frame}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Présentation RECORD}
+
+
+\subsection{Introduction}
+
+\begin{frame}
+ \frametitle{Modélisation des systèmes de culture}
+ %\framesubtitle{Extension Décision}
+ \begin{itemize}
+   \item Modèle de décision, modèle biophysique
+ \end{itemize}
+\end{frame}
+
+\subsection{DEVS-vle-gvle-RECORD}
+\subsection{Extensions}
+\begin{frame}
+ \frametitle{Extensions pour la modélisation}
+ \begin{figure}[h]
+  \begin{center}
+   \includegraphics[width=9cm]{figures/extensionsVLE}
+  \end{center}
+ \end{figure}
+\end{frame}
+
+\subsection{Notion de paquets}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Extension Décision}
+
+%%%%%%%%%%%%%
+\subsection{Introduction}
+
+\begin{frame}
+ \frametitle{Introduction}
+ \framesubtitle{Extension Décision}
+ \begin{exampleblock}{}
+  \begin{center}
+   Modélisation : Modèle décision / Système opérant / Système bio-physique
+  \end{center}
+ \end{exampleblock}
+ \begin{figure}[h]
+  \begin{center}
+   \includegraphics[width=9cm]{figures/agent-op-env}
+  \end{center}
+ \end{figure}
+\end{frame}
+
+\begin{frame}
+ \frametitle{Introduction}
+ \framesubtitle{Extension Décision}
+ \begin{exampleblock}{Le système Agent est composé :}
+  \begin{itemize}
+   \item<1-> d'une \structure{base de connaissances} sous forme d'ensemble de
+    variables, de structures, de classes :
+    \begin{itemize}
+     \item Elle se représente un modèle des systèmes opérants et bio-physiques
+     \item Elle est mise à jour :
+      \begin{itemize}
+       \item à partir des observations issues du système opérant
+       \item sur sa propre autonomie
+      \end{itemize}
+    \end{itemize}
+   \item<2-> d'un \structure{graphe d'activités} qui :
+    \begin{itemize}
+     \item s'appuie sur la base de connaissances pour \structure{activer} ou
+      \structure{invalider} des opérations techniques (ordre à envoyer au
+      système opérant)
+     \item peut déclencher des opérations \structure{en parallèle}
+     \item peut \structure{dynamiquement} manipuler le graphe d'activités
+    \end{itemize}
+  \end{itemize}
+ \end{exampleblock}
+\end{frame}
+
+\begin{frame}
+ \frametitle{Introduction}
+ \framesubtitle{Interface du modèle de l'extension décision}
+ \begin{exampleblock}{Interface du système Agent}
+  \begin{itemize}
+   \item La \structure{base de connaissances} est mise à jour par les
+    observations du système sur les ports d'entrée (\structure{faits $i$})
+   \item Les sorties sont connectées au système opérant indiquant les
+    déclenchements et arrêts des activités (\structure{activité $i$})
+   \item Un port d'entrée \structure{ack} pour la réception des événements de
+    fins d'activité du système opérant
+  \end{itemize}
+ \end{exampleblock}
+ \begin{figure}[h]
+  \begin{center}
+   \includegraphics[width=4cm]{figures/decision-mdl-gen}
+  \end{center}
+ \end{figure}
+\end{frame}
+
+%%%%%%%%%%%%%
+\subsection{Activité}
+
+\begin{frame}
+ \frametitle{Activité}
+ \framesubtitle{Caractéristiques}
+ \begin{exampleblock}{Une activité est caractérisée par :}
+ \begin{itemize}
+  \item un nom
+  \item un état (\emph{Wait}, \emph{Started}, \emph{FF}, \emph{Done},
+   \emph{Failed})
+  \item des contraintes temporelles
+  \item des pré-conditions
+  \item une fonction de changement d'état (wait à start, start à done,
+   etc.) (reliée au port d'entrée \structure{ack}) (\emph{optionnelle}).
+  \item une fonction de sortie (pour générer des événements complexes avec
+   paramètres par ex.) (\emph{optionnelle}).
+ \end{itemize}
+ \end{exampleblock}
+\end{frame}
+
+\begin{frame}
+ \frametitle{Activité}
+ \framesubtitle{Contraintes temporelles}
+ Défini une plage pendant laquelle une activité peut démarrer :
+ \begin{exampleblock}{Contraintes temporelles simples}
+  \begin{equation*}
+   \begin{array}{c}
+    \displaystyle [ -\infty, +\infty ] \\
+    \displaystyle [ \text{minstart}, +\infty ] \\
+    \displaystyle [ -\infty, \text{maxfinish} ] \\
+    \displaystyle [ \text{minstart}, \text{maxfinish}] \\
+   \end{array}
+  \end{equation*}
+ \end{exampleblock}
+ \pause
+ \begin{exampleblock}{Contraintes temporelles par intervalles}
+  \begin{equation*}
+   \begin{array}{c}
+    \displaystyle [ -\infty \text{ ou minstart}, [ \text{minfinish},
+    \text{maxfinish} ] ] \\
+    \displaystyle [ [ \text{minstart}, \text{maxfinish} ], +\infty
+    \text{ ou date} ] \\
+    \displaystyle [ [ \text{minstart}, \text{maxstart} ], [
+    \text{minfinish}, \text{maxfinish} ] ] \\
+   \end{array}
+  \end{equation*}
+ \end{exampleblock}
+\end{frame}
+
+\begin{frame}
+ \frametitle{Activité}
+ \framesubtitle{Pré-conditions}
+ \begin{exampleblock}{Un ensemble de \structure{prédicats} assemblé sous forme
+  de \structure{règles} :}
+  \begin{itemize}
+   \item un \structure{prédicat} se traduit par un \structure{test} effectué
+    sur la base de connaissance du modèle.
+   \item une \structure{règle} est une \structure{conjonction de prédicats} :
+    pour qu'une règle soit valide, tous les prédicats doivent être valides.
+   \item une \structure{activité} est attachée à $0$ ou $n$ \structure{règles}
+    pour former les pré-conditions.
+   \item une \structure{activité valide} ses pré-conditions si \structure{au
+    moins une des règles} est valide.
+  \end{itemize}
+ \end{exampleblock}
+\end{frame}
+
+\begin{frame}
+ \frametitle{Activité}
+ \framesubtitle{Contraintes de précédence}
+ Relier les activités entre-elle : les contraintes FS, SS et FF.
+ \begin{exampleblock}{Les contraintes sont valides si\ldots}
+  \begin{description}
+   \item[$F_iS_j$] l'activité $j$ démarre après la fin de l'activité $i$.
+   \item[$S_iS_j$] l'activité $j$ démarre après le démarrage de l'activité $i$.
+   \item[$F_iF_j$] l'activité $j$ finie après la fin de l'activité $i$.
+  \end{description}
+ \end{exampleblock}
+ \begin{exampleblock}{Avec des durées (\emph{timelag}), les contraintes sont
+  valides si\ldots}
+  \begin{description}
+   \item[$F_iS_j (tl_{min}$, $tl_{max})$] l'activité $j$ démarre entre
+    $tl_{min}$ et $tl_{max}$ unités de temps après la fin de l'activité $i$.
+   \item[$S_iS_j (tl_{min}$, $tl_{max})$] l'activité $j$ démarre entre
+    $tl_{min}$ et $tl_{max}$ unités de temps après le démarrage de l'activité
+    $i$.
+   \item[$F_iF_j (tl_{min}$, $tl_{max})$] l'activité $j$ finie entre $tl_{min}$
+    et $tl_{max}$ unités de temps après la fin de l'activité $i$.
+  \end{description}
+ \end{exampleblock}
+\end{frame}
+
+\begin{frame}
+ \frametitle{Activité}
+ \framesubtitle{Contraintes de précédence}
+ \begin{figure}[h]
+  \begin{center}
+   \begin{tikzpicture}
+    [->,>=stealth',shorten >=1pt,auto,node distance=2.5cm, semithick]
+    \tikzstyle{every state}=[fill=red!20,draw=red!50,text=black,minimum
+    size=20pt]
+    \node[state] (a) {a};
+    \node[state] (b) [right of=a] {b};
+    \node[state] (c) [right of=b] {c};
+    \path <1-> (a) edge [bend right] node {FS} (b);
+    \path <1-> (b) edge [bend right] node {FS} (c);
+   \end{tikzpicture}
+  \end{center}
+  \caption{$a$ démarre. Quand $a$ fini, $b$ peut démarrer, quand $b$ fini, $c$
+  peut démarrer.}
+ \end{figure}
+ \begin{figure}[h]
+  \begin{center}
+   \begin{tikzpicture}
+    [->,>=stealth',shorten >=1pt,auto,node distance=2.5cm, semithick]
+    \tikzstyle{every state}=[fill=red!20,draw=red!50,text=black,minimum
+    size=20pt]
+    \node[state] (a) {a};
+    \node[state] (b) [right of=a] {b};
+    \node[state] (c) [right of=b] {c};
+    \node[state] (d) [below of=a] {d};
+    \node[state] (e) [below of=c] {e};
+    \path <1-> (a) edge [bend right] node {FS} (b);
+    \path <1-> (b) edge [bend right] node {FS} (c);
+    \path <1-> (d) edge [bend right] node {SS} (a);
+    \path <1-> (c) edge [bend right] node {FF} (e);
+   \end{tikzpicture}
+  \end{center}
+  \caption{$a$ doit démarrer en même temps que $d$. Quand $a$ fini, $b$ peut
+  démarrer, quand $b$ fini, $c$ peut démarrer. Quand $c$ fini, $e$ doit finir.}
+ \end{figure}
+\end{frame}
+
+\begin{frame}
+ \frametitle{Activité}
+ \framesubtitle{Contraintes de précédence}
+ \begin{figure}[h]
+  \begin{center}
+   \begin{tikzpicture}
+    [->,>=stealth',shorten >=1pt,auto,node distance=2.5cm, semithick]
+    \tikzstyle{every state}=[fill=red!20,draw=red!50,text=black,minimum
+    size=20pt]
+    \node[state] (a) {a};
+    \node[state] (b) [right of=a] {b};
+    \node[state] (c) [right of=b] {c};
+    \node[state] (d) [below of=a] {d};
+    \node[state] (e) [below of=c] {e};
+    \node[state] (i) [left of=a] {i};
+    \node[state] (j) [right of=c] {j};
+    \path <1-> (a) edge [bend right] node {FS} (b);
+    \path <1-> (b) edge [bend right] node {FS} (c);
+    \path <1-> (d) edge [bend right] node {FS} (e);
+    \path <1-> (i) edge [bend right] node {FS} (a);
+    \path <1-> (i) edge [bend right] node {FS} (d);
+    \path <1-> (e) edge [bend right] node {FF} (c);
+    \path <1-> (c) edge [bend right] node {FS} (j);
+   \end{tikzpicture}
+  \end{center}
+  \caption{lorsque $i$ fini, $a$ et $d$ peuvent démarrer etc.}
+ \end{figure}
+\end{frame}
+
+%%%%%%%%%%%%%
+\subsection{Dynamique d'une activité}
+
+\begin{frame}
+ \frametitle{Activité}
+ \framesubtitle{Description des états}
+ \begin{description}
+  \item[Wait] l'activité est en attente : au moins une de ses contraintes
+   (temporelles, conditions ou précédence) n'est pas valide
+  \item[Started] l'activité est démarrée : toutes les contraintes sont valides
+   (contraintes temporelles, contraintes de précédences et pré-conditions)
+  \item[FF] l'activité est close par le système opérant (réception d'un
+   événement sur le port \structure{ack}) cependant les contraintes de
+   précédence de type \structure{FF} peuvent encore la faire passer en état
+   \structure{Failed}
+  \item[Done] l'activité est finie : un \structure{ack} de type ``done" a été
+  reçu et les contraintes de précédence de type \structure{FF} sont valides
+  \item[Failed] l'activité a raté : l'activité est sortie de ses contraintes
+   temporelles, le jeu du graphe de précédence l'a fait passé dans cet état ou
+   le système opérant l'a invalidé.
+ \end{description}
+\end{frame}
+
+\begin{frame}
+ \frametitle{Activité}
+ \framesubtitle{Graph d'états}
+ \begin{center}
+  \begin{tikzpicture}
+   [->,>=stealth',shorten >=1pt,auto,node distance=2.5cm, semithick]
+   \tikzstyle{every state}=[fill=red!20,draw=red!50,text=black,minimum
+   size=45pt]
+   \node[initial,state] (Wait) {Wait};
+   \node[state] (Start) [below right of=Wait] {Start};
+   \node[state] (Failed) [below right of=Start] {Failed};
+   \node[state] (FF) [below left of=Start] {FF};
+   \node[state] (Done) [below left of=Wait] {Done};
+
+   \path <2-> (Wait) edge [bend right] node {1} (Start);
+   \path <3-> (Start) edge [bend right] node {2} (Failed);
+   \path <4-> (Start) edge [bend left] node {3} (FF);
+   \path <5-> (Wait) edge [bend left] node {4} (Failed);
+   \path <6-> (FF) edge [bend left] node {5} (Done);
+   \path <7-> (FF) edge [bend right] node {6} (Failed);
+  \end{tikzpicture}
+ \end{center}
+ \begin{onlyenv}<2>
+  \structure{1.} Si la tâche est \structure{en attente}, la \structure{date de
+  début d'activité est valide} et les contraintes de précédence sont
+  \structure{toutes} valides ou \structure{au moins une} est valide (paramètre).
+  Des \structure{régles d'inactivation} peuvent aussi s'appliquer. 
+ \end{onlyenv}
+ \begin{onlyenv}<3>
+  \structure{2.} Si la tâche est en cours de simulation mais que \structure{la
+  date de fin est dépassée} ou si le \structure{système opérant invalide}
+  l'activité ou si des \structure{regles d'inactivation} s'appliquent.
+ \end{onlyenv}
+ \begin{onlyenv}<4>
+  \structure{3.} Si le \structure{système opérant valide l'activité}
+ \end{onlyenv}
+ \begin{onlyenv}<5>
+  \structure{4.} Si la tâche n'est \structure{jamais démarrée} et que la
+  \structure{date de fin est dépassée}
+ \end{onlyenv}
+ \begin{onlyenv}<6>
+  \structure{5} Si la \structure{tâche est finie} et que les
+  contraintes de type \structure{FF} sont satisfaites.
+ \end{onlyenv}
+ \begin{onlyenv}<7>
+  \structure{6} Si la \structure{tâche est finie} mais que les
+  containtes de type \structure{FF} ne sont pas satisfaites.
+ \end{onlyenv}
+\end{frame}
+
+
+%%%%%%%%%%%%%
+\section{Mise en oeuvre d'un modèle de décision}
+
+\subsection{Introduction}
+\begin{frame}
+ \frametitle{Fichier de plan et c++}
+ Pour bénéficier de plus souplesse :
+ \begin{itemize}
+  \item Les \structure{activités}, les \structure{contraintes de précédences}
+   et les \structure{règles} sont définies dans un fichier indépendant, 
+   (ou dans les conditions expérimentales ou dans le code C++).
+  \item La \structure{base de connaissance} reste dans les attributs de l'agent.
+  La mise à jour des \structure{faits} reste dans le C++.
+  Les \structure{prédicats} et les fonctions \structure{ack} 
+  et \structure{output} restent en C++.
+ \end{itemize}
+\end{frame}
+
+
+
+\subsection{Fichier de planification}
+
+
+\begin{frame}[fragile]
+ \frametitle{Fichier de planification}
+ \framesubtitle{Définition des règles}
+ \begin{exampleblock}{}
+  \begin{small}
+   \begin{lstlisting}[language=c]
+rules {
+  rule {
+    id = "identifiant" ;
+    predicates = "pred1", "pred2", "pred3"; # optionnel, lien avec le C++
+  }
+  ... # liste de règles.
+}
+activities {
+  ... # liste d'activités
+}
+precedences {
+ ... # liste de contraintes de précédence
+}
+\end{lstlisting}
+  \end{small}
+ \end{exampleblock}
+ \begin{itemize}
+  \item une règle est une combinaison de prédicats (chaînes de caractères)
+   définie dans le C++.
+ \end{itemize}
+\end{frame}
+
+
+\begin{frame}[fragile]
+ \frametitle{Fichier de planification}
+ \framesubtitle{Définition des règles}
+ \begin{exampleblock}{}
+  \begin{small}
+   \begin{lstlisting}[language=c]
+rules {
+  rule {
+    id = "identifiant" ;
+    predicates = "", "", "", ""; # optionnel, lien avec le C++
+  }
+  ... # liste de règles.
+}
+\end{lstlisting}
+  \end{small}
+ \end{exampleblock}
+ \begin{itemize}
+  \item une règle est une combinaison de prédicats (chaînes de caractères)
+   définie dans le C++.
+ \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+ \frametitle{Fichier de planification}
+ \framesubtitle{Définition des activités}
+ \begin{exampleblock}{}
+  \begin{small}
+   \begin{lstlisting}[language=c]
+activities {
+  activity {
+    id = "identifiant";
+    rules = "", "", "", "";        # optionnel
+    rules-fail = "", "", "", "";   # optionnel
+    temporal {                     # optionnel
+      minstart = 2;                # (1) | une configuration :
+      maxstart = 3;                # (2) | (1, 4) ou (1, 2 , 4) ou
+      minfinish = -infinity;       # (3) | (1, 3, 4) ou (1, 2 , 3, 4).
+      maxfinish = infinity;        # (4) | 
+    }
+    ack = "";               # optionnel (lien avec le C++).
+    output = "";            # optionnel (lien avec le C++).
+  } ... # liste d'activités
+}
+\end{lstlisting}
+  \end{small}
+ \end{exampleblock}
+ \begin{itemize}
+  \item un activité a un nom, des règles d'activation, des contraintes
+   temporelles, une fonction de changement d'état et une fonction de sortie.
+ \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+ \frametitle{Fichier de planification}
+ \framesubtitle{Définition des contraintes de précédence}
+ \begin{exampleblock}{}
+  \begin{small}
+   \begin{lstlisting}[language=c]
+precedences {
+  precedence {
+     type = SS | FF | FS;
+     first = "activity source";
+     second = "activity destination";
+     mintimelag = 0;        # un réel positif ou égal à 0 ou infinity.
+     maxtimelag = infinity; # un réel positif ou infinity.
+  }
+  ... # liste de contraintes de précédence.
+}
+\end{lstlisting}
+  \end{small}
+ \end{exampleblock}
+ \begin{itemize}
+  \item les contraintes de précédences sont de type FS, FF ou SS entre deux
+   activités et avec ou sans \emph{timelag}.
+ \end{itemize}
+\end{frame}
+
+
+\begin{frame}[fragile]
+ \frametitle{Fichier de planification}
+ \framesubtitle{Outils supplémentaires, les séquence d'activite}
+ \begin{exampleblock}{}
+  \begin{small}
+   \begin{lstlisting}[language=c]
+activities {
+  sequence-activity {
+     id-prefix = "id";
+     number = 2;             # optionnel (defaut infinie)
+     ...                     # optionnel, "rules", "rules-fail",
+     ...                     #    "ack", "output" pour toutes les 
+     ...                     #    activités  
+     temporal {              # optionnel, contraintes temporelles 
+       ...                   #    de la 1ere activite       
+     }                       #
+     temporal-sequence {     # optionnel, contraintes de precedences
+       precedence {          #    entre 2 activités de la séquence
+	...                  #
+       }                     #
+     }                       #
+  }
+}
+\end{lstlisting}
+  \end{small}
+ \end{exampleblock}
+ \begin{itemize}
+  \item les contraintes de précédences sont de type FS, FF ou SF entre deux
+   activités et avec ou sans \emph{timelag}.
+ \end{itemize}
+\end{frame}
+
+%%%%%
+\subsection{L'Agent en c++}
+\begin{frame}[fragile]
+ \frametitle{Exemple 1}
+\begin{exampleblock}{}
+ \begin{lstlisting}[language=c++]
+
+class MaDecision: public ved::Agent {
+public:
+    MaDecision(const vd::DynamicsInit& mdl, const vd::InitEventList& evts) :
+        ved::Agent(mdl, evts)
+    {
+        addFacts(this) +=
+                F("fait", &MaDecision::fait);
+        addPredicates(this) +=
+                P("pred1", &MaDecision::pred1);                             ;
+        addOutputFunctions(this) +=
+                O("out",&MaDecision::out);
+        addAcknowledgeFunctions(this) += 
+                A("ack", &MaDecision::ack);
+
+        KnowledgeBase::plan().fill("monFichierPlan.txt");
+    }
+}
+\end{lstlisting}
+\end{exampleblock}
+\end{frame}
+
+%%%%TODO 
+%%%%%%%%%%%%%
+\subsection{Exemple}
+
+\begin{frame}[fragile]
+ \frametitle{Exemple 1}
+ \begin{exampleblock}{}
+  \begin{lstlisting}[language=c++]
+class Test : public vle::extension::decision::Agent
+{
+  Test() {
+    addActivity("A");
+    addActivity("B", vle::devs::negativeInfinity, vle::devs::infinity);
+    addActivity("C", 12.0, vle::devs::infinity);
+    addActivity("D", vle::devs::negativeInfinity, 12.0);
+    addActivity("E", 12.0, 22.0);
+  }
+};
+  \end{lstlisting}
+ \end{exampleblock}
+ 5 activités, avec \structure{uniquement des contraintes temporelles}. Dans ce
+   cas $a$, $b$ et $d$ vont démarrer en début de simulation, suivit de $c$ et
+   $d$ lorsque la simulation atteint la date $12.0$.
+\end{frame}
+
+\begin{frame}[fragile]
+ \frametitle{Exemple 2}
+ \begin{exampleblock}{}
+ \begin{lstlisting}[language=c++]
+class Test : public vle::extension::decision::Agent
+{
+  Test() {
+    Activity& a = addActivity("A");
+    Activity& b = addActivity("B");
+    Activity& c = addActivity("C");
+    Activity& d = addActivity("D");
+    addFinishToStartConstraint(a, b);
+    addFinishToStartConstraint(b, c);
+    addFinishToFinishConstrait(c, d);
+  }
+}
+  \end{lstlisting}
+ \end{exampleblock}
+ \begin{figure}[h]
+  \begin{center}
+   \begin{tikzpicture}
+    [->,>=stealth',shorten >=1pt,auto,node distance=2.cm, semithick]
+    \tikzstyle{every state}=[fill=red!20,draw=red!50,text=black,minimum
+    size=20pt]
+    \node[state] (a) {a};
+    \node[state] (b) [right of=a] {b};
+    \node[state] (c) [right of=b] {c};
+    \node[state] (d) [below of=c] {d};
+    \path <1-> (a) edge [bend right] node {FS} (b);
+    \path <1-> (b) edge [bend right] node {FS} (c);
+    \path <1-> (c) edge [bend right] node {SS} (d);
+   \end{tikzpicture}
+  \end{center}
+  \caption{$a$ démarre en même temps que $b$. Quand $a$ fini, $b$ peut
+  démarrer, quand $b$ fini, $c$ peut démarrer. Quand $c$ fini, $e$ doit finir.}
+ \end{figure}
+\end{frame}
+
+\begin{frame}[fragile]
+ \frametitle{Exemple 3}
+ \begin{exampleblock}{}
+  \begin{lstlisting}[language=c++]
+class Test : public vle::extension::decision::Agent
+{
+  Test() {
+    addFact("pluie", boost::bind(&Test::majPluie, this, _1));
+  }
+
+  void majPluie(const vle::value::Value& value) {
+    std::rotate(mPluies, mPluies + 1, mPluies + 5);
+    mPluies[0] = value.toDouble().value();
+  }
+
+   double mPluies[5]; // vecteur de 5 réels : 5 jours de quantité
+                      // de pluie : la base de connaissances.
+};
+  \end{lstlisting}
+ \end{exampleblock}
+ \begin{itemize}
+  \item Lors de l'arrivée d'un événement sur sur le port \structure{Pluie} du
+   modèle \structure{Test} la fonction \structure{majPluie} est appelée et met
+   à jour le vecteur des 5 dernières températures.
+ \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+ \frametitle{Exemple 4}
+ \begin{exampleblock}{}
+  \begin{lstlisting}[language=c++]
+class Test : public vle::extension::decision::Agent {
+  Test() {
+    addFact("pluie", boost::bind(&Test::majPluie, this, _1));
+    Activity& a = addActivity("a");
+    Rule& r = a.addRule("RuleA");
+    r.add(boost::bind(&Test::solPortant, this));
+  }
+
+  void majPluie(const vle::value::Value& value) {
+    std::rotate(mPluies, mPluies + 1, mPluies + 5);
+    mPluies[0] = value.toDouble().value();
+  }
+
+  bool solPortant() const {
+    return std::accumulate(mPluies, mPluies + 5, 0.0) <= 15;
+  }
+                      // a demarre quand RuleA est valide
+  double mPluies[5];  // c-a-d, lorsque la somme sur 5 jours
+                      // est >= 15mm.
+  \end{lstlisting}
+ \end{exampleblock}
+\end{frame}
+
+\begin{frame}
+ \frametitle{Exemple 5}
+ \begin{figure}[h]
+  \begin{center}
+   \includegraphics[width=4cm]{figures/decision-mdl}
+  \end{center}
+ \end{figure}
+ \begin{itemize}
+  \item un port \structure{Pluie} pour la mise à jour de la base de
+   connaissance,
+  \item un port \structure{ack} pour la réception des résultats du système
+   opérant,
+  \item enfin, un port de sortie \structure{a} connecté au système opérant.
+ \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+ \frametitle{Exemple 6}
+ \framesubtitle{Relation : durant}
+ \begin{exampleblock}{}
+  \begin{lstlisting}[language=c++]
+class During : public vle::extension::decision::Agent
+{
+  During()
+  {
+    addActivity("A");
+    addActivity("B");
+
+    // B needs to start at begin time of A + 1.0.
+    // A needs to finished at end time of B + 1.0.
+    addStartToStartConstraint("A", "B", 1.0);
+    addFinishToFinishConstraint("B", "A", 1.0);
+  }
+};
+  \end{lstlisting}
+ \end{exampleblock}
+\end{frame}
+
+\begin{frame}[fragile]
+ \frametitle{Exemple 7}
+ \framesubtitle{Relation : égale}
+ \begin{exampleblock}{}
+  \begin{lstlisting}[language=c++]
+class Equal : public vle::extension::decision::Agent
+{
+  Equal()
+  {
+    addActivity("A");
+    addActivity("B");
+
+    // A and B need to start and finish a the same time.
+    addStartToStartConstraint("A", "B");
+    addFinishToFinishConstraint("A", "B");
+  }
+};
+  \end{lstlisting}
+ \end{exampleblock}
+\end{frame}
+
+\begin{frame}[fragile]
+ \frametitle{Exemple 8}
+ \framesubtitle{Réagir à la fermeture d'activité}
+ Comment réagir à la fermeture d'une activité par le système opérant :
+ \begin{exampleblock}{}
+  \begin{lstlisting}[language=c++]
+class React : public vle::extension::decision::Agent
+{
+  React()
+  {
+    Activity& a = addActivity("A");
+    a.addAck(&onUpdateActivityA);
+  }
+
+  virtual void onUpdateActivity(const std::string& name,
+                                const Activity& a,
+                                const value::Value& value)
+  {
+    std::cout << "la tache " << name << " a change d etat."
+              << "Elle se trouve dans l etat : " << a.state();
+  }
+};
+  \end{lstlisting}
+ \end{exampleblock}
+\end{frame}
+
+
+%%%%%%%%%%%%%
+\subsection{Allocation des ressources}
+\begin{frame}[fragile]
+ \frametitle{Gestion des durées d'activité}
+\begin{itemize}
+  \item durée effective de l'activité $=$ date de ``done" - date
+  ``start" 
+  \item $\neq$ durée d'activité a priori
+  \item Allocation de resources pour chaque activité par slot. 
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+ \frametitle{Approche retenue ici}
+\begin{itemize}
+  \item L'allocation des ressources fait partie intégrante du système opérant
+  (modèle fournit).
+  \item Construire une Allocation à $t$,  \\
+  $a_t : \textrm{Ressources } \to \textrm{ActivitesEnCours } \cup \{null\}$
+  \begin{itemize}
+  \item qui soit valide vis-à-vis des ressources nécessaires pour la
+  réalisation des activités.
+  \item qui minimise les priorités des activités choisies.
+  \item qui maximise l'utilisation des ressources.
+  \end{itemize} 
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[fragile]
+ \frametitle{Gestion des ressources}
+ \begin{figure}[h]
+  \begin{center}
+   \includegraphics[width=10cm]{figures/ressource-allocation}
+  \end{center}
+ \end{figure}
+\end{frame}
+
+\end{document}

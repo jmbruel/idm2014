@@ -1,0 +1,1 @@
+INSTALL(FILES modelisad.vpz DESTINATION exp)
