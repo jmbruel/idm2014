@@ -20,7 +20,7 @@
 <span id="author">Jean-Michel Bruel, Benoît Combemale (bruel@irit.fr,benoit.combemale@irisa.fr)</span>
 <br />
 <span id="revnumber">version 1.1,</span>
-<span id="revdate">2014-10-19, 2014</span>
+<span id="revdate">2014-10-21, 2014</span>
 <br />
 <span id="revremark">First draft</span>
 </section>
@@ -38,7 +38,7 @@ can help in other model-based fields such as scientific activities (Agronomy in 
 <li><a href="mailto:benoit.combemale@irisa.fr">Benoît Combemale</a></li>
 <li><a href="mailto:bruel@irit.fr">Jean-Michel Bruel</a></li>
 <li><a href="mailto:cedric.brun@obeo.fr">Cédric Brun</a> (from <a href="http://www.obeo.fr/">Obeo</a>)</li>
-<li><a href="mailto:florian.noyrit@cea.fr">Florian Noyrit</a> (from <a href="http://www-list.cea.fr/">CEA-List</a>)</li>
+<li><a href="mailto:saadia.dhouib@cea.fr">Saâdia Dhouib</a> (as well as <a href="mailto:florian.noyrit@cea.fr">Florian Noyrit</a> from <a href="http://www-list.cea.fr/">CEA-List</a>)</li>
 </ul>
 </div>
 </section>
@@ -217,17 +217,18 @@ we can follow:</p></div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-Starting from the expected DSL and a description of the domain model
+Starting from the expected DSL (most of the time a model<sup>sc</sup> or a graphical
+représentation) and a description of the domain model (model<sup>mde</sup>)
 </li>
 <li>
 A domain model is more precisely defined (e.g. a class diagram)
 </li>
 <li>
 The concepts (e.g., <code>Task</code> in <a href="#Selic07-fig">this figure</a>) are mapped to the
-more suitable UML elements (e.g., <code>Class</code> in <a href="#Selic07-fig">this figure</a>)
+more suitable <a href="http://www.omg.org/spec/UML/">UML</a> elements (e.g., <code>Class</code> in <a href="#Selic07-fig">this figure</a>)
 </li>
 <li>
-If the concepts directly match UML concepts (or if there is a way to slightly modify
+If the concepts directly match <a href="http://www.omg.org/spec/UML/">UML</a> concepts (or if there is a way to slightly modify
 them so that they match) then it is possible to define a profile.
 </li>
 <li>
@@ -245,11 +246,11 @@ Else another solution (e.g., defining a metamodel from scratch) should be studie
 <div class="paragraph"><p>There are different ways of defining the domain model:</p></div>
 <div class="ulist">
 <ul>
-<li>the domain expert provides the domain model (e.g., UML class diagram)</li>
-<li>the UML expert translate the concepts from the stakeholders into a domain
+<li>the domain expert provides the domain model (e.g., <a href="http://www.omg.org/spec/UML/">UML</a> class diagram)</li>
+<li>the <a href="http://www.omg.org/spec/UML/">UML</a> expert translate the concepts from the stakeholders into a domain
 model</li>
-<li>the UML expert and the domain expert build a model as close as possible
-of the expected DSL and the UML expert extract the core concepts in a domain
+<li>the <a href="http://www.omg.org/spec/UML/">UML</a> expert and the domain expert build a model<sup>mde</sup> as close as possible
+of the expected DSL and the <a href="http://www.omg.org/spec/UML/">UML</a> expert extract the core concepts in a domain
 model</li>
 </ul>
 </div>
@@ -261,9 +262,9 @@ model</li>
 <section class="slide" id="_iterative_process">
 <h2>Iterative process</h2>
 <div class="paragraph"><p>The above process is iterative. The constructs are introduced by step.
-The profile is experimented in a model importing the profile so that the user can validate
+The profile is experimented in a model<sup>sc</sup> importing the profile so that the user can validate
 that the concepts are captured adequatly.
-This is were the UML expert can use tuning possibilities.</p></div>
+This is were the <a href="http://www.omg.org/spec/UML/">UML</a> expert can use tuning possibilities.</p></div>
 </section>
 <section class="slide" id="_improvements">
 <h2>Improvements</h2>
