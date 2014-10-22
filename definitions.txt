@@ -1,3 +1,4 @@
+:definitions:
 //------------------------------------
 :cea: link:http://www-list.cea.fr/[CEA-List]
 :devs: link:http://fr.wikipedia.org/wiki/Discrete_Event_System_Specification[DEVS]
@@ -9,6 +10,7 @@
 :obeo: link:http://www.obeo.fr/[Obeo]
 :record: link:http://record.toulouse.inra.fr/[RECORD]
 :sirius: link:https://www.eclipse.org/proposals/modeling.sirius/[Sirius]
+:uml: link:http://www.omg.org/spec/UML/[UML]
 :vle: link:http://www.vle-project.org/wiki/Main_Page[VLE]
 
 //------------------------------------
@@ -21,4 +23,3 @@
 :pd: mailto:Pascal.Dayre@enseeiht.fr[Pascal Dayre]
 :sd: mailto:saadia.dhouib@cea.fr[Saâdia Dhouib]
 //------------------------------------
-:uml: link:http://www.omg.org/spec/UML/[UML]

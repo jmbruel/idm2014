@@ -27,10 +27,7 @@ We can also follow <<MDSEP12>>:
 ifdef::slides[=== Approach (ctd.)]
 
 Parler du papier de <<Selic07>> pour l'approche profil du {CEA}.
-
-[[Selic07-fig]]
-.A profil based approach (taken from <<Tatibouet14>> and inspired by <<Selic07>>)
-image::profil-BS.png[width="80%"]
+CF. <<Selic07-fig,cette figure>>.
 
 === DSL
 

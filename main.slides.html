@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=1024, user-scalable=no">
         <meta name="author" content="Jean-Michel Bruel, Benoît Combemale (bruel@irit.fr,benoit.combemale@irisa.fr)" />
         <meta name="generator" content="AsciiDoc 8.6.8" />
-        <meta name="presdate" content="2014-10-21, 2014" />
+        <meta name="presdate" content="2014-10-23, 2014" />
         
         <!-- Core and extension CSS files -->
 <style type="text/css">
@@ -2534,7 +2534,7 @@ This module splits a long slide into multiple slides.
 <section class="slide" id="title-slide">
         <h1>IDM&#8217;2014 Case Study</h1>
         <h3>Jean-Michel Bruel, Benoît Combemale (bruel@irit.fr,benoit.combemale@irisa.fr)</h3>
-        <h4>2014-10-21, 2014</h4>
+        <h4>2014-10-23, 2014</h4>
 </section>
 <section class="slide">
 <h2>Introduction</h2>
@@ -2750,43 +2750,48 @@ Modeling language validation
 </section>
 <section class="slide">
 <h2>Approach (ctd.)</h2>
-<p>Parler du papier de <a href="#Selic07">[Selic07]</a> pour l&#8217;approche profil du <a href="http://www-list.cea.fr/">CEA-List</a>.</p>
-<img src="/Users/bruel/dev/idm2014/images/profil-BS.png" alt="profil-BS.png" class=""/>
+<p>Parler du papier de <a href="#Selic07">[Selic07]</a> pour l&#8217;approche profil du <a href="http://www-list.cea.fr/">CEA-List</a>.
+CF. <a href="#Selic07-fig">cette figure</a>.</p>
 </section>
 <section class="slide">
 <h2>DSL</h2>
 </section>
 <section class="slide">
 <h2>Profile-based approach</h2>
+<p>Contribution by <a href="mailto:saadia.dhouib@cea.fr">Saâdia Dhouib</a>, <a href="mailto:florian.noyrit@cea.fr">Florian Noyrit</a>, <a href="mailto:bruel@irit.fr">Jean-Michel Bruel</a>.</p>
 <div class="sect2">
 <h3 id="_general_process">14.1. General process</h3>
 <p>The idea behing this approach is that there will be some benefits
 in the use of the <a href="http://www.omg.org/spec/UML/">UML</a> standard. Hence the DSL will be based on <a href="http://www.omg.org/spec/UML/">UML</a>
 by using the profile mechanisms.</p>
+<img src="/Users/bruel/dev/idm2014/images/profil-BS.png" alt="profil-BS.png" class=""/>
 <p>As illustrated in <a href="#Selic07-fig">this figure</a>, here is the processus
 we can follow:</p>
 <ol>
 <li class="">
 <p>
-Starting from the expected DSL and a description of the domain model
+Starting from the expected DSL (most of the time a model<sup>sc</sup> or a graphical
+  représentation) and a description of the domain model (model<sup>mde</sup>)
 </p>
 </li>
 <li class="">
 <p>
-A domain model is more precisely defined (e.g. a class diagram)
+A domain model is more precisely defined (e.g. a class diagram such as <a href="#mm1">[mm1]</a>)
 </p>
+<img src="/Users/bruel/dev/idm2014/images/image001.png" alt="image001.png" class=""/>
 </li>
 <li class="">
 <p>
 The concepts (e.g., <code>Task</code> in <a href="#Selic07-fig">this figure</a>) are mapped to the
-more suitable UML elements (e.g., <code>Class</code> in <a href="#Selic07-fig">this figure</a>)
+more suitable <a href="http://www.omg.org/spec/UML/">UML</a> elements (e.g., <code>Class</code> in <a href="#Selic07-fig">this figure</a>)
 </p>
 </li>
 <li class="">
 <p>
-If the concepts directly match UML concepts (or if there is a way to slightly modify
-  them so that they match) then it is possible to define a profile.
+If the concepts directly match <a href="http://www.omg.org/spec/UML/">UML</a> concepts (or if there is a way to slightly modify
+  them so that they match) then it is possible to define a profile. (see e.e., <a href="#profile1">[profile1]</a>)
 </p>
+<img src="/Users/bruel/dev/idm2014/images/image003.png" alt="image003.png" class=""/>
 </li>
 <li class="">
 <p>
@@ -2794,6 +2799,9 @@ Else another solution (e.g., defining a metamodel from scratch) should be studie
 </p>
 </li>
 </ol>
+<p>Additional examples:</p>
+<img src="/Users/bruel/dev/idm2014/images/image002.png" alt="image002.png" class=""/>
+<img src="/Users/bruel/dev/idm2014/images/image004.png" alt="image004.png" class=""/>
 <div class="admonitionblock">
 <table><tr>
 <td class="icon">
@@ -2847,15 +2855,15 @@ PAr9L8j/96+U/w3yCoCXW14B8HLLvwDd67nwZIEPdgAAAABJRU5ErkJggg==" />
 <p>There are different ways of defining the domain model:</p>
 <ul>
 <li class="">
-the domain expert provides the domain model (e.g., UML class diagram)
+the domain expert provides the domain model (e.g., <a href="http://www.omg.org/spec/UML/">UML</a> class diagram)
 </li>
 <li class="">
-the UML expert translate the concepts from the stakeholders into a domain
+the <a href="http://www.omg.org/spec/UML/">UML</a> expert translate the concepts from the stakeholders into a domain
 model
 </li>
 <li class="">
-the UML expert and the domain expert build a model as close as possible
-of the expected DSL and the UML expert extract the core concepts in a domain
+the <a href="http://www.omg.org/spec/UML/">UML</a> expert and the domain expert build a model<sup>mde</sup> as close as possible
+of the expected DSL and the <a href="http://www.omg.org/spec/UML/">UML</a> expert extract the core concepts in a domain
 model
 </li>
 </ul>
@@ -2866,9 +2874,9 @@ model
 <div class="sect2">
 <h3 id="_iterative_process">14.2. Iterative process</h3>
 <p>The above process is iterative. The constructs are introduced by step.
-The profile is experimented in a model importing the profile so that the user can validate
+The profile is experimented in a model<sup>sc</sup> importing the profile so that the user can validate
 that the concepts are captured adequatly.
-This is were the UML expert can use tuning possibilities.</p>
+This is were the <a href="http://www.omg.org/spec/UML/">UML</a> expert can use tuning possibilities.</p>
 </div>
 <div class="sect2">
 <h3 id="_improvements">14.3. Improvements</h3>
