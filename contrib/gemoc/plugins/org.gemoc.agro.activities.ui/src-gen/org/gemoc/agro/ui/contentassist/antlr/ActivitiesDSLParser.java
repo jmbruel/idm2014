@@ -55,8 +55,9 @@ public class ActivitiesDSLParser extends AbstractContentAssistParser {
 					put(grammarAccess.getDelaySinceActivyAccess().getGroup_2(), "rule__DelaySinceActivy__Group_2__0");
 					put(grammarAccess.getGrainIsAccess().getGroup(), "rule__GrainIs__Group__0");
 					put(grammarAccess.getDateAccess().getGroup(), "rule__Date__Group__0");
-					put(grammarAccess.getModelAccess().getCulturesAssignment_0(), "rule__Model__CulturesAssignment_0");
-					put(grammarAccess.getModelAccess().getResourceKindsAssignment_1(), "rule__Model__ResourceKindsAssignment_1");
+					put(grammarAccess.getModelAccess().getNameAssignment_1(), "rule__Model__NameAssignment_1");
+					put(grammarAccess.getModelAccess().getCulturesAssignment_2(), "rule__Model__CulturesAssignment_2");
+					put(grammarAccess.getModelAccess().getResourceKindsAssignment_3(), "rule__Model__ResourceKindsAssignment_3");
 					put(grammarAccess.getResourceKindAccess().getNameAssignment_1(), "rule__ResourceKind__NameAssignment_1");
 					put(grammarAccess.getCultureAccess().getNameAssignment_1(), "rule__Culture__NameAssignment_1");
 					put(grammarAccess.getCultureAccess().getActivitiesAssignment_3(), "rule__Culture__ActivitiesAssignment_3");

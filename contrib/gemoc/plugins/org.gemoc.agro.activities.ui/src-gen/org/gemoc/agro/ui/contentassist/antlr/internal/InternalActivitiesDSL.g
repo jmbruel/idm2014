@@ -661,9 +661,11 @@ rule__Model__Group__0__Impl
     }
 :
 (
-{ before(grammarAccess.getModelAccess().getCulturesAssignment_0()); }
-(rule__Model__CulturesAssignment_0)*
-{ after(grammarAccess.getModelAccess().getCulturesAssignment_0()); }
+{ before(grammarAccess.getModelAccess().getNameKeyword_0()); }
+
+	'name' 
+
+{ after(grammarAccess.getModelAccess().getNameKeyword_0()); }
 )
 
 ;
@@ -678,6 +680,7 @@ rule__Model__Group__1
     }
 :
 	rule__Model__Group__1__Impl
+	rule__Model__Group__2
 ;
 finally {
 	restoreStackSize(stackSize);
@@ -689,15 +692,76 @@ rule__Model__Group__1__Impl
     }
 :
 (
-{ before(grammarAccess.getModelAccess().getResourceKindsAssignment_1()); }
-(rule__Model__ResourceKindsAssignment_1)*
-{ after(grammarAccess.getModelAccess().getResourceKindsAssignment_1()); }
+{ before(grammarAccess.getModelAccess().getNameAssignment_1()); }
+(rule__Model__NameAssignment_1)
+{ after(grammarAccess.getModelAccess().getNameAssignment_1()); }
 )
 
 ;
 finally {
 	restoreStackSize(stackSize);
 }
+
+
+rule__Model__Group__2
+    @init {
+		int stackSize = keepStackSize();
+    }
+:
+	rule__Model__Group__2__Impl
+	rule__Model__Group__3
+;
+finally {
+	restoreStackSize(stackSize);
+}
+
+rule__Model__Group__2__Impl
+    @init {
+		int stackSize = keepStackSize();
+    }
+:
+(
+{ before(grammarAccess.getModelAccess().getCulturesAssignment_2()); }
+(rule__Model__CulturesAssignment_2)*
+{ after(grammarAccess.getModelAccess().getCulturesAssignment_2()); }
+)
+
+;
+finally {
+	restoreStackSize(stackSize);
+}
+
+
+rule__Model__Group__3
+    @init {
+		int stackSize = keepStackSize();
+    }
+:
+	rule__Model__Group__3__Impl
+;
+finally {
+	restoreStackSize(stackSize);
+}
+
+rule__Model__Group__3__Impl
+    @init {
+		int stackSize = keepStackSize();
+    }
+:
+(
+{ before(grammarAccess.getModelAccess().getResourceKindsAssignment_3()); }
+(rule__Model__ResourceKindsAssignment_3)*
+{ after(grammarAccess.getModelAccess().getResourceKindsAssignment_3()); }
+)
+
+;
+finally {
+	restoreStackSize(stackSize);
+}
+
+
+
+
 
 
 
@@ -1936,14 +2000,14 @@ finally {
 
 
 
-rule__Model__CulturesAssignment_0
+rule__Model__NameAssignment_1
     @init {
 		int stackSize = keepStackSize();
     }
 :
 (
-{ before(grammarAccess.getModelAccess().getCulturesCultureParserRuleCall_0_0()); }
-	ruleCulture{ after(grammarAccess.getModelAccess().getCulturesCultureParserRuleCall_0_0()); }
+{ before(grammarAccess.getModelAccess().getNameIDTerminalRuleCall_1_0()); }
+	RULE_ID{ after(grammarAccess.getModelAccess().getNameIDTerminalRuleCall_1_0()); }
 )
 
 ;
@@ -1951,14 +2015,29 @@ finally {
 	restoreStackSize(stackSize);
 }
 
-rule__Model__ResourceKindsAssignment_1
+rule__Model__CulturesAssignment_2
     @init {
 		int stackSize = keepStackSize();
     }
 :
 (
-{ before(grammarAccess.getModelAccess().getResourceKindsResourceKindParserRuleCall_1_0()); }
-	ruleResourceKind{ after(grammarAccess.getModelAccess().getResourceKindsResourceKindParserRuleCall_1_0()); }
+{ before(grammarAccess.getModelAccess().getCulturesCultureParserRuleCall_2_0()); }
+	ruleCulture{ after(grammarAccess.getModelAccess().getCulturesCultureParserRuleCall_2_0()); }
+)
+
+;
+finally {
+	restoreStackSize(stackSize);
+}
+
+rule__Model__ResourceKindsAssignment_3
+    @init {
+		int stackSize = keepStackSize();
+    }
+:
+(
+{ before(grammarAccess.getModelAccess().getResourceKindsResourceKindParserRuleCall_3_0()); }
+	ruleResourceKind{ after(grammarAccess.getModelAccess().getResourceKindsResourceKindParserRuleCall_3_0()); }
 )
 
 ;
