@@ -4,9 +4,19 @@
    <extension
          point="org.eclipse.emf.ecore.uri_mapping">
       <mapping
-            source="pathmap://FML"
+            source="pathmap://FarmingML"
             target="platform://plugin/org.eclipse.papyrus.farming/model">
       </mapping>
+   </extension>
+   
+   <extension
+         point="org.eclipse.papyrus.uml.extensionpoints.UMLProfile">
+      <profile
+            description="UML profile for farming DSL"
+           
+            path="pathmap://FarmingML/RobotMLProfile.profile.uml"
+            provider="CEA List">
+      </profile>
    </extension>
 
 </plugin>
