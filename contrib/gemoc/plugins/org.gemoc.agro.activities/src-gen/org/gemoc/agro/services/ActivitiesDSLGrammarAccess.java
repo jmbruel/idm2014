@@ -21,29 +21,41 @@ public class ActivitiesDSLGrammarAccess extends AbstractGrammarElementFinder {
 	public class ModelElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Model");
 		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final Assignment cCulturesAssignment_0 = (Assignment)cGroup.eContents().get(0);
-		private final RuleCall cCulturesCultureParserRuleCall_0_0 = (RuleCall)cCulturesAssignment_0.eContents().get(0);
-		private final Assignment cResourceKindsAssignment_1 = (Assignment)cGroup.eContents().get(1);
-		private final RuleCall cResourceKindsResourceKindParserRuleCall_1_0 = (RuleCall)cResourceKindsAssignment_1.eContents().get(0);
+		private final Keyword cNameKeyword_0 = (Keyword)cGroup.eContents().get(0);
+		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
+		private final RuleCall cNameIDTerminalRuleCall_1_0 = (RuleCall)cNameAssignment_1.eContents().get(0);
+		private final Assignment cCulturesAssignment_2 = (Assignment)cGroup.eContents().get(2);
+		private final RuleCall cCulturesCultureParserRuleCall_2_0 = (RuleCall)cCulturesAssignment_2.eContents().get(0);
+		private final Assignment cResourceKindsAssignment_3 = (Assignment)cGroup.eContents().get(3);
+		private final RuleCall cResourceKindsResourceKindParserRuleCall_3_0 = (RuleCall)cResourceKindsAssignment_3.eContents().get(0);
 		
 		//Model:
-		//	cultures+=Culture* resourceKinds+=ResourceKind*;
+		//	"name" name=ID cultures+=Culture* resourceKinds+=ResourceKind*;
 		public ParserRule getRule() { return rule; }
 
-		//cultures+=Culture* resourceKinds+=ResourceKind*
+		//"name" name=ID cultures+=Culture* resourceKinds+=ResourceKind*
 		public Group getGroup() { return cGroup; }
 
+		//"name"
+		public Keyword getNameKeyword_0() { return cNameKeyword_0; }
+
+		//name=ID
+		public Assignment getNameAssignment_1() { return cNameAssignment_1; }
+
+		//ID
+		public RuleCall getNameIDTerminalRuleCall_1_0() { return cNameIDTerminalRuleCall_1_0; }
+
 		//cultures+=Culture*
-		public Assignment getCulturesAssignment_0() { return cCulturesAssignment_0; }
+		public Assignment getCulturesAssignment_2() { return cCulturesAssignment_2; }
 
 		//Culture
-		public RuleCall getCulturesCultureParserRuleCall_0_0() { return cCulturesCultureParserRuleCall_0_0; }
+		public RuleCall getCulturesCultureParserRuleCall_2_0() { return cCulturesCultureParserRuleCall_2_0; }
 
 		//resourceKinds+=ResourceKind*
-		public Assignment getResourceKindsAssignment_1() { return cResourceKindsAssignment_1; }
+		public Assignment getResourceKindsAssignment_3() { return cResourceKindsAssignment_3; }
 
 		//ResourceKind
-		public RuleCall getResourceKindsResourceKindParserRuleCall_1_0() { return cResourceKindsResourceKindParserRuleCall_1_0; }
+		public RuleCall getResourceKindsResourceKindParserRuleCall_3_0() { return cResourceKindsResourceKindParserRuleCall_3_0; }
 	}
 
 	public class ResourceKindElements extends AbstractParserRuleElementFinder {
@@ -683,7 +695,7 @@ public class ActivitiesDSLGrammarAccess extends AbstractGrammarElementFinder {
 
 	
 	//Model:
-	//	cultures+=Culture* resourceKinds+=ResourceKind*;
+	//	"name" name=ID cultures+=Culture* resourceKinds+=ResourceKind*;
 	public ModelElements getModelAccess() {
 		return (pModel != null) ? pModel : (pModel = new ModelElements());
 	}

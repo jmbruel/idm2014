@@ -44,6 +44,7 @@ public class InternalActivitiesDSLLexer extends Lexer {
     public static final int T__44=44;
     public static final int T__45=45;
     public static final int T__48=48;
+    public static final int T__49=49;
     public static final int RULE_SL_COMMENT=8;
     public static final int RULE_ML_COMMENT=7;
     public static final int T__30=30;
@@ -77,10 +78,10 @@ public class InternalActivitiesDSLLexer extends Lexer {
         try {
             int _type = T__11;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:11:7: ( 'resource' )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:11:9: 'resource'
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:11:7: ( 'name' )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:11:9: 'name'
             {
-            match("resource"); 
+            match("name"); 
 
 
             }
@@ -98,10 +99,10 @@ public class InternalActivitiesDSLLexer extends Lexer {
         try {
             int _type = T__12;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:12:7: ( 'culture' )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:12:9: 'culture'
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:12:7: ( 'resource' )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:12:9: 'resource'
             {
-            match("culture"); 
+            match("resource"); 
 
 
             }
@@ -119,10 +120,11 @@ public class InternalActivitiesDSLLexer extends Lexer {
         try {
             int _type = T__13;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:13:7: ( '{' )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:13:9: '{'
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:13:7: ( 'culture' )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:13:9: 'culture'
             {
-            match('{'); 
+            match("culture"); 
+
 
             }
 
@@ -139,10 +141,10 @@ public class InternalActivitiesDSLLexer extends Lexer {
         try {
             int _type = T__14;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:14:7: ( '}' )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:14:9: '}'
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:14:7: ( '{' )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:14:9: '{'
             {
-            match('}'); 
+            match('{'); 
 
             }
 
@@ -159,11 +161,10 @@ public class InternalActivitiesDSLLexer extends Lexer {
         try {
             int _type = T__15;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:15:7: ( 'activity' )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:15:9: 'activity'
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:15:7: ( '}' )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:15:9: '}'
             {
-            match("activity"); 
-
+            match('}'); 
 
             }
 
@@ -180,10 +181,10 @@ public class InternalActivitiesDSLLexer extends Lexer {
         try {
             int _type = T__16;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:16:7: ( 'from ' )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:16:9: 'from '
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:16:7: ( 'activity' )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:16:9: 'activity'
             {
-            match("from "); 
+            match("activity"); 
 
 
             }
@@ -201,10 +202,10 @@ public class InternalActivitiesDSLLexer extends Lexer {
         try {
             int _type = T__17;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:17:7: ( 'to' )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:17:9: 'to'
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:17:7: ( 'from ' )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:17:9: 'from '
             {
-            match("to"); 
+            match("from "); 
 
 
             }
@@ -222,10 +223,11 @@ public class InternalActivitiesDSLLexer extends Lexer {
         try {
             int _type = T__18;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:18:7: ( '[' )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:18:9: '['
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:18:7: ( 'to' )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:18:9: 'to'
             {
-            match('['); 
+            match("to"); 
+
 
             }
 
@@ -242,11 +244,10 @@ public class InternalActivitiesDSLLexer extends Lexer {
         try {
             int _type = T__19;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:19:7: ( '&&' )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:19:9: '&&'
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:19:7: ( '[' )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:19:9: '['
             {
-            match("&&"); 
-
+            match('['); 
 
             }
 
@@ -263,10 +264,11 @@ public class InternalActivitiesDSLLexer extends Lexer {
         try {
             int _type = T__20;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:20:7: ( ']' )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:20:9: ']'
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:20:7: ( '&&' )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:20:9: '&&'
             {
-            match(']'); 
+            match("&&"); 
+
 
             }
 
@@ -283,11 +285,10 @@ public class InternalActivitiesDSLLexer extends Lexer {
         try {
             int _type = T__21;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:21:7: ( 'no rain since' )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:21:9: 'no rain since'
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:21:7: ( ']' )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:21:9: ']'
             {
-            match("no rain since"); 
-
+            match(']'); 
 
             }
 
@@ -304,10 +305,10 @@ public class InternalActivitiesDSLLexer extends Lexer {
         try {
             int _type = T__22;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:22:7: ( 'days' )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:22:9: 'days'
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:22:7: ( 'no rain since' )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:22:9: 'no rain since'
             {
-            match("days"); 
+            match("no rain since"); 
 
 
             }
@@ -325,10 +326,10 @@ public class InternalActivitiesDSLLexer extends Lexer {
         try {
             int _type = T__23;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:23:7: ( 'temperature' )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:23:9: 'temperature'
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:23:7: ( 'days' )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:23:9: 'days'
             {
-            match("temperature"); 
+            match("days"); 
 
 
             }
@@ -346,10 +347,10 @@ public class InternalActivitiesDSLLexer extends Lexer {
         try {
             int _type = T__24;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:24:7: ( 'after' )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:24:9: 'after'
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:24:7: ( 'temperature' )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:24:9: 'temperature'
             {
-            match("after"); 
+            match("temperature"); 
 
 
             }
@@ -367,10 +368,10 @@ public class InternalActivitiesDSLLexer extends Lexer {
         try {
             int _type = T__25;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:25:7: ( 'is done since' )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:25:9: 'is done since'
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:25:7: ( 'after' )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:25:9: 'after'
             {
-            match("is done since"); 
+            match("after"); 
 
 
             }
@@ -388,10 +389,10 @@ public class InternalActivitiesDSLLexer extends Lexer {
         try {
             int _type = T__26;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:26:7: ( 'grain is' )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:26:9: 'grain is'
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:26:7: ( 'is done since' )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:26:9: 'is done since'
             {
-            match("grain is"); 
+            match("is done since"); 
 
 
             }
@@ -409,10 +410,10 @@ public class InternalActivitiesDSLLexer extends Lexer {
         try {
             int _type = T__27;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:27:7: ( 'jan' )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:27:9: 'jan'
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:27:7: ( 'grain is' )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:27:9: 'grain is'
             {
-            match("jan"); 
+            match("grain is"); 
 
 
             }
@@ -430,10 +431,10 @@ public class InternalActivitiesDSLLexer extends Lexer {
         try {
             int _type = T__28;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:28:7: ( 'feb' )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:28:9: 'feb'
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:28:7: ( 'jan' )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:28:9: 'jan'
             {
-            match("feb"); 
+            match("jan"); 
 
 
             }
@@ -451,10 +452,10 @@ public class InternalActivitiesDSLLexer extends Lexer {
         try {
             int _type = T__29;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:29:7: ( 'mar' )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:29:9: 'mar'
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:29:7: ( 'feb' )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:29:9: 'feb'
             {
-            match("mar"); 
+            match("feb"); 
 
 
             }
@@ -472,10 +473,10 @@ public class InternalActivitiesDSLLexer extends Lexer {
         try {
             int _type = T__30;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:30:7: ( 'apr' )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:30:9: 'apr'
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:30:7: ( 'mar' )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:30:9: 'mar'
             {
-            match("apr"); 
+            match("mar"); 
 
 
             }
@@ -493,10 +494,10 @@ public class InternalActivitiesDSLLexer extends Lexer {
         try {
             int _type = T__31;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:31:7: ( 'may' )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:31:9: 'may'
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:31:7: ( 'apr' )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:31:9: 'apr'
             {
-            match("may"); 
+            match("apr"); 
 
 
             }
@@ -514,10 +515,10 @@ public class InternalActivitiesDSLLexer extends Lexer {
         try {
             int _type = T__32;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:32:7: ( 'jun' )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:32:9: 'jun'
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:32:7: ( 'may' )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:32:9: 'may'
             {
-            match("jun"); 
+            match("may"); 
 
 
             }
@@ -535,10 +536,10 @@ public class InternalActivitiesDSLLexer extends Lexer {
         try {
             int _type = T__33;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:33:7: ( 'jul' )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:33:9: 'jul'
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:33:7: ( 'jun' )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:33:9: 'jun'
             {
-            match("jul"); 
+            match("jun"); 
 
 
             }
@@ -556,10 +557,10 @@ public class InternalActivitiesDSLLexer extends Lexer {
         try {
             int _type = T__34;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:34:7: ( 'aug' )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:34:9: 'aug'
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:34:7: ( 'jul' )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:34:9: 'jul'
             {
-            match("aug"); 
+            match("jul"); 
 
 
             }
@@ -577,10 +578,10 @@ public class InternalActivitiesDSLLexer extends Lexer {
         try {
             int _type = T__35;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:35:7: ( 'sept' )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:35:9: 'sept'
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:35:7: ( 'aug' )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:35:9: 'aug'
             {
-            match("sept"); 
+            match("aug"); 
 
 
             }
@@ -598,10 +599,10 @@ public class InternalActivitiesDSLLexer extends Lexer {
         try {
             int _type = T__36;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:36:7: ( 'oct' )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:36:9: 'oct'
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:36:7: ( 'sept' )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:36:9: 'sept'
             {
-            match("oct"); 
+            match("sept"); 
 
 
             }
@@ -619,10 +620,10 @@ public class InternalActivitiesDSLLexer extends Lexer {
         try {
             int _type = T__37;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:37:7: ( 'nov' )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:37:9: 'nov'
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:37:7: ( 'oct' )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:37:9: 'oct'
             {
-            match("nov"); 
+            match("oct"); 
 
 
             }
@@ -640,10 +641,10 @@ public class InternalActivitiesDSLLexer extends Lexer {
         try {
             int _type = T__38;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:38:7: ( 'dec' )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:38:9: 'dec'
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:38:7: ( 'nov' )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:38:9: 'nov'
             {
-            match("dec"); 
+            match("nov"); 
 
 
             }
@@ -661,10 +662,11 @@ public class InternalActivitiesDSLLexer extends Lexer {
         try {
             int _type = T__39;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:39:7: ( '>' )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:39:9: '>'
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:39:7: ( 'dec' )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:39:9: 'dec'
             {
-            match('>'); 
+            match("dec"); 
+
 
             }
 
@@ -681,10 +683,10 @@ public class InternalActivitiesDSLLexer extends Lexer {
         try {
             int _type = T__40;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:40:7: ( '<' )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:40:9: '<'
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:40:7: ( '>' )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:40:9: '>'
             {
-            match('<'); 
+            match('>'); 
 
             }
 
@@ -701,11 +703,10 @@ public class InternalActivitiesDSLLexer extends Lexer {
         try {
             int _type = T__41;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:41:7: ( '\\u00B0C' )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:41:9: '\\u00B0C'
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:41:7: ( '<' )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:41:9: '<'
             {
-            match("\u00B0C"); 
-
+            match('<'); 
 
             }
 
@@ -722,10 +723,10 @@ public class InternalActivitiesDSLLexer extends Lexer {
         try {
             int _type = T__42;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:42:7: ( '\\u00B0F' )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:42:9: '\\u00B0F'
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:42:7: ( '\\u00B0C' )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:42:9: '\\u00B0C'
             {
-            match("\u00B0F"); 
+            match("\u00B0C"); 
 
 
             }
@@ -743,10 +744,10 @@ public class InternalActivitiesDSLLexer extends Lexer {
         try {
             int _type = T__43;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:43:7: ( 'once' )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:43:9: 'once'
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:43:7: ( '\\u00B0F' )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:43:9: '\\u00B0F'
             {
-            match("once"); 
+            match("\u00B0F"); 
 
 
             }
@@ -764,10 +765,10 @@ public class InternalActivitiesDSLLexer extends Lexer {
         try {
             int _type = T__44;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:44:7: ( 'daily' )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:44:9: 'daily'
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:44:7: ( 'once' )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:44:9: 'once'
             {
-            match("daily"); 
+            match("once"); 
 
 
             }
@@ -785,10 +786,10 @@ public class InternalActivitiesDSLLexer extends Lexer {
         try {
             int _type = T__45;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:45:7: ( 'weekly' )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:45:9: 'weekly'
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:45:7: ( 'daily' )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:45:9: 'daily'
             {
-            match("weekly"); 
+            match("daily"); 
 
 
             }
@@ -806,10 +807,10 @@ public class InternalActivitiesDSLLexer extends Lexer {
         try {
             int _type = T__46;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:46:7: ( 'monthly' )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:46:9: 'monthly'
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:46:7: ( 'weekly' )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:46:9: 'weekly'
             {
-            match("monthly"); 
+            match("weekly"); 
 
 
             }
@@ -827,10 +828,10 @@ public class InternalActivitiesDSLLexer extends Lexer {
         try {
             int _type = T__47;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:47:7: ( 'quaterly' )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:47:9: 'quaterly'
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:47:7: ( 'monthly' )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:47:9: 'monthly'
             {
-            match("quaterly"); 
+            match("monthly"); 
 
 
             }
@@ -848,10 +849,10 @@ public class InternalActivitiesDSLLexer extends Lexer {
         try {
             int _type = T__48;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:48:7: ( 'yearly' )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:48:9: 'yearly'
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:48:7: ( 'quaterly' )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:48:9: 'quaterly'
             {
-            match("yearly"); 
+            match("quaterly"); 
 
 
             }
@@ -864,15 +865,36 @@ public class InternalActivitiesDSLLexer extends Lexer {
     }
     // $ANTLR end "T__48"
 
+    // $ANTLR start "T__49"
+    public final void mT__49() throws RecognitionException {
+        try {
+            int _type = T__49;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:49:7: ( 'yearly' )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:49:9: 'yearly'
+            {
+            match("yearly"); 
+
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        }
+    }
+    // $ANTLR end "T__49"
+
     // $ANTLR start "RULE_ID"
     public final void mRULE_ID() throws RecognitionException {
         try {
             int _type = RULE_ID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:899:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )* )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:899:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:921:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )* )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:921:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
             {
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:899:11: ( '^' )?
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:921:11: ( '^' )?
             int alt1=2;
             int LA1_0 = input.LA(1);
 
@@ -881,7 +903,7 @@ public class InternalActivitiesDSLLexer extends Lexer {
             }
             switch (alt1) {
                 case 1 :
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:899:11: '^'
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:921:11: '^'
                     {
                     match('^'); 
 
@@ -899,7 +921,7 @@ public class InternalActivitiesDSLLexer extends Lexer {
                 recover(mse);
                 throw mse;}
 
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:899:40: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:921:40: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
             loop2:
             do {
                 int alt2=2;
@@ -948,10 +970,10 @@ public class InternalActivitiesDSLLexer extends Lexer {
         try {
             int _type = RULE_INT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:901:10: ( ( '0' .. '9' )+ )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:901:12: ( '0' .. '9' )+
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:923:10: ( ( '0' .. '9' )+ )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:923:12: ( '0' .. '9' )+
             {
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:901:12: ( '0' .. '9' )+
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:923:12: ( '0' .. '9' )+
             int cnt3=0;
             loop3:
             do {
@@ -965,7 +987,7 @@ public class InternalActivitiesDSLLexer extends Lexer {
 
                 switch (alt3) {
             	case 1 :
-            	    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:901:13: '0' .. '9'
+            	    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:923:13: '0' .. '9'
             	    {
             	    matchRange('0','9'); 
 
@@ -997,10 +1019,10 @@ public class InternalActivitiesDSLLexer extends Lexer {
         try {
             int _type = RULE_STRING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:903:13: ( ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:903:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:925:13: ( ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:925:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             {
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:903:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:925:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             int alt6=2;
             int LA6_0 = input.LA(1);
 
@@ -1018,10 +1040,10 @@ public class InternalActivitiesDSLLexer extends Lexer {
             }
             switch (alt6) {
                 case 1 :
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:903:16: '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:925:16: '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
                     {
                     match('\"'); 
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:903:20: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )*
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:925:20: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )*
                     loop4:
                     do {
                         int alt4=3;
@@ -1037,7 +1059,7 @@ public class InternalActivitiesDSLLexer extends Lexer {
 
                         switch (alt4) {
                     	case 1 :
-                    	    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:903:21: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
+                    	    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:925:21: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
                     	    {
                     	    match('\\'); 
                     	    if ( input.LA(1)=='\"'||input.LA(1)=='\''||input.LA(1)=='\\'||input.LA(1)=='b'||input.LA(1)=='f'||input.LA(1)=='n'||input.LA(1)=='r'||(input.LA(1)>='t' && input.LA(1)<='u') ) {
@@ -1053,7 +1075,7 @@ public class InternalActivitiesDSLLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:903:66: ~ ( ( '\\\\' | '\"' ) )
+                    	    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:925:66: ~ ( ( '\\\\' | '\"' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -1078,10 +1100,10 @@ public class InternalActivitiesDSLLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:903:86: '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:925:86: '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
                     {
                     match('\''); 
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:903:91: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )*
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:925:91: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )*
                     loop5:
                     do {
                         int alt5=3;
@@ -1097,7 +1119,7 @@ public class InternalActivitiesDSLLexer extends Lexer {
 
                         switch (alt5) {
                     	case 1 :
-                    	    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:903:92: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
+                    	    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:925:92: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
                     	    {
                     	    match('\\'); 
                     	    if ( input.LA(1)=='\"'||input.LA(1)=='\''||input.LA(1)=='\\'||input.LA(1)=='b'||input.LA(1)=='f'||input.LA(1)=='n'||input.LA(1)=='r'||(input.LA(1)>='t' && input.LA(1)<='u') ) {
@@ -1113,7 +1135,7 @@ public class InternalActivitiesDSLLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:903:137: ~ ( ( '\\\\' | '\\'' ) )
+                    	    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:925:137: ~ ( ( '\\\\' | '\\'' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -1156,12 +1178,12 @@ public class InternalActivitiesDSLLexer extends Lexer {
         try {
             int _type = RULE_ML_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:905:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:905:19: '/*' ( options {greedy=false; } : . )* '*/'
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:927:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:927:19: '/*' ( options {greedy=false; } : . )* '*/'
             {
             match("/*"); 
 
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:905:24: ( options {greedy=false; } : . )*
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:927:24: ( options {greedy=false; } : . )*
             loop7:
             do {
                 int alt7=2;
@@ -1186,7 +1208,7 @@ public class InternalActivitiesDSLLexer extends Lexer {
 
                 switch (alt7) {
             	case 1 :
-            	    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:905:52: .
+            	    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:927:52: .
             	    {
             	    matchAny(); 
 
@@ -1216,12 +1238,12 @@ public class InternalActivitiesDSLLexer extends Lexer {
         try {
             int _type = RULE_SL_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:907:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:907:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:929:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:929:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
             {
             match("//"); 
 
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:907:24: (~ ( ( '\\n' | '\\r' ) ) )*
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:929:24: (~ ( ( '\\n' | '\\r' ) ) )*
             loop8:
             do {
                 int alt8=2;
@@ -1234,7 +1256,7 @@ public class InternalActivitiesDSLLexer extends Lexer {
 
                 switch (alt8) {
             	case 1 :
-            	    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:907:24: ~ ( ( '\\n' | '\\r' ) )
+            	    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:929:24: ~ ( ( '\\n' | '\\r' ) )
             	    {
             	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
@@ -1254,7 +1276,7 @@ public class InternalActivitiesDSLLexer extends Lexer {
                 }
             } while (true);
 
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:907:40: ( ( '\\r' )? '\\n' )?
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:929:40: ( ( '\\r' )? '\\n' )?
             int alt10=2;
             int LA10_0 = input.LA(1);
 
@@ -1263,9 +1285,9 @@ public class InternalActivitiesDSLLexer extends Lexer {
             }
             switch (alt10) {
                 case 1 :
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:907:41: ( '\\r' )? '\\n'
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:929:41: ( '\\r' )? '\\n'
                     {
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:907:41: ( '\\r' )?
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:929:41: ( '\\r' )?
                     int alt9=2;
                     int LA9_0 = input.LA(1);
 
@@ -1274,7 +1296,7 @@ public class InternalActivitiesDSLLexer extends Lexer {
                     }
                     switch (alt9) {
                         case 1 :
-                            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:907:41: '\\r'
+                            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:929:41: '\\r'
                             {
                             match('\r'); 
 
@@ -1306,10 +1328,10 @@ public class InternalActivitiesDSLLexer extends Lexer {
         try {
             int _type = RULE_WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:909:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:909:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:931:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:931:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             {
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:909:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:931:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             int cnt11=0;
             loop11:
             do {
@@ -1363,8 +1385,8 @@ public class InternalActivitiesDSLLexer extends Lexer {
         try {
             int _type = RULE_ANY_OTHER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:911:16: ( . )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:911:18: .
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:933:16: ( . )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:933:18: .
             {
             matchAny(); 
 
@@ -1379,8 +1401,8 @@ public class InternalActivitiesDSLLexer extends Lexer {
     // $ANTLR end "RULE_ANY_OTHER"
 
     public void mTokens() throws RecognitionException {
-        // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:1:8: ( T__11 | T__12 | T__13 | T__14 | T__15 | T__16 | T__17 | T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | T__38 | T__39 | T__40 | T__41 | T__42 | T__43 | T__44 | T__45 | T__46 | T__47 | T__48 | RULE_ID | RULE_INT | RULE_STRING | RULE_ML_COMMENT | RULE_SL_COMMENT | RULE_WS | RULE_ANY_OTHER )
-        int alt12=45;
+        // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:1:8: ( T__11 | T__12 | T__13 | T__14 | T__15 | T__16 | T__17 | T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | T__38 | T__39 | T__40 | T__41 | T__42 | T__43 | T__44 | T__45 | T__46 | T__47 | T__48 | T__49 | RULE_ID | RULE_INT | RULE_STRING | RULE_ML_COMMENT | RULE_SL_COMMENT | RULE_WS | RULE_ANY_OTHER )
+        int alt12=46;
         alt12 = dfa12.predict(input);
         switch (alt12) {
             case 1 :
@@ -1650,49 +1672,56 @@ public class InternalActivitiesDSLLexer extends Lexer {
                 }
                 break;
             case 39 :
-                // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:1:238: RULE_ID
+                // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:1:238: T__49
+                {
+                mT__49(); 
+
+                }
+                break;
+            case 40 :
+                // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:1:244: RULE_ID
                 {
                 mRULE_ID(); 
 
                 }
                 break;
-            case 40 :
-                // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:1:246: RULE_INT
+            case 41 :
+                // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:1:252: RULE_INT
                 {
                 mRULE_INT(); 
 
                 }
                 break;
-            case 41 :
-                // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:1:255: RULE_STRING
+            case 42 :
+                // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:1:261: RULE_STRING
                 {
                 mRULE_STRING(); 
 
                 }
                 break;
-            case 42 :
-                // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:1:267: RULE_ML_COMMENT
+            case 43 :
+                // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:1:273: RULE_ML_COMMENT
                 {
                 mRULE_ML_COMMENT(); 
 
                 }
                 break;
-            case 43 :
-                // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:1:283: RULE_SL_COMMENT
+            case 44 :
+                // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:1:289: RULE_SL_COMMENT
                 {
                 mRULE_SL_COMMENT(); 
 
                 }
                 break;
-            case 44 :
-                // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:1:299: RULE_WS
+            case 45 :
+                // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:1:305: RULE_WS
                 {
                 mRULE_WS(); 
 
                 }
                 break;
-            case 45 :
-                // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:1:307: RULE_ANY_OTHER
+            case 46 :
+                // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:1:313: RULE_ANY_OTHER
                 {
                 mRULE_ANY_OTHER(); 
 
@@ -1706,239 +1735,245 @@ public class InternalActivitiesDSLLexer extends Lexer {
 
     protected DFA12 dfa12 = new DFA12(this);
     static final String DFA12_eotS =
-        "\1\uffff\2\42\2\uffff\3\42\1\uffff\1\40\1\uffff\10\42\2\uffff\1"+
-        "\40\3\42\1\40\2\uffff\3\40\2\uffff\1\42\1\uffff\1\42\2\uffff\6\42"+
-        "\1\121\1\42\3\uffff\14\42\4\uffff\3\42\5\uffff\4\42\1\152\1\153"+
-        "\1\42\1\155\1\uffff\1\42\1\uffff\1\157\2\42\1\162\1\uffff\1\42\1"+
-        "\164\1\165\1\166\1\167\1\170\2\42\1\173\10\42\2\uffff\1\42\1\uffff"+
-        "\1\42\1\uffff\1\u0086\1\42\1\uffff\1\42\5\uffff\1\42\1\u008a\1\uffff"+
-        "\1\u008b\6\42\1\u0092\1\uffff\1\42\1\uffff\1\u0094\2\42\2\uffff"+
-        "\6\42\1\uffff\1\42\2\uffff\1\42\1\u009f\1\42\1\u00a1\1\42\1\u00a3"+
-        "\2\42\1\u00a6\1\uffff\1\42\1\uffff\1\u00a8\1\uffff\1\u00a9\1\42"+
-        "\1\uffff\1\u00ab\2\uffff\1\42\1\uffff\1\42\1\u00ae\1\uffff";
+        "\1\uffff\3\43\2\uffff\3\43\1\uffff\1\40\1\uffff\7\43\2\uffff\1\40"+
+        "\3\43\1\40\2\uffff\3\40\2\uffff\2\43\1\uffff\2\43\2\uffff\6\43\1"+
+        "\125\1\43\3\uffff\13\43\4\uffff\3\43\5\uffff\1\43\1\uffff\1\151"+
+        "\4\43\1\156\1\157\1\43\1\161\1\uffff\3\43\1\165\1\uffff\1\43\1\167"+
+        "\1\170\1\171\1\172\1\173\2\43\1\176\4\43\1\u0083\1\uffff\4\43\2"+
+        "\uffff\1\43\1\uffff\1\43\1\u008a\1\43\1\uffff\1\43\5\uffff\1\43"+
+        "\1\u008e\1\uffff\1\u008f\3\43\1\uffff\3\43\1\u0096\1\uffff\1\43"+
+        "\1\uffff\1\u0098\2\43\2\uffff\6\43\1\uffff\1\43\2\uffff\1\43\1\u00a3"+
+        "\1\43\1\u00a5\1\43\1\u00a7\2\43\1\u00aa\1\uffff\1\43\1\uffff\1\u00ac"+
+        "\1\uffff\1\u00ad\1\43\1\uffff\1\u00af\2\uffff\1\43\1\uffff\1\43"+
+        "\1\u00b2\1\uffff";
     static final String DFA12_eofS =
-        "\u00af\uffff";
+        "\u00b3\uffff";
     static final String DFA12_minS =
-        "\1\0\1\145\1\165\2\uffff\1\143\2\145\1\uffff\1\46\1\uffff\1\157"+
+        "\1\0\1\141\1\145\1\165\2\uffff\1\143\2\145\1\uffff\1\46\1\uffff"+
         "\1\141\1\163\1\162\2\141\1\145\1\143\2\uffff\1\103\1\145\1\165\1"+
-        "\145\1\101\2\uffff\2\0\1\52\2\uffff\1\163\1\uffff\1\154\2\uffff"+
-        "\2\164\1\162\1\147\1\157\1\142\1\60\1\155\3\uffff\1\40\1\151\1\143"+
-        "\1\40\1\141\1\156\1\154\1\162\1\156\1\160\1\164\1\143\4\uffff\1"+
-        "\145\2\141\5\uffff\1\157\1\164\1\151\1\145\2\60\1\155\1\60\1\uffff"+
-        "\1\160\1\uffff\1\60\1\163\1\154\1\60\1\uffff\1\151\5\60\2\164\1"+
-        "\60\1\145\1\153\1\164\1\162\2\165\1\166\1\162\2\uffff\1\40\1\uffff"+
-        "\1\145\1\uffff\1\60\1\171\1\uffff\1\156\5\uffff\1\150\1\60\1\uffff"+
-        "\1\60\1\154\1\145\1\154\2\162\1\151\1\60\1\uffff\1\162\1\uffff\1"+
-        "\60\1\40\1\154\2\uffff\1\171\1\162\1\171\1\143\1\145\1\164\1\uffff"+
-        "\1\141\2\uffff\1\171\1\60\1\154\1\60\1\145\1\60\1\171\1\164\1\60"+
-        "\1\uffff\1\171\1\uffff\1\60\1\uffff\1\60\1\165\1\uffff\1\60\2\uffff"+
-        "\1\162\1\uffff\1\145\1\60\1\uffff";
+        "\145\1\101\2\uffff\2\0\1\52\2\uffff\1\155\1\40\1\uffff\1\163\1\154"+
+        "\2\uffff\2\164\1\162\1\147\1\157\1\142\1\60\1\155\3\uffff\1\151"+
+        "\1\143\1\40\1\141\1\156\1\154\1\162\1\156\1\160\1\164\1\143\4\uffff"+
+        "\1\145\2\141\5\uffff\1\145\1\uffff\1\60\1\157\1\164\1\151\1\145"+
+        "\2\60\1\155\1\60\1\uffff\1\160\1\163\1\154\1\60\1\uffff\1\151\5"+
+        "\60\2\164\1\60\1\145\1\153\1\164\1\162\1\60\1\uffff\2\165\1\166"+
+        "\1\162\2\uffff\1\40\1\uffff\1\145\1\60\1\171\1\uffff\1\156\5\uffff"+
+        "\1\150\1\60\1\uffff\1\60\1\154\1\145\1\154\1\uffff\2\162\1\151\1"+
+        "\60\1\uffff\1\162\1\uffff\1\60\1\40\1\154\2\uffff\1\171\1\162\1"+
+        "\171\1\143\1\145\1\164\1\uffff\1\141\2\uffff\1\171\1\60\1\154\1"+
+        "\60\1\145\1\60\1\171\1\164\1\60\1\uffff\1\171\1\uffff\1\60\1\uffff"+
+        "\1\60\1\165\1\uffff\1\60\2\uffff\1\162\1\uffff\1\145\1\60\1\uffff";
     static final String DFA12_maxS =
-        "\1\uffff\1\145\1\165\2\uffff\1\165\1\162\1\157\1\uffff\1\46\1\uffff"+
-        "\1\157\1\145\1\163\1\162\1\165\1\157\1\145\1\156\2\uffff\1\106\1"+
-        "\145\1\165\1\145\1\172\2\uffff\2\uffff\1\57\2\uffff\1\163\1\uffff"+
-        "\1\154\2\uffff\2\164\1\162\1\147\1\157\1\142\1\172\1\155\3\uffff"+
-        "\1\166\1\171\1\143\1\40\1\141\2\156\1\171\1\156\1\160\1\164\1\143"+
-        "\4\uffff\1\145\2\141\5\uffff\1\157\1\164\1\151\1\145\2\172\1\155"+
-        "\1\172\1\uffff\1\160\1\uffff\1\172\1\163\1\154\1\172\1\uffff\1\151"+
-        "\5\172\2\164\1\172\1\145\1\153\1\164\1\162\2\165\1\166\1\162\2\uffff"+
-        "\1\40\1\uffff\1\145\1\uffff\1\172\1\171\1\uffff\1\156\5\uffff\1"+
-        "\150\1\172\1\uffff\1\172\1\154\1\145\1\154\2\162\1\151\1\172\1\uffff"+
-        "\1\162\1\uffff\1\172\1\40\1\154\2\uffff\1\171\1\162\1\171\1\143"+
-        "\1\145\1\164\1\uffff\1\141\2\uffff\1\171\1\172\1\154\1\172\1\145"+
-        "\1\172\1\171\1\164\1\172\1\uffff\1\171\1\uffff\1\172\1\uffff\1\172"+
-        "\1\165\1\uffff\1\172\2\uffff\1\162\1\uffff\1\145\1\172\1\uffff";
+        "\1\uffff\1\157\1\145\1\165\2\uffff\1\165\1\162\1\157\1\uffff\1\46"+
+        "\1\uffff\1\145\1\163\1\162\1\165\1\157\1\145\1\156\2\uffff\1\106"+
+        "\1\145\1\165\1\145\1\172\2\uffff\2\uffff\1\57\2\uffff\1\155\1\166"+
+        "\1\uffff\1\163\1\154\2\uffff\2\164\1\162\1\147\1\157\1\142\1\172"+
+        "\1\155\3\uffff\1\171\1\143\1\40\1\141\2\156\1\171\1\156\1\160\1"+
+        "\164\1\143\4\uffff\1\145\2\141\5\uffff\1\145\1\uffff\1\172\1\157"+
+        "\1\164\1\151\1\145\2\172\1\155\1\172\1\uffff\1\160\1\163\1\154\1"+
+        "\172\1\uffff\1\151\5\172\2\164\1\172\1\145\1\153\1\164\1\162\1\172"+
+        "\1\uffff\2\165\1\166\1\162\2\uffff\1\40\1\uffff\1\145\1\172\1\171"+
+        "\1\uffff\1\156\5\uffff\1\150\1\172\1\uffff\1\172\1\154\1\145\1\154"+
+        "\1\uffff\2\162\1\151\1\172\1\uffff\1\162\1\uffff\1\172\1\40\1\154"+
+        "\2\uffff\1\171\1\162\1\171\1\143\1\145\1\164\1\uffff\1\141\2\uffff"+
+        "\1\171\1\172\1\154\1\172\1\145\1\172\1\171\1\164\1\172\1\uffff\1"+
+        "\171\1\uffff\1\172\1\uffff\1\172\1\165\1\uffff\1\172\2\uffff\1\162"+
+        "\1\uffff\1\145\1\172\1\uffff";
     static final String DFA12_acceptS =
-        "\3\uffff\1\3\1\4\3\uffff\1\10\1\uffff\1\12\10\uffff\1\35\1\36\5"+
-        "\uffff\1\47\1\50\3\uffff\1\54\1\55\1\uffff\1\47\1\uffff\1\3\1\4"+
-        "\10\uffff\1\10\1\11\1\12\14\uffff\1\35\1\36\1\37\1\40\3\uffff\1"+
-        "\50\1\51\1\52\1\53\1\54\10\uffff\1\7\1\uffff\1\13\4\uffff\1\17\21"+
-        "\uffff\1\24\1\30\1\uffff\1\22\1\uffff\1\33\2\uffff\1\34\1\uffff"+
-        "\1\21\1\26\1\27\1\23\1\25\2\uffff\1\32\10\uffff\1\6\1\uffff\1\14"+
-        "\3\uffff\1\31\1\41\6\uffff\1\16\1\uffff\1\42\1\20\11\uffff\1\43"+
-        "\1\uffff\1\46\1\uffff\1\2\2\uffff\1\44\1\uffff\1\1\1\5\1\uffff\1"+
-        "\45\2\uffff\1\15";
+        "\4\uffff\1\4\1\5\3\uffff\1\11\1\uffff\1\13\7\uffff\1\36\1\37\5\uffff"+
+        "\1\50\1\51\3\uffff\1\55\1\56\2\uffff\1\50\2\uffff\1\4\1\5\10\uffff"+
+        "\1\11\1\12\1\13\13\uffff\1\36\1\37\1\40\1\41\3\uffff\1\51\1\52\1"+
+        "\53\1\54\1\55\1\uffff\1\14\11\uffff\1\10\4\uffff\1\20\16\uffff\1"+
+        "\34\4\uffff\1\25\1\31\1\uffff\1\23\3\uffff\1\35\1\uffff\1\22\1\27"+
+        "\1\30\1\24\1\26\2\uffff\1\33\4\uffff\1\1\4\uffff\1\7\1\uffff\1\15"+
+        "\3\uffff\1\32\1\42\6\uffff\1\17\1\uffff\1\43\1\21\11\uffff\1\44"+
+        "\1\uffff\1\47\1\uffff\1\3\2\uffff\1\45\1\uffff\1\2\1\6\1\uffff\1"+
+        "\46\2\uffff\1\16";
     static final String DFA12_specialS =
-        "\1\1\33\uffff\1\0\1\2\u0091\uffff}>";
+        "\1\1\33\uffff\1\2\1\0\u0095\uffff}>";
     static final String[] DFA12_transitionS = {
-            "\11\40\2\37\2\40\1\37\22\40\1\37\1\40\1\34\3\40\1\11\1\35\7"+
-            "\40\1\36\12\33\2\40\1\24\1\40\1\23\2\40\32\32\1\10\1\40\1\12"+
-            "\1\31\1\32\1\40\1\5\1\32\1\2\1\14\1\32\1\6\1\16\1\32\1\15\1"+
-            "\17\2\32\1\20\1\13\1\22\1\32\1\27\1\1\1\21\1\7\2\32\1\26\1\32"+
-            "\1\30\1\32\1\3\1\40\1\4\62\40\1\25\uff4f\40",
-            "\1\41",
-            "\1\43",
+            "\11\40\2\37\2\40\1\37\22\40\1\37\1\40\1\34\3\40\1\12\1\35\7"+
+            "\40\1\36\12\33\2\40\1\24\1\40\1\23\2\40\32\32\1\11\1\40\1\13"+
+            "\1\31\1\32\1\40\1\6\1\32\1\3\1\14\1\32\1\7\1\16\1\32\1\15\1"+
+            "\17\2\32\1\20\1\1\1\22\1\32\1\27\1\2\1\21\1\10\2\32\1\26\1\32"+
+            "\1\30\1\32\1\4\1\40\1\5\62\40\1\25\uff4f\40",
+            "\1\41\15\uffff\1\42",
+            "\1\44",
+            "\1\45",
             "",
             "",
-            "\1\46\2\uffff\1\47\11\uffff\1\50\4\uffff\1\51",
-            "\1\53\14\uffff\1\52",
-            "\1\55\11\uffff\1\54",
-            "",
-            "\1\57",
+            "\1\50\2\uffff\1\51\11\uffff\1\52\4\uffff\1\53",
+            "\1\55\14\uffff\1\54",
+            "\1\57\11\uffff\1\56",
             "",
             "\1\61",
-            "\1\62\3\uffff\1\63",
-            "\1\64",
+            "",
+            "\1\63\3\uffff\1\64",
             "\1\65",
-            "\1\66\23\uffff\1\67",
-            "\1\70\15\uffff\1\71",
-            "\1\72",
-            "\1\73\12\uffff\1\74",
+            "\1\66",
+            "\1\67\23\uffff\1\70",
+            "\1\71\15\uffff\1\72",
+            "\1\73",
+            "\1\74\12\uffff\1\75",
             "",
             "",
-            "\1\77\2\uffff\1\100",
-            "\1\101",
+            "\1\100\2\uffff\1\101",
             "\1\102",
             "\1\103",
-            "\32\42\4\uffff\1\42\1\uffff\32\42",
+            "\1\104",
+            "\32\43\4\uffff\1\43\1\uffff\32\43",
             "",
             "",
-            "\0\105",
-            "\0\105",
-            "\1\106\4\uffff\1\107",
+            "\0\106",
+            "\0\106",
+            "\1\107\4\uffff\1\110",
             "",
-            "",
-            "\1\111",
             "",
             "\1\112",
+            "\1\113\125\uffff\1\114",
             "",
-            "",
-            "\1\113",
-            "\1\114",
             "\1\115",
             "\1\116",
+            "",
+            "",
             "\1\117",
             "\1\120",
-            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
+            "\1\121",
             "\1\122",
+            "\1\123",
+            "\1\124",
+            "\12\43\7\uffff\32\43\4\uffff\1\43\1\uffff\32\43",
+            "\1\126",
             "",
             "",
             "",
-            "\1\123\125\uffff\1\124",
-            "\1\126\17\uffff\1\125",
-            "\1\127",
-            "\1\130",
+            "\1\130\17\uffff\1\127",
             "\1\131",
             "\1\132",
-            "\1\134\1\uffff\1\133",
-            "\1\135\6\uffff\1\136",
-            "\1\137",
-            "\1\140",
+            "\1\133",
+            "\1\134",
+            "\1\136\1\uffff\1\135",
+            "\1\137\6\uffff\1\140",
             "\1\141",
             "\1\142",
-            "",
-            "",
-            "",
-            "",
             "\1\143",
             "\1\144",
+            "",
+            "",
+            "",
+            "",
             "\1\145",
-            "",
-            "",
-            "",
-            "",
-            "",
             "\1\146",
             "\1\147",
+            "",
+            "",
+            "",
+            "",
+            "",
             "\1\150",
-            "\1\151",
-            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
-            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
+            "",
+            "\12\43\7\uffff\32\43\4\uffff\1\43\1\uffff\32\43",
+            "\1\152",
+            "\1\153",
             "\1\154",
-            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
-            "",
-            "\1\156",
-            "",
-            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
+            "\1\155",
+            "\12\43\7\uffff\32\43\4\uffff\1\43\1\uffff\32\43",
+            "\12\43\7\uffff\32\43\4\uffff\1\43\1\uffff\32\43",
             "\1\160",
-            "\1\161",
-            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
+            "\12\43\7\uffff\32\43\4\uffff\1\43\1\uffff\32\43",
             "",
+            "\1\162",
             "\1\163",
-            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
-            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
-            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
-            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
-            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
-            "\1\171",
-            "\1\172",
-            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
+            "\1\164",
+            "\12\43\7\uffff\32\43\4\uffff\1\43\1\uffff\32\43",
+            "",
+            "\1\166",
+            "\12\43\7\uffff\32\43\4\uffff\1\43\1\uffff\32\43",
+            "\12\43\7\uffff\32\43\4\uffff\1\43\1\uffff\32\43",
+            "\12\43\7\uffff\32\43\4\uffff\1\43\1\uffff\32\43",
+            "\12\43\7\uffff\32\43\4\uffff\1\43\1\uffff\32\43",
+            "\12\43\7\uffff\32\43\4\uffff\1\43\1\uffff\32\43",
             "\1\174",
             "\1\175",
-            "\1\176",
+            "\12\43\7\uffff\32\43\4\uffff\1\43\1\uffff\32\43",
             "\1\177",
             "\1\u0080",
             "\1\u0081",
             "\1\u0082",
-            "\1\u0083",
-            "",
+            "\12\43\7\uffff\32\43\4\uffff\1\43\1\uffff\32\43",
             "",
             "\1\u0084",
-            "",
             "\1\u0085",
-            "",
-            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
+            "\1\u0086",
             "\1\u0087",
+            "",
             "",
             "\1\u0088",
             "",
-            "",
-            "",
-            "",
-            "",
             "\1\u0089",
-            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
+            "\12\43\7\uffff\32\43\4\uffff\1\43\1\uffff\32\43",
+            "\1\u008b",
             "",
-            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
             "\1\u008c",
+            "",
+            "",
+            "",
+            "",
+            "",
             "\1\u008d",
-            "\1\u008e",
-            "\1\u008f",
+            "\12\43\7\uffff\32\43\4\uffff\1\43\1\uffff\32\43",
+            "",
+            "\12\43\7\uffff\32\43\4\uffff\1\43\1\uffff\32\43",
             "\1\u0090",
             "\1\u0091",
-            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
+            "\1\u0092",
             "",
             "\1\u0093",
-            "",
-            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
+            "\1\u0094",
             "\1\u0095",
-            "\1\u0096",
-            "",
+            "\12\43\7\uffff\32\43\4\uffff\1\43\1\uffff\32\43",
             "",
             "\1\u0097",
-            "\1\u0098",
+            "",
+            "\12\43\7\uffff\32\43\4\uffff\1\43\1\uffff\32\43",
             "\1\u0099",
             "\1\u009a",
+            "",
+            "",
             "\1\u009b",
             "\1\u009c",
-            "",
             "\1\u009d",
-            "",
-            "",
             "\1\u009e",
-            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
+            "\1\u009f",
             "\1\u00a0",
-            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
+            "",
+            "\1\u00a1",
+            "",
+            "",
             "\1\u00a2",
-            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
+            "\12\43\7\uffff\32\43\4\uffff\1\43\1\uffff\32\43",
             "\1\u00a4",
-            "\1\u00a5",
-            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
+            "\12\43\7\uffff\32\43\4\uffff\1\43\1\uffff\32\43",
+            "\1\u00a6",
+            "\12\43\7\uffff\32\43\4\uffff\1\43\1\uffff\32\43",
+            "\1\u00a8",
+            "\1\u00a9",
+            "\12\43\7\uffff\32\43\4\uffff\1\43\1\uffff\32\43",
             "",
-            "\1\u00a7",
+            "\1\u00ab",
             "",
-            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
+            "\12\43\7\uffff\32\43\4\uffff\1\43\1\uffff\32\43",
             "",
-            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
-            "\1\u00aa",
+            "\12\43\7\uffff\32\43\4\uffff\1\43\1\uffff\32\43",
+            "\1\u00ae",
             "",
-            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
+            "\12\43\7\uffff\32\43\4\uffff\1\43\1\uffff\32\43",
             "",
             "",
-            "\1\u00ac",
+            "\1\u00b0",
             "",
-            "\1\u00ad",
-            "\12\42\7\uffff\32\42\4\uffff\1\42\1\uffff\32\42",
+            "\1\u00b1",
+            "\12\43\7\uffff\32\43\4\uffff\1\43\1\uffff\32\43",
             ""
     };
 
@@ -1972,17 +2007,17 @@ public class InternalActivitiesDSLLexer extends Lexer {
             this.transition = DFA12_transition;
         }
         public String getDescription() {
-            return "1:1: Tokens : ( T__11 | T__12 | T__13 | T__14 | T__15 | T__16 | T__17 | T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | T__38 | T__39 | T__40 | T__41 | T__42 | T__43 | T__44 | T__45 | T__46 | T__47 | T__48 | RULE_ID | RULE_INT | RULE_STRING | RULE_ML_COMMENT | RULE_SL_COMMENT | RULE_WS | RULE_ANY_OTHER );";
+            return "1:1: Tokens : ( T__11 | T__12 | T__13 | T__14 | T__15 | T__16 | T__17 | T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | T__38 | T__39 | T__40 | T__41 | T__42 | T__43 | T__44 | T__45 | T__46 | T__47 | T__48 | T__49 | RULE_ID | RULE_INT | RULE_STRING | RULE_ML_COMMENT | RULE_SL_COMMENT | RULE_WS | RULE_ANY_OTHER );";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             IntStream input = _input;
         	int _s = s;
             switch ( s ) {
                     case 0 : 
-                        int LA12_28 = input.LA(1);
+                        int LA12_29 = input.LA(1);
 
                         s = -1;
-                        if ( ((LA12_28>='\u0000' && LA12_28<='\uFFFF')) ) {s = 69;}
+                        if ( ((LA12_29>='\u0000' && LA12_29<='\uFFFF')) ) {s = 70;}
 
                         else s = 32;
 
@@ -1992,27 +2027,27 @@ public class InternalActivitiesDSLLexer extends Lexer {
                         int LA12_0 = input.LA(1);
 
                         s = -1;
-                        if ( (LA12_0=='r') ) {s = 1;}
+                        if ( (LA12_0=='n') ) {s = 1;}
 
-                        else if ( (LA12_0=='c') ) {s = 2;}
+                        else if ( (LA12_0=='r') ) {s = 2;}
 
-                        else if ( (LA12_0=='{') ) {s = 3;}
+                        else if ( (LA12_0=='c') ) {s = 3;}
 
-                        else if ( (LA12_0=='}') ) {s = 4;}
+                        else if ( (LA12_0=='{') ) {s = 4;}
 
-                        else if ( (LA12_0=='a') ) {s = 5;}
+                        else if ( (LA12_0=='}') ) {s = 5;}
 
-                        else if ( (LA12_0=='f') ) {s = 6;}
+                        else if ( (LA12_0=='a') ) {s = 6;}
 
-                        else if ( (LA12_0=='t') ) {s = 7;}
+                        else if ( (LA12_0=='f') ) {s = 7;}
 
-                        else if ( (LA12_0=='[') ) {s = 8;}
+                        else if ( (LA12_0=='t') ) {s = 8;}
 
-                        else if ( (LA12_0=='&') ) {s = 9;}
+                        else if ( (LA12_0=='[') ) {s = 9;}
 
-                        else if ( (LA12_0==']') ) {s = 10;}
+                        else if ( (LA12_0=='&') ) {s = 10;}
 
-                        else if ( (LA12_0=='n') ) {s = 11;}
+                        else if ( (LA12_0==']') ) {s = 11;}
 
                         else if ( (LA12_0=='d') ) {s = 12;}
 
@@ -2059,10 +2094,10 @@ public class InternalActivitiesDSLLexer extends Lexer {
                         if ( s>=0 ) return s;
                         break;
                     case 2 : 
-                        int LA12_29 = input.LA(1);
+                        int LA12_28 = input.LA(1);
 
                         s = -1;
-                        if ( ((LA12_29>='\u0000' && LA12_29<='\uFFFF')) ) {s = 69;}
+                        if ( ((LA12_28>='\u0000' && LA12_28<='\uFFFF')) ) {s = 70;}
 
                         else s = 32;
 

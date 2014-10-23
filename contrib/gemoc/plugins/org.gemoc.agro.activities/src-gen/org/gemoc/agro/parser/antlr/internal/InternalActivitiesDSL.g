@@ -78,19 +78,41 @@ ruleModel returns [EObject current=null]
     @init { enterRule(); 
     }
     @after { leaveRule(); }:
-((
+(	otherlv_0='name' 
+    {
+    	newLeafNode(otherlv_0, grammarAccess.getModelAccess().getNameKeyword_0());
+    }
+(
+(
+		lv_name_1_0=RULE_ID
+		{
+			newLeafNode(lv_name_1_0, grammarAccess.getModelAccess().getNameIDTerminalRuleCall_1_0()); 
+		}
+		{
+	        if ($current==null) {
+	            $current = createModelElement(grammarAccess.getModelRule());
+	        }
+       		setWithLastConsumed(
+       			$current, 
+       			"name",
+        		lv_name_1_0, 
+        		"ID");
+	    }
+
+)
+)(
 (
 		{ 
-	        newCompositeNode(grammarAccess.getModelAccess().getCulturesCultureParserRuleCall_0_0()); 
+	        newCompositeNode(grammarAccess.getModelAccess().getCulturesCultureParserRuleCall_2_0()); 
 	    }
-		lv_cultures_0_0=ruleCulture		{
+		lv_cultures_2_0=ruleCulture		{
 	        if ($current==null) {
 	            $current = createModelElementForParent(grammarAccess.getModelRule());
 	        }
        		add(
        			$current, 
        			"cultures",
-        		lv_cultures_0_0, 
+        		lv_cultures_2_0, 
         		"Culture");
 	        afterParserOrEnumRuleCall();
 	    }
@@ -99,16 +121,16 @@ ruleModel returns [EObject current=null]
 )*(
 (
 		{ 
-	        newCompositeNode(grammarAccess.getModelAccess().getResourceKindsResourceKindParserRuleCall_1_0()); 
+	        newCompositeNode(grammarAccess.getModelAccess().getResourceKindsResourceKindParserRuleCall_3_0()); 
 	    }
-		lv_resourceKinds_1_0=ruleResourceKind		{
+		lv_resourceKinds_3_0=ruleResourceKind		{
 	        if ($current==null) {
 	            $current = createModelElementForParent(grammarAccess.getModelRule());
 	        }
        		add(
        			$current, 
        			"resourceKinds",
-        		lv_resourceKinds_1_0, 
+        		lv_resourceKinds_3_0, 
         		"ResourceKind");
 	        afterParserOrEnumRuleCall();
 	    }

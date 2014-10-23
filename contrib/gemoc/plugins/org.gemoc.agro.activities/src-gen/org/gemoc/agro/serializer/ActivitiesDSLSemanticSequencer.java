@@ -159,7 +159,7 @@ public class ActivitiesDSLSemanticSequencer extends AbstractDelegatingSemanticSe
 	
 	/**
 	 * Constraint:
-	 *     (cultures+=Culture* resourceKinds+=ResourceKind*)
+	 *     (name=ID cultures+=Culture* resourceKinds+=ResourceKind*)
 	 */
 	protected void sequence_Model(EObject context, Model semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);

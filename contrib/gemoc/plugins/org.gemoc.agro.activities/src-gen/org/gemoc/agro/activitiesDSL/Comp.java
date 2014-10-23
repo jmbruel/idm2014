@@ -20,198 +20,204 @@ import org.eclipse.emf.common.util.Enumerator;
 public enum Comp implements Enumerator
 {
   /**
-	 * The '<em><b>More Than</b></em>' literal object.
-	 * <!-- begin-user-doc -->
+   * The '<em><b>More Than</b></em>' literal object.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #MORE_THAN_VALUE
-	 * @generated
-	 * @ordered
-	 */
+   * @see #MORE_THAN_VALUE
+   * @generated
+   * @ordered
+   */
   MORE_THAN(0, "moreThan", ">"),
 
   /**
-	 * The '<em><b>Less Than</b></em>' literal object.
-	 * <!-- begin-user-doc -->
+   * The '<em><b>Less Than</b></em>' literal object.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #LESS_THAN_VALUE
-	 * @generated
-	 * @ordered
-	 */
+   * @see #LESS_THAN_VALUE
+   * @generated
+   * @ordered
+   */
   LESS_THAN(1, "lessThan", "<");
 
   /**
-	 * The '<em><b>More Than</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+   * The '<em><b>More Than</b></em>' literal value.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of '<em><b>More Than</b></em>' literal object isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @see #MORE_THAN
-	 * @model name="moreThan" literal=">"
-	 * @generated
-	 * @ordered
-	 */
+   * @see #MORE_THAN
+   * @model name="moreThan" literal=">"
+   * @generated
+   * @ordered
+   */
   public static final int MORE_THAN_VALUE = 0;
 
   /**
-	 * The '<em><b>Less Than</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+   * The '<em><b>Less Than</b></em>' literal value.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of '<em><b>Less Than</b></em>' literal object isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @see #LESS_THAN
-	 * @model name="lessThan" literal="<"
-	 * @generated
-	 * @ordered
-	 */
+   * @see #LESS_THAN
+   * @model name="lessThan" literal="<"
+   * @generated
+   * @ordered
+   */
   public static final int LESS_THAN_VALUE = 1;
 
   /**
-	 * An array of all the '<em><b>Comp</b></em>' enumerators.
-	 * <!-- begin-user-doc -->
+   * An array of all the '<em><b>Comp</b></em>' enumerators.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   private static final Comp[] VALUES_ARRAY =
-    new Comp[] {
-			MORE_THAN,
-			LESS_THAN,
-		};
+    new Comp[]
+    {
+      MORE_THAN,
+      LESS_THAN,
+    };
 
   /**
-	 * A public read-only list of all the '<em><b>Comp</b></em>' enumerators.
-	 * <!-- begin-user-doc -->
+   * A public read-only list of all the '<em><b>Comp</b></em>' enumerators.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public static final List<Comp> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
 
   /**
-	 * Returns the '<em><b>Comp</b></em>' literal with the specified literal value.
-	 * <!-- begin-user-doc -->
+   * Returns the '<em><b>Comp</b></em>' literal with the specified literal value.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public static Comp get(String literal)
   {
-		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
-			Comp result = VALUES_ARRAY[i];
-			if (result.toString().equals(literal)) {
-				return result;
-			}
-		}
-		return null;
-	}
+    for (int i = 0; i < VALUES_ARRAY.length; ++i)
+    {
+      Comp result = VALUES_ARRAY[i];
+      if (result.toString().equals(literal))
+      {
+        return result;
+      }
+    }
+    return null;
+  }
 
   /**
-	 * Returns the '<em><b>Comp</b></em>' literal with the specified name.
-	 * <!-- begin-user-doc -->
+   * Returns the '<em><b>Comp</b></em>' literal with the specified name.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public static Comp getByName(String name)
   {
-		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
-			Comp result = VALUES_ARRAY[i];
-			if (result.getName().equals(name)) {
-				return result;
-			}
-		}
-		return null;
-	}
+    for (int i = 0; i < VALUES_ARRAY.length; ++i)
+    {
+      Comp result = VALUES_ARRAY[i];
+      if (result.getName().equals(name))
+      {
+        return result;
+      }
+    }
+    return null;
+  }
 
   /**
-	 * Returns the '<em><b>Comp</b></em>' literal with the specified integer value.
-	 * <!-- begin-user-doc -->
+   * Returns the '<em><b>Comp</b></em>' literal with the specified integer value.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public static Comp get(int value)
   {
-		switch (value) {
-			case MORE_THAN_VALUE: return MORE_THAN;
-			case LESS_THAN_VALUE: return LESS_THAN;
-		}
-		return null;
-	}
+    switch (value)
+    {
+      case MORE_THAN_VALUE: return MORE_THAN;
+      case LESS_THAN_VALUE: return LESS_THAN;
+    }
+    return null;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   private final int value;
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   private final String name;
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   private final String literal;
 
   /**
-	 * Only this class can construct instances.
-	 * <!-- begin-user-doc -->
+   * Only this class can construct instances.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   private Comp(int value, String name, String literal)
   {
-		this.value = value;
-		this.name = name;
-		this.literal = literal;
-	}
+    this.value = value;
+    this.name = name;
+    this.literal = literal;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public int getValue()
   {
-	  return value;
-	}
+    return value;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public String getName()
   {
-	  return name;
-	}
+    return name;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public String getLiteral()
   {
-	  return literal;
-	}
+    return literal;
+  }
 
   /**
-	 * Returns the literal value of the enumerator, which is its string representation.
-	 * <!-- begin-user-doc -->
+   * Returns the literal value of the enumerator, which is its string representation.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public String toString()
   {
-		return literal;
-	}
+    return literal;
+  }
   
 } //Comp
