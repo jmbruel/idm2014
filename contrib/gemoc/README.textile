@@ -47,3 +47,25 @@ assigned to a given workgroup.
 Both syntaxes are used togethers, the exploitation diagram represents the activities so that what each of the exploitation workshops is assigned to do.
 
 !images/agrodsl-instances.png!
+
+h1. Leveraging the models
+
+The models can be leveraged by different means. Using model to text transformation one can generate reports based on the simulation results. Here 
+is a transformation template: 
+
+!images/agro-gensimuhtml.png!
+
+or could directly generate code to launch the simulation using a specific platform like DEVs:
+
+!images/agro-genexpdevs.png!
+
+A Java API is also generated allowing to load the exploitation, activities and simulation data and manipulate those in a platform-agnostic way.
+
+!images/agro-javaapi.png!
+
+
+
+h1. Deploying the tooling
+
+This tooling made of Eclipse Plugins which can be built and archived in a so-called *update-site* with a single right-click. 
+It can be deployed as a standalone product directly executable on Windows, Linux and MacOSX or installed in a pre-existing Eclipse instance.
