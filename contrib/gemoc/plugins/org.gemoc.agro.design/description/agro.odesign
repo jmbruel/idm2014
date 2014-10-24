@@ -19,7 +19,7 @@
             </sections>
           </style>
         </nodeMappings>
-        <nodeMappings name="Resource" domainClass="exploitation.Resource">
+        <nodeMappings name="Resource" labelDirectEdit="//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Activities']/@defaultLayer/@toolSections.0/@ownedTools[name='Set%20name']" domainClass="exploitation.Resource">
           <style xsi:type="style:BundledImageDescription" showIcon="false" resizeKind="NSEW" shape="triangle">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -71,7 +71,7 @@
             </centerLabelStyleDescription>
           </style>
         </edgeMappings>
-        <containerMappings name="WorkGroup" domainClass="exploitation.WorkGroup">
+        <containerMappings name="WorkGroup" labelDirectEdit="//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Activities']/@defaultLayer/@toolSections.0/@ownedTools[name='Set%20name']" domainClass="exploitation.WorkGroup">
           <subNodeMappings name="WorkgroupSurface" semanticCandidatesExpression="var:self" domainClass="exploitation.WorkGroup">
             <style xsi:type="style:GaugeCompositeStyleDescription" showIcon="false" labelExpression="assigned" sizeComputationExpression="6" resizeKind="NSEW">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -202,7 +202,7 @@
             </centerLabelStyleDescription>
           </style>
         </edgeMappings>
-        <containerMappings name="ActivityContainer" semanticCandidatesExpression="feature:eAllContents" domainClass="activitiesDSL.ExploitationActivity" childrenPresentation="List">
+        <containerMappings name="ActivityContainer" labelDirectEdit="//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Activities']/@defaultLayer/@toolSections.0/@ownedTools[name='Set%20name']" semanticCandidatesExpression="feature:eAllContents" domainClass="activitiesDSL.ExploitationActivity" childrenPresentation="List">
           <subNodeMappings name="Predicates" semanticCandidatesExpression="feature:eAllContents" domainClass="activitiesDSL.Predicate">
             <style xsi:type="style:BundledImageDescription" labelExpression="[self.eClass().name/]" resizeKind="NSEW">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -229,6 +229,12 @@
                   <subModelOperations xsi:type="tool_1:SetValue" featureName="prerequisite" valueExpression="var:target"/>
                 </subModelOperations>
               </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DirectEditLabel" name="Set name">
+            <mask mask="{0}"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="var:0"/>
             </initialOperation>
           </ownedTools>
         </toolSections>
