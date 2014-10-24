@@ -5,17 +5,67 @@ This contains an implementation of the "Exploitation" use case through technolog
 
 Three DSLs are defined and used in an integrated way to provide tooling and analysis capabilities over an exploitation.
 
+!images/agrodsl-meta.png!
+
+
 h2. Activities DSL
 
 Its purpose is to capture a static definition of the rules related to some cultures : how they are split in activities
 and what might trigger an activity. It also provides a textual syntax (based on Xtext) which makes it 
 easier to specific the requirements and to compose expressions.
 
+!images/agro-activitiesecore.png!
+
 h2. Exploitation DSL
 
 It is used to capture the structure of a given exploitation. Its break down in fields, the available resources and how
 the workgroups are setup in the exploitation.
 
+!images/agro-exploitationecore.png!
+
 h2. Simulation DSL
 
 It is used to capture simulation settings and result : a calendar of the activities scheduling.
+
+!images/agro-simulationecore.png!
+
+
+h1. Syntaxes
+
+A textual syntax is used to describe the agricultural activites. Text is more suited for this case as it is composed of expressions and predicates which can be 
+composed togethers.
+
+A graphical syntax is used to describe the exploitation structure. Graphics are more suited in this case as they give a birds-eye view and we 
+can use the shapes size and colors to convey information which helps the analysis :
+- the size of the *Fields* shapes matches the area of those fields.
+- the color of the fields represents the fact that they are fodder and watered or not.
+- *gauges* are used to represent the ratio of the watered fields (W) fodder fields (F) and non watered non fodder fields (N) which is 
+assigned to a given workgroup.
+
+!images/agrodsl-exploitation.png!
+
+Both syntaxes are used togethers, the exploitation diagram represents the activities so that what each of the exploitation workshops is assigned to do.
+
+!images/agrodsl-instances.png!
+
+h1. Leveraging the models
+
+The models can be leveraged by different means. Using model to text transformation one can generate reports based on the simulation results. Here 
+is a transformation template: 
+
+!images/agro-gensimuhtml.png!
+
+or could directly generate code to launch the simulation using a specific platform like DEVs:
+
+!images/agro-genexpdevs.png!
+
+A Java API is also generated allowing to load the exploitation, activities and simulation data and manipulate those in a platform-agnostic way.
+
+!images/agro-javaapi.png!
+
+
+
+h1. Deploying the tooling
+
+This tooling made of Eclipse Plugins which can be built and archived in a so-called *update-site* with a single right-click. 
+It can be deployed as a standalone product directly executable on Windows, Linux and MacOSX or installed in a pre-existing Eclipse instance.
