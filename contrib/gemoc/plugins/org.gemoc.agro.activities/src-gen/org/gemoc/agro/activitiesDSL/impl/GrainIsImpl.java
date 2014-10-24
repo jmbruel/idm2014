@@ -27,150 +27,146 @@ import org.gemoc.agro.activitiesDSL.GrainIs;
 public class GrainIsImpl extends PredicateImpl implements GrainIs
 {
   /**
-   * The default value of the '{@link #getState() <em>State</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getState() <em>State</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getState()
-   * @generated
-   * @ordered
-   */
+	 * @see #getState()
+	 * @generated
+	 * @ordered
+	 */
   protected static final String STATE_EDEFAULT = null;
 
   /**
-   * The cached value of the '{@link #getState() <em>State</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getState() <em>State</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getState()
-   * @generated
-   * @ordered
-   */
+	 * @see #getState()
+	 * @generated
+	 * @ordered
+	 */
   protected String state = STATE_EDEFAULT;
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   protected GrainIsImpl()
   {
-    super();
-  }
+		super();
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   protected EClass eStaticClass()
   {
-    return ActivitiesDSLPackage.Literals.GRAIN_IS;
-  }
+		return ActivitiesDSLPackage.Literals.GRAIN_IS;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public String getState()
   {
-    return state;
-  }
+		return state;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public void setState(String newState)
   {
-    String oldState = state;
-    state = newState;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, ActivitiesDSLPackage.GRAIN_IS__STATE, oldState, state));
-  }
+		String oldState = state;
+		state = newState;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ActivitiesDSLPackage.GRAIN_IS__STATE, oldState, state));
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType)
   {
-    switch (featureID)
-    {
-      case ActivitiesDSLPackage.GRAIN_IS__STATE:
-        return getState();
-    }
-    return super.eGet(featureID, resolve, coreType);
-  }
+		switch (featureID) {
+			case ActivitiesDSLPackage.GRAIN_IS__STATE:
+				return getState();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public void eSet(int featureID, Object newValue)
   {
-    switch (featureID)
-    {
-      case ActivitiesDSLPackage.GRAIN_IS__STATE:
-        setState((String)newValue);
-        return;
-    }
-    super.eSet(featureID, newValue);
-  }
+		switch (featureID) {
+			case ActivitiesDSLPackage.GRAIN_IS__STATE:
+				setState((String)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public void eUnset(int featureID)
   {
-    switch (featureID)
-    {
-      case ActivitiesDSLPackage.GRAIN_IS__STATE:
-        setState(STATE_EDEFAULT);
-        return;
-    }
-    super.eUnset(featureID);
-  }
+		switch (featureID) {
+			case ActivitiesDSLPackage.GRAIN_IS__STATE:
+				setState(STATE_EDEFAULT);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public boolean eIsSet(int featureID)
   {
-    switch (featureID)
-    {
-      case ActivitiesDSLPackage.GRAIN_IS__STATE:
-        return STATE_EDEFAULT == null ? state != null : !STATE_EDEFAULT.equals(state);
-    }
-    return super.eIsSet(featureID);
-  }
+		switch (featureID) {
+			case ActivitiesDSLPackage.GRAIN_IS__STATE:
+				return STATE_EDEFAULT == null ? state != null : !STATE_EDEFAULT.equals(state);
+		}
+		return super.eIsSet(featureID);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public String toString()
   {
-    if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-    StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (state: ");
-    result.append(state);
-    result.append(')');
-    return result.toString();
-  }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (state: ");
+		result.append(state);
+		result.append(')');
+		return result.toString();
+	}
 
 } //GrainIsImpl

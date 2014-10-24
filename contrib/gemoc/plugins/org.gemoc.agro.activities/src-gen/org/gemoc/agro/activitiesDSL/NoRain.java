@@ -22,29 +22,29 @@ package org.gemoc.agro.activitiesDSL;
 public interface NoRain extends Predicate
 {
   /**
-   * Returns the value of the '<em><b>Days</b></em>' attribute.
-   * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Days</b></em>' attribute.
+	 * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Days</em>' attribute isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Days</em>' attribute.
-   * @see #setDays(int)
-   * @see org.gemoc.agro.activitiesDSL.ActivitiesDSLPackage#getNoRain_Days()
-   * @model
-   * @generated
-   */
+	 * @return the value of the '<em>Days</em>' attribute.
+	 * @see #setDays(int)
+	 * @see org.gemoc.agro.activitiesDSL.ActivitiesDSLPackage#getNoRain_Days()
+	 * @model
+	 * @generated
+	 */
   int getDays();
 
   /**
-   * Sets the value of the '{@link org.gemoc.agro.activitiesDSL.NoRain#getDays <em>Days</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.gemoc.agro.activitiesDSL.NoRain#getDays <em>Days</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Days</em>' attribute.
-   * @see #getDays()
-   * @generated
-   */
+	 * @param value the new value of the '<em>Days</em>' attribute.
+	 * @see #getDays()
+	 * @generated
+	 */
   void setDays(int value);
 
 } // NoRain

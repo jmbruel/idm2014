@@ -21,24 +21,24 @@ import org.gemoc.agro.activitiesDSL.Predicate;
 public class PredicateImpl extends MinimalEObjectImpl.Container implements Predicate
 {
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   protected PredicateImpl()
   {
-    super();
-  }
+		super();
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   protected EClass eStaticClass()
   {
-    return ActivitiesDSLPackage.Literals.PREDICATE;
-  }
+		return ActivitiesDSLPackage.Literals.PREDICATE;
+	}
 
 } //PredicateImpl

@@ -22,7 +22,7 @@ import java.util.ArrayList;
 @SuppressWarnings("all")
 public class InternalActivitiesDSLParser extends AbstractInternalContentAssistParser {
     public static final String[] tokenNames = new String[] {
-        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_ID", "RULE_INT", "RULE_STRING", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'jan'", "'feb'", "'mar'", "'apr'", "'may'", "'jun'", "'jul'", "'aug'", "'sept'", "'oct'", "'nov'", "'dec'", "'>'", "'<'", "'\\u00B0C'", "'\\u00B0F'", "'once'", "'daily'", "'weekly'", "'monthly'", "'quaterly'", "'yearly'", "'name'", "'resource'", "'culture'", "'{'", "'}'", "'activity'", "'from '", "'to'", "'['", "']'", "'&&'", "'no rain since'", "'days'", "'temperature'", "'after'", "'is done since'", "'grain is'"
+        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_ID", "RULE_INT", "RULE_STRING", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'jan'", "'feb'", "'mar'", "'apr'", "'may'", "'jun'", "'jul'", "'aug'", "'sept'", "'oct'", "'nov'", "'dec'", "'>'", "'<'", "'\\u00B0C'", "'\\u00B0F'", "'once'", "'daily'", "'weekly'", "'monthly'", "'quaterly'", "'yearly'", "'resource'", "'culture'", "'{'", "'}'", "'activity'", "'from '", "'to'", "'['", "']'", "'&&'", "'no rain since'", "'days'", "'temperature'", "'after'", "'is done since'", "'grain is'"
     };
     public static final int RULE_ID=4;
     public static final int T__29=29;
@@ -56,7 +56,6 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
     public static final int T__44=44;
     public static final int T__45=45;
     public static final int T__48=48;
-    public static final int T__49=49;
     public static final int RULE_SL_COMMENT=8;
     public static final int RULE_ML_COMMENT=7;
     public static final int T__30=30;
@@ -1077,22 +1076,22 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
             // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:420:1: ( ( ruleNoRain ) | ( ruleTempOfTheDay ) | ( ruleDelaySinceActivy ) | ( ruleGrainIs ) )
             int alt1=4;
             switch ( input.LA(1) ) {
-            case 44:
+            case 43:
                 {
                 alt1=1;
                 }
                 break;
-            case 46:
+            case 45:
                 {
                 alt1=2;
                 }
                 break;
-            case 47:
+            case 46:
                 {
                 alt1=3;
                 }
                 break;
-            case 49:
+            case 48:
                 {
                 alt1=4;
                 }
@@ -1941,21 +1940,49 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__Model__Group__0__Impl"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:658:1: rule__Model__Group__0__Impl : ( 'name' ) ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:658:1: rule__Model__Group__0__Impl : ( ( rule__Model__CulturesAssignment_0 )* ) ;
     public final void rule__Model__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:662:1: ( ( 'name' ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:663:1: ( 'name' )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:662:1: ( ( ( rule__Model__CulturesAssignment_0 )* ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:663:1: ( ( rule__Model__CulturesAssignment_0 )* )
             {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:663:1: ( 'name' )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:664:1: 'name'
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:663:1: ( ( rule__Model__CulturesAssignment_0 )* )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:664:1: ( rule__Model__CulturesAssignment_0 )*
             {
-             before(grammarAccess.getModelAccess().getNameKeyword_0()); 
-            match(input,33,FOLLOW_33_in_rule__Model__Group__0__Impl1448); 
-             after(grammarAccess.getModelAccess().getNameKeyword_0()); 
+             before(grammarAccess.getModelAccess().getCulturesAssignment_0()); 
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:665:1: ( rule__Model__CulturesAssignment_0 )*
+            loop6:
+            do {
+                int alt6=2;
+                int LA6_0 = input.LA(1);
+
+                if ( (LA6_0==34) ) {
+                    alt6=1;
+                }
+
+
+                switch (alt6) {
+            	case 1 :
+            	    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:665:2: rule__Model__CulturesAssignment_0
+            	    {
+            	    pushFollow(FOLLOW_rule__Model__CulturesAssignment_0_in_rule__Model__Group__0__Impl1447);
+            	    rule__Model__CulturesAssignment_0();
+
+            	    state._fsp--;
+
+
+            	    }
+            	    break;
+
+            	default :
+            	    break loop6;
+                }
+            } while (true);
+
+             after(grammarAccess.getModelAccess().getCulturesAssignment_0()); 
 
             }
 
@@ -1978,22 +2005,17 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__Model__Group__1"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:677:1: rule__Model__Group__1 : rule__Model__Group__1__Impl rule__Model__Group__2 ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:675:1: rule__Model__Group__1 : rule__Model__Group__1__Impl ;
     public final void rule__Model__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:681:1: ( rule__Model__Group__1__Impl rule__Model__Group__2 )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:682:2: rule__Model__Group__1__Impl rule__Model__Group__2
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:679:1: ( rule__Model__Group__1__Impl )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:680:2: rule__Model__Group__1__Impl
             {
-            pushFollow(FOLLOW_rule__Model__Group__1__Impl_in_rule__Model__Group__11479);
+            pushFollow(FOLLOW_rule__Model__Group__1__Impl_in_rule__Model__Group__11478);
             rule__Model__Group__1__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_rule__Model__Group__2_in_rule__Model__Group__11482);
-            rule__Model__Group__2();
 
             state._fsp--;
 
@@ -2016,31 +2038,49 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__Model__Group__1__Impl"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:689:1: rule__Model__Group__1__Impl : ( ( rule__Model__NameAssignment_1 ) ) ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:686:1: rule__Model__Group__1__Impl : ( ( rule__Model__ResourceKindsAssignment_1 )* ) ;
     public final void rule__Model__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:693:1: ( ( ( rule__Model__NameAssignment_1 ) ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:694:1: ( ( rule__Model__NameAssignment_1 ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:690:1: ( ( ( rule__Model__ResourceKindsAssignment_1 )* ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:691:1: ( ( rule__Model__ResourceKindsAssignment_1 )* )
             {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:694:1: ( ( rule__Model__NameAssignment_1 ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:695:1: ( rule__Model__NameAssignment_1 )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:691:1: ( ( rule__Model__ResourceKindsAssignment_1 )* )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:692:1: ( rule__Model__ResourceKindsAssignment_1 )*
             {
-             before(grammarAccess.getModelAccess().getNameAssignment_1()); 
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:696:1: ( rule__Model__NameAssignment_1 )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:696:2: rule__Model__NameAssignment_1
-            {
-            pushFollow(FOLLOW_rule__Model__NameAssignment_1_in_rule__Model__Group__1__Impl1509);
-            rule__Model__NameAssignment_1();
+             before(grammarAccess.getModelAccess().getResourceKindsAssignment_1()); 
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:693:1: ( rule__Model__ResourceKindsAssignment_1 )*
+            loop7:
+            do {
+                int alt7=2;
+                int LA7_0 = input.LA(1);
 
-            state._fsp--;
+                if ( (LA7_0==33) ) {
+                    alt7=1;
+                }
 
 
-            }
+                switch (alt7) {
+            	case 1 :
+            	    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:693:2: rule__Model__ResourceKindsAssignment_1
+            	    {
+            	    pushFollow(FOLLOW_rule__Model__ResourceKindsAssignment_1_in_rule__Model__Group__1__Impl1505);
+            	    rule__Model__ResourceKindsAssignment_1();
 
-             after(grammarAccess.getModelAccess().getNameAssignment_1()); 
+            	    state._fsp--;
+
+
+            	    }
+            	    break;
+
+            	default :
+            	    break loop7;
+                }
+            } while (true);
+
+             after(grammarAccess.getModelAccess().getResourceKindsAssignment_1()); 
 
             }
 
@@ -2062,223 +2102,22 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
     // $ANTLR end "rule__Model__Group__1__Impl"
 
 
-    // $ANTLR start "rule__Model__Group__2"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:706:1: rule__Model__Group__2 : rule__Model__Group__2__Impl rule__Model__Group__3 ;
-    public final void rule__Model__Group__2() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:710:1: ( rule__Model__Group__2__Impl rule__Model__Group__3 )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:711:2: rule__Model__Group__2__Impl rule__Model__Group__3
-            {
-            pushFollow(FOLLOW_rule__Model__Group__2__Impl_in_rule__Model__Group__21539);
-            rule__Model__Group__2__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_rule__Model__Group__3_in_rule__Model__Group__21542);
-            rule__Model__Group__3();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Model__Group__2"
-
-
-    // $ANTLR start "rule__Model__Group__2__Impl"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:718:1: rule__Model__Group__2__Impl : ( ( rule__Model__CulturesAssignment_2 )* ) ;
-    public final void rule__Model__Group__2__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:722:1: ( ( ( rule__Model__CulturesAssignment_2 )* ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:723:1: ( ( rule__Model__CulturesAssignment_2 )* )
-            {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:723:1: ( ( rule__Model__CulturesAssignment_2 )* )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:724:1: ( rule__Model__CulturesAssignment_2 )*
-            {
-             before(grammarAccess.getModelAccess().getCulturesAssignment_2()); 
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:725:1: ( rule__Model__CulturesAssignment_2 )*
-            loop6:
-            do {
-                int alt6=2;
-                int LA6_0 = input.LA(1);
-
-                if ( (LA6_0==35) ) {
-                    alt6=1;
-                }
-
-
-                switch (alt6) {
-            	case 1 :
-            	    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:725:2: rule__Model__CulturesAssignment_2
-            	    {
-            	    pushFollow(FOLLOW_rule__Model__CulturesAssignment_2_in_rule__Model__Group__2__Impl1569);
-            	    rule__Model__CulturesAssignment_2();
-
-            	    state._fsp--;
-
-
-            	    }
-            	    break;
-
-            	default :
-            	    break loop6;
-                }
-            } while (true);
-
-             after(grammarAccess.getModelAccess().getCulturesAssignment_2()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Model__Group__2__Impl"
-
-
-    // $ANTLR start "rule__Model__Group__3"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:735:1: rule__Model__Group__3 : rule__Model__Group__3__Impl ;
-    public final void rule__Model__Group__3() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:739:1: ( rule__Model__Group__3__Impl )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:740:2: rule__Model__Group__3__Impl
-            {
-            pushFollow(FOLLOW_rule__Model__Group__3__Impl_in_rule__Model__Group__31600);
-            rule__Model__Group__3__Impl();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Model__Group__3"
-
-
-    // $ANTLR start "rule__Model__Group__3__Impl"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:746:1: rule__Model__Group__3__Impl : ( ( rule__Model__ResourceKindsAssignment_3 )* ) ;
-    public final void rule__Model__Group__3__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:750:1: ( ( ( rule__Model__ResourceKindsAssignment_3 )* ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:751:1: ( ( rule__Model__ResourceKindsAssignment_3 )* )
-            {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:751:1: ( ( rule__Model__ResourceKindsAssignment_3 )* )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:752:1: ( rule__Model__ResourceKindsAssignment_3 )*
-            {
-             before(grammarAccess.getModelAccess().getResourceKindsAssignment_3()); 
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:753:1: ( rule__Model__ResourceKindsAssignment_3 )*
-            loop7:
-            do {
-                int alt7=2;
-                int LA7_0 = input.LA(1);
-
-                if ( (LA7_0==34) ) {
-                    alt7=1;
-                }
-
-
-                switch (alt7) {
-            	case 1 :
-            	    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:753:2: rule__Model__ResourceKindsAssignment_3
-            	    {
-            	    pushFollow(FOLLOW_rule__Model__ResourceKindsAssignment_3_in_rule__Model__Group__3__Impl1627);
-            	    rule__Model__ResourceKindsAssignment_3();
-
-            	    state._fsp--;
-
-
-            	    }
-            	    break;
-
-            	default :
-            	    break loop7;
-                }
-            } while (true);
-
-             after(grammarAccess.getModelAccess().getResourceKindsAssignment_3()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Model__Group__3__Impl"
-
-
     // $ANTLR start "rule__ResourceKind__Group__0"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:771:1: rule__ResourceKind__Group__0 : rule__ResourceKind__Group__0__Impl rule__ResourceKind__Group__1 ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:707:1: rule__ResourceKind__Group__0 : rule__ResourceKind__Group__0__Impl rule__ResourceKind__Group__1 ;
     public final void rule__ResourceKind__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:775:1: ( rule__ResourceKind__Group__0__Impl rule__ResourceKind__Group__1 )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:776:2: rule__ResourceKind__Group__0__Impl rule__ResourceKind__Group__1
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:711:1: ( rule__ResourceKind__Group__0__Impl rule__ResourceKind__Group__1 )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:712:2: rule__ResourceKind__Group__0__Impl rule__ResourceKind__Group__1
             {
-            pushFollow(FOLLOW_rule__ResourceKind__Group__0__Impl_in_rule__ResourceKind__Group__01666);
+            pushFollow(FOLLOW_rule__ResourceKind__Group__0__Impl_in_rule__ResourceKind__Group__01540);
             rule__ResourceKind__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__ResourceKind__Group__1_in_rule__ResourceKind__Group__01669);
+            pushFollow(FOLLOW_rule__ResourceKind__Group__1_in_rule__ResourceKind__Group__01543);
             rule__ResourceKind__Group__1();
 
             state._fsp--;
@@ -2302,20 +2141,20 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__ResourceKind__Group__0__Impl"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:783:1: rule__ResourceKind__Group__0__Impl : ( 'resource' ) ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:719:1: rule__ResourceKind__Group__0__Impl : ( 'resource' ) ;
     public final void rule__ResourceKind__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:787:1: ( ( 'resource' ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:788:1: ( 'resource' )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:723:1: ( ( 'resource' ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:724:1: ( 'resource' )
             {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:788:1: ( 'resource' )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:789:1: 'resource'
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:724:1: ( 'resource' )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:725:1: 'resource'
             {
              before(grammarAccess.getResourceKindAccess().getResourceKeyword_0()); 
-            match(input,34,FOLLOW_34_in_rule__ResourceKind__Group__0__Impl1697); 
+            match(input,33,FOLLOW_33_in_rule__ResourceKind__Group__0__Impl1571); 
              after(grammarAccess.getResourceKindAccess().getResourceKeyword_0()); 
 
             }
@@ -2339,16 +2178,16 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__ResourceKind__Group__1"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:802:1: rule__ResourceKind__Group__1 : rule__ResourceKind__Group__1__Impl ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:738:1: rule__ResourceKind__Group__1 : rule__ResourceKind__Group__1__Impl ;
     public final void rule__ResourceKind__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:806:1: ( rule__ResourceKind__Group__1__Impl )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:807:2: rule__ResourceKind__Group__1__Impl
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:742:1: ( rule__ResourceKind__Group__1__Impl )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:743:2: rule__ResourceKind__Group__1__Impl
             {
-            pushFollow(FOLLOW_rule__ResourceKind__Group__1__Impl_in_rule__ResourceKind__Group__11728);
+            pushFollow(FOLLOW_rule__ResourceKind__Group__1__Impl_in_rule__ResourceKind__Group__11602);
             rule__ResourceKind__Group__1__Impl();
 
             state._fsp--;
@@ -2372,23 +2211,23 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__ResourceKind__Group__1__Impl"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:813:1: rule__ResourceKind__Group__1__Impl : ( ( rule__ResourceKind__NameAssignment_1 ) ) ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:749:1: rule__ResourceKind__Group__1__Impl : ( ( rule__ResourceKind__NameAssignment_1 ) ) ;
     public final void rule__ResourceKind__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:817:1: ( ( ( rule__ResourceKind__NameAssignment_1 ) ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:818:1: ( ( rule__ResourceKind__NameAssignment_1 ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:753:1: ( ( ( rule__ResourceKind__NameAssignment_1 ) ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:754:1: ( ( rule__ResourceKind__NameAssignment_1 ) )
             {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:818:1: ( ( rule__ResourceKind__NameAssignment_1 ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:819:1: ( rule__ResourceKind__NameAssignment_1 )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:754:1: ( ( rule__ResourceKind__NameAssignment_1 ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:755:1: ( rule__ResourceKind__NameAssignment_1 )
             {
              before(grammarAccess.getResourceKindAccess().getNameAssignment_1()); 
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:820:1: ( rule__ResourceKind__NameAssignment_1 )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:820:2: rule__ResourceKind__NameAssignment_1
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:756:1: ( rule__ResourceKind__NameAssignment_1 )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:756:2: rule__ResourceKind__NameAssignment_1
             {
-            pushFollow(FOLLOW_rule__ResourceKind__NameAssignment_1_in_rule__ResourceKind__Group__1__Impl1755);
+            pushFollow(FOLLOW_rule__ResourceKind__NameAssignment_1_in_rule__ResourceKind__Group__1__Impl1629);
             rule__ResourceKind__NameAssignment_1();
 
             state._fsp--;
@@ -2419,21 +2258,21 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__Culture__Group__0"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:834:1: rule__Culture__Group__0 : rule__Culture__Group__0__Impl rule__Culture__Group__1 ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:770:1: rule__Culture__Group__0 : rule__Culture__Group__0__Impl rule__Culture__Group__1 ;
     public final void rule__Culture__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:838:1: ( rule__Culture__Group__0__Impl rule__Culture__Group__1 )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:839:2: rule__Culture__Group__0__Impl rule__Culture__Group__1
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:774:1: ( rule__Culture__Group__0__Impl rule__Culture__Group__1 )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:775:2: rule__Culture__Group__0__Impl rule__Culture__Group__1
             {
-            pushFollow(FOLLOW_rule__Culture__Group__0__Impl_in_rule__Culture__Group__01789);
+            pushFollow(FOLLOW_rule__Culture__Group__0__Impl_in_rule__Culture__Group__01663);
             rule__Culture__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Culture__Group__1_in_rule__Culture__Group__01792);
+            pushFollow(FOLLOW_rule__Culture__Group__1_in_rule__Culture__Group__01666);
             rule__Culture__Group__1();
 
             state._fsp--;
@@ -2457,20 +2296,20 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__Culture__Group__0__Impl"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:846:1: rule__Culture__Group__0__Impl : ( 'culture' ) ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:782:1: rule__Culture__Group__0__Impl : ( 'culture' ) ;
     public final void rule__Culture__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:850:1: ( ( 'culture' ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:851:1: ( 'culture' )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:786:1: ( ( 'culture' ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:787:1: ( 'culture' )
             {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:851:1: ( 'culture' )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:852:1: 'culture'
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:787:1: ( 'culture' )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:788:1: 'culture'
             {
              before(grammarAccess.getCultureAccess().getCultureKeyword_0()); 
-            match(input,35,FOLLOW_35_in_rule__Culture__Group__0__Impl1820); 
+            match(input,34,FOLLOW_34_in_rule__Culture__Group__0__Impl1694); 
              after(grammarAccess.getCultureAccess().getCultureKeyword_0()); 
 
             }
@@ -2494,21 +2333,21 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__Culture__Group__1"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:865:1: rule__Culture__Group__1 : rule__Culture__Group__1__Impl rule__Culture__Group__2 ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:801:1: rule__Culture__Group__1 : rule__Culture__Group__1__Impl rule__Culture__Group__2 ;
     public final void rule__Culture__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:869:1: ( rule__Culture__Group__1__Impl rule__Culture__Group__2 )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:870:2: rule__Culture__Group__1__Impl rule__Culture__Group__2
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:805:1: ( rule__Culture__Group__1__Impl rule__Culture__Group__2 )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:806:2: rule__Culture__Group__1__Impl rule__Culture__Group__2
             {
-            pushFollow(FOLLOW_rule__Culture__Group__1__Impl_in_rule__Culture__Group__11851);
+            pushFollow(FOLLOW_rule__Culture__Group__1__Impl_in_rule__Culture__Group__11725);
             rule__Culture__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Culture__Group__2_in_rule__Culture__Group__11854);
+            pushFollow(FOLLOW_rule__Culture__Group__2_in_rule__Culture__Group__11728);
             rule__Culture__Group__2();
 
             state._fsp--;
@@ -2532,23 +2371,23 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__Culture__Group__1__Impl"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:877:1: rule__Culture__Group__1__Impl : ( ( rule__Culture__NameAssignment_1 ) ) ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:813:1: rule__Culture__Group__1__Impl : ( ( rule__Culture__NameAssignment_1 ) ) ;
     public final void rule__Culture__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:881:1: ( ( ( rule__Culture__NameAssignment_1 ) ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:882:1: ( ( rule__Culture__NameAssignment_1 ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:817:1: ( ( ( rule__Culture__NameAssignment_1 ) ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:818:1: ( ( rule__Culture__NameAssignment_1 ) )
             {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:882:1: ( ( rule__Culture__NameAssignment_1 ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:883:1: ( rule__Culture__NameAssignment_1 )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:818:1: ( ( rule__Culture__NameAssignment_1 ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:819:1: ( rule__Culture__NameAssignment_1 )
             {
              before(grammarAccess.getCultureAccess().getNameAssignment_1()); 
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:884:1: ( rule__Culture__NameAssignment_1 )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:884:2: rule__Culture__NameAssignment_1
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:820:1: ( rule__Culture__NameAssignment_1 )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:820:2: rule__Culture__NameAssignment_1
             {
-            pushFollow(FOLLOW_rule__Culture__NameAssignment_1_in_rule__Culture__Group__1__Impl1881);
+            pushFollow(FOLLOW_rule__Culture__NameAssignment_1_in_rule__Culture__Group__1__Impl1755);
             rule__Culture__NameAssignment_1();
 
             state._fsp--;
@@ -2579,21 +2418,21 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__Culture__Group__2"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:894:1: rule__Culture__Group__2 : rule__Culture__Group__2__Impl rule__Culture__Group__3 ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:830:1: rule__Culture__Group__2 : rule__Culture__Group__2__Impl rule__Culture__Group__3 ;
     public final void rule__Culture__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:898:1: ( rule__Culture__Group__2__Impl rule__Culture__Group__3 )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:899:2: rule__Culture__Group__2__Impl rule__Culture__Group__3
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:834:1: ( rule__Culture__Group__2__Impl rule__Culture__Group__3 )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:835:2: rule__Culture__Group__2__Impl rule__Culture__Group__3
             {
-            pushFollow(FOLLOW_rule__Culture__Group__2__Impl_in_rule__Culture__Group__21911);
+            pushFollow(FOLLOW_rule__Culture__Group__2__Impl_in_rule__Culture__Group__21785);
             rule__Culture__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Culture__Group__3_in_rule__Culture__Group__21914);
+            pushFollow(FOLLOW_rule__Culture__Group__3_in_rule__Culture__Group__21788);
             rule__Culture__Group__3();
 
             state._fsp--;
@@ -2617,20 +2456,20 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__Culture__Group__2__Impl"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:906:1: rule__Culture__Group__2__Impl : ( '{' ) ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:842:1: rule__Culture__Group__2__Impl : ( '{' ) ;
     public final void rule__Culture__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:910:1: ( ( '{' ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:911:1: ( '{' )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:846:1: ( ( '{' ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:847:1: ( '{' )
             {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:911:1: ( '{' )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:912:1: '{'
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:847:1: ( '{' )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:848:1: '{'
             {
              before(grammarAccess.getCultureAccess().getLeftCurlyBracketKeyword_2()); 
-            match(input,36,FOLLOW_36_in_rule__Culture__Group__2__Impl1942); 
+            match(input,35,FOLLOW_35_in_rule__Culture__Group__2__Impl1816); 
              after(grammarAccess.getCultureAccess().getLeftCurlyBracketKeyword_2()); 
 
             }
@@ -2654,21 +2493,21 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__Culture__Group__3"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:925:1: rule__Culture__Group__3 : rule__Culture__Group__3__Impl rule__Culture__Group__4 ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:861:1: rule__Culture__Group__3 : rule__Culture__Group__3__Impl rule__Culture__Group__4 ;
     public final void rule__Culture__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:929:1: ( rule__Culture__Group__3__Impl rule__Culture__Group__4 )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:930:2: rule__Culture__Group__3__Impl rule__Culture__Group__4
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:865:1: ( rule__Culture__Group__3__Impl rule__Culture__Group__4 )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:866:2: rule__Culture__Group__3__Impl rule__Culture__Group__4
             {
-            pushFollow(FOLLOW_rule__Culture__Group__3__Impl_in_rule__Culture__Group__31973);
+            pushFollow(FOLLOW_rule__Culture__Group__3__Impl_in_rule__Culture__Group__31847);
             rule__Culture__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Culture__Group__4_in_rule__Culture__Group__31976);
+            pushFollow(FOLLOW_rule__Culture__Group__4_in_rule__Culture__Group__31850);
             rule__Culture__Group__4();
 
             state._fsp--;
@@ -2692,35 +2531,35 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__Culture__Group__3__Impl"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:937:1: rule__Culture__Group__3__Impl : ( ( rule__Culture__ActivitiesAssignment_3 )* ) ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:873:1: rule__Culture__Group__3__Impl : ( ( rule__Culture__ActivitiesAssignment_3 )* ) ;
     public final void rule__Culture__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:941:1: ( ( ( rule__Culture__ActivitiesAssignment_3 )* ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:942:1: ( ( rule__Culture__ActivitiesAssignment_3 )* )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:877:1: ( ( ( rule__Culture__ActivitiesAssignment_3 )* ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:878:1: ( ( rule__Culture__ActivitiesAssignment_3 )* )
             {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:942:1: ( ( rule__Culture__ActivitiesAssignment_3 )* )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:943:1: ( rule__Culture__ActivitiesAssignment_3 )*
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:878:1: ( ( rule__Culture__ActivitiesAssignment_3 )* )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:879:1: ( rule__Culture__ActivitiesAssignment_3 )*
             {
              before(grammarAccess.getCultureAccess().getActivitiesAssignment_3()); 
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:944:1: ( rule__Culture__ActivitiesAssignment_3 )*
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:880:1: ( rule__Culture__ActivitiesAssignment_3 )*
             loop8:
             do {
                 int alt8=2;
                 int LA8_0 = input.LA(1);
 
-                if ( (LA8_0==38) ) {
+                if ( (LA8_0==37) ) {
                     alt8=1;
                 }
 
 
                 switch (alt8) {
             	case 1 :
-            	    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:944:2: rule__Culture__ActivitiesAssignment_3
+            	    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:880:2: rule__Culture__ActivitiesAssignment_3
             	    {
-            	    pushFollow(FOLLOW_rule__Culture__ActivitiesAssignment_3_in_rule__Culture__Group__3__Impl2003);
+            	    pushFollow(FOLLOW_rule__Culture__ActivitiesAssignment_3_in_rule__Culture__Group__3__Impl1877);
             	    rule__Culture__ActivitiesAssignment_3();
 
             	    state._fsp--;
@@ -2757,16 +2596,16 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__Culture__Group__4"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:954:1: rule__Culture__Group__4 : rule__Culture__Group__4__Impl ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:890:1: rule__Culture__Group__4 : rule__Culture__Group__4__Impl ;
     public final void rule__Culture__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:958:1: ( rule__Culture__Group__4__Impl )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:959:2: rule__Culture__Group__4__Impl
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:894:1: ( rule__Culture__Group__4__Impl )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:895:2: rule__Culture__Group__4__Impl
             {
-            pushFollow(FOLLOW_rule__Culture__Group__4__Impl_in_rule__Culture__Group__42034);
+            pushFollow(FOLLOW_rule__Culture__Group__4__Impl_in_rule__Culture__Group__41908);
             rule__Culture__Group__4__Impl();
 
             state._fsp--;
@@ -2790,20 +2629,20 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__Culture__Group__4__Impl"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:965:1: rule__Culture__Group__4__Impl : ( '}' ) ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:901:1: rule__Culture__Group__4__Impl : ( '}' ) ;
     public final void rule__Culture__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:969:1: ( ( '}' ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:970:1: ( '}' )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:905:1: ( ( '}' ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:906:1: ( '}' )
             {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:970:1: ( '}' )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:971:1: '}'
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:906:1: ( '}' )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:907:1: '}'
             {
              before(grammarAccess.getCultureAccess().getRightCurlyBracketKeyword_4()); 
-            match(input,37,FOLLOW_37_in_rule__Culture__Group__4__Impl2062); 
+            match(input,36,FOLLOW_36_in_rule__Culture__Group__4__Impl1936); 
              after(grammarAccess.getCultureAccess().getRightCurlyBracketKeyword_4()); 
 
             }
@@ -2827,21 +2666,21 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__ExploitationActivity__Group__0"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:994:1: rule__ExploitationActivity__Group__0 : rule__ExploitationActivity__Group__0__Impl rule__ExploitationActivity__Group__1 ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:930:1: rule__ExploitationActivity__Group__0 : rule__ExploitationActivity__Group__0__Impl rule__ExploitationActivity__Group__1 ;
     public final void rule__ExploitationActivity__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:998:1: ( rule__ExploitationActivity__Group__0__Impl rule__ExploitationActivity__Group__1 )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:999:2: rule__ExploitationActivity__Group__0__Impl rule__ExploitationActivity__Group__1
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:934:1: ( rule__ExploitationActivity__Group__0__Impl rule__ExploitationActivity__Group__1 )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:935:2: rule__ExploitationActivity__Group__0__Impl rule__ExploitationActivity__Group__1
             {
-            pushFollow(FOLLOW_rule__ExploitationActivity__Group__0__Impl_in_rule__ExploitationActivity__Group__02103);
+            pushFollow(FOLLOW_rule__ExploitationActivity__Group__0__Impl_in_rule__ExploitationActivity__Group__01977);
             rule__ExploitationActivity__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__ExploitationActivity__Group__1_in_rule__ExploitationActivity__Group__02106);
+            pushFollow(FOLLOW_rule__ExploitationActivity__Group__1_in_rule__ExploitationActivity__Group__01980);
             rule__ExploitationActivity__Group__1();
 
             state._fsp--;
@@ -2865,20 +2704,20 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__ExploitationActivity__Group__0__Impl"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1006:1: rule__ExploitationActivity__Group__0__Impl : ( 'activity' ) ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:942:1: rule__ExploitationActivity__Group__0__Impl : ( 'activity' ) ;
     public final void rule__ExploitationActivity__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1010:1: ( ( 'activity' ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1011:1: ( 'activity' )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:946:1: ( ( 'activity' ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:947:1: ( 'activity' )
             {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1011:1: ( 'activity' )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1012:1: 'activity'
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:947:1: ( 'activity' )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:948:1: 'activity'
             {
              before(grammarAccess.getExploitationActivityAccess().getActivityKeyword_0()); 
-            match(input,38,FOLLOW_38_in_rule__ExploitationActivity__Group__0__Impl2134); 
+            match(input,37,FOLLOW_37_in_rule__ExploitationActivity__Group__0__Impl2008); 
              after(grammarAccess.getExploitationActivityAccess().getActivityKeyword_0()); 
 
             }
@@ -2902,21 +2741,21 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__ExploitationActivity__Group__1"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1025:1: rule__ExploitationActivity__Group__1 : rule__ExploitationActivity__Group__1__Impl rule__ExploitationActivity__Group__2 ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:961:1: rule__ExploitationActivity__Group__1 : rule__ExploitationActivity__Group__1__Impl rule__ExploitationActivity__Group__2 ;
     public final void rule__ExploitationActivity__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1029:1: ( rule__ExploitationActivity__Group__1__Impl rule__ExploitationActivity__Group__2 )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1030:2: rule__ExploitationActivity__Group__1__Impl rule__ExploitationActivity__Group__2
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:965:1: ( rule__ExploitationActivity__Group__1__Impl rule__ExploitationActivity__Group__2 )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:966:2: rule__ExploitationActivity__Group__1__Impl rule__ExploitationActivity__Group__2
             {
-            pushFollow(FOLLOW_rule__ExploitationActivity__Group__1__Impl_in_rule__ExploitationActivity__Group__12165);
+            pushFollow(FOLLOW_rule__ExploitationActivity__Group__1__Impl_in_rule__ExploitationActivity__Group__12039);
             rule__ExploitationActivity__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__ExploitationActivity__Group__2_in_rule__ExploitationActivity__Group__12168);
+            pushFollow(FOLLOW_rule__ExploitationActivity__Group__2_in_rule__ExploitationActivity__Group__12042);
             rule__ExploitationActivity__Group__2();
 
             state._fsp--;
@@ -2940,23 +2779,23 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__ExploitationActivity__Group__1__Impl"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1037:1: rule__ExploitationActivity__Group__1__Impl : ( ( rule__ExploitationActivity__NameAssignment_1 ) ) ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:973:1: rule__ExploitationActivity__Group__1__Impl : ( ( rule__ExploitationActivity__NameAssignment_1 ) ) ;
     public final void rule__ExploitationActivity__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1041:1: ( ( ( rule__ExploitationActivity__NameAssignment_1 ) ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1042:1: ( ( rule__ExploitationActivity__NameAssignment_1 ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:977:1: ( ( ( rule__ExploitationActivity__NameAssignment_1 ) ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:978:1: ( ( rule__ExploitationActivity__NameAssignment_1 ) )
             {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1042:1: ( ( rule__ExploitationActivity__NameAssignment_1 ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1043:1: ( rule__ExploitationActivity__NameAssignment_1 )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:978:1: ( ( rule__ExploitationActivity__NameAssignment_1 ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:979:1: ( rule__ExploitationActivity__NameAssignment_1 )
             {
              before(grammarAccess.getExploitationActivityAccess().getNameAssignment_1()); 
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1044:1: ( rule__ExploitationActivity__NameAssignment_1 )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1044:2: rule__ExploitationActivity__NameAssignment_1
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:980:1: ( rule__ExploitationActivity__NameAssignment_1 )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:980:2: rule__ExploitationActivity__NameAssignment_1
             {
-            pushFollow(FOLLOW_rule__ExploitationActivity__NameAssignment_1_in_rule__ExploitationActivity__Group__1__Impl2195);
+            pushFollow(FOLLOW_rule__ExploitationActivity__NameAssignment_1_in_rule__ExploitationActivity__Group__1__Impl2069);
             rule__ExploitationActivity__NameAssignment_1();
 
             state._fsp--;
@@ -2987,21 +2826,21 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__ExploitationActivity__Group__2"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1054:1: rule__ExploitationActivity__Group__2 : rule__ExploitationActivity__Group__2__Impl rule__ExploitationActivity__Group__3 ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:990:1: rule__ExploitationActivity__Group__2 : rule__ExploitationActivity__Group__2__Impl rule__ExploitationActivity__Group__3 ;
     public final void rule__ExploitationActivity__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1058:1: ( rule__ExploitationActivity__Group__2__Impl rule__ExploitationActivity__Group__3 )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1059:2: rule__ExploitationActivity__Group__2__Impl rule__ExploitationActivity__Group__3
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:994:1: ( rule__ExploitationActivity__Group__2__Impl rule__ExploitationActivity__Group__3 )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:995:2: rule__ExploitationActivity__Group__2__Impl rule__ExploitationActivity__Group__3
             {
-            pushFollow(FOLLOW_rule__ExploitationActivity__Group__2__Impl_in_rule__ExploitationActivity__Group__22225);
+            pushFollow(FOLLOW_rule__ExploitationActivity__Group__2__Impl_in_rule__ExploitationActivity__Group__22099);
             rule__ExploitationActivity__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__ExploitationActivity__Group__3_in_rule__ExploitationActivity__Group__22228);
+            pushFollow(FOLLOW_rule__ExploitationActivity__Group__3_in_rule__ExploitationActivity__Group__22102);
             rule__ExploitationActivity__Group__3();
 
             state._fsp--;
@@ -3025,20 +2864,20 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__ExploitationActivity__Group__2__Impl"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1066:1: rule__ExploitationActivity__Group__2__Impl : ( ( rule__ExploitationActivity__FrequencyAssignment_2 )? ) ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1002:1: rule__ExploitationActivity__Group__2__Impl : ( ( rule__ExploitationActivity__FrequencyAssignment_2 )? ) ;
     public final void rule__ExploitationActivity__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1070:1: ( ( ( rule__ExploitationActivity__FrequencyAssignment_2 )? ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1071:1: ( ( rule__ExploitationActivity__FrequencyAssignment_2 )? )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1006:1: ( ( ( rule__ExploitationActivity__FrequencyAssignment_2 )? ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1007:1: ( ( rule__ExploitationActivity__FrequencyAssignment_2 )? )
             {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1071:1: ( ( rule__ExploitationActivity__FrequencyAssignment_2 )? )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1072:1: ( rule__ExploitationActivity__FrequencyAssignment_2 )?
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1007:1: ( ( rule__ExploitationActivity__FrequencyAssignment_2 )? )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1008:1: ( rule__ExploitationActivity__FrequencyAssignment_2 )?
             {
              before(grammarAccess.getExploitationActivityAccess().getFrequencyAssignment_2()); 
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1073:1: ( rule__ExploitationActivity__FrequencyAssignment_2 )?
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1009:1: ( rule__ExploitationActivity__FrequencyAssignment_2 )?
             int alt9=2;
             int LA9_0 = input.LA(1);
 
@@ -3047,9 +2886,9 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
             }
             switch (alt9) {
                 case 1 :
-                    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1073:2: rule__ExploitationActivity__FrequencyAssignment_2
+                    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1009:2: rule__ExploitationActivity__FrequencyAssignment_2
                     {
-                    pushFollow(FOLLOW_rule__ExploitationActivity__FrequencyAssignment_2_in_rule__ExploitationActivity__Group__2__Impl2255);
+                    pushFollow(FOLLOW_rule__ExploitationActivity__FrequencyAssignment_2_in_rule__ExploitationActivity__Group__2__Impl2129);
                     rule__ExploitationActivity__FrequencyAssignment_2();
 
                     state._fsp--;
@@ -3083,21 +2922,21 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__ExploitationActivity__Group__3"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1083:1: rule__ExploitationActivity__Group__3 : rule__ExploitationActivity__Group__3__Impl rule__ExploitationActivity__Group__4 ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1019:1: rule__ExploitationActivity__Group__3 : rule__ExploitationActivity__Group__3__Impl rule__ExploitationActivity__Group__4 ;
     public final void rule__ExploitationActivity__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1087:1: ( rule__ExploitationActivity__Group__3__Impl rule__ExploitationActivity__Group__4 )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1088:2: rule__ExploitationActivity__Group__3__Impl rule__ExploitationActivity__Group__4
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1023:1: ( rule__ExploitationActivity__Group__3__Impl rule__ExploitationActivity__Group__4 )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1024:2: rule__ExploitationActivity__Group__3__Impl rule__ExploitationActivity__Group__4
             {
-            pushFollow(FOLLOW_rule__ExploitationActivity__Group__3__Impl_in_rule__ExploitationActivity__Group__32286);
+            pushFollow(FOLLOW_rule__ExploitationActivity__Group__3__Impl_in_rule__ExploitationActivity__Group__32160);
             rule__ExploitationActivity__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__ExploitationActivity__Group__4_in_rule__ExploitationActivity__Group__32289);
+            pushFollow(FOLLOW_rule__ExploitationActivity__Group__4_in_rule__ExploitationActivity__Group__32163);
             rule__ExploitationActivity__Group__4();
 
             state._fsp--;
@@ -3121,31 +2960,31 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__ExploitationActivity__Group__3__Impl"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1095:1: rule__ExploitationActivity__Group__3__Impl : ( ( rule__ExploitationActivity__Group_3__0 )? ) ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1031:1: rule__ExploitationActivity__Group__3__Impl : ( ( rule__ExploitationActivity__Group_3__0 )? ) ;
     public final void rule__ExploitationActivity__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1099:1: ( ( ( rule__ExploitationActivity__Group_3__0 )? ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1100:1: ( ( rule__ExploitationActivity__Group_3__0 )? )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1035:1: ( ( ( rule__ExploitationActivity__Group_3__0 )? ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1036:1: ( ( rule__ExploitationActivity__Group_3__0 )? )
             {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1100:1: ( ( rule__ExploitationActivity__Group_3__0 )? )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1101:1: ( rule__ExploitationActivity__Group_3__0 )?
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1036:1: ( ( rule__ExploitationActivity__Group_3__0 )? )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1037:1: ( rule__ExploitationActivity__Group_3__0 )?
             {
              before(grammarAccess.getExploitationActivityAccess().getGroup_3()); 
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1102:1: ( rule__ExploitationActivity__Group_3__0 )?
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1038:1: ( rule__ExploitationActivity__Group_3__0 )?
             int alt10=2;
             int LA10_0 = input.LA(1);
 
-            if ( (LA10_0==39) ) {
+            if ( (LA10_0==38) ) {
                 alt10=1;
             }
             switch (alt10) {
                 case 1 :
-                    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1102:2: rule__ExploitationActivity__Group_3__0
+                    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1038:2: rule__ExploitationActivity__Group_3__0
                     {
-                    pushFollow(FOLLOW_rule__ExploitationActivity__Group_3__0_in_rule__ExploitationActivity__Group__3__Impl2316);
+                    pushFollow(FOLLOW_rule__ExploitationActivity__Group_3__0_in_rule__ExploitationActivity__Group__3__Impl2190);
                     rule__ExploitationActivity__Group_3__0();
 
                     state._fsp--;
@@ -3179,16 +3018,16 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__ExploitationActivity__Group__4"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1112:1: rule__ExploitationActivity__Group__4 : rule__ExploitationActivity__Group__4__Impl ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1048:1: rule__ExploitationActivity__Group__4 : rule__ExploitationActivity__Group__4__Impl ;
     public final void rule__ExploitationActivity__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1116:1: ( rule__ExploitationActivity__Group__4__Impl )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1117:2: rule__ExploitationActivity__Group__4__Impl
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1052:1: ( rule__ExploitationActivity__Group__4__Impl )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1053:2: rule__ExploitationActivity__Group__4__Impl
             {
-            pushFollow(FOLLOW_rule__ExploitationActivity__Group__4__Impl_in_rule__ExploitationActivity__Group__42347);
+            pushFollow(FOLLOW_rule__ExploitationActivity__Group__4__Impl_in_rule__ExploitationActivity__Group__42221);
             rule__ExploitationActivity__Group__4__Impl();
 
             state._fsp--;
@@ -3212,31 +3051,31 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__ExploitationActivity__Group__4__Impl"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1123:1: rule__ExploitationActivity__Group__4__Impl : ( ( rule__ExploitationActivity__Group_4__0 )? ) ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1059:1: rule__ExploitationActivity__Group__4__Impl : ( ( rule__ExploitationActivity__Group_4__0 )? ) ;
     public final void rule__ExploitationActivity__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1127:1: ( ( ( rule__ExploitationActivity__Group_4__0 )? ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1128:1: ( ( rule__ExploitationActivity__Group_4__0 )? )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1063:1: ( ( ( rule__ExploitationActivity__Group_4__0 )? ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1064:1: ( ( rule__ExploitationActivity__Group_4__0 )? )
             {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1128:1: ( ( rule__ExploitationActivity__Group_4__0 )? )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1129:1: ( rule__ExploitationActivity__Group_4__0 )?
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1064:1: ( ( rule__ExploitationActivity__Group_4__0 )? )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1065:1: ( rule__ExploitationActivity__Group_4__0 )?
             {
              before(grammarAccess.getExploitationActivityAccess().getGroup_4()); 
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1130:1: ( rule__ExploitationActivity__Group_4__0 )?
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1066:1: ( rule__ExploitationActivity__Group_4__0 )?
             int alt11=2;
             int LA11_0 = input.LA(1);
 
-            if ( (LA11_0==41) ) {
+            if ( (LA11_0==40) ) {
                 alt11=1;
             }
             switch (alt11) {
                 case 1 :
-                    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1130:2: rule__ExploitationActivity__Group_4__0
+                    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1066:2: rule__ExploitationActivity__Group_4__0
                     {
-                    pushFollow(FOLLOW_rule__ExploitationActivity__Group_4__0_in_rule__ExploitationActivity__Group__4__Impl2374);
+                    pushFollow(FOLLOW_rule__ExploitationActivity__Group_4__0_in_rule__ExploitationActivity__Group__4__Impl2248);
                     rule__ExploitationActivity__Group_4__0();
 
                     state._fsp--;
@@ -3270,21 +3109,21 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__ExploitationActivity__Group_3__0"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1150:1: rule__ExploitationActivity__Group_3__0 : rule__ExploitationActivity__Group_3__0__Impl rule__ExploitationActivity__Group_3__1 ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1086:1: rule__ExploitationActivity__Group_3__0 : rule__ExploitationActivity__Group_3__0__Impl rule__ExploitationActivity__Group_3__1 ;
     public final void rule__ExploitationActivity__Group_3__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1154:1: ( rule__ExploitationActivity__Group_3__0__Impl rule__ExploitationActivity__Group_3__1 )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1155:2: rule__ExploitationActivity__Group_3__0__Impl rule__ExploitationActivity__Group_3__1
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1090:1: ( rule__ExploitationActivity__Group_3__0__Impl rule__ExploitationActivity__Group_3__1 )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1091:2: rule__ExploitationActivity__Group_3__0__Impl rule__ExploitationActivity__Group_3__1
             {
-            pushFollow(FOLLOW_rule__ExploitationActivity__Group_3__0__Impl_in_rule__ExploitationActivity__Group_3__02415);
+            pushFollow(FOLLOW_rule__ExploitationActivity__Group_3__0__Impl_in_rule__ExploitationActivity__Group_3__02289);
             rule__ExploitationActivity__Group_3__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__ExploitationActivity__Group_3__1_in_rule__ExploitationActivity__Group_3__02418);
+            pushFollow(FOLLOW_rule__ExploitationActivity__Group_3__1_in_rule__ExploitationActivity__Group_3__02292);
             rule__ExploitationActivity__Group_3__1();
 
             state._fsp--;
@@ -3308,20 +3147,20 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__ExploitationActivity__Group_3__0__Impl"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1162:1: rule__ExploitationActivity__Group_3__0__Impl : ( 'from ' ) ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1098:1: rule__ExploitationActivity__Group_3__0__Impl : ( 'from ' ) ;
     public final void rule__ExploitationActivity__Group_3__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1166:1: ( ( 'from ' ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1167:1: ( 'from ' )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1102:1: ( ( 'from ' ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1103:1: ( 'from ' )
             {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1167:1: ( 'from ' )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1168:1: 'from '
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1103:1: ( 'from ' )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1104:1: 'from '
             {
              before(grammarAccess.getExploitationActivityAccess().getFromKeyword_3_0()); 
-            match(input,39,FOLLOW_39_in_rule__ExploitationActivity__Group_3__0__Impl2446); 
+            match(input,38,FOLLOW_38_in_rule__ExploitationActivity__Group_3__0__Impl2320); 
              after(grammarAccess.getExploitationActivityAccess().getFromKeyword_3_0()); 
 
             }
@@ -3345,21 +3184,21 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__ExploitationActivity__Group_3__1"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1181:1: rule__ExploitationActivity__Group_3__1 : rule__ExploitationActivity__Group_3__1__Impl rule__ExploitationActivity__Group_3__2 ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1117:1: rule__ExploitationActivity__Group_3__1 : rule__ExploitationActivity__Group_3__1__Impl rule__ExploitationActivity__Group_3__2 ;
     public final void rule__ExploitationActivity__Group_3__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1185:1: ( rule__ExploitationActivity__Group_3__1__Impl rule__ExploitationActivity__Group_3__2 )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1186:2: rule__ExploitationActivity__Group_3__1__Impl rule__ExploitationActivity__Group_3__2
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1121:1: ( rule__ExploitationActivity__Group_3__1__Impl rule__ExploitationActivity__Group_3__2 )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1122:2: rule__ExploitationActivity__Group_3__1__Impl rule__ExploitationActivity__Group_3__2
             {
-            pushFollow(FOLLOW_rule__ExploitationActivity__Group_3__1__Impl_in_rule__ExploitationActivity__Group_3__12477);
+            pushFollow(FOLLOW_rule__ExploitationActivity__Group_3__1__Impl_in_rule__ExploitationActivity__Group_3__12351);
             rule__ExploitationActivity__Group_3__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__ExploitationActivity__Group_3__2_in_rule__ExploitationActivity__Group_3__12480);
+            pushFollow(FOLLOW_rule__ExploitationActivity__Group_3__2_in_rule__ExploitationActivity__Group_3__12354);
             rule__ExploitationActivity__Group_3__2();
 
             state._fsp--;
@@ -3383,23 +3222,23 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__ExploitationActivity__Group_3__1__Impl"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1193:1: rule__ExploitationActivity__Group_3__1__Impl : ( ( rule__ExploitationActivity__StartDateAssignment_3_1 ) ) ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1129:1: rule__ExploitationActivity__Group_3__1__Impl : ( ( rule__ExploitationActivity__StartDateAssignment_3_1 ) ) ;
     public final void rule__ExploitationActivity__Group_3__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1197:1: ( ( ( rule__ExploitationActivity__StartDateAssignment_3_1 ) ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1198:1: ( ( rule__ExploitationActivity__StartDateAssignment_3_1 ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1133:1: ( ( ( rule__ExploitationActivity__StartDateAssignment_3_1 ) ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1134:1: ( ( rule__ExploitationActivity__StartDateAssignment_3_1 ) )
             {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1198:1: ( ( rule__ExploitationActivity__StartDateAssignment_3_1 ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1199:1: ( rule__ExploitationActivity__StartDateAssignment_3_1 )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1134:1: ( ( rule__ExploitationActivity__StartDateAssignment_3_1 ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1135:1: ( rule__ExploitationActivity__StartDateAssignment_3_1 )
             {
              before(grammarAccess.getExploitationActivityAccess().getStartDateAssignment_3_1()); 
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1200:1: ( rule__ExploitationActivity__StartDateAssignment_3_1 )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1200:2: rule__ExploitationActivity__StartDateAssignment_3_1
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1136:1: ( rule__ExploitationActivity__StartDateAssignment_3_1 )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1136:2: rule__ExploitationActivity__StartDateAssignment_3_1
             {
-            pushFollow(FOLLOW_rule__ExploitationActivity__StartDateAssignment_3_1_in_rule__ExploitationActivity__Group_3__1__Impl2507);
+            pushFollow(FOLLOW_rule__ExploitationActivity__StartDateAssignment_3_1_in_rule__ExploitationActivity__Group_3__1__Impl2381);
             rule__ExploitationActivity__StartDateAssignment_3_1();
 
             state._fsp--;
@@ -3430,21 +3269,21 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__ExploitationActivity__Group_3__2"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1210:1: rule__ExploitationActivity__Group_3__2 : rule__ExploitationActivity__Group_3__2__Impl rule__ExploitationActivity__Group_3__3 ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1146:1: rule__ExploitationActivity__Group_3__2 : rule__ExploitationActivity__Group_3__2__Impl rule__ExploitationActivity__Group_3__3 ;
     public final void rule__ExploitationActivity__Group_3__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1214:1: ( rule__ExploitationActivity__Group_3__2__Impl rule__ExploitationActivity__Group_3__3 )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1215:2: rule__ExploitationActivity__Group_3__2__Impl rule__ExploitationActivity__Group_3__3
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1150:1: ( rule__ExploitationActivity__Group_3__2__Impl rule__ExploitationActivity__Group_3__3 )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1151:2: rule__ExploitationActivity__Group_3__2__Impl rule__ExploitationActivity__Group_3__3
             {
-            pushFollow(FOLLOW_rule__ExploitationActivity__Group_3__2__Impl_in_rule__ExploitationActivity__Group_3__22537);
+            pushFollow(FOLLOW_rule__ExploitationActivity__Group_3__2__Impl_in_rule__ExploitationActivity__Group_3__22411);
             rule__ExploitationActivity__Group_3__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__ExploitationActivity__Group_3__3_in_rule__ExploitationActivity__Group_3__22540);
+            pushFollow(FOLLOW_rule__ExploitationActivity__Group_3__3_in_rule__ExploitationActivity__Group_3__22414);
             rule__ExploitationActivity__Group_3__3();
 
             state._fsp--;
@@ -3468,20 +3307,20 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__ExploitationActivity__Group_3__2__Impl"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1222:1: rule__ExploitationActivity__Group_3__2__Impl : ( 'to' ) ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1158:1: rule__ExploitationActivity__Group_3__2__Impl : ( 'to' ) ;
     public final void rule__ExploitationActivity__Group_3__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1226:1: ( ( 'to' ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1227:1: ( 'to' )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1162:1: ( ( 'to' ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1163:1: ( 'to' )
             {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1227:1: ( 'to' )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1228:1: 'to'
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1163:1: ( 'to' )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1164:1: 'to'
             {
              before(grammarAccess.getExploitationActivityAccess().getToKeyword_3_2()); 
-            match(input,40,FOLLOW_40_in_rule__ExploitationActivity__Group_3__2__Impl2568); 
+            match(input,39,FOLLOW_39_in_rule__ExploitationActivity__Group_3__2__Impl2442); 
              after(grammarAccess.getExploitationActivityAccess().getToKeyword_3_2()); 
 
             }
@@ -3505,16 +3344,16 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__ExploitationActivity__Group_3__3"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1241:1: rule__ExploitationActivity__Group_3__3 : rule__ExploitationActivity__Group_3__3__Impl ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1177:1: rule__ExploitationActivity__Group_3__3 : rule__ExploitationActivity__Group_3__3__Impl ;
     public final void rule__ExploitationActivity__Group_3__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1245:1: ( rule__ExploitationActivity__Group_3__3__Impl )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1246:2: rule__ExploitationActivity__Group_3__3__Impl
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1181:1: ( rule__ExploitationActivity__Group_3__3__Impl )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1182:2: rule__ExploitationActivity__Group_3__3__Impl
             {
-            pushFollow(FOLLOW_rule__ExploitationActivity__Group_3__3__Impl_in_rule__ExploitationActivity__Group_3__32599);
+            pushFollow(FOLLOW_rule__ExploitationActivity__Group_3__3__Impl_in_rule__ExploitationActivity__Group_3__32473);
             rule__ExploitationActivity__Group_3__3__Impl();
 
             state._fsp--;
@@ -3538,23 +3377,23 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__ExploitationActivity__Group_3__3__Impl"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1252:1: rule__ExploitationActivity__Group_3__3__Impl : ( ( rule__ExploitationActivity__EndDateAssignment_3_3 ) ) ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1188:1: rule__ExploitationActivity__Group_3__3__Impl : ( ( rule__ExploitationActivity__EndDateAssignment_3_3 ) ) ;
     public final void rule__ExploitationActivity__Group_3__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1256:1: ( ( ( rule__ExploitationActivity__EndDateAssignment_3_3 ) ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1257:1: ( ( rule__ExploitationActivity__EndDateAssignment_3_3 ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1192:1: ( ( ( rule__ExploitationActivity__EndDateAssignment_3_3 ) ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1193:1: ( ( rule__ExploitationActivity__EndDateAssignment_3_3 ) )
             {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1257:1: ( ( rule__ExploitationActivity__EndDateAssignment_3_3 ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1258:1: ( rule__ExploitationActivity__EndDateAssignment_3_3 )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1193:1: ( ( rule__ExploitationActivity__EndDateAssignment_3_3 ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1194:1: ( rule__ExploitationActivity__EndDateAssignment_3_3 )
             {
              before(grammarAccess.getExploitationActivityAccess().getEndDateAssignment_3_3()); 
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1259:1: ( rule__ExploitationActivity__EndDateAssignment_3_3 )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1259:2: rule__ExploitationActivity__EndDateAssignment_3_3
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1195:1: ( rule__ExploitationActivity__EndDateAssignment_3_3 )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1195:2: rule__ExploitationActivity__EndDateAssignment_3_3
             {
-            pushFollow(FOLLOW_rule__ExploitationActivity__EndDateAssignment_3_3_in_rule__ExploitationActivity__Group_3__3__Impl2626);
+            pushFollow(FOLLOW_rule__ExploitationActivity__EndDateAssignment_3_3_in_rule__ExploitationActivity__Group_3__3__Impl2500);
             rule__ExploitationActivity__EndDateAssignment_3_3();
 
             state._fsp--;
@@ -3585,21 +3424,21 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__ExploitationActivity__Group_4__0"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1277:1: rule__ExploitationActivity__Group_4__0 : rule__ExploitationActivity__Group_4__0__Impl rule__ExploitationActivity__Group_4__1 ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1213:1: rule__ExploitationActivity__Group_4__0 : rule__ExploitationActivity__Group_4__0__Impl rule__ExploitationActivity__Group_4__1 ;
     public final void rule__ExploitationActivity__Group_4__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1281:1: ( rule__ExploitationActivity__Group_4__0__Impl rule__ExploitationActivity__Group_4__1 )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1282:2: rule__ExploitationActivity__Group_4__0__Impl rule__ExploitationActivity__Group_4__1
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1217:1: ( rule__ExploitationActivity__Group_4__0__Impl rule__ExploitationActivity__Group_4__1 )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1218:2: rule__ExploitationActivity__Group_4__0__Impl rule__ExploitationActivity__Group_4__1
             {
-            pushFollow(FOLLOW_rule__ExploitationActivity__Group_4__0__Impl_in_rule__ExploitationActivity__Group_4__02664);
+            pushFollow(FOLLOW_rule__ExploitationActivity__Group_4__0__Impl_in_rule__ExploitationActivity__Group_4__02538);
             rule__ExploitationActivity__Group_4__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__ExploitationActivity__Group_4__1_in_rule__ExploitationActivity__Group_4__02667);
+            pushFollow(FOLLOW_rule__ExploitationActivity__Group_4__1_in_rule__ExploitationActivity__Group_4__02541);
             rule__ExploitationActivity__Group_4__1();
 
             state._fsp--;
@@ -3623,20 +3462,20 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__ExploitationActivity__Group_4__0__Impl"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1289:1: rule__ExploitationActivity__Group_4__0__Impl : ( '[' ) ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1225:1: rule__ExploitationActivity__Group_4__0__Impl : ( '[' ) ;
     public final void rule__ExploitationActivity__Group_4__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1293:1: ( ( '[' ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1294:1: ( '[' )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1229:1: ( ( '[' ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1230:1: ( '[' )
             {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1294:1: ( '[' )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1295:1: '['
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1230:1: ( '[' )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1231:1: '['
             {
              before(grammarAccess.getExploitationActivityAccess().getLeftSquareBracketKeyword_4_0()); 
-            match(input,41,FOLLOW_41_in_rule__ExploitationActivity__Group_4__0__Impl2695); 
+            match(input,40,FOLLOW_40_in_rule__ExploitationActivity__Group_4__0__Impl2569); 
              after(grammarAccess.getExploitationActivityAccess().getLeftSquareBracketKeyword_4_0()); 
 
             }
@@ -3660,21 +3499,21 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__ExploitationActivity__Group_4__1"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1308:1: rule__ExploitationActivity__Group_4__1 : rule__ExploitationActivity__Group_4__1__Impl rule__ExploitationActivity__Group_4__2 ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1244:1: rule__ExploitationActivity__Group_4__1 : rule__ExploitationActivity__Group_4__1__Impl rule__ExploitationActivity__Group_4__2 ;
     public final void rule__ExploitationActivity__Group_4__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1312:1: ( rule__ExploitationActivity__Group_4__1__Impl rule__ExploitationActivity__Group_4__2 )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1313:2: rule__ExploitationActivity__Group_4__1__Impl rule__ExploitationActivity__Group_4__2
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1248:1: ( rule__ExploitationActivity__Group_4__1__Impl rule__ExploitationActivity__Group_4__2 )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1249:2: rule__ExploitationActivity__Group_4__1__Impl rule__ExploitationActivity__Group_4__2
             {
-            pushFollow(FOLLOW_rule__ExploitationActivity__Group_4__1__Impl_in_rule__ExploitationActivity__Group_4__12726);
+            pushFollow(FOLLOW_rule__ExploitationActivity__Group_4__1__Impl_in_rule__ExploitationActivity__Group_4__12600);
             rule__ExploitationActivity__Group_4__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__ExploitationActivity__Group_4__2_in_rule__ExploitationActivity__Group_4__12729);
+            pushFollow(FOLLOW_rule__ExploitationActivity__Group_4__2_in_rule__ExploitationActivity__Group_4__12603);
             rule__ExploitationActivity__Group_4__2();
 
             state._fsp--;
@@ -3698,23 +3537,23 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__ExploitationActivity__Group_4__1__Impl"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1320:1: rule__ExploitationActivity__Group_4__1__Impl : ( ( rule__ExploitationActivity__PredicatesAssignment_4_1 ) ) ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1256:1: rule__ExploitationActivity__Group_4__1__Impl : ( ( rule__ExploitationActivity__PredicatesAssignment_4_1 ) ) ;
     public final void rule__ExploitationActivity__Group_4__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1324:1: ( ( ( rule__ExploitationActivity__PredicatesAssignment_4_1 ) ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1325:1: ( ( rule__ExploitationActivity__PredicatesAssignment_4_1 ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1260:1: ( ( ( rule__ExploitationActivity__PredicatesAssignment_4_1 ) ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1261:1: ( ( rule__ExploitationActivity__PredicatesAssignment_4_1 ) )
             {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1325:1: ( ( rule__ExploitationActivity__PredicatesAssignment_4_1 ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1326:1: ( rule__ExploitationActivity__PredicatesAssignment_4_1 )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1261:1: ( ( rule__ExploitationActivity__PredicatesAssignment_4_1 ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1262:1: ( rule__ExploitationActivity__PredicatesAssignment_4_1 )
             {
              before(grammarAccess.getExploitationActivityAccess().getPredicatesAssignment_4_1()); 
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1327:1: ( rule__ExploitationActivity__PredicatesAssignment_4_1 )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1327:2: rule__ExploitationActivity__PredicatesAssignment_4_1
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1263:1: ( rule__ExploitationActivity__PredicatesAssignment_4_1 )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1263:2: rule__ExploitationActivity__PredicatesAssignment_4_1
             {
-            pushFollow(FOLLOW_rule__ExploitationActivity__PredicatesAssignment_4_1_in_rule__ExploitationActivity__Group_4__1__Impl2756);
+            pushFollow(FOLLOW_rule__ExploitationActivity__PredicatesAssignment_4_1_in_rule__ExploitationActivity__Group_4__1__Impl2630);
             rule__ExploitationActivity__PredicatesAssignment_4_1();
 
             state._fsp--;
@@ -3745,21 +3584,21 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__ExploitationActivity__Group_4__2"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1337:1: rule__ExploitationActivity__Group_4__2 : rule__ExploitationActivity__Group_4__2__Impl rule__ExploitationActivity__Group_4__3 ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1273:1: rule__ExploitationActivity__Group_4__2 : rule__ExploitationActivity__Group_4__2__Impl rule__ExploitationActivity__Group_4__3 ;
     public final void rule__ExploitationActivity__Group_4__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1341:1: ( rule__ExploitationActivity__Group_4__2__Impl rule__ExploitationActivity__Group_4__3 )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1342:2: rule__ExploitationActivity__Group_4__2__Impl rule__ExploitationActivity__Group_4__3
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1277:1: ( rule__ExploitationActivity__Group_4__2__Impl rule__ExploitationActivity__Group_4__3 )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1278:2: rule__ExploitationActivity__Group_4__2__Impl rule__ExploitationActivity__Group_4__3
             {
-            pushFollow(FOLLOW_rule__ExploitationActivity__Group_4__2__Impl_in_rule__ExploitationActivity__Group_4__22786);
+            pushFollow(FOLLOW_rule__ExploitationActivity__Group_4__2__Impl_in_rule__ExploitationActivity__Group_4__22660);
             rule__ExploitationActivity__Group_4__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__ExploitationActivity__Group_4__3_in_rule__ExploitationActivity__Group_4__22789);
+            pushFollow(FOLLOW_rule__ExploitationActivity__Group_4__3_in_rule__ExploitationActivity__Group_4__22663);
             rule__ExploitationActivity__Group_4__3();
 
             state._fsp--;
@@ -3783,35 +3622,35 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__ExploitationActivity__Group_4__2__Impl"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1349:1: rule__ExploitationActivity__Group_4__2__Impl : ( ( rule__ExploitationActivity__Group_4_2__0 )* ) ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1285:1: rule__ExploitationActivity__Group_4__2__Impl : ( ( rule__ExploitationActivity__Group_4_2__0 )* ) ;
     public final void rule__ExploitationActivity__Group_4__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1353:1: ( ( ( rule__ExploitationActivity__Group_4_2__0 )* ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1354:1: ( ( rule__ExploitationActivity__Group_4_2__0 )* )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1289:1: ( ( ( rule__ExploitationActivity__Group_4_2__0 )* ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1290:1: ( ( rule__ExploitationActivity__Group_4_2__0 )* )
             {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1354:1: ( ( rule__ExploitationActivity__Group_4_2__0 )* )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1355:1: ( rule__ExploitationActivity__Group_4_2__0 )*
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1290:1: ( ( rule__ExploitationActivity__Group_4_2__0 )* )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1291:1: ( rule__ExploitationActivity__Group_4_2__0 )*
             {
              before(grammarAccess.getExploitationActivityAccess().getGroup_4_2()); 
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1356:1: ( rule__ExploitationActivity__Group_4_2__0 )*
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1292:1: ( rule__ExploitationActivity__Group_4_2__0 )*
             loop12:
             do {
                 int alt12=2;
                 int LA12_0 = input.LA(1);
 
-                if ( (LA12_0==43) ) {
+                if ( (LA12_0==42) ) {
                     alt12=1;
                 }
 
 
                 switch (alt12) {
             	case 1 :
-            	    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1356:2: rule__ExploitationActivity__Group_4_2__0
+            	    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1292:2: rule__ExploitationActivity__Group_4_2__0
             	    {
-            	    pushFollow(FOLLOW_rule__ExploitationActivity__Group_4_2__0_in_rule__ExploitationActivity__Group_4__2__Impl2816);
+            	    pushFollow(FOLLOW_rule__ExploitationActivity__Group_4_2__0_in_rule__ExploitationActivity__Group_4__2__Impl2690);
             	    rule__ExploitationActivity__Group_4_2__0();
 
             	    state._fsp--;
@@ -3848,16 +3687,16 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__ExploitationActivity__Group_4__3"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1366:1: rule__ExploitationActivity__Group_4__3 : rule__ExploitationActivity__Group_4__3__Impl ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1302:1: rule__ExploitationActivity__Group_4__3 : rule__ExploitationActivity__Group_4__3__Impl ;
     public final void rule__ExploitationActivity__Group_4__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1370:1: ( rule__ExploitationActivity__Group_4__3__Impl )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1371:2: rule__ExploitationActivity__Group_4__3__Impl
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1306:1: ( rule__ExploitationActivity__Group_4__3__Impl )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1307:2: rule__ExploitationActivity__Group_4__3__Impl
             {
-            pushFollow(FOLLOW_rule__ExploitationActivity__Group_4__3__Impl_in_rule__ExploitationActivity__Group_4__32847);
+            pushFollow(FOLLOW_rule__ExploitationActivity__Group_4__3__Impl_in_rule__ExploitationActivity__Group_4__32721);
             rule__ExploitationActivity__Group_4__3__Impl();
 
             state._fsp--;
@@ -3881,20 +3720,20 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__ExploitationActivity__Group_4__3__Impl"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1377:1: rule__ExploitationActivity__Group_4__3__Impl : ( ']' ) ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1313:1: rule__ExploitationActivity__Group_4__3__Impl : ( ']' ) ;
     public final void rule__ExploitationActivity__Group_4__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1381:1: ( ( ']' ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1382:1: ( ']' )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1317:1: ( ( ']' ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1318:1: ( ']' )
             {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1382:1: ( ']' )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1383:1: ']'
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1318:1: ( ']' )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1319:1: ']'
             {
              before(grammarAccess.getExploitationActivityAccess().getRightSquareBracketKeyword_4_3()); 
-            match(input,42,FOLLOW_42_in_rule__ExploitationActivity__Group_4__3__Impl2875); 
+            match(input,41,FOLLOW_41_in_rule__ExploitationActivity__Group_4__3__Impl2749); 
              after(grammarAccess.getExploitationActivityAccess().getRightSquareBracketKeyword_4_3()); 
 
             }
@@ -3918,21 +3757,21 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__ExploitationActivity__Group_4_2__0"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1404:1: rule__ExploitationActivity__Group_4_2__0 : rule__ExploitationActivity__Group_4_2__0__Impl rule__ExploitationActivity__Group_4_2__1 ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1340:1: rule__ExploitationActivity__Group_4_2__0 : rule__ExploitationActivity__Group_4_2__0__Impl rule__ExploitationActivity__Group_4_2__1 ;
     public final void rule__ExploitationActivity__Group_4_2__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1408:1: ( rule__ExploitationActivity__Group_4_2__0__Impl rule__ExploitationActivity__Group_4_2__1 )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1409:2: rule__ExploitationActivity__Group_4_2__0__Impl rule__ExploitationActivity__Group_4_2__1
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1344:1: ( rule__ExploitationActivity__Group_4_2__0__Impl rule__ExploitationActivity__Group_4_2__1 )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1345:2: rule__ExploitationActivity__Group_4_2__0__Impl rule__ExploitationActivity__Group_4_2__1
             {
-            pushFollow(FOLLOW_rule__ExploitationActivity__Group_4_2__0__Impl_in_rule__ExploitationActivity__Group_4_2__02914);
+            pushFollow(FOLLOW_rule__ExploitationActivity__Group_4_2__0__Impl_in_rule__ExploitationActivity__Group_4_2__02788);
             rule__ExploitationActivity__Group_4_2__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__ExploitationActivity__Group_4_2__1_in_rule__ExploitationActivity__Group_4_2__02917);
+            pushFollow(FOLLOW_rule__ExploitationActivity__Group_4_2__1_in_rule__ExploitationActivity__Group_4_2__02791);
             rule__ExploitationActivity__Group_4_2__1();
 
             state._fsp--;
@@ -3956,20 +3795,20 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__ExploitationActivity__Group_4_2__0__Impl"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1416:1: rule__ExploitationActivity__Group_4_2__0__Impl : ( '&&' ) ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1352:1: rule__ExploitationActivity__Group_4_2__0__Impl : ( '&&' ) ;
     public final void rule__ExploitationActivity__Group_4_2__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1420:1: ( ( '&&' ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1421:1: ( '&&' )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1356:1: ( ( '&&' ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1357:1: ( '&&' )
             {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1421:1: ( '&&' )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1422:1: '&&'
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1357:1: ( '&&' )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1358:1: '&&'
             {
              before(grammarAccess.getExploitationActivityAccess().getAmpersandAmpersandKeyword_4_2_0()); 
-            match(input,43,FOLLOW_43_in_rule__ExploitationActivity__Group_4_2__0__Impl2945); 
+            match(input,42,FOLLOW_42_in_rule__ExploitationActivity__Group_4_2__0__Impl2819); 
              after(grammarAccess.getExploitationActivityAccess().getAmpersandAmpersandKeyword_4_2_0()); 
 
             }
@@ -3993,16 +3832,16 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__ExploitationActivity__Group_4_2__1"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1435:1: rule__ExploitationActivity__Group_4_2__1 : rule__ExploitationActivity__Group_4_2__1__Impl ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1371:1: rule__ExploitationActivity__Group_4_2__1 : rule__ExploitationActivity__Group_4_2__1__Impl ;
     public final void rule__ExploitationActivity__Group_4_2__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1439:1: ( rule__ExploitationActivity__Group_4_2__1__Impl )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1440:2: rule__ExploitationActivity__Group_4_2__1__Impl
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1375:1: ( rule__ExploitationActivity__Group_4_2__1__Impl )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1376:2: rule__ExploitationActivity__Group_4_2__1__Impl
             {
-            pushFollow(FOLLOW_rule__ExploitationActivity__Group_4_2__1__Impl_in_rule__ExploitationActivity__Group_4_2__12976);
+            pushFollow(FOLLOW_rule__ExploitationActivity__Group_4_2__1__Impl_in_rule__ExploitationActivity__Group_4_2__12850);
             rule__ExploitationActivity__Group_4_2__1__Impl();
 
             state._fsp--;
@@ -4026,23 +3865,23 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__ExploitationActivity__Group_4_2__1__Impl"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1446:1: rule__ExploitationActivity__Group_4_2__1__Impl : ( ( rule__ExploitationActivity__PredicatesAssignment_4_2_1 ) ) ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1382:1: rule__ExploitationActivity__Group_4_2__1__Impl : ( ( rule__ExploitationActivity__PredicatesAssignment_4_2_1 ) ) ;
     public final void rule__ExploitationActivity__Group_4_2__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1450:1: ( ( ( rule__ExploitationActivity__PredicatesAssignment_4_2_1 ) ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1451:1: ( ( rule__ExploitationActivity__PredicatesAssignment_4_2_1 ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1386:1: ( ( ( rule__ExploitationActivity__PredicatesAssignment_4_2_1 ) ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1387:1: ( ( rule__ExploitationActivity__PredicatesAssignment_4_2_1 ) )
             {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1451:1: ( ( rule__ExploitationActivity__PredicatesAssignment_4_2_1 ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1452:1: ( rule__ExploitationActivity__PredicatesAssignment_4_2_1 )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1387:1: ( ( rule__ExploitationActivity__PredicatesAssignment_4_2_1 ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1388:1: ( rule__ExploitationActivity__PredicatesAssignment_4_2_1 )
             {
              before(grammarAccess.getExploitationActivityAccess().getPredicatesAssignment_4_2_1()); 
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1453:1: ( rule__ExploitationActivity__PredicatesAssignment_4_2_1 )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1453:2: rule__ExploitationActivity__PredicatesAssignment_4_2_1
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1389:1: ( rule__ExploitationActivity__PredicatesAssignment_4_2_1 )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1389:2: rule__ExploitationActivity__PredicatesAssignment_4_2_1
             {
-            pushFollow(FOLLOW_rule__ExploitationActivity__PredicatesAssignment_4_2_1_in_rule__ExploitationActivity__Group_4_2__1__Impl3003);
+            pushFollow(FOLLOW_rule__ExploitationActivity__PredicatesAssignment_4_2_1_in_rule__ExploitationActivity__Group_4_2__1__Impl2877);
             rule__ExploitationActivity__PredicatesAssignment_4_2_1();
 
             state._fsp--;
@@ -4073,21 +3912,21 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__NoRain__Group__0"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1467:1: rule__NoRain__Group__0 : rule__NoRain__Group__0__Impl rule__NoRain__Group__1 ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1403:1: rule__NoRain__Group__0 : rule__NoRain__Group__0__Impl rule__NoRain__Group__1 ;
     public final void rule__NoRain__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1471:1: ( rule__NoRain__Group__0__Impl rule__NoRain__Group__1 )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1472:2: rule__NoRain__Group__0__Impl rule__NoRain__Group__1
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1407:1: ( rule__NoRain__Group__0__Impl rule__NoRain__Group__1 )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1408:2: rule__NoRain__Group__0__Impl rule__NoRain__Group__1
             {
-            pushFollow(FOLLOW_rule__NoRain__Group__0__Impl_in_rule__NoRain__Group__03037);
+            pushFollow(FOLLOW_rule__NoRain__Group__0__Impl_in_rule__NoRain__Group__02911);
             rule__NoRain__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__NoRain__Group__1_in_rule__NoRain__Group__03040);
+            pushFollow(FOLLOW_rule__NoRain__Group__1_in_rule__NoRain__Group__02914);
             rule__NoRain__Group__1();
 
             state._fsp--;
@@ -4111,20 +3950,20 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__NoRain__Group__0__Impl"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1479:1: rule__NoRain__Group__0__Impl : ( 'no rain since' ) ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1415:1: rule__NoRain__Group__0__Impl : ( 'no rain since' ) ;
     public final void rule__NoRain__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1483:1: ( ( 'no rain since' ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1484:1: ( 'no rain since' )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1419:1: ( ( 'no rain since' ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1420:1: ( 'no rain since' )
             {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1484:1: ( 'no rain since' )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1485:1: 'no rain since'
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1420:1: ( 'no rain since' )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1421:1: 'no rain since'
             {
              before(grammarAccess.getNoRainAccess().getNoRainSinceKeyword_0()); 
-            match(input,44,FOLLOW_44_in_rule__NoRain__Group__0__Impl3068); 
+            match(input,43,FOLLOW_43_in_rule__NoRain__Group__0__Impl2942); 
              after(grammarAccess.getNoRainAccess().getNoRainSinceKeyword_0()); 
 
             }
@@ -4148,21 +3987,21 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__NoRain__Group__1"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1498:1: rule__NoRain__Group__1 : rule__NoRain__Group__1__Impl rule__NoRain__Group__2 ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1434:1: rule__NoRain__Group__1 : rule__NoRain__Group__1__Impl rule__NoRain__Group__2 ;
     public final void rule__NoRain__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1502:1: ( rule__NoRain__Group__1__Impl rule__NoRain__Group__2 )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1503:2: rule__NoRain__Group__1__Impl rule__NoRain__Group__2
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1438:1: ( rule__NoRain__Group__1__Impl rule__NoRain__Group__2 )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1439:2: rule__NoRain__Group__1__Impl rule__NoRain__Group__2
             {
-            pushFollow(FOLLOW_rule__NoRain__Group__1__Impl_in_rule__NoRain__Group__13099);
+            pushFollow(FOLLOW_rule__NoRain__Group__1__Impl_in_rule__NoRain__Group__12973);
             rule__NoRain__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__NoRain__Group__2_in_rule__NoRain__Group__13102);
+            pushFollow(FOLLOW_rule__NoRain__Group__2_in_rule__NoRain__Group__12976);
             rule__NoRain__Group__2();
 
             state._fsp--;
@@ -4186,23 +4025,23 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__NoRain__Group__1__Impl"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1510:1: rule__NoRain__Group__1__Impl : ( ( rule__NoRain__DaysAssignment_1 ) ) ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1446:1: rule__NoRain__Group__1__Impl : ( ( rule__NoRain__DaysAssignment_1 ) ) ;
     public final void rule__NoRain__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1514:1: ( ( ( rule__NoRain__DaysAssignment_1 ) ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1515:1: ( ( rule__NoRain__DaysAssignment_1 ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1450:1: ( ( ( rule__NoRain__DaysAssignment_1 ) ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1451:1: ( ( rule__NoRain__DaysAssignment_1 ) )
             {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1515:1: ( ( rule__NoRain__DaysAssignment_1 ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1516:1: ( rule__NoRain__DaysAssignment_1 )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1451:1: ( ( rule__NoRain__DaysAssignment_1 ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1452:1: ( rule__NoRain__DaysAssignment_1 )
             {
              before(grammarAccess.getNoRainAccess().getDaysAssignment_1()); 
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1517:1: ( rule__NoRain__DaysAssignment_1 )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1517:2: rule__NoRain__DaysAssignment_1
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1453:1: ( rule__NoRain__DaysAssignment_1 )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1453:2: rule__NoRain__DaysAssignment_1
             {
-            pushFollow(FOLLOW_rule__NoRain__DaysAssignment_1_in_rule__NoRain__Group__1__Impl3129);
+            pushFollow(FOLLOW_rule__NoRain__DaysAssignment_1_in_rule__NoRain__Group__1__Impl3003);
             rule__NoRain__DaysAssignment_1();
 
             state._fsp--;
@@ -4233,16 +4072,16 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__NoRain__Group__2"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1527:1: rule__NoRain__Group__2 : rule__NoRain__Group__2__Impl ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1463:1: rule__NoRain__Group__2 : rule__NoRain__Group__2__Impl ;
     public final void rule__NoRain__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1531:1: ( rule__NoRain__Group__2__Impl )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1532:2: rule__NoRain__Group__2__Impl
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1467:1: ( rule__NoRain__Group__2__Impl )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1468:2: rule__NoRain__Group__2__Impl
             {
-            pushFollow(FOLLOW_rule__NoRain__Group__2__Impl_in_rule__NoRain__Group__23159);
+            pushFollow(FOLLOW_rule__NoRain__Group__2__Impl_in_rule__NoRain__Group__23033);
             rule__NoRain__Group__2__Impl();
 
             state._fsp--;
@@ -4266,20 +4105,20 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__NoRain__Group__2__Impl"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1538:1: rule__NoRain__Group__2__Impl : ( 'days' ) ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1474:1: rule__NoRain__Group__2__Impl : ( 'days' ) ;
     public final void rule__NoRain__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1542:1: ( ( 'days' ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1543:1: ( 'days' )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1478:1: ( ( 'days' ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1479:1: ( 'days' )
             {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1543:1: ( 'days' )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1544:1: 'days'
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1479:1: ( 'days' )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1480:1: 'days'
             {
              before(grammarAccess.getNoRainAccess().getDaysKeyword_2()); 
-            match(input,45,FOLLOW_45_in_rule__NoRain__Group__2__Impl3187); 
+            match(input,44,FOLLOW_44_in_rule__NoRain__Group__2__Impl3061); 
              after(grammarAccess.getNoRainAccess().getDaysKeyword_2()); 
 
             }
@@ -4303,21 +4142,21 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__TempOfTheDay__Group__0"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1563:1: rule__TempOfTheDay__Group__0 : rule__TempOfTheDay__Group__0__Impl rule__TempOfTheDay__Group__1 ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1499:1: rule__TempOfTheDay__Group__0 : rule__TempOfTheDay__Group__0__Impl rule__TempOfTheDay__Group__1 ;
     public final void rule__TempOfTheDay__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1567:1: ( rule__TempOfTheDay__Group__0__Impl rule__TempOfTheDay__Group__1 )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1568:2: rule__TempOfTheDay__Group__0__Impl rule__TempOfTheDay__Group__1
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1503:1: ( rule__TempOfTheDay__Group__0__Impl rule__TempOfTheDay__Group__1 )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1504:2: rule__TempOfTheDay__Group__0__Impl rule__TempOfTheDay__Group__1
             {
-            pushFollow(FOLLOW_rule__TempOfTheDay__Group__0__Impl_in_rule__TempOfTheDay__Group__03224);
+            pushFollow(FOLLOW_rule__TempOfTheDay__Group__0__Impl_in_rule__TempOfTheDay__Group__03098);
             rule__TempOfTheDay__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__TempOfTheDay__Group__1_in_rule__TempOfTheDay__Group__03227);
+            pushFollow(FOLLOW_rule__TempOfTheDay__Group__1_in_rule__TempOfTheDay__Group__03101);
             rule__TempOfTheDay__Group__1();
 
             state._fsp--;
@@ -4341,20 +4180,20 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__TempOfTheDay__Group__0__Impl"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1575:1: rule__TempOfTheDay__Group__0__Impl : ( 'temperature' ) ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1511:1: rule__TempOfTheDay__Group__0__Impl : ( 'temperature' ) ;
     public final void rule__TempOfTheDay__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1579:1: ( ( 'temperature' ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1580:1: ( 'temperature' )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1515:1: ( ( 'temperature' ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1516:1: ( 'temperature' )
             {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1580:1: ( 'temperature' )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1581:1: 'temperature'
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1516:1: ( 'temperature' )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1517:1: 'temperature'
             {
              before(grammarAccess.getTempOfTheDayAccess().getTemperatureKeyword_0()); 
-            match(input,46,FOLLOW_46_in_rule__TempOfTheDay__Group__0__Impl3255); 
+            match(input,45,FOLLOW_45_in_rule__TempOfTheDay__Group__0__Impl3129); 
              after(grammarAccess.getTempOfTheDayAccess().getTemperatureKeyword_0()); 
 
             }
@@ -4378,21 +4217,21 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__TempOfTheDay__Group__1"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1594:1: rule__TempOfTheDay__Group__1 : rule__TempOfTheDay__Group__1__Impl rule__TempOfTheDay__Group__2 ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1530:1: rule__TempOfTheDay__Group__1 : rule__TempOfTheDay__Group__1__Impl rule__TempOfTheDay__Group__2 ;
     public final void rule__TempOfTheDay__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1598:1: ( rule__TempOfTheDay__Group__1__Impl rule__TempOfTheDay__Group__2 )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1599:2: rule__TempOfTheDay__Group__1__Impl rule__TempOfTheDay__Group__2
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1534:1: ( rule__TempOfTheDay__Group__1__Impl rule__TempOfTheDay__Group__2 )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1535:2: rule__TempOfTheDay__Group__1__Impl rule__TempOfTheDay__Group__2
             {
-            pushFollow(FOLLOW_rule__TempOfTheDay__Group__1__Impl_in_rule__TempOfTheDay__Group__13286);
+            pushFollow(FOLLOW_rule__TempOfTheDay__Group__1__Impl_in_rule__TempOfTheDay__Group__13160);
             rule__TempOfTheDay__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__TempOfTheDay__Group__2_in_rule__TempOfTheDay__Group__13289);
+            pushFollow(FOLLOW_rule__TempOfTheDay__Group__2_in_rule__TempOfTheDay__Group__13163);
             rule__TempOfTheDay__Group__2();
 
             state._fsp--;
@@ -4416,23 +4255,23 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__TempOfTheDay__Group__1__Impl"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1606:1: rule__TempOfTheDay__Group__1__Impl : ( ( rule__TempOfTheDay__ComparisonAssignment_1 ) ) ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1542:1: rule__TempOfTheDay__Group__1__Impl : ( ( rule__TempOfTheDay__ComparisonAssignment_1 ) ) ;
     public final void rule__TempOfTheDay__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1610:1: ( ( ( rule__TempOfTheDay__ComparisonAssignment_1 ) ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1611:1: ( ( rule__TempOfTheDay__ComparisonAssignment_1 ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1546:1: ( ( ( rule__TempOfTheDay__ComparisonAssignment_1 ) ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1547:1: ( ( rule__TempOfTheDay__ComparisonAssignment_1 ) )
             {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1611:1: ( ( rule__TempOfTheDay__ComparisonAssignment_1 ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1612:1: ( rule__TempOfTheDay__ComparisonAssignment_1 )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1547:1: ( ( rule__TempOfTheDay__ComparisonAssignment_1 ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1548:1: ( rule__TempOfTheDay__ComparisonAssignment_1 )
             {
              before(grammarAccess.getTempOfTheDayAccess().getComparisonAssignment_1()); 
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1613:1: ( rule__TempOfTheDay__ComparisonAssignment_1 )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1613:2: rule__TempOfTheDay__ComparisonAssignment_1
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1549:1: ( rule__TempOfTheDay__ComparisonAssignment_1 )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1549:2: rule__TempOfTheDay__ComparisonAssignment_1
             {
-            pushFollow(FOLLOW_rule__TempOfTheDay__ComparisonAssignment_1_in_rule__TempOfTheDay__Group__1__Impl3316);
+            pushFollow(FOLLOW_rule__TempOfTheDay__ComparisonAssignment_1_in_rule__TempOfTheDay__Group__1__Impl3190);
             rule__TempOfTheDay__ComparisonAssignment_1();
 
             state._fsp--;
@@ -4463,21 +4302,21 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__TempOfTheDay__Group__2"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1623:1: rule__TempOfTheDay__Group__2 : rule__TempOfTheDay__Group__2__Impl rule__TempOfTheDay__Group__3 ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1559:1: rule__TempOfTheDay__Group__2 : rule__TempOfTheDay__Group__2__Impl rule__TempOfTheDay__Group__3 ;
     public final void rule__TempOfTheDay__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1627:1: ( rule__TempOfTheDay__Group__2__Impl rule__TempOfTheDay__Group__3 )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1628:2: rule__TempOfTheDay__Group__2__Impl rule__TempOfTheDay__Group__3
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1563:1: ( rule__TempOfTheDay__Group__2__Impl rule__TempOfTheDay__Group__3 )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1564:2: rule__TempOfTheDay__Group__2__Impl rule__TempOfTheDay__Group__3
             {
-            pushFollow(FOLLOW_rule__TempOfTheDay__Group__2__Impl_in_rule__TempOfTheDay__Group__23346);
+            pushFollow(FOLLOW_rule__TempOfTheDay__Group__2__Impl_in_rule__TempOfTheDay__Group__23220);
             rule__TempOfTheDay__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__TempOfTheDay__Group__3_in_rule__TempOfTheDay__Group__23349);
+            pushFollow(FOLLOW_rule__TempOfTheDay__Group__3_in_rule__TempOfTheDay__Group__23223);
             rule__TempOfTheDay__Group__3();
 
             state._fsp--;
@@ -4501,23 +4340,23 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__TempOfTheDay__Group__2__Impl"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1635:1: rule__TempOfTheDay__Group__2__Impl : ( ( rule__TempOfTheDay__LowerTempBoundAssignment_2 ) ) ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1571:1: rule__TempOfTheDay__Group__2__Impl : ( ( rule__TempOfTheDay__LowerTempBoundAssignment_2 ) ) ;
     public final void rule__TempOfTheDay__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1639:1: ( ( ( rule__TempOfTheDay__LowerTempBoundAssignment_2 ) ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1640:1: ( ( rule__TempOfTheDay__LowerTempBoundAssignment_2 ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1575:1: ( ( ( rule__TempOfTheDay__LowerTempBoundAssignment_2 ) ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1576:1: ( ( rule__TempOfTheDay__LowerTempBoundAssignment_2 ) )
             {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1640:1: ( ( rule__TempOfTheDay__LowerTempBoundAssignment_2 ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1641:1: ( rule__TempOfTheDay__LowerTempBoundAssignment_2 )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1576:1: ( ( rule__TempOfTheDay__LowerTempBoundAssignment_2 ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1577:1: ( rule__TempOfTheDay__LowerTempBoundAssignment_2 )
             {
              before(grammarAccess.getTempOfTheDayAccess().getLowerTempBoundAssignment_2()); 
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1642:1: ( rule__TempOfTheDay__LowerTempBoundAssignment_2 )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1642:2: rule__TempOfTheDay__LowerTempBoundAssignment_2
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1578:1: ( rule__TempOfTheDay__LowerTempBoundAssignment_2 )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1578:2: rule__TempOfTheDay__LowerTempBoundAssignment_2
             {
-            pushFollow(FOLLOW_rule__TempOfTheDay__LowerTempBoundAssignment_2_in_rule__TempOfTheDay__Group__2__Impl3376);
+            pushFollow(FOLLOW_rule__TempOfTheDay__LowerTempBoundAssignment_2_in_rule__TempOfTheDay__Group__2__Impl3250);
             rule__TempOfTheDay__LowerTempBoundAssignment_2();
 
             state._fsp--;
@@ -4548,16 +4387,16 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__TempOfTheDay__Group__3"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1652:1: rule__TempOfTheDay__Group__3 : rule__TempOfTheDay__Group__3__Impl ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1588:1: rule__TempOfTheDay__Group__3 : rule__TempOfTheDay__Group__3__Impl ;
     public final void rule__TempOfTheDay__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1656:1: ( rule__TempOfTheDay__Group__3__Impl )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1657:2: rule__TempOfTheDay__Group__3__Impl
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1592:1: ( rule__TempOfTheDay__Group__3__Impl )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1593:2: rule__TempOfTheDay__Group__3__Impl
             {
-            pushFollow(FOLLOW_rule__TempOfTheDay__Group__3__Impl_in_rule__TempOfTheDay__Group__33406);
+            pushFollow(FOLLOW_rule__TempOfTheDay__Group__3__Impl_in_rule__TempOfTheDay__Group__33280);
             rule__TempOfTheDay__Group__3__Impl();
 
             state._fsp--;
@@ -4581,23 +4420,23 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__TempOfTheDay__Group__3__Impl"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1663:1: rule__TempOfTheDay__Group__3__Impl : ( ( rule__TempOfTheDay__UnitAssignment_3 ) ) ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1599:1: rule__TempOfTheDay__Group__3__Impl : ( ( rule__TempOfTheDay__UnitAssignment_3 ) ) ;
     public final void rule__TempOfTheDay__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1667:1: ( ( ( rule__TempOfTheDay__UnitAssignment_3 ) ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1668:1: ( ( rule__TempOfTheDay__UnitAssignment_3 ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1603:1: ( ( ( rule__TempOfTheDay__UnitAssignment_3 ) ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1604:1: ( ( rule__TempOfTheDay__UnitAssignment_3 ) )
             {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1668:1: ( ( rule__TempOfTheDay__UnitAssignment_3 ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1669:1: ( rule__TempOfTheDay__UnitAssignment_3 )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1604:1: ( ( rule__TempOfTheDay__UnitAssignment_3 ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1605:1: ( rule__TempOfTheDay__UnitAssignment_3 )
             {
              before(grammarAccess.getTempOfTheDayAccess().getUnitAssignment_3()); 
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1670:1: ( rule__TempOfTheDay__UnitAssignment_3 )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1670:2: rule__TempOfTheDay__UnitAssignment_3
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1606:1: ( rule__TempOfTheDay__UnitAssignment_3 )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1606:2: rule__TempOfTheDay__UnitAssignment_3
             {
-            pushFollow(FOLLOW_rule__TempOfTheDay__UnitAssignment_3_in_rule__TempOfTheDay__Group__3__Impl3433);
+            pushFollow(FOLLOW_rule__TempOfTheDay__UnitAssignment_3_in_rule__TempOfTheDay__Group__3__Impl3307);
             rule__TempOfTheDay__UnitAssignment_3();
 
             state._fsp--;
@@ -4628,21 +4467,21 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__DelaySinceActivy__Group__0"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1688:1: rule__DelaySinceActivy__Group__0 : rule__DelaySinceActivy__Group__0__Impl rule__DelaySinceActivy__Group__1 ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1624:1: rule__DelaySinceActivy__Group__0 : rule__DelaySinceActivy__Group__0__Impl rule__DelaySinceActivy__Group__1 ;
     public final void rule__DelaySinceActivy__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1692:1: ( rule__DelaySinceActivy__Group__0__Impl rule__DelaySinceActivy__Group__1 )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1693:2: rule__DelaySinceActivy__Group__0__Impl rule__DelaySinceActivy__Group__1
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1628:1: ( rule__DelaySinceActivy__Group__0__Impl rule__DelaySinceActivy__Group__1 )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1629:2: rule__DelaySinceActivy__Group__0__Impl rule__DelaySinceActivy__Group__1
             {
-            pushFollow(FOLLOW_rule__DelaySinceActivy__Group__0__Impl_in_rule__DelaySinceActivy__Group__03471);
+            pushFollow(FOLLOW_rule__DelaySinceActivy__Group__0__Impl_in_rule__DelaySinceActivy__Group__03345);
             rule__DelaySinceActivy__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__DelaySinceActivy__Group__1_in_rule__DelaySinceActivy__Group__03474);
+            pushFollow(FOLLOW_rule__DelaySinceActivy__Group__1_in_rule__DelaySinceActivy__Group__03348);
             rule__DelaySinceActivy__Group__1();
 
             state._fsp--;
@@ -4666,20 +4505,20 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__DelaySinceActivy__Group__0__Impl"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1700:1: rule__DelaySinceActivy__Group__0__Impl : ( 'after' ) ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1636:1: rule__DelaySinceActivy__Group__0__Impl : ( 'after' ) ;
     public final void rule__DelaySinceActivy__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1704:1: ( ( 'after' ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1705:1: ( 'after' )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1640:1: ( ( 'after' ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1641:1: ( 'after' )
             {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1705:1: ( 'after' )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1706:1: 'after'
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1641:1: ( 'after' )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1642:1: 'after'
             {
              before(grammarAccess.getDelaySinceActivyAccess().getAfterKeyword_0()); 
-            match(input,47,FOLLOW_47_in_rule__DelaySinceActivy__Group__0__Impl3502); 
+            match(input,46,FOLLOW_46_in_rule__DelaySinceActivy__Group__0__Impl3376); 
              after(grammarAccess.getDelaySinceActivyAccess().getAfterKeyword_0()); 
 
             }
@@ -4703,21 +4542,21 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__DelaySinceActivy__Group__1"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1719:1: rule__DelaySinceActivy__Group__1 : rule__DelaySinceActivy__Group__1__Impl rule__DelaySinceActivy__Group__2 ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1655:1: rule__DelaySinceActivy__Group__1 : rule__DelaySinceActivy__Group__1__Impl rule__DelaySinceActivy__Group__2 ;
     public final void rule__DelaySinceActivy__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1723:1: ( rule__DelaySinceActivy__Group__1__Impl rule__DelaySinceActivy__Group__2 )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1724:2: rule__DelaySinceActivy__Group__1__Impl rule__DelaySinceActivy__Group__2
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1659:1: ( rule__DelaySinceActivy__Group__1__Impl rule__DelaySinceActivy__Group__2 )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1660:2: rule__DelaySinceActivy__Group__1__Impl rule__DelaySinceActivy__Group__2
             {
-            pushFollow(FOLLOW_rule__DelaySinceActivy__Group__1__Impl_in_rule__DelaySinceActivy__Group__13533);
+            pushFollow(FOLLOW_rule__DelaySinceActivy__Group__1__Impl_in_rule__DelaySinceActivy__Group__13407);
             rule__DelaySinceActivy__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__DelaySinceActivy__Group__2_in_rule__DelaySinceActivy__Group__13536);
+            pushFollow(FOLLOW_rule__DelaySinceActivy__Group__2_in_rule__DelaySinceActivy__Group__13410);
             rule__DelaySinceActivy__Group__2();
 
             state._fsp--;
@@ -4741,23 +4580,23 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__DelaySinceActivy__Group__1__Impl"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1731:1: rule__DelaySinceActivy__Group__1__Impl : ( ( rule__DelaySinceActivy__PrerequisiteAssignment_1 ) ) ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1667:1: rule__DelaySinceActivy__Group__1__Impl : ( ( rule__DelaySinceActivy__PrerequisiteAssignment_1 ) ) ;
     public final void rule__DelaySinceActivy__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1735:1: ( ( ( rule__DelaySinceActivy__PrerequisiteAssignment_1 ) ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1736:1: ( ( rule__DelaySinceActivy__PrerequisiteAssignment_1 ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1671:1: ( ( ( rule__DelaySinceActivy__PrerequisiteAssignment_1 ) ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1672:1: ( ( rule__DelaySinceActivy__PrerequisiteAssignment_1 ) )
             {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1736:1: ( ( rule__DelaySinceActivy__PrerequisiteAssignment_1 ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1737:1: ( rule__DelaySinceActivy__PrerequisiteAssignment_1 )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1672:1: ( ( rule__DelaySinceActivy__PrerequisiteAssignment_1 ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1673:1: ( rule__DelaySinceActivy__PrerequisiteAssignment_1 )
             {
              before(grammarAccess.getDelaySinceActivyAccess().getPrerequisiteAssignment_1()); 
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1738:1: ( rule__DelaySinceActivy__PrerequisiteAssignment_1 )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1738:2: rule__DelaySinceActivy__PrerequisiteAssignment_1
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1674:1: ( rule__DelaySinceActivy__PrerequisiteAssignment_1 )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1674:2: rule__DelaySinceActivy__PrerequisiteAssignment_1
             {
-            pushFollow(FOLLOW_rule__DelaySinceActivy__PrerequisiteAssignment_1_in_rule__DelaySinceActivy__Group__1__Impl3563);
+            pushFollow(FOLLOW_rule__DelaySinceActivy__PrerequisiteAssignment_1_in_rule__DelaySinceActivy__Group__1__Impl3437);
             rule__DelaySinceActivy__PrerequisiteAssignment_1();
 
             state._fsp--;
@@ -4788,16 +4627,16 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__DelaySinceActivy__Group__2"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1748:1: rule__DelaySinceActivy__Group__2 : rule__DelaySinceActivy__Group__2__Impl ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1684:1: rule__DelaySinceActivy__Group__2 : rule__DelaySinceActivy__Group__2__Impl ;
     public final void rule__DelaySinceActivy__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1752:1: ( rule__DelaySinceActivy__Group__2__Impl )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1753:2: rule__DelaySinceActivy__Group__2__Impl
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1688:1: ( rule__DelaySinceActivy__Group__2__Impl )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1689:2: rule__DelaySinceActivy__Group__2__Impl
             {
-            pushFollow(FOLLOW_rule__DelaySinceActivy__Group__2__Impl_in_rule__DelaySinceActivy__Group__23593);
+            pushFollow(FOLLOW_rule__DelaySinceActivy__Group__2__Impl_in_rule__DelaySinceActivy__Group__23467);
             rule__DelaySinceActivy__Group__2__Impl();
 
             state._fsp--;
@@ -4821,31 +4660,31 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__DelaySinceActivy__Group__2__Impl"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1759:1: rule__DelaySinceActivy__Group__2__Impl : ( ( rule__DelaySinceActivy__Group_2__0 )? ) ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1695:1: rule__DelaySinceActivy__Group__2__Impl : ( ( rule__DelaySinceActivy__Group_2__0 )? ) ;
     public final void rule__DelaySinceActivy__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1763:1: ( ( ( rule__DelaySinceActivy__Group_2__0 )? ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1764:1: ( ( rule__DelaySinceActivy__Group_2__0 )? )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1699:1: ( ( ( rule__DelaySinceActivy__Group_2__0 )? ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1700:1: ( ( rule__DelaySinceActivy__Group_2__0 )? )
             {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1764:1: ( ( rule__DelaySinceActivy__Group_2__0 )? )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1765:1: ( rule__DelaySinceActivy__Group_2__0 )?
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1700:1: ( ( rule__DelaySinceActivy__Group_2__0 )? )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1701:1: ( rule__DelaySinceActivy__Group_2__0 )?
             {
              before(grammarAccess.getDelaySinceActivyAccess().getGroup_2()); 
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1766:1: ( rule__DelaySinceActivy__Group_2__0 )?
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1702:1: ( rule__DelaySinceActivy__Group_2__0 )?
             int alt13=2;
             int LA13_0 = input.LA(1);
 
-            if ( (LA13_0==48) ) {
+            if ( (LA13_0==47) ) {
                 alt13=1;
             }
             switch (alt13) {
                 case 1 :
-                    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1766:2: rule__DelaySinceActivy__Group_2__0
+                    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1702:2: rule__DelaySinceActivy__Group_2__0
                     {
-                    pushFollow(FOLLOW_rule__DelaySinceActivy__Group_2__0_in_rule__DelaySinceActivy__Group__2__Impl3620);
+                    pushFollow(FOLLOW_rule__DelaySinceActivy__Group_2__0_in_rule__DelaySinceActivy__Group__2__Impl3494);
                     rule__DelaySinceActivy__Group_2__0();
 
                     state._fsp--;
@@ -4879,21 +4718,21 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__DelaySinceActivy__Group_2__0"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1782:1: rule__DelaySinceActivy__Group_2__0 : rule__DelaySinceActivy__Group_2__0__Impl rule__DelaySinceActivy__Group_2__1 ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1718:1: rule__DelaySinceActivy__Group_2__0 : rule__DelaySinceActivy__Group_2__0__Impl rule__DelaySinceActivy__Group_2__1 ;
     public final void rule__DelaySinceActivy__Group_2__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1786:1: ( rule__DelaySinceActivy__Group_2__0__Impl rule__DelaySinceActivy__Group_2__1 )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1787:2: rule__DelaySinceActivy__Group_2__0__Impl rule__DelaySinceActivy__Group_2__1
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1722:1: ( rule__DelaySinceActivy__Group_2__0__Impl rule__DelaySinceActivy__Group_2__1 )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1723:2: rule__DelaySinceActivy__Group_2__0__Impl rule__DelaySinceActivy__Group_2__1
             {
-            pushFollow(FOLLOW_rule__DelaySinceActivy__Group_2__0__Impl_in_rule__DelaySinceActivy__Group_2__03657);
+            pushFollow(FOLLOW_rule__DelaySinceActivy__Group_2__0__Impl_in_rule__DelaySinceActivy__Group_2__03531);
             rule__DelaySinceActivy__Group_2__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__DelaySinceActivy__Group_2__1_in_rule__DelaySinceActivy__Group_2__03660);
+            pushFollow(FOLLOW_rule__DelaySinceActivy__Group_2__1_in_rule__DelaySinceActivy__Group_2__03534);
             rule__DelaySinceActivy__Group_2__1();
 
             state._fsp--;
@@ -4917,20 +4756,20 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__DelaySinceActivy__Group_2__0__Impl"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1794:1: rule__DelaySinceActivy__Group_2__0__Impl : ( 'is done since' ) ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1730:1: rule__DelaySinceActivy__Group_2__0__Impl : ( 'is done since' ) ;
     public final void rule__DelaySinceActivy__Group_2__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1798:1: ( ( 'is done since' ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1799:1: ( 'is done since' )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1734:1: ( ( 'is done since' ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1735:1: ( 'is done since' )
             {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1799:1: ( 'is done since' )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1800:1: 'is done since'
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1735:1: ( 'is done since' )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1736:1: 'is done since'
             {
              before(grammarAccess.getDelaySinceActivyAccess().getIsDoneSinceKeyword_2_0()); 
-            match(input,48,FOLLOW_48_in_rule__DelaySinceActivy__Group_2__0__Impl3688); 
+            match(input,47,FOLLOW_47_in_rule__DelaySinceActivy__Group_2__0__Impl3562); 
              after(grammarAccess.getDelaySinceActivyAccess().getIsDoneSinceKeyword_2_0()); 
 
             }
@@ -4954,21 +4793,21 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__DelaySinceActivy__Group_2__1"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1813:1: rule__DelaySinceActivy__Group_2__1 : rule__DelaySinceActivy__Group_2__1__Impl rule__DelaySinceActivy__Group_2__2 ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1749:1: rule__DelaySinceActivy__Group_2__1 : rule__DelaySinceActivy__Group_2__1__Impl rule__DelaySinceActivy__Group_2__2 ;
     public final void rule__DelaySinceActivy__Group_2__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1817:1: ( rule__DelaySinceActivy__Group_2__1__Impl rule__DelaySinceActivy__Group_2__2 )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1818:2: rule__DelaySinceActivy__Group_2__1__Impl rule__DelaySinceActivy__Group_2__2
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1753:1: ( rule__DelaySinceActivy__Group_2__1__Impl rule__DelaySinceActivy__Group_2__2 )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1754:2: rule__DelaySinceActivy__Group_2__1__Impl rule__DelaySinceActivy__Group_2__2
             {
-            pushFollow(FOLLOW_rule__DelaySinceActivy__Group_2__1__Impl_in_rule__DelaySinceActivy__Group_2__13719);
+            pushFollow(FOLLOW_rule__DelaySinceActivy__Group_2__1__Impl_in_rule__DelaySinceActivy__Group_2__13593);
             rule__DelaySinceActivy__Group_2__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__DelaySinceActivy__Group_2__2_in_rule__DelaySinceActivy__Group_2__13722);
+            pushFollow(FOLLOW_rule__DelaySinceActivy__Group_2__2_in_rule__DelaySinceActivy__Group_2__13596);
             rule__DelaySinceActivy__Group_2__2();
 
             state._fsp--;
@@ -4992,23 +4831,23 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__DelaySinceActivy__Group_2__1__Impl"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1825:1: rule__DelaySinceActivy__Group_2__1__Impl : ( ( rule__DelaySinceActivy__DaysAssignment_2_1 ) ) ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1761:1: rule__DelaySinceActivy__Group_2__1__Impl : ( ( rule__DelaySinceActivy__DaysAssignment_2_1 ) ) ;
     public final void rule__DelaySinceActivy__Group_2__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1829:1: ( ( ( rule__DelaySinceActivy__DaysAssignment_2_1 ) ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1830:1: ( ( rule__DelaySinceActivy__DaysAssignment_2_1 ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1765:1: ( ( ( rule__DelaySinceActivy__DaysAssignment_2_1 ) ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1766:1: ( ( rule__DelaySinceActivy__DaysAssignment_2_1 ) )
             {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1830:1: ( ( rule__DelaySinceActivy__DaysAssignment_2_1 ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1831:1: ( rule__DelaySinceActivy__DaysAssignment_2_1 )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1766:1: ( ( rule__DelaySinceActivy__DaysAssignment_2_1 ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1767:1: ( rule__DelaySinceActivy__DaysAssignment_2_1 )
             {
              before(grammarAccess.getDelaySinceActivyAccess().getDaysAssignment_2_1()); 
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1832:1: ( rule__DelaySinceActivy__DaysAssignment_2_1 )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1832:2: rule__DelaySinceActivy__DaysAssignment_2_1
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1768:1: ( rule__DelaySinceActivy__DaysAssignment_2_1 )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1768:2: rule__DelaySinceActivy__DaysAssignment_2_1
             {
-            pushFollow(FOLLOW_rule__DelaySinceActivy__DaysAssignment_2_1_in_rule__DelaySinceActivy__Group_2__1__Impl3749);
+            pushFollow(FOLLOW_rule__DelaySinceActivy__DaysAssignment_2_1_in_rule__DelaySinceActivy__Group_2__1__Impl3623);
             rule__DelaySinceActivy__DaysAssignment_2_1();
 
             state._fsp--;
@@ -5039,16 +4878,16 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__DelaySinceActivy__Group_2__2"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1842:1: rule__DelaySinceActivy__Group_2__2 : rule__DelaySinceActivy__Group_2__2__Impl ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1778:1: rule__DelaySinceActivy__Group_2__2 : rule__DelaySinceActivy__Group_2__2__Impl ;
     public final void rule__DelaySinceActivy__Group_2__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1846:1: ( rule__DelaySinceActivy__Group_2__2__Impl )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1847:2: rule__DelaySinceActivy__Group_2__2__Impl
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1782:1: ( rule__DelaySinceActivy__Group_2__2__Impl )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1783:2: rule__DelaySinceActivy__Group_2__2__Impl
             {
-            pushFollow(FOLLOW_rule__DelaySinceActivy__Group_2__2__Impl_in_rule__DelaySinceActivy__Group_2__23779);
+            pushFollow(FOLLOW_rule__DelaySinceActivy__Group_2__2__Impl_in_rule__DelaySinceActivy__Group_2__23653);
             rule__DelaySinceActivy__Group_2__2__Impl();
 
             state._fsp--;
@@ -5072,20 +4911,20 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__DelaySinceActivy__Group_2__2__Impl"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1853:1: rule__DelaySinceActivy__Group_2__2__Impl : ( 'days' ) ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1789:1: rule__DelaySinceActivy__Group_2__2__Impl : ( 'days' ) ;
     public final void rule__DelaySinceActivy__Group_2__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1857:1: ( ( 'days' ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1858:1: ( 'days' )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1793:1: ( ( 'days' ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1794:1: ( 'days' )
             {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1858:1: ( 'days' )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1859:1: 'days'
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1794:1: ( 'days' )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1795:1: 'days'
             {
              before(grammarAccess.getDelaySinceActivyAccess().getDaysKeyword_2_2()); 
-            match(input,45,FOLLOW_45_in_rule__DelaySinceActivy__Group_2__2__Impl3807); 
+            match(input,44,FOLLOW_44_in_rule__DelaySinceActivy__Group_2__2__Impl3681); 
              after(grammarAccess.getDelaySinceActivyAccess().getDaysKeyword_2_2()); 
 
             }
@@ -5109,21 +4948,21 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__GrainIs__Group__0"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1878:1: rule__GrainIs__Group__0 : rule__GrainIs__Group__0__Impl rule__GrainIs__Group__1 ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1814:1: rule__GrainIs__Group__0 : rule__GrainIs__Group__0__Impl rule__GrainIs__Group__1 ;
     public final void rule__GrainIs__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1882:1: ( rule__GrainIs__Group__0__Impl rule__GrainIs__Group__1 )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1883:2: rule__GrainIs__Group__0__Impl rule__GrainIs__Group__1
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1818:1: ( rule__GrainIs__Group__0__Impl rule__GrainIs__Group__1 )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1819:2: rule__GrainIs__Group__0__Impl rule__GrainIs__Group__1
             {
-            pushFollow(FOLLOW_rule__GrainIs__Group__0__Impl_in_rule__GrainIs__Group__03844);
+            pushFollow(FOLLOW_rule__GrainIs__Group__0__Impl_in_rule__GrainIs__Group__03718);
             rule__GrainIs__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__GrainIs__Group__1_in_rule__GrainIs__Group__03847);
+            pushFollow(FOLLOW_rule__GrainIs__Group__1_in_rule__GrainIs__Group__03721);
             rule__GrainIs__Group__1();
 
             state._fsp--;
@@ -5147,20 +4986,20 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__GrainIs__Group__0__Impl"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1890:1: rule__GrainIs__Group__0__Impl : ( 'grain is' ) ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1826:1: rule__GrainIs__Group__0__Impl : ( 'grain is' ) ;
     public final void rule__GrainIs__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1894:1: ( ( 'grain is' ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1895:1: ( 'grain is' )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1830:1: ( ( 'grain is' ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1831:1: ( 'grain is' )
             {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1895:1: ( 'grain is' )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1896:1: 'grain is'
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1831:1: ( 'grain is' )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1832:1: 'grain is'
             {
              before(grammarAccess.getGrainIsAccess().getGrainIsKeyword_0()); 
-            match(input,49,FOLLOW_49_in_rule__GrainIs__Group__0__Impl3875); 
+            match(input,48,FOLLOW_48_in_rule__GrainIs__Group__0__Impl3749); 
              after(grammarAccess.getGrainIsAccess().getGrainIsKeyword_0()); 
 
             }
@@ -5184,16 +5023,16 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__GrainIs__Group__1"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1909:1: rule__GrainIs__Group__1 : rule__GrainIs__Group__1__Impl ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1845:1: rule__GrainIs__Group__1 : rule__GrainIs__Group__1__Impl ;
     public final void rule__GrainIs__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1913:1: ( rule__GrainIs__Group__1__Impl )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1914:2: rule__GrainIs__Group__1__Impl
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1849:1: ( rule__GrainIs__Group__1__Impl )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1850:2: rule__GrainIs__Group__1__Impl
             {
-            pushFollow(FOLLOW_rule__GrainIs__Group__1__Impl_in_rule__GrainIs__Group__13906);
+            pushFollow(FOLLOW_rule__GrainIs__Group__1__Impl_in_rule__GrainIs__Group__13780);
             rule__GrainIs__Group__1__Impl();
 
             state._fsp--;
@@ -5217,23 +5056,23 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__GrainIs__Group__1__Impl"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1920:1: rule__GrainIs__Group__1__Impl : ( ( rule__GrainIs__StateAssignment_1 ) ) ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1856:1: rule__GrainIs__Group__1__Impl : ( ( rule__GrainIs__StateAssignment_1 ) ) ;
     public final void rule__GrainIs__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1924:1: ( ( ( rule__GrainIs__StateAssignment_1 ) ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1925:1: ( ( rule__GrainIs__StateAssignment_1 ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1860:1: ( ( ( rule__GrainIs__StateAssignment_1 ) ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1861:1: ( ( rule__GrainIs__StateAssignment_1 ) )
             {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1925:1: ( ( rule__GrainIs__StateAssignment_1 ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1926:1: ( rule__GrainIs__StateAssignment_1 )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1861:1: ( ( rule__GrainIs__StateAssignment_1 ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1862:1: ( rule__GrainIs__StateAssignment_1 )
             {
              before(grammarAccess.getGrainIsAccess().getStateAssignment_1()); 
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1927:1: ( rule__GrainIs__StateAssignment_1 )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1927:2: rule__GrainIs__StateAssignment_1
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1863:1: ( rule__GrainIs__StateAssignment_1 )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1863:2: rule__GrainIs__StateAssignment_1
             {
-            pushFollow(FOLLOW_rule__GrainIs__StateAssignment_1_in_rule__GrainIs__Group__1__Impl3933);
+            pushFollow(FOLLOW_rule__GrainIs__StateAssignment_1_in_rule__GrainIs__Group__1__Impl3807);
             rule__GrainIs__StateAssignment_1();
 
             state._fsp--;
@@ -5264,21 +5103,21 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__Date__Group__0"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1941:1: rule__Date__Group__0 : rule__Date__Group__0__Impl rule__Date__Group__1 ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1877:1: rule__Date__Group__0 : rule__Date__Group__0__Impl rule__Date__Group__1 ;
     public final void rule__Date__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1945:1: ( rule__Date__Group__0__Impl rule__Date__Group__1 )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1946:2: rule__Date__Group__0__Impl rule__Date__Group__1
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1881:1: ( rule__Date__Group__0__Impl rule__Date__Group__1 )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1882:2: rule__Date__Group__0__Impl rule__Date__Group__1
             {
-            pushFollow(FOLLOW_rule__Date__Group__0__Impl_in_rule__Date__Group__03967);
+            pushFollow(FOLLOW_rule__Date__Group__0__Impl_in_rule__Date__Group__03841);
             rule__Date__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Date__Group__1_in_rule__Date__Group__03970);
+            pushFollow(FOLLOW_rule__Date__Group__1_in_rule__Date__Group__03844);
             rule__Date__Group__1();
 
             state._fsp--;
@@ -5302,23 +5141,23 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__Date__Group__0__Impl"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1953:1: rule__Date__Group__0__Impl : ( ( rule__Date__DayAssignment_0 ) ) ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1889:1: rule__Date__Group__0__Impl : ( ( rule__Date__DayAssignment_0 ) ) ;
     public final void rule__Date__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1957:1: ( ( ( rule__Date__DayAssignment_0 ) ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1958:1: ( ( rule__Date__DayAssignment_0 ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1893:1: ( ( ( rule__Date__DayAssignment_0 ) ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1894:1: ( ( rule__Date__DayAssignment_0 ) )
             {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1958:1: ( ( rule__Date__DayAssignment_0 ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1959:1: ( rule__Date__DayAssignment_0 )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1894:1: ( ( rule__Date__DayAssignment_0 ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1895:1: ( rule__Date__DayAssignment_0 )
             {
              before(grammarAccess.getDateAccess().getDayAssignment_0()); 
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1960:1: ( rule__Date__DayAssignment_0 )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1960:2: rule__Date__DayAssignment_0
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1896:1: ( rule__Date__DayAssignment_0 )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1896:2: rule__Date__DayAssignment_0
             {
-            pushFollow(FOLLOW_rule__Date__DayAssignment_0_in_rule__Date__Group__0__Impl3997);
+            pushFollow(FOLLOW_rule__Date__DayAssignment_0_in_rule__Date__Group__0__Impl3871);
             rule__Date__DayAssignment_0();
 
             state._fsp--;
@@ -5349,16 +5188,16 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__Date__Group__1"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1970:1: rule__Date__Group__1 : rule__Date__Group__1__Impl ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1906:1: rule__Date__Group__1 : rule__Date__Group__1__Impl ;
     public final void rule__Date__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1974:1: ( rule__Date__Group__1__Impl )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1975:2: rule__Date__Group__1__Impl
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1910:1: ( rule__Date__Group__1__Impl )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1911:2: rule__Date__Group__1__Impl
             {
-            pushFollow(FOLLOW_rule__Date__Group__1__Impl_in_rule__Date__Group__14027);
+            pushFollow(FOLLOW_rule__Date__Group__1__Impl_in_rule__Date__Group__13901);
             rule__Date__Group__1__Impl();
 
             state._fsp--;
@@ -5382,23 +5221,23 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__Date__Group__1__Impl"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1981:1: rule__Date__Group__1__Impl : ( ( rule__Date__MonthAssignment_1 ) ) ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1917:1: rule__Date__Group__1__Impl : ( ( rule__Date__MonthAssignment_1 ) ) ;
     public final void rule__Date__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1985:1: ( ( ( rule__Date__MonthAssignment_1 ) ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1986:1: ( ( rule__Date__MonthAssignment_1 ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1921:1: ( ( ( rule__Date__MonthAssignment_1 ) ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1922:1: ( ( rule__Date__MonthAssignment_1 ) )
             {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1986:1: ( ( rule__Date__MonthAssignment_1 ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1987:1: ( rule__Date__MonthAssignment_1 )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1922:1: ( ( rule__Date__MonthAssignment_1 ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1923:1: ( rule__Date__MonthAssignment_1 )
             {
              before(grammarAccess.getDateAccess().getMonthAssignment_1()); 
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1988:1: ( rule__Date__MonthAssignment_1 )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1988:2: rule__Date__MonthAssignment_1
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1924:1: ( rule__Date__MonthAssignment_1 )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1924:2: rule__Date__MonthAssignment_1
             {
-            pushFollow(FOLLOW_rule__Date__MonthAssignment_1_in_rule__Date__Group__1__Impl4054);
+            pushFollow(FOLLOW_rule__Date__MonthAssignment_1_in_rule__Date__Group__1__Impl3928);
             rule__Date__MonthAssignment_1();
 
             state._fsp--;
@@ -5428,63 +5267,26 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
     // $ANTLR end "rule__Date__Group__1__Impl"
 
 
-    // $ANTLR start "rule__Model__NameAssignment_1"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2003:1: rule__Model__NameAssignment_1 : ( RULE_ID ) ;
-    public final void rule__Model__NameAssignment_1() throws RecognitionException {
+    // $ANTLR start "rule__Model__CulturesAssignment_0"
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1939:1: rule__Model__CulturesAssignment_0 : ( ruleCulture ) ;
+    public final void rule__Model__CulturesAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2007:1: ( ( RULE_ID ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2008:1: ( RULE_ID )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1943:1: ( ( ruleCulture ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1944:1: ( ruleCulture )
             {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2008:1: ( RULE_ID )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2009:1: RULE_ID
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1944:1: ( ruleCulture )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1945:1: ruleCulture
             {
-             before(grammarAccess.getModelAccess().getNameIDTerminalRuleCall_1_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Model__NameAssignment_14093); 
-             after(grammarAccess.getModelAccess().getNameIDTerminalRuleCall_1_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Model__NameAssignment_1"
-
-
-    // $ANTLR start "rule__Model__CulturesAssignment_2"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2018:1: rule__Model__CulturesAssignment_2 : ( ruleCulture ) ;
-    public final void rule__Model__CulturesAssignment_2() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2022:1: ( ( ruleCulture ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2023:1: ( ruleCulture )
-            {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2023:1: ( ruleCulture )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2024:1: ruleCulture
-            {
-             before(grammarAccess.getModelAccess().getCulturesCultureParserRuleCall_2_0()); 
-            pushFollow(FOLLOW_ruleCulture_in_rule__Model__CulturesAssignment_24124);
+             before(grammarAccess.getModelAccess().getCulturesCultureParserRuleCall_0_0()); 
+            pushFollow(FOLLOW_ruleCulture_in_rule__Model__CulturesAssignment_03967);
             ruleCulture();
 
             state._fsp--;
 
-             after(grammarAccess.getModelAccess().getCulturesCultureParserRuleCall_2_0()); 
+             after(grammarAccess.getModelAccess().getCulturesCultureParserRuleCall_0_0()); 
 
             }
 
@@ -5503,29 +5305,29 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
         }
         return ;
     }
-    // $ANTLR end "rule__Model__CulturesAssignment_2"
+    // $ANTLR end "rule__Model__CulturesAssignment_0"
 
 
-    // $ANTLR start "rule__Model__ResourceKindsAssignment_3"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2033:1: rule__Model__ResourceKindsAssignment_3 : ( ruleResourceKind ) ;
-    public final void rule__Model__ResourceKindsAssignment_3() throws RecognitionException {
+    // $ANTLR start "rule__Model__ResourceKindsAssignment_1"
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1954:1: rule__Model__ResourceKindsAssignment_1 : ( ruleResourceKind ) ;
+    public final void rule__Model__ResourceKindsAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2037:1: ( ( ruleResourceKind ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2038:1: ( ruleResourceKind )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1958:1: ( ( ruleResourceKind ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1959:1: ( ruleResourceKind )
             {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2038:1: ( ruleResourceKind )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2039:1: ruleResourceKind
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1959:1: ( ruleResourceKind )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1960:1: ruleResourceKind
             {
-             before(grammarAccess.getModelAccess().getResourceKindsResourceKindParserRuleCall_3_0()); 
-            pushFollow(FOLLOW_ruleResourceKind_in_rule__Model__ResourceKindsAssignment_34155);
+             before(grammarAccess.getModelAccess().getResourceKindsResourceKindParserRuleCall_1_0()); 
+            pushFollow(FOLLOW_ruleResourceKind_in_rule__Model__ResourceKindsAssignment_13998);
             ruleResourceKind();
 
             state._fsp--;
 
-             after(grammarAccess.getModelAccess().getResourceKindsResourceKindParserRuleCall_3_0()); 
+             after(grammarAccess.getModelAccess().getResourceKindsResourceKindParserRuleCall_1_0()); 
 
             }
 
@@ -5544,24 +5346,24 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
         }
         return ;
     }
-    // $ANTLR end "rule__Model__ResourceKindsAssignment_3"
+    // $ANTLR end "rule__Model__ResourceKindsAssignment_1"
 
 
     // $ANTLR start "rule__ResourceKind__NameAssignment_1"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2048:1: rule__ResourceKind__NameAssignment_1 : ( RULE_ID ) ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1969:1: rule__ResourceKind__NameAssignment_1 : ( RULE_ID ) ;
     public final void rule__ResourceKind__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2052:1: ( ( RULE_ID ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2053:1: ( RULE_ID )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1973:1: ( ( RULE_ID ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1974:1: ( RULE_ID )
             {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2053:1: ( RULE_ID )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2054:1: RULE_ID
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1974:1: ( RULE_ID )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1975:1: RULE_ID
             {
              before(grammarAccess.getResourceKindAccess().getNameIDTerminalRuleCall_1_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__ResourceKind__NameAssignment_14186); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__ResourceKind__NameAssignment_14029); 
              after(grammarAccess.getResourceKindAccess().getNameIDTerminalRuleCall_1_0()); 
 
             }
@@ -5585,20 +5387,20 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__Culture__NameAssignment_1"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2063:1: rule__Culture__NameAssignment_1 : ( RULE_ID ) ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1984:1: rule__Culture__NameAssignment_1 : ( RULE_ID ) ;
     public final void rule__Culture__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2067:1: ( ( RULE_ID ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2068:1: ( RULE_ID )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1988:1: ( ( RULE_ID ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1989:1: ( RULE_ID )
             {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2068:1: ( RULE_ID )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2069:1: RULE_ID
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1989:1: ( RULE_ID )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1990:1: RULE_ID
             {
              before(grammarAccess.getCultureAccess().getNameIDTerminalRuleCall_1_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Culture__NameAssignment_14217); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Culture__NameAssignment_14060); 
              after(grammarAccess.getCultureAccess().getNameIDTerminalRuleCall_1_0()); 
 
             }
@@ -5622,20 +5424,20 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__Culture__ActivitiesAssignment_3"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2078:1: rule__Culture__ActivitiesAssignment_3 : ( ruleExploitationActivity ) ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:1999:1: rule__Culture__ActivitiesAssignment_3 : ( ruleExploitationActivity ) ;
     public final void rule__Culture__ActivitiesAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2082:1: ( ( ruleExploitationActivity ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2083:1: ( ruleExploitationActivity )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2003:1: ( ( ruleExploitationActivity ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2004:1: ( ruleExploitationActivity )
             {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2083:1: ( ruleExploitationActivity )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2084:1: ruleExploitationActivity
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2004:1: ( ruleExploitationActivity )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2005:1: ruleExploitationActivity
             {
              before(grammarAccess.getCultureAccess().getActivitiesExploitationActivityParserRuleCall_3_0()); 
-            pushFollow(FOLLOW_ruleExploitationActivity_in_rule__Culture__ActivitiesAssignment_34248);
+            pushFollow(FOLLOW_ruleExploitationActivity_in_rule__Culture__ActivitiesAssignment_34091);
             ruleExploitationActivity();
 
             state._fsp--;
@@ -5663,20 +5465,20 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__ExploitationActivity__NameAssignment_1"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2093:1: rule__ExploitationActivity__NameAssignment_1 : ( RULE_ID ) ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2014:1: rule__ExploitationActivity__NameAssignment_1 : ( RULE_ID ) ;
     public final void rule__ExploitationActivity__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2097:1: ( ( RULE_ID ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2098:1: ( RULE_ID )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2018:1: ( ( RULE_ID ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2019:1: ( RULE_ID )
             {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2098:1: ( RULE_ID )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2099:1: RULE_ID
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2019:1: ( RULE_ID )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2020:1: RULE_ID
             {
              before(grammarAccess.getExploitationActivityAccess().getNameIDTerminalRuleCall_1_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__ExploitationActivity__NameAssignment_14279); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__ExploitationActivity__NameAssignment_14122); 
              after(grammarAccess.getExploitationActivityAccess().getNameIDTerminalRuleCall_1_0()); 
 
             }
@@ -5700,20 +5502,20 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__ExploitationActivity__FrequencyAssignment_2"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2108:1: rule__ExploitationActivity__FrequencyAssignment_2 : ( ruleFrequency ) ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2029:1: rule__ExploitationActivity__FrequencyAssignment_2 : ( ruleFrequency ) ;
     public final void rule__ExploitationActivity__FrequencyAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2112:1: ( ( ruleFrequency ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2113:1: ( ruleFrequency )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2033:1: ( ( ruleFrequency ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2034:1: ( ruleFrequency )
             {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2113:1: ( ruleFrequency )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2114:1: ruleFrequency
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2034:1: ( ruleFrequency )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2035:1: ruleFrequency
             {
              before(grammarAccess.getExploitationActivityAccess().getFrequencyFrequencyEnumRuleCall_2_0()); 
-            pushFollow(FOLLOW_ruleFrequency_in_rule__ExploitationActivity__FrequencyAssignment_24310);
+            pushFollow(FOLLOW_ruleFrequency_in_rule__ExploitationActivity__FrequencyAssignment_24153);
             ruleFrequency();
 
             state._fsp--;
@@ -5741,20 +5543,20 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__ExploitationActivity__StartDateAssignment_3_1"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2123:1: rule__ExploitationActivity__StartDateAssignment_3_1 : ( ruleDate ) ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2044:1: rule__ExploitationActivity__StartDateAssignment_3_1 : ( ruleDate ) ;
     public final void rule__ExploitationActivity__StartDateAssignment_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2127:1: ( ( ruleDate ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2128:1: ( ruleDate )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2048:1: ( ( ruleDate ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2049:1: ( ruleDate )
             {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2128:1: ( ruleDate )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2129:1: ruleDate
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2049:1: ( ruleDate )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2050:1: ruleDate
             {
              before(grammarAccess.getExploitationActivityAccess().getStartDateDateParserRuleCall_3_1_0()); 
-            pushFollow(FOLLOW_ruleDate_in_rule__ExploitationActivity__StartDateAssignment_3_14341);
+            pushFollow(FOLLOW_ruleDate_in_rule__ExploitationActivity__StartDateAssignment_3_14184);
             ruleDate();
 
             state._fsp--;
@@ -5782,20 +5584,20 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__ExploitationActivity__EndDateAssignment_3_3"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2138:1: rule__ExploitationActivity__EndDateAssignment_3_3 : ( ruleDate ) ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2059:1: rule__ExploitationActivity__EndDateAssignment_3_3 : ( ruleDate ) ;
     public final void rule__ExploitationActivity__EndDateAssignment_3_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2142:1: ( ( ruleDate ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2143:1: ( ruleDate )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2063:1: ( ( ruleDate ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2064:1: ( ruleDate )
             {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2143:1: ( ruleDate )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2144:1: ruleDate
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2064:1: ( ruleDate )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2065:1: ruleDate
             {
              before(grammarAccess.getExploitationActivityAccess().getEndDateDateParserRuleCall_3_3_0()); 
-            pushFollow(FOLLOW_ruleDate_in_rule__ExploitationActivity__EndDateAssignment_3_34372);
+            pushFollow(FOLLOW_ruleDate_in_rule__ExploitationActivity__EndDateAssignment_3_34215);
             ruleDate();
 
             state._fsp--;
@@ -5823,20 +5625,20 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__ExploitationActivity__PredicatesAssignment_4_1"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2153:1: rule__ExploitationActivity__PredicatesAssignment_4_1 : ( rulePredicate ) ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2074:1: rule__ExploitationActivity__PredicatesAssignment_4_1 : ( rulePredicate ) ;
     public final void rule__ExploitationActivity__PredicatesAssignment_4_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2157:1: ( ( rulePredicate ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2158:1: ( rulePredicate )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2078:1: ( ( rulePredicate ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2079:1: ( rulePredicate )
             {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2158:1: ( rulePredicate )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2159:1: rulePredicate
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2079:1: ( rulePredicate )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2080:1: rulePredicate
             {
              before(grammarAccess.getExploitationActivityAccess().getPredicatesPredicateParserRuleCall_4_1_0()); 
-            pushFollow(FOLLOW_rulePredicate_in_rule__ExploitationActivity__PredicatesAssignment_4_14403);
+            pushFollow(FOLLOW_rulePredicate_in_rule__ExploitationActivity__PredicatesAssignment_4_14246);
             rulePredicate();
 
             state._fsp--;
@@ -5864,20 +5666,20 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__ExploitationActivity__PredicatesAssignment_4_2_1"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2168:1: rule__ExploitationActivity__PredicatesAssignment_4_2_1 : ( rulePredicate ) ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2089:1: rule__ExploitationActivity__PredicatesAssignment_4_2_1 : ( rulePredicate ) ;
     public final void rule__ExploitationActivity__PredicatesAssignment_4_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2172:1: ( ( rulePredicate ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2173:1: ( rulePredicate )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2093:1: ( ( rulePredicate ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2094:1: ( rulePredicate )
             {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2173:1: ( rulePredicate )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2174:1: rulePredicate
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2094:1: ( rulePredicate )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2095:1: rulePredicate
             {
              before(grammarAccess.getExploitationActivityAccess().getPredicatesPredicateParserRuleCall_4_2_1_0()); 
-            pushFollow(FOLLOW_rulePredicate_in_rule__ExploitationActivity__PredicatesAssignment_4_2_14434);
+            pushFollow(FOLLOW_rulePredicate_in_rule__ExploitationActivity__PredicatesAssignment_4_2_14277);
             rulePredicate();
 
             state._fsp--;
@@ -5905,20 +5707,20 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__NoRain__DaysAssignment_1"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2183:1: rule__NoRain__DaysAssignment_1 : ( RULE_INT ) ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2104:1: rule__NoRain__DaysAssignment_1 : ( RULE_INT ) ;
     public final void rule__NoRain__DaysAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2187:1: ( ( RULE_INT ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2188:1: ( RULE_INT )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2108:1: ( ( RULE_INT ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2109:1: ( RULE_INT )
             {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2188:1: ( RULE_INT )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2189:1: RULE_INT
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2109:1: ( RULE_INT )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2110:1: RULE_INT
             {
              before(grammarAccess.getNoRainAccess().getDaysINTTerminalRuleCall_1_0()); 
-            match(input,RULE_INT,FOLLOW_RULE_INT_in_rule__NoRain__DaysAssignment_14465); 
+            match(input,RULE_INT,FOLLOW_RULE_INT_in_rule__NoRain__DaysAssignment_14308); 
              after(grammarAccess.getNoRainAccess().getDaysINTTerminalRuleCall_1_0()); 
 
             }
@@ -5942,20 +5744,20 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__TempOfTheDay__ComparisonAssignment_1"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2198:1: rule__TempOfTheDay__ComparisonAssignment_1 : ( ruleComp ) ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2119:1: rule__TempOfTheDay__ComparisonAssignment_1 : ( ruleComp ) ;
     public final void rule__TempOfTheDay__ComparisonAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2202:1: ( ( ruleComp ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2203:1: ( ruleComp )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2123:1: ( ( ruleComp ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2124:1: ( ruleComp )
             {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2203:1: ( ruleComp )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2204:1: ruleComp
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2124:1: ( ruleComp )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2125:1: ruleComp
             {
              before(grammarAccess.getTempOfTheDayAccess().getComparisonCompEnumRuleCall_1_0()); 
-            pushFollow(FOLLOW_ruleComp_in_rule__TempOfTheDay__ComparisonAssignment_14496);
+            pushFollow(FOLLOW_ruleComp_in_rule__TempOfTheDay__ComparisonAssignment_14339);
             ruleComp();
 
             state._fsp--;
@@ -5983,20 +5785,20 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__TempOfTheDay__LowerTempBoundAssignment_2"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2213:1: rule__TempOfTheDay__LowerTempBoundAssignment_2 : ( RULE_INT ) ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2134:1: rule__TempOfTheDay__LowerTempBoundAssignment_2 : ( RULE_INT ) ;
     public final void rule__TempOfTheDay__LowerTempBoundAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2217:1: ( ( RULE_INT ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2218:1: ( RULE_INT )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2138:1: ( ( RULE_INT ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2139:1: ( RULE_INT )
             {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2218:1: ( RULE_INT )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2219:1: RULE_INT
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2139:1: ( RULE_INT )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2140:1: RULE_INT
             {
              before(grammarAccess.getTempOfTheDayAccess().getLowerTempBoundINTTerminalRuleCall_2_0()); 
-            match(input,RULE_INT,FOLLOW_RULE_INT_in_rule__TempOfTheDay__LowerTempBoundAssignment_24527); 
+            match(input,RULE_INT,FOLLOW_RULE_INT_in_rule__TempOfTheDay__LowerTempBoundAssignment_24370); 
              after(grammarAccess.getTempOfTheDayAccess().getLowerTempBoundINTTerminalRuleCall_2_0()); 
 
             }
@@ -6020,20 +5822,20 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__TempOfTheDay__UnitAssignment_3"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2228:1: rule__TempOfTheDay__UnitAssignment_3 : ( ruleTempUnit ) ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2149:1: rule__TempOfTheDay__UnitAssignment_3 : ( ruleTempUnit ) ;
     public final void rule__TempOfTheDay__UnitAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2232:1: ( ( ruleTempUnit ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2233:1: ( ruleTempUnit )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2153:1: ( ( ruleTempUnit ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2154:1: ( ruleTempUnit )
             {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2233:1: ( ruleTempUnit )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2234:1: ruleTempUnit
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2154:1: ( ruleTempUnit )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2155:1: ruleTempUnit
             {
              before(grammarAccess.getTempOfTheDayAccess().getUnitTempUnitEnumRuleCall_3_0()); 
-            pushFollow(FOLLOW_ruleTempUnit_in_rule__TempOfTheDay__UnitAssignment_34558);
+            pushFollow(FOLLOW_ruleTempUnit_in_rule__TempOfTheDay__UnitAssignment_34401);
             ruleTempUnit();
 
             state._fsp--;
@@ -6061,24 +5863,24 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__DelaySinceActivy__PrerequisiteAssignment_1"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2243:1: rule__DelaySinceActivy__PrerequisiteAssignment_1 : ( ( RULE_ID ) ) ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2164:1: rule__DelaySinceActivy__PrerequisiteAssignment_1 : ( ( RULE_ID ) ) ;
     public final void rule__DelaySinceActivy__PrerequisiteAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2247:1: ( ( ( RULE_ID ) ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2248:1: ( ( RULE_ID ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2168:1: ( ( ( RULE_ID ) ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2169:1: ( ( RULE_ID ) )
             {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2248:1: ( ( RULE_ID ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2249:1: ( RULE_ID )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2169:1: ( ( RULE_ID ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2170:1: ( RULE_ID )
             {
              before(grammarAccess.getDelaySinceActivyAccess().getPrerequisiteExploitationActivityCrossReference_1_0()); 
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2250:1: ( RULE_ID )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2251:1: RULE_ID
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2171:1: ( RULE_ID )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2172:1: RULE_ID
             {
              before(grammarAccess.getDelaySinceActivyAccess().getPrerequisiteExploitationActivityIDTerminalRuleCall_1_0_1()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__DelaySinceActivy__PrerequisiteAssignment_14593); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__DelaySinceActivy__PrerequisiteAssignment_14436); 
              after(grammarAccess.getDelaySinceActivyAccess().getPrerequisiteExploitationActivityIDTerminalRuleCall_1_0_1()); 
 
             }
@@ -6106,20 +5908,20 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__DelaySinceActivy__DaysAssignment_2_1"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2262:1: rule__DelaySinceActivy__DaysAssignment_2_1 : ( RULE_INT ) ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2183:1: rule__DelaySinceActivy__DaysAssignment_2_1 : ( RULE_INT ) ;
     public final void rule__DelaySinceActivy__DaysAssignment_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2266:1: ( ( RULE_INT ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2267:1: ( RULE_INT )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2187:1: ( ( RULE_INT ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2188:1: ( RULE_INT )
             {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2267:1: ( RULE_INT )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2268:1: RULE_INT
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2188:1: ( RULE_INT )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2189:1: RULE_INT
             {
              before(grammarAccess.getDelaySinceActivyAccess().getDaysINTTerminalRuleCall_2_1_0()); 
-            match(input,RULE_INT,FOLLOW_RULE_INT_in_rule__DelaySinceActivy__DaysAssignment_2_14628); 
+            match(input,RULE_INT,FOLLOW_RULE_INT_in_rule__DelaySinceActivy__DaysAssignment_2_14471); 
              after(grammarAccess.getDelaySinceActivyAccess().getDaysINTTerminalRuleCall_2_1_0()); 
 
             }
@@ -6143,20 +5945,20 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__GrainIs__StateAssignment_1"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2277:1: rule__GrainIs__StateAssignment_1 : ( RULE_STRING ) ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2198:1: rule__GrainIs__StateAssignment_1 : ( RULE_STRING ) ;
     public final void rule__GrainIs__StateAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2281:1: ( ( RULE_STRING ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2282:1: ( RULE_STRING )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2202:1: ( ( RULE_STRING ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2203:1: ( RULE_STRING )
             {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2282:1: ( RULE_STRING )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2283:1: RULE_STRING
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2203:1: ( RULE_STRING )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2204:1: RULE_STRING
             {
              before(grammarAccess.getGrainIsAccess().getStateSTRINGTerminalRuleCall_1_0()); 
-            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__GrainIs__StateAssignment_14659); 
+            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__GrainIs__StateAssignment_14502); 
              after(grammarAccess.getGrainIsAccess().getStateSTRINGTerminalRuleCall_1_0()); 
 
             }
@@ -6180,20 +5982,20 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__Date__DayAssignment_0"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2292:1: rule__Date__DayAssignment_0 : ( RULE_INT ) ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2213:1: rule__Date__DayAssignment_0 : ( RULE_INT ) ;
     public final void rule__Date__DayAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2296:1: ( ( RULE_INT ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2297:1: ( RULE_INT )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2217:1: ( ( RULE_INT ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2218:1: ( RULE_INT )
             {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2297:1: ( RULE_INT )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2298:1: RULE_INT
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2218:1: ( RULE_INT )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2219:1: RULE_INT
             {
              before(grammarAccess.getDateAccess().getDayINTTerminalRuleCall_0_0()); 
-            match(input,RULE_INT,FOLLOW_RULE_INT_in_rule__Date__DayAssignment_04690); 
+            match(input,RULE_INT,FOLLOW_RULE_INT_in_rule__Date__DayAssignment_04533); 
              after(grammarAccess.getDateAccess().getDayINTTerminalRuleCall_0_0()); 
 
             }
@@ -6217,20 +6019,20 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__Date__MonthAssignment_1"
-    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2307:1: rule__Date__MonthAssignment_1 : ( ruleMonth ) ;
+    // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2228:1: rule__Date__MonthAssignment_1 : ( ruleMonth ) ;
     public final void rule__Date__MonthAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2311:1: ( ( ruleMonth ) )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2312:1: ( ruleMonth )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2232:1: ( ( ruleMonth ) )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2233:1: ( ruleMonth )
             {
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2312:1: ( ruleMonth )
-            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2313:1: ruleMonth
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2233:1: ( ruleMonth )
+            // ../org.gemoc.agro.activities.ui/src-gen/org/gemoc/agro/ui/contentassist/antlr/internal/InternalActivitiesDSL.g:2234:1: ruleMonth
             {
              before(grammarAccess.getDateAccess().getMonthMonthEnumRuleCall_1_0()); 
-            pushFollow(FOLLOW_ruleMonth_in_rule__Date__MonthAssignment_14721);
+            pushFollow(FOLLOW_ruleMonth_in_rule__Date__MonthAssignment_14564);
             ruleMonth();
 
             state._fsp--;
@@ -6321,142 +6123,135 @@ public class InternalActivitiesDSLParser extends AbstractInternalContentAssistPa
     public static final BitSet FOLLOW_30_in_rule__Frequency__Alternatives1342 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_31_in_rule__Frequency__Alternatives1363 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_32_in_rule__Frequency__Alternatives1384 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Model__Group__0__Impl_in_rule__Model__Group__01417 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__Model__Group__0__Impl_in_rule__Model__Group__01417 = new BitSet(new long[]{0x0000000200000000L});
     public static final BitSet FOLLOW_rule__Model__Group__1_in_rule__Model__Group__01420 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_33_in_rule__Model__Group__0__Impl1448 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Model__Group__1__Impl_in_rule__Model__Group__11479 = new BitSet(new long[]{0x0000000C00000000L});
-    public static final BitSet FOLLOW_rule__Model__Group__2_in_rule__Model__Group__11482 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Model__NameAssignment_1_in_rule__Model__Group__1__Impl1509 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Model__Group__2__Impl_in_rule__Model__Group__21539 = new BitSet(new long[]{0x0000000C00000000L});
-    public static final BitSet FOLLOW_rule__Model__Group__3_in_rule__Model__Group__21542 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Model__CulturesAssignment_2_in_rule__Model__Group__2__Impl1569 = new BitSet(new long[]{0x0000000800000002L});
-    public static final BitSet FOLLOW_rule__Model__Group__3__Impl_in_rule__Model__Group__31600 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Model__ResourceKindsAssignment_3_in_rule__Model__Group__3__Impl1627 = new BitSet(new long[]{0x0000000400000002L});
-    public static final BitSet FOLLOW_rule__ResourceKind__Group__0__Impl_in_rule__ResourceKind__Group__01666 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__ResourceKind__Group__1_in_rule__ResourceKind__Group__01669 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_34_in_rule__ResourceKind__Group__0__Impl1697 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ResourceKind__Group__1__Impl_in_rule__ResourceKind__Group__11728 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ResourceKind__NameAssignment_1_in_rule__ResourceKind__Group__1__Impl1755 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Culture__Group__0__Impl_in_rule__Culture__Group__01789 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__Culture__Group__1_in_rule__Culture__Group__01792 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_35_in_rule__Culture__Group__0__Impl1820 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Culture__Group__1__Impl_in_rule__Culture__Group__11851 = new BitSet(new long[]{0x0000001000000000L});
-    public static final BitSet FOLLOW_rule__Culture__Group__2_in_rule__Culture__Group__11854 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Culture__NameAssignment_1_in_rule__Culture__Group__1__Impl1881 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Culture__Group__2__Impl_in_rule__Culture__Group__21911 = new BitSet(new long[]{0x0000006000000000L});
-    public static final BitSet FOLLOW_rule__Culture__Group__3_in_rule__Culture__Group__21914 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_36_in_rule__Culture__Group__2__Impl1942 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Culture__Group__3__Impl_in_rule__Culture__Group__31973 = new BitSet(new long[]{0x0000006000000000L});
-    public static final BitSet FOLLOW_rule__Culture__Group__4_in_rule__Culture__Group__31976 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Culture__ActivitiesAssignment_3_in_rule__Culture__Group__3__Impl2003 = new BitSet(new long[]{0x0000004000000002L});
-    public static final BitSet FOLLOW_rule__Culture__Group__4__Impl_in_rule__Culture__Group__42034 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_37_in_rule__Culture__Group__4__Impl2062 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ExploitationActivity__Group__0__Impl_in_rule__ExploitationActivity__Group__02103 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__ExploitationActivity__Group__1_in_rule__ExploitationActivity__Group__02106 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_38_in_rule__ExploitationActivity__Group__0__Impl2134 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ExploitationActivity__Group__1__Impl_in_rule__ExploitationActivity__Group__12165 = new BitSet(new long[]{0x00000281F8000000L});
-    public static final BitSet FOLLOW_rule__ExploitationActivity__Group__2_in_rule__ExploitationActivity__Group__12168 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ExploitationActivity__NameAssignment_1_in_rule__ExploitationActivity__Group__1__Impl2195 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ExploitationActivity__Group__2__Impl_in_rule__ExploitationActivity__Group__22225 = new BitSet(new long[]{0x00000281F8000000L});
-    public static final BitSet FOLLOW_rule__ExploitationActivity__Group__3_in_rule__ExploitationActivity__Group__22228 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ExploitationActivity__FrequencyAssignment_2_in_rule__ExploitationActivity__Group__2__Impl2255 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ExploitationActivity__Group__3__Impl_in_rule__ExploitationActivity__Group__32286 = new BitSet(new long[]{0x00000281F8000000L});
-    public static final BitSet FOLLOW_rule__ExploitationActivity__Group__4_in_rule__ExploitationActivity__Group__32289 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ExploitationActivity__Group_3__0_in_rule__ExploitationActivity__Group__3__Impl2316 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ExploitationActivity__Group__4__Impl_in_rule__ExploitationActivity__Group__42347 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ExploitationActivity__Group_4__0_in_rule__ExploitationActivity__Group__4__Impl2374 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ExploitationActivity__Group_3__0__Impl_in_rule__ExploitationActivity__Group_3__02415 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_rule__ExploitationActivity__Group_3__1_in_rule__ExploitationActivity__Group_3__02418 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_39_in_rule__ExploitationActivity__Group_3__0__Impl2446 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ExploitationActivity__Group_3__1__Impl_in_rule__ExploitationActivity__Group_3__12477 = new BitSet(new long[]{0x0000010000000000L});
-    public static final BitSet FOLLOW_rule__ExploitationActivity__Group_3__2_in_rule__ExploitationActivity__Group_3__12480 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ExploitationActivity__StartDateAssignment_3_1_in_rule__ExploitationActivity__Group_3__1__Impl2507 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ExploitationActivity__Group_3__2__Impl_in_rule__ExploitationActivity__Group_3__22537 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_rule__ExploitationActivity__Group_3__3_in_rule__ExploitationActivity__Group_3__22540 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_40_in_rule__ExploitationActivity__Group_3__2__Impl2568 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ExploitationActivity__Group_3__3__Impl_in_rule__ExploitationActivity__Group_3__32599 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ExploitationActivity__EndDateAssignment_3_3_in_rule__ExploitationActivity__Group_3__3__Impl2626 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ExploitationActivity__Group_4__0__Impl_in_rule__ExploitationActivity__Group_4__02664 = new BitSet(new long[]{0x0002D00000000000L});
-    public static final BitSet FOLLOW_rule__ExploitationActivity__Group_4__1_in_rule__ExploitationActivity__Group_4__02667 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_41_in_rule__ExploitationActivity__Group_4__0__Impl2695 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ExploitationActivity__Group_4__1__Impl_in_rule__ExploitationActivity__Group_4__12726 = new BitSet(new long[]{0x00000C0000000000L});
-    public static final BitSet FOLLOW_rule__ExploitationActivity__Group_4__2_in_rule__ExploitationActivity__Group_4__12729 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ExploitationActivity__PredicatesAssignment_4_1_in_rule__ExploitationActivity__Group_4__1__Impl2756 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ExploitationActivity__Group_4__2__Impl_in_rule__ExploitationActivity__Group_4__22786 = new BitSet(new long[]{0x00000C0000000000L});
-    public static final BitSet FOLLOW_rule__ExploitationActivity__Group_4__3_in_rule__ExploitationActivity__Group_4__22789 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ExploitationActivity__Group_4_2__0_in_rule__ExploitationActivity__Group_4__2__Impl2816 = new BitSet(new long[]{0x0000080000000002L});
-    public static final BitSet FOLLOW_rule__ExploitationActivity__Group_4__3__Impl_in_rule__ExploitationActivity__Group_4__32847 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_42_in_rule__ExploitationActivity__Group_4__3__Impl2875 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ExploitationActivity__Group_4_2__0__Impl_in_rule__ExploitationActivity__Group_4_2__02914 = new BitSet(new long[]{0x0002D00000000000L});
-    public static final BitSet FOLLOW_rule__ExploitationActivity__Group_4_2__1_in_rule__ExploitationActivity__Group_4_2__02917 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_43_in_rule__ExploitationActivity__Group_4_2__0__Impl2945 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ExploitationActivity__Group_4_2__1__Impl_in_rule__ExploitationActivity__Group_4_2__12976 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ExploitationActivity__PredicatesAssignment_4_2_1_in_rule__ExploitationActivity__Group_4_2__1__Impl3003 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NoRain__Group__0__Impl_in_rule__NoRain__Group__03037 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_rule__NoRain__Group__1_in_rule__NoRain__Group__03040 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_44_in_rule__NoRain__Group__0__Impl3068 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NoRain__Group__1__Impl_in_rule__NoRain__Group__13099 = new BitSet(new long[]{0x0000200000000000L});
-    public static final BitSet FOLLOW_rule__NoRain__Group__2_in_rule__NoRain__Group__13102 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NoRain__DaysAssignment_1_in_rule__NoRain__Group__1__Impl3129 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NoRain__Group__2__Impl_in_rule__NoRain__Group__23159 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_45_in_rule__NoRain__Group__2__Impl3187 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__TempOfTheDay__Group__0__Impl_in_rule__TempOfTheDay__Group__03224 = new BitSet(new long[]{0x0000000001800000L});
-    public static final BitSet FOLLOW_rule__TempOfTheDay__Group__1_in_rule__TempOfTheDay__Group__03227 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_46_in_rule__TempOfTheDay__Group__0__Impl3255 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__TempOfTheDay__Group__1__Impl_in_rule__TempOfTheDay__Group__13286 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_rule__TempOfTheDay__Group__2_in_rule__TempOfTheDay__Group__13289 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__TempOfTheDay__ComparisonAssignment_1_in_rule__TempOfTheDay__Group__1__Impl3316 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__TempOfTheDay__Group__2__Impl_in_rule__TempOfTheDay__Group__23346 = new BitSet(new long[]{0x0000000006000000L});
-    public static final BitSet FOLLOW_rule__TempOfTheDay__Group__3_in_rule__TempOfTheDay__Group__23349 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__TempOfTheDay__LowerTempBoundAssignment_2_in_rule__TempOfTheDay__Group__2__Impl3376 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__TempOfTheDay__Group__3__Impl_in_rule__TempOfTheDay__Group__33406 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__TempOfTheDay__UnitAssignment_3_in_rule__TempOfTheDay__Group__3__Impl3433 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__DelaySinceActivy__Group__0__Impl_in_rule__DelaySinceActivy__Group__03471 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__DelaySinceActivy__Group__1_in_rule__DelaySinceActivy__Group__03474 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_47_in_rule__DelaySinceActivy__Group__0__Impl3502 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__DelaySinceActivy__Group__1__Impl_in_rule__DelaySinceActivy__Group__13533 = new BitSet(new long[]{0x0001000000000000L});
-    public static final BitSet FOLLOW_rule__DelaySinceActivy__Group__2_in_rule__DelaySinceActivy__Group__13536 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__DelaySinceActivy__PrerequisiteAssignment_1_in_rule__DelaySinceActivy__Group__1__Impl3563 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__DelaySinceActivy__Group__2__Impl_in_rule__DelaySinceActivy__Group__23593 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__DelaySinceActivy__Group_2__0_in_rule__DelaySinceActivy__Group__2__Impl3620 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__DelaySinceActivy__Group_2__0__Impl_in_rule__DelaySinceActivy__Group_2__03657 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_rule__DelaySinceActivy__Group_2__1_in_rule__DelaySinceActivy__Group_2__03660 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_48_in_rule__DelaySinceActivy__Group_2__0__Impl3688 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__DelaySinceActivy__Group_2__1__Impl_in_rule__DelaySinceActivy__Group_2__13719 = new BitSet(new long[]{0x0000200000000000L});
-    public static final BitSet FOLLOW_rule__DelaySinceActivy__Group_2__2_in_rule__DelaySinceActivy__Group_2__13722 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__DelaySinceActivy__DaysAssignment_2_1_in_rule__DelaySinceActivy__Group_2__1__Impl3749 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__DelaySinceActivy__Group_2__2__Impl_in_rule__DelaySinceActivy__Group_2__23779 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_45_in_rule__DelaySinceActivy__Group_2__2__Impl3807 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__GrainIs__Group__0__Impl_in_rule__GrainIs__Group__03844 = new BitSet(new long[]{0x0000000000000040L});
-    public static final BitSet FOLLOW_rule__GrainIs__Group__1_in_rule__GrainIs__Group__03847 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_49_in_rule__GrainIs__Group__0__Impl3875 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__GrainIs__Group__1__Impl_in_rule__GrainIs__Group__13906 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__GrainIs__StateAssignment_1_in_rule__GrainIs__Group__1__Impl3933 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Date__Group__0__Impl_in_rule__Date__Group__03967 = new BitSet(new long[]{0x00000000007FF800L});
-    public static final BitSet FOLLOW_rule__Date__Group__1_in_rule__Date__Group__03970 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Date__DayAssignment_0_in_rule__Date__Group__0__Impl3997 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Date__Group__1__Impl_in_rule__Date__Group__14027 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Date__MonthAssignment_1_in_rule__Date__Group__1__Impl4054 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__Model__NameAssignment_14093 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleCulture_in_rule__Model__CulturesAssignment_24124 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleResourceKind_in_rule__Model__ResourceKindsAssignment_34155 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__ResourceKind__NameAssignment_14186 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__Culture__NameAssignment_14217 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleExploitationActivity_in_rule__Culture__ActivitiesAssignment_34248 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__ExploitationActivity__NameAssignment_14279 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleFrequency_in_rule__ExploitationActivity__FrequencyAssignment_24310 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleDate_in_rule__ExploitationActivity__StartDateAssignment_3_14341 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleDate_in_rule__ExploitationActivity__EndDateAssignment_3_34372 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rulePredicate_in_rule__ExploitationActivity__PredicatesAssignment_4_14403 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rulePredicate_in_rule__ExploitationActivity__PredicatesAssignment_4_2_14434 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_INT_in_rule__NoRain__DaysAssignment_14465 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleComp_in_rule__TempOfTheDay__ComparisonAssignment_14496 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_INT_in_rule__TempOfTheDay__LowerTempBoundAssignment_24527 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleTempUnit_in_rule__TempOfTheDay__UnitAssignment_34558 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__DelaySinceActivy__PrerequisiteAssignment_14593 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_INT_in_rule__DelaySinceActivy__DaysAssignment_2_14628 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_STRING_in_rule__GrainIs__StateAssignment_14659 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_INT_in_rule__Date__DayAssignment_04690 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleMonth_in_rule__Date__MonthAssignment_14721 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Model__CulturesAssignment_0_in_rule__Model__Group__0__Impl1447 = new BitSet(new long[]{0x0000000400000002L});
+    public static final BitSet FOLLOW_rule__Model__Group__1__Impl_in_rule__Model__Group__11478 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Model__ResourceKindsAssignment_1_in_rule__Model__Group__1__Impl1505 = new BitSet(new long[]{0x0000000200000002L});
+    public static final BitSet FOLLOW_rule__ResourceKind__Group__0__Impl_in_rule__ResourceKind__Group__01540 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__ResourceKind__Group__1_in_rule__ResourceKind__Group__01543 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_33_in_rule__ResourceKind__Group__0__Impl1571 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ResourceKind__Group__1__Impl_in_rule__ResourceKind__Group__11602 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ResourceKind__NameAssignment_1_in_rule__ResourceKind__Group__1__Impl1629 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Culture__Group__0__Impl_in_rule__Culture__Group__01663 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__Culture__Group__1_in_rule__Culture__Group__01666 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_34_in_rule__Culture__Group__0__Impl1694 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Culture__Group__1__Impl_in_rule__Culture__Group__11725 = new BitSet(new long[]{0x0000000800000000L});
+    public static final BitSet FOLLOW_rule__Culture__Group__2_in_rule__Culture__Group__11728 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Culture__NameAssignment_1_in_rule__Culture__Group__1__Impl1755 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Culture__Group__2__Impl_in_rule__Culture__Group__21785 = new BitSet(new long[]{0x0000003000000000L});
+    public static final BitSet FOLLOW_rule__Culture__Group__3_in_rule__Culture__Group__21788 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_35_in_rule__Culture__Group__2__Impl1816 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Culture__Group__3__Impl_in_rule__Culture__Group__31847 = new BitSet(new long[]{0x0000003000000000L});
+    public static final BitSet FOLLOW_rule__Culture__Group__4_in_rule__Culture__Group__31850 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Culture__ActivitiesAssignment_3_in_rule__Culture__Group__3__Impl1877 = new BitSet(new long[]{0x0000002000000002L});
+    public static final BitSet FOLLOW_rule__Culture__Group__4__Impl_in_rule__Culture__Group__41908 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_36_in_rule__Culture__Group__4__Impl1936 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ExploitationActivity__Group__0__Impl_in_rule__ExploitationActivity__Group__01977 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__ExploitationActivity__Group__1_in_rule__ExploitationActivity__Group__01980 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_37_in_rule__ExploitationActivity__Group__0__Impl2008 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ExploitationActivity__Group__1__Impl_in_rule__ExploitationActivity__Group__12039 = new BitSet(new long[]{0x00000141F8000000L});
+    public static final BitSet FOLLOW_rule__ExploitationActivity__Group__2_in_rule__ExploitationActivity__Group__12042 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ExploitationActivity__NameAssignment_1_in_rule__ExploitationActivity__Group__1__Impl2069 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ExploitationActivity__Group__2__Impl_in_rule__ExploitationActivity__Group__22099 = new BitSet(new long[]{0x00000141F8000000L});
+    public static final BitSet FOLLOW_rule__ExploitationActivity__Group__3_in_rule__ExploitationActivity__Group__22102 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ExploitationActivity__FrequencyAssignment_2_in_rule__ExploitationActivity__Group__2__Impl2129 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ExploitationActivity__Group__3__Impl_in_rule__ExploitationActivity__Group__32160 = new BitSet(new long[]{0x00000141F8000000L});
+    public static final BitSet FOLLOW_rule__ExploitationActivity__Group__4_in_rule__ExploitationActivity__Group__32163 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ExploitationActivity__Group_3__0_in_rule__ExploitationActivity__Group__3__Impl2190 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ExploitationActivity__Group__4__Impl_in_rule__ExploitationActivity__Group__42221 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ExploitationActivity__Group_4__0_in_rule__ExploitationActivity__Group__4__Impl2248 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ExploitationActivity__Group_3__0__Impl_in_rule__ExploitationActivity__Group_3__02289 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_rule__ExploitationActivity__Group_3__1_in_rule__ExploitationActivity__Group_3__02292 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_38_in_rule__ExploitationActivity__Group_3__0__Impl2320 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ExploitationActivity__Group_3__1__Impl_in_rule__ExploitationActivity__Group_3__12351 = new BitSet(new long[]{0x0000008000000000L});
+    public static final BitSet FOLLOW_rule__ExploitationActivity__Group_3__2_in_rule__ExploitationActivity__Group_3__12354 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ExploitationActivity__StartDateAssignment_3_1_in_rule__ExploitationActivity__Group_3__1__Impl2381 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ExploitationActivity__Group_3__2__Impl_in_rule__ExploitationActivity__Group_3__22411 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_rule__ExploitationActivity__Group_3__3_in_rule__ExploitationActivity__Group_3__22414 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_39_in_rule__ExploitationActivity__Group_3__2__Impl2442 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ExploitationActivity__Group_3__3__Impl_in_rule__ExploitationActivity__Group_3__32473 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ExploitationActivity__EndDateAssignment_3_3_in_rule__ExploitationActivity__Group_3__3__Impl2500 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ExploitationActivity__Group_4__0__Impl_in_rule__ExploitationActivity__Group_4__02538 = new BitSet(new long[]{0x0001680000000000L});
+    public static final BitSet FOLLOW_rule__ExploitationActivity__Group_4__1_in_rule__ExploitationActivity__Group_4__02541 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_40_in_rule__ExploitationActivity__Group_4__0__Impl2569 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ExploitationActivity__Group_4__1__Impl_in_rule__ExploitationActivity__Group_4__12600 = new BitSet(new long[]{0x0000060000000000L});
+    public static final BitSet FOLLOW_rule__ExploitationActivity__Group_4__2_in_rule__ExploitationActivity__Group_4__12603 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ExploitationActivity__PredicatesAssignment_4_1_in_rule__ExploitationActivity__Group_4__1__Impl2630 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ExploitationActivity__Group_4__2__Impl_in_rule__ExploitationActivity__Group_4__22660 = new BitSet(new long[]{0x0000060000000000L});
+    public static final BitSet FOLLOW_rule__ExploitationActivity__Group_4__3_in_rule__ExploitationActivity__Group_4__22663 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ExploitationActivity__Group_4_2__0_in_rule__ExploitationActivity__Group_4__2__Impl2690 = new BitSet(new long[]{0x0000040000000002L});
+    public static final BitSet FOLLOW_rule__ExploitationActivity__Group_4__3__Impl_in_rule__ExploitationActivity__Group_4__32721 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_41_in_rule__ExploitationActivity__Group_4__3__Impl2749 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ExploitationActivity__Group_4_2__0__Impl_in_rule__ExploitationActivity__Group_4_2__02788 = new BitSet(new long[]{0x0001680000000000L});
+    public static final BitSet FOLLOW_rule__ExploitationActivity__Group_4_2__1_in_rule__ExploitationActivity__Group_4_2__02791 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_42_in_rule__ExploitationActivity__Group_4_2__0__Impl2819 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ExploitationActivity__Group_4_2__1__Impl_in_rule__ExploitationActivity__Group_4_2__12850 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ExploitationActivity__PredicatesAssignment_4_2_1_in_rule__ExploitationActivity__Group_4_2__1__Impl2877 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NoRain__Group__0__Impl_in_rule__NoRain__Group__02911 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_rule__NoRain__Group__1_in_rule__NoRain__Group__02914 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_43_in_rule__NoRain__Group__0__Impl2942 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NoRain__Group__1__Impl_in_rule__NoRain__Group__12973 = new BitSet(new long[]{0x0000100000000000L});
+    public static final BitSet FOLLOW_rule__NoRain__Group__2_in_rule__NoRain__Group__12976 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NoRain__DaysAssignment_1_in_rule__NoRain__Group__1__Impl3003 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NoRain__Group__2__Impl_in_rule__NoRain__Group__23033 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_44_in_rule__NoRain__Group__2__Impl3061 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__TempOfTheDay__Group__0__Impl_in_rule__TempOfTheDay__Group__03098 = new BitSet(new long[]{0x0000000001800000L});
+    public static final BitSet FOLLOW_rule__TempOfTheDay__Group__1_in_rule__TempOfTheDay__Group__03101 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_45_in_rule__TempOfTheDay__Group__0__Impl3129 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__TempOfTheDay__Group__1__Impl_in_rule__TempOfTheDay__Group__13160 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_rule__TempOfTheDay__Group__2_in_rule__TempOfTheDay__Group__13163 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__TempOfTheDay__ComparisonAssignment_1_in_rule__TempOfTheDay__Group__1__Impl3190 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__TempOfTheDay__Group__2__Impl_in_rule__TempOfTheDay__Group__23220 = new BitSet(new long[]{0x0000000006000000L});
+    public static final BitSet FOLLOW_rule__TempOfTheDay__Group__3_in_rule__TempOfTheDay__Group__23223 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__TempOfTheDay__LowerTempBoundAssignment_2_in_rule__TempOfTheDay__Group__2__Impl3250 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__TempOfTheDay__Group__3__Impl_in_rule__TempOfTheDay__Group__33280 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__TempOfTheDay__UnitAssignment_3_in_rule__TempOfTheDay__Group__3__Impl3307 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__DelaySinceActivy__Group__0__Impl_in_rule__DelaySinceActivy__Group__03345 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__DelaySinceActivy__Group__1_in_rule__DelaySinceActivy__Group__03348 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_46_in_rule__DelaySinceActivy__Group__0__Impl3376 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__DelaySinceActivy__Group__1__Impl_in_rule__DelaySinceActivy__Group__13407 = new BitSet(new long[]{0x0000800000000000L});
+    public static final BitSet FOLLOW_rule__DelaySinceActivy__Group__2_in_rule__DelaySinceActivy__Group__13410 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__DelaySinceActivy__PrerequisiteAssignment_1_in_rule__DelaySinceActivy__Group__1__Impl3437 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__DelaySinceActivy__Group__2__Impl_in_rule__DelaySinceActivy__Group__23467 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__DelaySinceActivy__Group_2__0_in_rule__DelaySinceActivy__Group__2__Impl3494 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__DelaySinceActivy__Group_2__0__Impl_in_rule__DelaySinceActivy__Group_2__03531 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_rule__DelaySinceActivy__Group_2__1_in_rule__DelaySinceActivy__Group_2__03534 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_47_in_rule__DelaySinceActivy__Group_2__0__Impl3562 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__DelaySinceActivy__Group_2__1__Impl_in_rule__DelaySinceActivy__Group_2__13593 = new BitSet(new long[]{0x0000100000000000L});
+    public static final BitSet FOLLOW_rule__DelaySinceActivy__Group_2__2_in_rule__DelaySinceActivy__Group_2__13596 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__DelaySinceActivy__DaysAssignment_2_1_in_rule__DelaySinceActivy__Group_2__1__Impl3623 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__DelaySinceActivy__Group_2__2__Impl_in_rule__DelaySinceActivy__Group_2__23653 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_44_in_rule__DelaySinceActivy__Group_2__2__Impl3681 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__GrainIs__Group__0__Impl_in_rule__GrainIs__Group__03718 = new BitSet(new long[]{0x0000000000000040L});
+    public static final BitSet FOLLOW_rule__GrainIs__Group__1_in_rule__GrainIs__Group__03721 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_48_in_rule__GrainIs__Group__0__Impl3749 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__GrainIs__Group__1__Impl_in_rule__GrainIs__Group__13780 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__GrainIs__StateAssignment_1_in_rule__GrainIs__Group__1__Impl3807 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Date__Group__0__Impl_in_rule__Date__Group__03841 = new BitSet(new long[]{0x00000000007FF800L});
+    public static final BitSet FOLLOW_rule__Date__Group__1_in_rule__Date__Group__03844 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Date__DayAssignment_0_in_rule__Date__Group__0__Impl3871 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Date__Group__1__Impl_in_rule__Date__Group__13901 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Date__MonthAssignment_1_in_rule__Date__Group__1__Impl3928 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleCulture_in_rule__Model__CulturesAssignment_03967 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleResourceKind_in_rule__Model__ResourceKindsAssignment_13998 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__ResourceKind__NameAssignment_14029 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__Culture__NameAssignment_14060 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleExploitationActivity_in_rule__Culture__ActivitiesAssignment_34091 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__ExploitationActivity__NameAssignment_14122 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleFrequency_in_rule__ExploitationActivity__FrequencyAssignment_24153 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleDate_in_rule__ExploitationActivity__StartDateAssignment_3_14184 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleDate_in_rule__ExploitationActivity__EndDateAssignment_3_34215 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rulePredicate_in_rule__ExploitationActivity__PredicatesAssignment_4_14246 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rulePredicate_in_rule__ExploitationActivity__PredicatesAssignment_4_2_14277 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_INT_in_rule__NoRain__DaysAssignment_14308 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleComp_in_rule__TempOfTheDay__ComparisonAssignment_14339 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_INT_in_rule__TempOfTheDay__LowerTempBoundAssignment_24370 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleTempUnit_in_rule__TempOfTheDay__UnitAssignment_34401 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__DelaySinceActivy__PrerequisiteAssignment_14436 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_INT_in_rule__DelaySinceActivy__DaysAssignment_2_14471 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_STRING_in_rule__GrainIs__StateAssignment_14502 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_INT_in_rule__Date__DayAssignment_04533 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleMonth_in_rule__Date__MonthAssignment_14564 = new BitSet(new long[]{0x0000000000000002L});
 
 }

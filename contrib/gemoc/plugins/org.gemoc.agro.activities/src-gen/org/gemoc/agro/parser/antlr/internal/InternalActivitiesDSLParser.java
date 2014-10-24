@@ -22,7 +22,7 @@ import java.util.ArrayList;
 @SuppressWarnings("all")
 public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
     public static final String[] tokenNames = new String[] {
-        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_ID", "RULE_INT", "RULE_STRING", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'name'", "'resource'", "'culture'", "'{'", "'}'", "'activity'", "'from '", "'to'", "'['", "'&&'", "']'", "'no rain since'", "'days'", "'temperature'", "'after'", "'is done since'", "'grain is'", "'jan'", "'feb'", "'mar'", "'apr'", "'may'", "'jun'", "'jul'", "'aug'", "'sept'", "'oct'", "'nov'", "'dec'", "'>'", "'<'", "'\\u00B0C'", "'\\u00B0F'", "'once'", "'daily'", "'weekly'", "'monthly'", "'quaterly'", "'yearly'"
+        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_ID", "RULE_INT", "RULE_STRING", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'resource'", "'culture'", "'{'", "'}'", "'activity'", "'from '", "'to'", "'['", "'&&'", "']'", "'no rain since'", "'days'", "'temperature'", "'after'", "'is done since'", "'grain is'", "'jan'", "'feb'", "'mar'", "'apr'", "'may'", "'jun'", "'jul'", "'aug'", "'sept'", "'oct'", "'nov'", "'dec'", "'>'", "'<'", "'\\u00B0C'", "'\\u00B0F'", "'once'", "'daily'", "'weekly'", "'monthly'", "'quaterly'", "'yearly'"
     };
     public static final int RULE_ID=4;
     public static final int T__29=29;
@@ -56,7 +56,6 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
     public static final int T__44=44;
     public static final int T__45=45;
     public static final int T__48=48;
-    public static final int T__49=49;
     public static final int RULE_SL_COMMENT=8;
     public static final int RULE_ML_COMMENT=7;
     public static final int T__30=30;
@@ -147,79 +146,47 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleModel"
-    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:77:1: ruleModel returns [EObject current=null] : (otherlv_0= 'name' ( (lv_name_1_0= RULE_ID ) ) ( (lv_cultures_2_0= ruleCulture ) )* ( (lv_resourceKinds_3_0= ruleResourceKind ) )* ) ;
+    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:77:1: ruleModel returns [EObject current=null] : ( ( (lv_cultures_0_0= ruleCulture ) )* ( (lv_resourceKinds_1_0= ruleResourceKind ) )* ) ;
     public final EObject ruleModel() throws RecognitionException {
         EObject current = null;
 
-        Token otherlv_0=null;
-        Token lv_name_1_0=null;
-        EObject lv_cultures_2_0 = null;
+        EObject lv_cultures_0_0 = null;
 
-        EObject lv_resourceKinds_3_0 = null;
+        EObject lv_resourceKinds_1_0 = null;
 
 
          enterRule(); 
             
         try {
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:80:28: ( (otherlv_0= 'name' ( (lv_name_1_0= RULE_ID ) ) ( (lv_cultures_2_0= ruleCulture ) )* ( (lv_resourceKinds_3_0= ruleResourceKind ) )* ) )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:81:1: (otherlv_0= 'name' ( (lv_name_1_0= RULE_ID ) ) ( (lv_cultures_2_0= ruleCulture ) )* ( (lv_resourceKinds_3_0= ruleResourceKind ) )* )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:80:28: ( ( ( (lv_cultures_0_0= ruleCulture ) )* ( (lv_resourceKinds_1_0= ruleResourceKind ) )* ) )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:81:1: ( ( (lv_cultures_0_0= ruleCulture ) )* ( (lv_resourceKinds_1_0= ruleResourceKind ) )* )
             {
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:81:1: (otherlv_0= 'name' ( (lv_name_1_0= RULE_ID ) ) ( (lv_cultures_2_0= ruleCulture ) )* ( (lv_resourceKinds_3_0= ruleResourceKind ) )* )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:81:3: otherlv_0= 'name' ( (lv_name_1_0= RULE_ID ) ) ( (lv_cultures_2_0= ruleCulture ) )* ( (lv_resourceKinds_3_0= ruleResourceKind ) )*
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:81:1: ( ( (lv_cultures_0_0= ruleCulture ) )* ( (lv_resourceKinds_1_0= ruleResourceKind ) )* )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:81:2: ( (lv_cultures_0_0= ruleCulture ) )* ( (lv_resourceKinds_1_0= ruleResourceKind ) )*
             {
-            otherlv_0=(Token)match(input,11,FOLLOW_11_in_ruleModel122); 
-
-                	newLeafNode(otherlv_0, grammarAccess.getModelAccess().getNameKeyword_0());
-                
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:85:1: ( (lv_name_1_0= RULE_ID ) )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:86:1: (lv_name_1_0= RULE_ID )
-            {
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:86:1: (lv_name_1_0= RULE_ID )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:87:3: lv_name_1_0= RULE_ID
-            {
-            lv_name_1_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleModel139); 
-
-            			newLeafNode(lv_name_1_0, grammarAccess.getModelAccess().getNameIDTerminalRuleCall_1_0()); 
-            		
-
-            	        if (current==null) {
-            	            current = createModelElement(grammarAccess.getModelRule());
-            	        }
-                   		setWithLastConsumed(
-                   			current, 
-                   			"name",
-                    		lv_name_1_0, 
-                    		"ID");
-            	    
-
-            }
-
-
-            }
-
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:103:2: ( (lv_cultures_2_0= ruleCulture ) )*
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:81:2: ( (lv_cultures_0_0= ruleCulture ) )*
             loop1:
             do {
                 int alt1=2;
                 int LA1_0 = input.LA(1);
 
-                if ( (LA1_0==13) ) {
+                if ( (LA1_0==12) ) {
                     alt1=1;
                 }
 
 
                 switch (alt1) {
             	case 1 :
-            	    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:104:1: (lv_cultures_2_0= ruleCulture )
+            	    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:82:1: (lv_cultures_0_0= ruleCulture )
             	    {
-            	    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:104:1: (lv_cultures_2_0= ruleCulture )
-            	    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:105:3: lv_cultures_2_0= ruleCulture
+            	    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:82:1: (lv_cultures_0_0= ruleCulture )
+            	    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:83:3: lv_cultures_0_0= ruleCulture
             	    {
             	     
-            	    	        newCompositeNode(grammarAccess.getModelAccess().getCulturesCultureParserRuleCall_2_0()); 
+            	    	        newCompositeNode(grammarAccess.getModelAccess().getCulturesCultureParserRuleCall_0_0()); 
             	    	    
-            	    pushFollow(FOLLOW_ruleCulture_in_ruleModel165);
-            	    lv_cultures_2_0=ruleCulture();
+            	    pushFollow(FOLLOW_ruleCulture_in_ruleModel131);
+            	    lv_cultures_0_0=ruleCulture();
 
             	    state._fsp--;
 
@@ -230,7 +197,7 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
             	           		add(
             	           			current, 
             	           			"cultures",
-            	            		lv_cultures_2_0, 
+            	            		lv_cultures_0_0, 
             	            		"Culture");
             	    	        afterParserOrEnumRuleCall();
             	    	    
@@ -246,29 +213,29 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
                 }
             } while (true);
 
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:121:3: ( (lv_resourceKinds_3_0= ruleResourceKind ) )*
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:99:3: ( (lv_resourceKinds_1_0= ruleResourceKind ) )*
             loop2:
             do {
                 int alt2=2;
                 int LA2_0 = input.LA(1);
 
-                if ( (LA2_0==12) ) {
+                if ( (LA2_0==11) ) {
                     alt2=1;
                 }
 
 
                 switch (alt2) {
             	case 1 :
-            	    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:122:1: (lv_resourceKinds_3_0= ruleResourceKind )
+            	    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:100:1: (lv_resourceKinds_1_0= ruleResourceKind )
             	    {
-            	    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:122:1: (lv_resourceKinds_3_0= ruleResourceKind )
-            	    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:123:3: lv_resourceKinds_3_0= ruleResourceKind
+            	    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:100:1: (lv_resourceKinds_1_0= ruleResourceKind )
+            	    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:101:3: lv_resourceKinds_1_0= ruleResourceKind
             	    {
             	     
-            	    	        newCompositeNode(grammarAccess.getModelAccess().getResourceKindsResourceKindParserRuleCall_3_0()); 
+            	    	        newCompositeNode(grammarAccess.getModelAccess().getResourceKindsResourceKindParserRuleCall_1_0()); 
             	    	    
-            	    pushFollow(FOLLOW_ruleResourceKind_in_ruleModel187);
-            	    lv_resourceKinds_3_0=ruleResourceKind();
+            	    pushFollow(FOLLOW_ruleResourceKind_in_ruleModel153);
+            	    lv_resourceKinds_1_0=ruleResourceKind();
 
             	    state._fsp--;
 
@@ -279,7 +246,7 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
             	           		add(
             	           			current, 
             	           			"resourceKinds",
-            	            		lv_resourceKinds_3_0, 
+            	            		lv_resourceKinds_1_0, 
             	            		"ResourceKind");
             	    	        afterParserOrEnumRuleCall();
             	    	    
@@ -316,7 +283,7 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleResourceKind"
-    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:147:1: entryRuleResourceKind returns [EObject current=null] : iv_ruleResourceKind= ruleResourceKind EOF ;
+    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:125:1: entryRuleResourceKind returns [EObject current=null] : iv_ruleResourceKind= ruleResourceKind EOF ;
     public final EObject entryRuleResourceKind() throws RecognitionException {
         EObject current = null;
 
@@ -324,17 +291,17 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:148:2: (iv_ruleResourceKind= ruleResourceKind EOF )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:149:2: iv_ruleResourceKind= ruleResourceKind EOF
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:126:2: (iv_ruleResourceKind= ruleResourceKind EOF )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:127:2: iv_ruleResourceKind= ruleResourceKind EOF
             {
              newCompositeNode(grammarAccess.getResourceKindRule()); 
-            pushFollow(FOLLOW_ruleResourceKind_in_entryRuleResourceKind224);
+            pushFollow(FOLLOW_ruleResourceKind_in_entryRuleResourceKind190);
             iv_ruleResourceKind=ruleResourceKind();
 
             state._fsp--;
 
              current =iv_ruleResourceKind; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleResourceKind234); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleResourceKind200); 
 
             }
 
@@ -352,7 +319,7 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleResourceKind"
-    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:156:1: ruleResourceKind returns [EObject current=null] : (otherlv_0= 'resource' ( (lv_name_1_0= RULE_ID ) ) ) ;
+    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:134:1: ruleResourceKind returns [EObject current=null] : (otherlv_0= 'resource' ( (lv_name_1_0= RULE_ID ) ) ) ;
     public final EObject ruleResourceKind() throws RecognitionException {
         EObject current = null;
 
@@ -362,23 +329,23 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:159:28: ( (otherlv_0= 'resource' ( (lv_name_1_0= RULE_ID ) ) ) )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:160:1: (otherlv_0= 'resource' ( (lv_name_1_0= RULE_ID ) ) )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:137:28: ( (otherlv_0= 'resource' ( (lv_name_1_0= RULE_ID ) ) ) )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:138:1: (otherlv_0= 'resource' ( (lv_name_1_0= RULE_ID ) ) )
             {
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:160:1: (otherlv_0= 'resource' ( (lv_name_1_0= RULE_ID ) ) )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:160:3: otherlv_0= 'resource' ( (lv_name_1_0= RULE_ID ) )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:138:1: (otherlv_0= 'resource' ( (lv_name_1_0= RULE_ID ) ) )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:138:3: otherlv_0= 'resource' ( (lv_name_1_0= RULE_ID ) )
             {
-            otherlv_0=(Token)match(input,12,FOLLOW_12_in_ruleResourceKind271); 
+            otherlv_0=(Token)match(input,11,FOLLOW_11_in_ruleResourceKind237); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getResourceKindAccess().getResourceKeyword_0());
                 
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:164:1: ( (lv_name_1_0= RULE_ID ) )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:165:1: (lv_name_1_0= RULE_ID )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:142:1: ( (lv_name_1_0= RULE_ID ) )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:143:1: (lv_name_1_0= RULE_ID )
             {
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:165:1: (lv_name_1_0= RULE_ID )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:166:3: lv_name_1_0= RULE_ID
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:143:1: (lv_name_1_0= RULE_ID )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:144:3: lv_name_1_0= RULE_ID
             {
-            lv_name_1_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleResourceKind288); 
+            lv_name_1_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleResourceKind254); 
 
             			newLeafNode(lv_name_1_0, grammarAccess.getResourceKindAccess().getNameIDTerminalRuleCall_1_0()); 
             		
@@ -419,7 +386,7 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleCulture"
-    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:190:1: entryRuleCulture returns [EObject current=null] : iv_ruleCulture= ruleCulture EOF ;
+    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:168:1: entryRuleCulture returns [EObject current=null] : iv_ruleCulture= ruleCulture EOF ;
     public final EObject entryRuleCulture() throws RecognitionException {
         EObject current = null;
 
@@ -427,17 +394,17 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:191:2: (iv_ruleCulture= ruleCulture EOF )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:192:2: iv_ruleCulture= ruleCulture EOF
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:169:2: (iv_ruleCulture= ruleCulture EOF )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:170:2: iv_ruleCulture= ruleCulture EOF
             {
              newCompositeNode(grammarAccess.getCultureRule()); 
-            pushFollow(FOLLOW_ruleCulture_in_entryRuleCulture329);
+            pushFollow(FOLLOW_ruleCulture_in_entryRuleCulture295);
             iv_ruleCulture=ruleCulture();
 
             state._fsp--;
 
              current =iv_ruleCulture; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleCulture339); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleCulture305); 
 
             }
 
@@ -455,7 +422,7 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleCulture"
-    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:199:1: ruleCulture returns [EObject current=null] : (otherlv_0= 'culture' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_activities_3_0= ruleExploitationActivity ) )* otherlv_4= '}' ) ;
+    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:177:1: ruleCulture returns [EObject current=null] : (otherlv_0= 'culture' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_activities_3_0= ruleExploitationActivity ) )* otherlv_4= '}' ) ;
     public final EObject ruleCulture() throws RecognitionException {
         EObject current = null;
 
@@ -469,23 +436,23 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:202:28: ( (otherlv_0= 'culture' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_activities_3_0= ruleExploitationActivity ) )* otherlv_4= '}' ) )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:203:1: (otherlv_0= 'culture' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_activities_3_0= ruleExploitationActivity ) )* otherlv_4= '}' )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:180:28: ( (otherlv_0= 'culture' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_activities_3_0= ruleExploitationActivity ) )* otherlv_4= '}' ) )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:181:1: (otherlv_0= 'culture' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_activities_3_0= ruleExploitationActivity ) )* otherlv_4= '}' )
             {
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:203:1: (otherlv_0= 'culture' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_activities_3_0= ruleExploitationActivity ) )* otherlv_4= '}' )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:203:3: otherlv_0= 'culture' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_activities_3_0= ruleExploitationActivity ) )* otherlv_4= '}'
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:181:1: (otherlv_0= 'culture' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_activities_3_0= ruleExploitationActivity ) )* otherlv_4= '}' )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:181:3: otherlv_0= 'culture' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_activities_3_0= ruleExploitationActivity ) )* otherlv_4= '}'
             {
-            otherlv_0=(Token)match(input,13,FOLLOW_13_in_ruleCulture376); 
+            otherlv_0=(Token)match(input,12,FOLLOW_12_in_ruleCulture342); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getCultureAccess().getCultureKeyword_0());
                 
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:207:1: ( (lv_name_1_0= RULE_ID ) )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:208:1: (lv_name_1_0= RULE_ID )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:185:1: ( (lv_name_1_0= RULE_ID ) )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:186:1: (lv_name_1_0= RULE_ID )
             {
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:208:1: (lv_name_1_0= RULE_ID )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:209:3: lv_name_1_0= RULE_ID
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:186:1: (lv_name_1_0= RULE_ID )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:187:3: lv_name_1_0= RULE_ID
             {
-            lv_name_1_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleCulture393); 
+            lv_name_1_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleCulture359); 
 
             			newLeafNode(lv_name_1_0, grammarAccess.getCultureAccess().getNameIDTerminalRuleCall_1_0()); 
             		
@@ -505,32 +472,32 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_2=(Token)match(input,14,FOLLOW_14_in_ruleCulture410); 
+            otherlv_2=(Token)match(input,13,FOLLOW_13_in_ruleCulture376); 
 
                 	newLeafNode(otherlv_2, grammarAccess.getCultureAccess().getLeftCurlyBracketKeyword_2());
                 
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:229:1: ( (lv_activities_3_0= ruleExploitationActivity ) )*
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:207:1: ( (lv_activities_3_0= ruleExploitationActivity ) )*
             loop3:
             do {
                 int alt3=2;
                 int LA3_0 = input.LA(1);
 
-                if ( (LA3_0==16) ) {
+                if ( (LA3_0==15) ) {
                     alt3=1;
                 }
 
 
                 switch (alt3) {
             	case 1 :
-            	    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:230:1: (lv_activities_3_0= ruleExploitationActivity )
+            	    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:208:1: (lv_activities_3_0= ruleExploitationActivity )
             	    {
-            	    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:230:1: (lv_activities_3_0= ruleExploitationActivity )
-            	    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:231:3: lv_activities_3_0= ruleExploitationActivity
+            	    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:208:1: (lv_activities_3_0= ruleExploitationActivity )
+            	    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:209:3: lv_activities_3_0= ruleExploitationActivity
             	    {
             	     
             	    	        newCompositeNode(grammarAccess.getCultureAccess().getActivitiesExploitationActivityParserRuleCall_3_0()); 
             	    	    
-            	    pushFollow(FOLLOW_ruleExploitationActivity_in_ruleCulture431);
+            	    pushFollow(FOLLOW_ruleExploitationActivity_in_ruleCulture397);
             	    lv_activities_3_0=ruleExploitationActivity();
 
             	    state._fsp--;
@@ -558,7 +525,7 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
                 }
             } while (true);
 
-            otherlv_4=(Token)match(input,15,FOLLOW_15_in_ruleCulture444); 
+            otherlv_4=(Token)match(input,14,FOLLOW_14_in_ruleCulture410); 
 
                 	newLeafNode(otherlv_4, grammarAccess.getCultureAccess().getRightCurlyBracketKeyword_4());
                 
@@ -583,7 +550,7 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleExploitationActivity"
-    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:259:1: entryRuleExploitationActivity returns [EObject current=null] : iv_ruleExploitationActivity= ruleExploitationActivity EOF ;
+    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:237:1: entryRuleExploitationActivity returns [EObject current=null] : iv_ruleExploitationActivity= ruleExploitationActivity EOF ;
     public final EObject entryRuleExploitationActivity() throws RecognitionException {
         EObject current = null;
 
@@ -591,17 +558,17 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:260:2: (iv_ruleExploitationActivity= ruleExploitationActivity EOF )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:261:2: iv_ruleExploitationActivity= ruleExploitationActivity EOF
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:238:2: (iv_ruleExploitationActivity= ruleExploitationActivity EOF )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:239:2: iv_ruleExploitationActivity= ruleExploitationActivity EOF
             {
              newCompositeNode(grammarAccess.getExploitationActivityRule()); 
-            pushFollow(FOLLOW_ruleExploitationActivity_in_entryRuleExploitationActivity480);
+            pushFollow(FOLLOW_ruleExploitationActivity_in_entryRuleExploitationActivity446);
             iv_ruleExploitationActivity=ruleExploitationActivity();
 
             state._fsp--;
 
              current =iv_ruleExploitationActivity; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleExploitationActivity490); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleExploitationActivity456); 
 
             }
 
@@ -619,7 +586,7 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleExploitationActivity"
-    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:268:1: ruleExploitationActivity returns [EObject current=null] : (otherlv_0= 'activity' ( (lv_name_1_0= RULE_ID ) ) ( (lv_frequency_2_0= ruleFrequency ) )? (otherlv_3= 'from ' ( (lv_startDate_4_0= ruleDate ) ) otherlv_5= 'to' ( (lv_endDate_6_0= ruleDate ) ) )? (otherlv_7= '[' ( (lv_predicates_8_0= rulePredicate ) ) (otherlv_9= '&&' ( (lv_predicates_10_0= rulePredicate ) ) )* otherlv_11= ']' )? ) ;
+    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:246:1: ruleExploitationActivity returns [EObject current=null] : (otherlv_0= 'activity' ( (lv_name_1_0= RULE_ID ) ) ( (lv_frequency_2_0= ruleFrequency ) )? (otherlv_3= 'from ' ( (lv_startDate_4_0= ruleDate ) ) otherlv_5= 'to' ( (lv_endDate_6_0= ruleDate ) ) )? (otherlv_7= '[' ( (lv_predicates_8_0= rulePredicate ) ) (otherlv_9= '&&' ( (lv_predicates_10_0= rulePredicate ) ) )* otherlv_11= ']' )? ) ;
     public final EObject ruleExploitationActivity() throws RecognitionException {
         EObject current = null;
 
@@ -644,23 +611,23 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:271:28: ( (otherlv_0= 'activity' ( (lv_name_1_0= RULE_ID ) ) ( (lv_frequency_2_0= ruleFrequency ) )? (otherlv_3= 'from ' ( (lv_startDate_4_0= ruleDate ) ) otherlv_5= 'to' ( (lv_endDate_6_0= ruleDate ) ) )? (otherlv_7= '[' ( (lv_predicates_8_0= rulePredicate ) ) (otherlv_9= '&&' ( (lv_predicates_10_0= rulePredicate ) ) )* otherlv_11= ']' )? ) )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:272:1: (otherlv_0= 'activity' ( (lv_name_1_0= RULE_ID ) ) ( (lv_frequency_2_0= ruleFrequency ) )? (otherlv_3= 'from ' ( (lv_startDate_4_0= ruleDate ) ) otherlv_5= 'to' ( (lv_endDate_6_0= ruleDate ) ) )? (otherlv_7= '[' ( (lv_predicates_8_0= rulePredicate ) ) (otherlv_9= '&&' ( (lv_predicates_10_0= rulePredicate ) ) )* otherlv_11= ']' )? )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:249:28: ( (otherlv_0= 'activity' ( (lv_name_1_0= RULE_ID ) ) ( (lv_frequency_2_0= ruleFrequency ) )? (otherlv_3= 'from ' ( (lv_startDate_4_0= ruleDate ) ) otherlv_5= 'to' ( (lv_endDate_6_0= ruleDate ) ) )? (otherlv_7= '[' ( (lv_predicates_8_0= rulePredicate ) ) (otherlv_9= '&&' ( (lv_predicates_10_0= rulePredicate ) ) )* otherlv_11= ']' )? ) )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:250:1: (otherlv_0= 'activity' ( (lv_name_1_0= RULE_ID ) ) ( (lv_frequency_2_0= ruleFrequency ) )? (otherlv_3= 'from ' ( (lv_startDate_4_0= ruleDate ) ) otherlv_5= 'to' ( (lv_endDate_6_0= ruleDate ) ) )? (otherlv_7= '[' ( (lv_predicates_8_0= rulePredicate ) ) (otherlv_9= '&&' ( (lv_predicates_10_0= rulePredicate ) ) )* otherlv_11= ']' )? )
             {
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:272:1: (otherlv_0= 'activity' ( (lv_name_1_0= RULE_ID ) ) ( (lv_frequency_2_0= ruleFrequency ) )? (otherlv_3= 'from ' ( (lv_startDate_4_0= ruleDate ) ) otherlv_5= 'to' ( (lv_endDate_6_0= ruleDate ) ) )? (otherlv_7= '[' ( (lv_predicates_8_0= rulePredicate ) ) (otherlv_9= '&&' ( (lv_predicates_10_0= rulePredicate ) ) )* otherlv_11= ']' )? )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:272:3: otherlv_0= 'activity' ( (lv_name_1_0= RULE_ID ) ) ( (lv_frequency_2_0= ruleFrequency ) )? (otherlv_3= 'from ' ( (lv_startDate_4_0= ruleDate ) ) otherlv_5= 'to' ( (lv_endDate_6_0= ruleDate ) ) )? (otherlv_7= '[' ( (lv_predicates_8_0= rulePredicate ) ) (otherlv_9= '&&' ( (lv_predicates_10_0= rulePredicate ) ) )* otherlv_11= ']' )?
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:250:1: (otherlv_0= 'activity' ( (lv_name_1_0= RULE_ID ) ) ( (lv_frequency_2_0= ruleFrequency ) )? (otherlv_3= 'from ' ( (lv_startDate_4_0= ruleDate ) ) otherlv_5= 'to' ( (lv_endDate_6_0= ruleDate ) ) )? (otherlv_7= '[' ( (lv_predicates_8_0= rulePredicate ) ) (otherlv_9= '&&' ( (lv_predicates_10_0= rulePredicate ) ) )* otherlv_11= ']' )? )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:250:3: otherlv_0= 'activity' ( (lv_name_1_0= RULE_ID ) ) ( (lv_frequency_2_0= ruleFrequency ) )? (otherlv_3= 'from ' ( (lv_startDate_4_0= ruleDate ) ) otherlv_5= 'to' ( (lv_endDate_6_0= ruleDate ) ) )? (otherlv_7= '[' ( (lv_predicates_8_0= rulePredicate ) ) (otherlv_9= '&&' ( (lv_predicates_10_0= rulePredicate ) ) )* otherlv_11= ']' )?
             {
-            otherlv_0=(Token)match(input,16,FOLLOW_16_in_ruleExploitationActivity527); 
+            otherlv_0=(Token)match(input,15,FOLLOW_15_in_ruleExploitationActivity493); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getExploitationActivityAccess().getActivityKeyword_0());
                 
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:276:1: ( (lv_name_1_0= RULE_ID ) )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:277:1: (lv_name_1_0= RULE_ID )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:254:1: ( (lv_name_1_0= RULE_ID ) )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:255:1: (lv_name_1_0= RULE_ID )
             {
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:277:1: (lv_name_1_0= RULE_ID )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:278:3: lv_name_1_0= RULE_ID
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:255:1: (lv_name_1_0= RULE_ID )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:256:3: lv_name_1_0= RULE_ID
             {
-            lv_name_1_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleExploitationActivity544); 
+            lv_name_1_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleExploitationActivity510); 
 
             			newLeafNode(lv_name_1_0, grammarAccess.getExploitationActivityAccess().getNameIDTerminalRuleCall_1_0()); 
             		
@@ -680,24 +647,24 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:294:2: ( (lv_frequency_2_0= ruleFrequency ) )?
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:272:2: ( (lv_frequency_2_0= ruleFrequency ) )?
             int alt4=2;
             int LA4_0 = input.LA(1);
 
-            if ( ((LA4_0>=44 && LA4_0<=49)) ) {
+            if ( ((LA4_0>=43 && LA4_0<=48)) ) {
                 alt4=1;
             }
             switch (alt4) {
                 case 1 :
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:295:1: (lv_frequency_2_0= ruleFrequency )
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:273:1: (lv_frequency_2_0= ruleFrequency )
                     {
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:295:1: (lv_frequency_2_0= ruleFrequency )
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:296:3: lv_frequency_2_0= ruleFrequency
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:273:1: (lv_frequency_2_0= ruleFrequency )
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:274:3: lv_frequency_2_0= ruleFrequency
                     {
                      
                     	        newCompositeNode(grammarAccess.getExploitationActivityAccess().getFrequencyFrequencyEnumRuleCall_2_0()); 
                     	    
-                    pushFollow(FOLLOW_ruleFrequency_in_ruleExploitationActivity570);
+                    pushFollow(FOLLOW_ruleFrequency_in_ruleExploitationActivity536);
                     lv_frequency_2_0=ruleFrequency();
 
                     state._fsp--;
@@ -722,31 +689,31 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:312:3: (otherlv_3= 'from ' ( (lv_startDate_4_0= ruleDate ) ) otherlv_5= 'to' ( (lv_endDate_6_0= ruleDate ) ) )?
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:290:3: (otherlv_3= 'from ' ( (lv_startDate_4_0= ruleDate ) ) otherlv_5= 'to' ( (lv_endDate_6_0= ruleDate ) ) )?
             int alt5=2;
             int LA5_0 = input.LA(1);
 
-            if ( (LA5_0==17) ) {
+            if ( (LA5_0==16) ) {
                 alt5=1;
             }
             switch (alt5) {
                 case 1 :
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:312:5: otherlv_3= 'from ' ( (lv_startDate_4_0= ruleDate ) ) otherlv_5= 'to' ( (lv_endDate_6_0= ruleDate ) )
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:290:5: otherlv_3= 'from ' ( (lv_startDate_4_0= ruleDate ) ) otherlv_5= 'to' ( (lv_endDate_6_0= ruleDate ) )
                     {
-                    otherlv_3=(Token)match(input,17,FOLLOW_17_in_ruleExploitationActivity584); 
+                    otherlv_3=(Token)match(input,16,FOLLOW_16_in_ruleExploitationActivity550); 
 
                         	newLeafNode(otherlv_3, grammarAccess.getExploitationActivityAccess().getFromKeyword_3_0());
                         
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:316:1: ( (lv_startDate_4_0= ruleDate ) )
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:317:1: (lv_startDate_4_0= ruleDate )
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:294:1: ( (lv_startDate_4_0= ruleDate ) )
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:295:1: (lv_startDate_4_0= ruleDate )
                     {
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:317:1: (lv_startDate_4_0= ruleDate )
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:318:3: lv_startDate_4_0= ruleDate
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:295:1: (lv_startDate_4_0= ruleDate )
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:296:3: lv_startDate_4_0= ruleDate
                     {
                      
                     	        newCompositeNode(grammarAccess.getExploitationActivityAccess().getStartDateDateParserRuleCall_3_1_0()); 
                     	    
-                    pushFollow(FOLLOW_ruleDate_in_ruleExploitationActivity605);
+                    pushFollow(FOLLOW_ruleDate_in_ruleExploitationActivity571);
                     lv_startDate_4_0=ruleDate();
 
                     state._fsp--;
@@ -768,20 +735,20 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
 
                     }
 
-                    otherlv_5=(Token)match(input,18,FOLLOW_18_in_ruleExploitationActivity617); 
+                    otherlv_5=(Token)match(input,17,FOLLOW_17_in_ruleExploitationActivity583); 
 
                         	newLeafNode(otherlv_5, grammarAccess.getExploitationActivityAccess().getToKeyword_3_2());
                         
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:338:1: ( (lv_endDate_6_0= ruleDate ) )
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:339:1: (lv_endDate_6_0= ruleDate )
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:316:1: ( (lv_endDate_6_0= ruleDate ) )
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:317:1: (lv_endDate_6_0= ruleDate )
                     {
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:339:1: (lv_endDate_6_0= ruleDate )
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:340:3: lv_endDate_6_0= ruleDate
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:317:1: (lv_endDate_6_0= ruleDate )
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:318:3: lv_endDate_6_0= ruleDate
                     {
                      
                     	        newCompositeNode(grammarAccess.getExploitationActivityAccess().getEndDateDateParserRuleCall_3_3_0()); 
                     	    
-                    pushFollow(FOLLOW_ruleDate_in_ruleExploitationActivity638);
+                    pushFollow(FOLLOW_ruleDate_in_ruleExploitationActivity604);
                     lv_endDate_6_0=ruleDate();
 
                     state._fsp--;
@@ -809,31 +776,31 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:356:4: (otherlv_7= '[' ( (lv_predicates_8_0= rulePredicate ) ) (otherlv_9= '&&' ( (lv_predicates_10_0= rulePredicate ) ) )* otherlv_11= ']' )?
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:334:4: (otherlv_7= '[' ( (lv_predicates_8_0= rulePredicate ) ) (otherlv_9= '&&' ( (lv_predicates_10_0= rulePredicate ) ) )* otherlv_11= ']' )?
             int alt7=2;
             int LA7_0 = input.LA(1);
 
-            if ( (LA7_0==19) ) {
+            if ( (LA7_0==18) ) {
                 alt7=1;
             }
             switch (alt7) {
                 case 1 :
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:356:6: otherlv_7= '[' ( (lv_predicates_8_0= rulePredicate ) ) (otherlv_9= '&&' ( (lv_predicates_10_0= rulePredicate ) ) )* otherlv_11= ']'
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:334:6: otherlv_7= '[' ( (lv_predicates_8_0= rulePredicate ) ) (otherlv_9= '&&' ( (lv_predicates_10_0= rulePredicate ) ) )* otherlv_11= ']'
                     {
-                    otherlv_7=(Token)match(input,19,FOLLOW_19_in_ruleExploitationActivity653); 
+                    otherlv_7=(Token)match(input,18,FOLLOW_18_in_ruleExploitationActivity619); 
 
                         	newLeafNode(otherlv_7, grammarAccess.getExploitationActivityAccess().getLeftSquareBracketKeyword_4_0());
                         
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:360:1: ( (lv_predicates_8_0= rulePredicate ) )
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:361:1: (lv_predicates_8_0= rulePredicate )
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:338:1: ( (lv_predicates_8_0= rulePredicate ) )
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:339:1: (lv_predicates_8_0= rulePredicate )
                     {
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:361:1: (lv_predicates_8_0= rulePredicate )
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:362:3: lv_predicates_8_0= rulePredicate
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:339:1: (lv_predicates_8_0= rulePredicate )
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:340:3: lv_predicates_8_0= rulePredicate
                     {
                      
                     	        newCompositeNode(grammarAccess.getExploitationActivityAccess().getPredicatesPredicateParserRuleCall_4_1_0()); 
                     	    
-                    pushFollow(FOLLOW_rulePredicate_in_ruleExploitationActivity674);
+                    pushFollow(FOLLOW_rulePredicate_in_ruleExploitationActivity640);
                     lv_predicates_8_0=rulePredicate();
 
                     state._fsp--;
@@ -855,35 +822,35 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
 
                     }
 
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:378:2: (otherlv_9= '&&' ( (lv_predicates_10_0= rulePredicate ) ) )*
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:356:2: (otherlv_9= '&&' ( (lv_predicates_10_0= rulePredicate ) ) )*
                     loop6:
                     do {
                         int alt6=2;
                         int LA6_0 = input.LA(1);
 
-                        if ( (LA6_0==20) ) {
+                        if ( (LA6_0==19) ) {
                             alt6=1;
                         }
 
 
                         switch (alt6) {
                     	case 1 :
-                    	    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:378:4: otherlv_9= '&&' ( (lv_predicates_10_0= rulePredicate ) )
+                    	    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:356:4: otherlv_9= '&&' ( (lv_predicates_10_0= rulePredicate ) )
                     	    {
-                    	    otherlv_9=(Token)match(input,20,FOLLOW_20_in_ruleExploitationActivity687); 
+                    	    otherlv_9=(Token)match(input,19,FOLLOW_19_in_ruleExploitationActivity653); 
 
                     	        	newLeafNode(otherlv_9, grammarAccess.getExploitationActivityAccess().getAmpersandAmpersandKeyword_4_2_0());
                     	        
-                    	    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:382:1: ( (lv_predicates_10_0= rulePredicate ) )
-                    	    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:383:1: (lv_predicates_10_0= rulePredicate )
+                    	    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:360:1: ( (lv_predicates_10_0= rulePredicate ) )
+                    	    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:361:1: (lv_predicates_10_0= rulePredicate )
                     	    {
-                    	    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:383:1: (lv_predicates_10_0= rulePredicate )
-                    	    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:384:3: lv_predicates_10_0= rulePredicate
+                    	    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:361:1: (lv_predicates_10_0= rulePredicate )
+                    	    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:362:3: lv_predicates_10_0= rulePredicate
                     	    {
                     	     
                     	    	        newCompositeNode(grammarAccess.getExploitationActivityAccess().getPredicatesPredicateParserRuleCall_4_2_1_0()); 
                     	    	    
-                    	    pushFollow(FOLLOW_rulePredicate_in_ruleExploitationActivity708);
+                    	    pushFollow(FOLLOW_rulePredicate_in_ruleExploitationActivity674);
                     	    lv_predicates_10_0=rulePredicate();
 
                     	    state._fsp--;
@@ -914,7 +881,7 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
                         }
                     } while (true);
 
-                    otherlv_11=(Token)match(input,21,FOLLOW_21_in_ruleExploitationActivity722); 
+                    otherlv_11=(Token)match(input,20,FOLLOW_20_in_ruleExploitationActivity688); 
 
                         	newLeafNode(otherlv_11, grammarAccess.getExploitationActivityAccess().getRightSquareBracketKeyword_4_3());
                         
@@ -945,7 +912,7 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRulePredicate"
-    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:412:1: entryRulePredicate returns [EObject current=null] : iv_rulePredicate= rulePredicate EOF ;
+    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:390:1: entryRulePredicate returns [EObject current=null] : iv_rulePredicate= rulePredicate EOF ;
     public final EObject entryRulePredicate() throws RecognitionException {
         EObject current = null;
 
@@ -953,17 +920,17 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:413:2: (iv_rulePredicate= rulePredicate EOF )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:414:2: iv_rulePredicate= rulePredicate EOF
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:391:2: (iv_rulePredicate= rulePredicate EOF )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:392:2: iv_rulePredicate= rulePredicate EOF
             {
              newCompositeNode(grammarAccess.getPredicateRule()); 
-            pushFollow(FOLLOW_rulePredicate_in_entryRulePredicate760);
+            pushFollow(FOLLOW_rulePredicate_in_entryRulePredicate726);
             iv_rulePredicate=rulePredicate();
 
             state._fsp--;
 
              current =iv_rulePredicate; 
-            match(input,EOF,FOLLOW_EOF_in_entryRulePredicate770); 
+            match(input,EOF,FOLLOW_EOF_in_entryRulePredicate736); 
 
             }
 
@@ -981,7 +948,7 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "rulePredicate"
-    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:421:1: rulePredicate returns [EObject current=null] : (this_NoRain_0= ruleNoRain | this_TempOfTheDay_1= ruleTempOfTheDay | this_DelaySinceActivy_2= ruleDelaySinceActivy | this_GrainIs_3= ruleGrainIs ) ;
+    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:399:1: rulePredicate returns [EObject current=null] : (this_NoRain_0= ruleNoRain | this_TempOfTheDay_1= ruleTempOfTheDay | this_DelaySinceActivy_2= ruleDelaySinceActivy | this_GrainIs_3= ruleGrainIs ) ;
     public final EObject rulePredicate() throws RecognitionException {
         EObject current = null;
 
@@ -997,28 +964,28 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:424:28: ( (this_NoRain_0= ruleNoRain | this_TempOfTheDay_1= ruleTempOfTheDay | this_DelaySinceActivy_2= ruleDelaySinceActivy | this_GrainIs_3= ruleGrainIs ) )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:425:1: (this_NoRain_0= ruleNoRain | this_TempOfTheDay_1= ruleTempOfTheDay | this_DelaySinceActivy_2= ruleDelaySinceActivy | this_GrainIs_3= ruleGrainIs )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:402:28: ( (this_NoRain_0= ruleNoRain | this_TempOfTheDay_1= ruleTempOfTheDay | this_DelaySinceActivy_2= ruleDelaySinceActivy | this_GrainIs_3= ruleGrainIs ) )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:403:1: (this_NoRain_0= ruleNoRain | this_TempOfTheDay_1= ruleTempOfTheDay | this_DelaySinceActivy_2= ruleDelaySinceActivy | this_GrainIs_3= ruleGrainIs )
             {
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:425:1: (this_NoRain_0= ruleNoRain | this_TempOfTheDay_1= ruleTempOfTheDay | this_DelaySinceActivy_2= ruleDelaySinceActivy | this_GrainIs_3= ruleGrainIs )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:403:1: (this_NoRain_0= ruleNoRain | this_TempOfTheDay_1= ruleTempOfTheDay | this_DelaySinceActivy_2= ruleDelaySinceActivy | this_GrainIs_3= ruleGrainIs )
             int alt8=4;
             switch ( input.LA(1) ) {
-            case 22:
+            case 21:
                 {
                 alt8=1;
                 }
                 break;
-            case 24:
+            case 23:
                 {
                 alt8=2;
                 }
                 break;
-            case 25:
+            case 24:
                 {
                 alt8=3;
                 }
                 break;
-            case 27:
+            case 26:
                 {
                 alt8=4;
                 }
@@ -1032,12 +999,12 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
 
             switch (alt8) {
                 case 1 :
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:426:5: this_NoRain_0= ruleNoRain
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:404:5: this_NoRain_0= ruleNoRain
                     {
                      
                             newCompositeNode(grammarAccess.getPredicateAccess().getNoRainParserRuleCall_0()); 
                         
-                    pushFollow(FOLLOW_ruleNoRain_in_rulePredicate817);
+                    pushFollow(FOLLOW_ruleNoRain_in_rulePredicate783);
                     this_NoRain_0=ruleNoRain();
 
                     state._fsp--;
@@ -1050,12 +1017,12 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:436:5: this_TempOfTheDay_1= ruleTempOfTheDay
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:414:5: this_TempOfTheDay_1= ruleTempOfTheDay
                     {
                      
                             newCompositeNode(grammarAccess.getPredicateAccess().getTempOfTheDayParserRuleCall_1()); 
                         
-                    pushFollow(FOLLOW_ruleTempOfTheDay_in_rulePredicate844);
+                    pushFollow(FOLLOW_ruleTempOfTheDay_in_rulePredicate810);
                     this_TempOfTheDay_1=ruleTempOfTheDay();
 
                     state._fsp--;
@@ -1068,12 +1035,12 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 3 :
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:446:5: this_DelaySinceActivy_2= ruleDelaySinceActivy
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:424:5: this_DelaySinceActivy_2= ruleDelaySinceActivy
                     {
                      
                             newCompositeNode(grammarAccess.getPredicateAccess().getDelaySinceActivyParserRuleCall_2()); 
                         
-                    pushFollow(FOLLOW_ruleDelaySinceActivy_in_rulePredicate871);
+                    pushFollow(FOLLOW_ruleDelaySinceActivy_in_rulePredicate837);
                     this_DelaySinceActivy_2=ruleDelaySinceActivy();
 
                     state._fsp--;
@@ -1086,12 +1053,12 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 4 :
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:456:5: this_GrainIs_3= ruleGrainIs
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:434:5: this_GrainIs_3= ruleGrainIs
                     {
                      
                             newCompositeNode(grammarAccess.getPredicateAccess().getGrainIsParserRuleCall_3()); 
                         
-                    pushFollow(FOLLOW_ruleGrainIs_in_rulePredicate898);
+                    pushFollow(FOLLOW_ruleGrainIs_in_rulePredicate864);
                     this_GrainIs_3=ruleGrainIs();
 
                     state._fsp--;
@@ -1124,7 +1091,7 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleNoRain"
-    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:472:1: entryRuleNoRain returns [EObject current=null] : iv_ruleNoRain= ruleNoRain EOF ;
+    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:450:1: entryRuleNoRain returns [EObject current=null] : iv_ruleNoRain= ruleNoRain EOF ;
     public final EObject entryRuleNoRain() throws RecognitionException {
         EObject current = null;
 
@@ -1132,17 +1099,17 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:473:2: (iv_ruleNoRain= ruleNoRain EOF )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:474:2: iv_ruleNoRain= ruleNoRain EOF
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:451:2: (iv_ruleNoRain= ruleNoRain EOF )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:452:2: iv_ruleNoRain= ruleNoRain EOF
             {
              newCompositeNode(grammarAccess.getNoRainRule()); 
-            pushFollow(FOLLOW_ruleNoRain_in_entryRuleNoRain933);
+            pushFollow(FOLLOW_ruleNoRain_in_entryRuleNoRain899);
             iv_ruleNoRain=ruleNoRain();
 
             state._fsp--;
 
              current =iv_ruleNoRain; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleNoRain943); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleNoRain909); 
 
             }
 
@@ -1160,7 +1127,7 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleNoRain"
-    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:481:1: ruleNoRain returns [EObject current=null] : (otherlv_0= 'no rain since' ( (lv_days_1_0= RULE_INT ) ) otherlv_2= 'days' ) ;
+    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:459:1: ruleNoRain returns [EObject current=null] : (otherlv_0= 'no rain since' ( (lv_days_1_0= RULE_INT ) ) otherlv_2= 'days' ) ;
     public final EObject ruleNoRain() throws RecognitionException {
         EObject current = null;
 
@@ -1171,23 +1138,23 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:484:28: ( (otherlv_0= 'no rain since' ( (lv_days_1_0= RULE_INT ) ) otherlv_2= 'days' ) )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:485:1: (otherlv_0= 'no rain since' ( (lv_days_1_0= RULE_INT ) ) otherlv_2= 'days' )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:462:28: ( (otherlv_0= 'no rain since' ( (lv_days_1_0= RULE_INT ) ) otherlv_2= 'days' ) )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:463:1: (otherlv_0= 'no rain since' ( (lv_days_1_0= RULE_INT ) ) otherlv_2= 'days' )
             {
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:485:1: (otherlv_0= 'no rain since' ( (lv_days_1_0= RULE_INT ) ) otherlv_2= 'days' )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:485:3: otherlv_0= 'no rain since' ( (lv_days_1_0= RULE_INT ) ) otherlv_2= 'days'
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:463:1: (otherlv_0= 'no rain since' ( (lv_days_1_0= RULE_INT ) ) otherlv_2= 'days' )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:463:3: otherlv_0= 'no rain since' ( (lv_days_1_0= RULE_INT ) ) otherlv_2= 'days'
             {
-            otherlv_0=(Token)match(input,22,FOLLOW_22_in_ruleNoRain980); 
+            otherlv_0=(Token)match(input,21,FOLLOW_21_in_ruleNoRain946); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getNoRainAccess().getNoRainSinceKeyword_0());
                 
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:489:1: ( (lv_days_1_0= RULE_INT ) )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:490:1: (lv_days_1_0= RULE_INT )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:467:1: ( (lv_days_1_0= RULE_INT ) )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:468:1: (lv_days_1_0= RULE_INT )
             {
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:490:1: (lv_days_1_0= RULE_INT )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:491:3: lv_days_1_0= RULE_INT
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:468:1: (lv_days_1_0= RULE_INT )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:469:3: lv_days_1_0= RULE_INT
             {
-            lv_days_1_0=(Token)match(input,RULE_INT,FOLLOW_RULE_INT_in_ruleNoRain997); 
+            lv_days_1_0=(Token)match(input,RULE_INT,FOLLOW_RULE_INT_in_ruleNoRain963); 
 
             			newLeafNode(lv_days_1_0, grammarAccess.getNoRainAccess().getDaysINTTerminalRuleCall_1_0()); 
             		
@@ -1207,7 +1174,7 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_2=(Token)match(input,23,FOLLOW_23_in_ruleNoRain1014); 
+            otherlv_2=(Token)match(input,22,FOLLOW_22_in_ruleNoRain980); 
 
                 	newLeafNode(otherlv_2, grammarAccess.getNoRainAccess().getDaysKeyword_2());
                 
@@ -1232,7 +1199,7 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleTempOfTheDay"
-    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:519:1: entryRuleTempOfTheDay returns [EObject current=null] : iv_ruleTempOfTheDay= ruleTempOfTheDay EOF ;
+    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:497:1: entryRuleTempOfTheDay returns [EObject current=null] : iv_ruleTempOfTheDay= ruleTempOfTheDay EOF ;
     public final EObject entryRuleTempOfTheDay() throws RecognitionException {
         EObject current = null;
 
@@ -1240,17 +1207,17 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:520:2: (iv_ruleTempOfTheDay= ruleTempOfTheDay EOF )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:521:2: iv_ruleTempOfTheDay= ruleTempOfTheDay EOF
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:498:2: (iv_ruleTempOfTheDay= ruleTempOfTheDay EOF )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:499:2: iv_ruleTempOfTheDay= ruleTempOfTheDay EOF
             {
              newCompositeNode(grammarAccess.getTempOfTheDayRule()); 
-            pushFollow(FOLLOW_ruleTempOfTheDay_in_entryRuleTempOfTheDay1050);
+            pushFollow(FOLLOW_ruleTempOfTheDay_in_entryRuleTempOfTheDay1016);
             iv_ruleTempOfTheDay=ruleTempOfTheDay();
 
             state._fsp--;
 
              current =iv_ruleTempOfTheDay; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleTempOfTheDay1060); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleTempOfTheDay1026); 
 
             }
 
@@ -1268,7 +1235,7 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleTempOfTheDay"
-    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:528:1: ruleTempOfTheDay returns [EObject current=null] : (otherlv_0= 'temperature' ( (lv_comparison_1_0= ruleComp ) ) ( (lv_lowerTempBound_2_0= RULE_INT ) ) ( (lv_unit_3_0= ruleTempUnit ) ) ) ;
+    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:506:1: ruleTempOfTheDay returns [EObject current=null] : (otherlv_0= 'temperature' ( (lv_comparison_1_0= ruleComp ) ) ( (lv_lowerTempBound_2_0= RULE_INT ) ) ( (lv_unit_3_0= ruleTempUnit ) ) ) ;
     public final EObject ruleTempOfTheDay() throws RecognitionException {
         EObject current = null;
 
@@ -1282,26 +1249,26 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:531:28: ( (otherlv_0= 'temperature' ( (lv_comparison_1_0= ruleComp ) ) ( (lv_lowerTempBound_2_0= RULE_INT ) ) ( (lv_unit_3_0= ruleTempUnit ) ) ) )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:532:1: (otherlv_0= 'temperature' ( (lv_comparison_1_0= ruleComp ) ) ( (lv_lowerTempBound_2_0= RULE_INT ) ) ( (lv_unit_3_0= ruleTempUnit ) ) )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:509:28: ( (otherlv_0= 'temperature' ( (lv_comparison_1_0= ruleComp ) ) ( (lv_lowerTempBound_2_0= RULE_INT ) ) ( (lv_unit_3_0= ruleTempUnit ) ) ) )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:510:1: (otherlv_0= 'temperature' ( (lv_comparison_1_0= ruleComp ) ) ( (lv_lowerTempBound_2_0= RULE_INT ) ) ( (lv_unit_3_0= ruleTempUnit ) ) )
             {
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:532:1: (otherlv_0= 'temperature' ( (lv_comparison_1_0= ruleComp ) ) ( (lv_lowerTempBound_2_0= RULE_INT ) ) ( (lv_unit_3_0= ruleTempUnit ) ) )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:532:3: otherlv_0= 'temperature' ( (lv_comparison_1_0= ruleComp ) ) ( (lv_lowerTempBound_2_0= RULE_INT ) ) ( (lv_unit_3_0= ruleTempUnit ) )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:510:1: (otherlv_0= 'temperature' ( (lv_comparison_1_0= ruleComp ) ) ( (lv_lowerTempBound_2_0= RULE_INT ) ) ( (lv_unit_3_0= ruleTempUnit ) ) )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:510:3: otherlv_0= 'temperature' ( (lv_comparison_1_0= ruleComp ) ) ( (lv_lowerTempBound_2_0= RULE_INT ) ) ( (lv_unit_3_0= ruleTempUnit ) )
             {
-            otherlv_0=(Token)match(input,24,FOLLOW_24_in_ruleTempOfTheDay1097); 
+            otherlv_0=(Token)match(input,23,FOLLOW_23_in_ruleTempOfTheDay1063); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getTempOfTheDayAccess().getTemperatureKeyword_0());
                 
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:536:1: ( (lv_comparison_1_0= ruleComp ) )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:537:1: (lv_comparison_1_0= ruleComp )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:514:1: ( (lv_comparison_1_0= ruleComp ) )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:515:1: (lv_comparison_1_0= ruleComp )
             {
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:537:1: (lv_comparison_1_0= ruleComp )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:538:3: lv_comparison_1_0= ruleComp
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:515:1: (lv_comparison_1_0= ruleComp )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:516:3: lv_comparison_1_0= ruleComp
             {
              
             	        newCompositeNode(grammarAccess.getTempOfTheDayAccess().getComparisonCompEnumRuleCall_1_0()); 
             	    
-            pushFollow(FOLLOW_ruleComp_in_ruleTempOfTheDay1118);
+            pushFollow(FOLLOW_ruleComp_in_ruleTempOfTheDay1084);
             lv_comparison_1_0=ruleComp();
 
             state._fsp--;
@@ -1323,13 +1290,13 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:554:2: ( (lv_lowerTempBound_2_0= RULE_INT ) )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:555:1: (lv_lowerTempBound_2_0= RULE_INT )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:532:2: ( (lv_lowerTempBound_2_0= RULE_INT ) )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:533:1: (lv_lowerTempBound_2_0= RULE_INT )
             {
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:555:1: (lv_lowerTempBound_2_0= RULE_INT )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:556:3: lv_lowerTempBound_2_0= RULE_INT
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:533:1: (lv_lowerTempBound_2_0= RULE_INT )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:534:3: lv_lowerTempBound_2_0= RULE_INT
             {
-            lv_lowerTempBound_2_0=(Token)match(input,RULE_INT,FOLLOW_RULE_INT_in_ruleTempOfTheDay1135); 
+            lv_lowerTempBound_2_0=(Token)match(input,RULE_INT,FOLLOW_RULE_INT_in_ruleTempOfTheDay1101); 
 
             			newLeafNode(lv_lowerTempBound_2_0, grammarAccess.getTempOfTheDayAccess().getLowerTempBoundINTTerminalRuleCall_2_0()); 
             		
@@ -1349,16 +1316,16 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:572:2: ( (lv_unit_3_0= ruleTempUnit ) )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:573:1: (lv_unit_3_0= ruleTempUnit )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:550:2: ( (lv_unit_3_0= ruleTempUnit ) )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:551:1: (lv_unit_3_0= ruleTempUnit )
             {
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:573:1: (lv_unit_3_0= ruleTempUnit )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:574:3: lv_unit_3_0= ruleTempUnit
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:551:1: (lv_unit_3_0= ruleTempUnit )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:552:3: lv_unit_3_0= ruleTempUnit
             {
              
             	        newCompositeNode(grammarAccess.getTempOfTheDayAccess().getUnitTempUnitEnumRuleCall_3_0()); 
             	    
-            pushFollow(FOLLOW_ruleTempUnit_in_ruleTempOfTheDay1161);
+            pushFollow(FOLLOW_ruleTempUnit_in_ruleTempOfTheDay1127);
             lv_unit_3_0=ruleTempUnit();
 
             state._fsp--;
@@ -1401,7 +1368,7 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleDelaySinceActivy"
-    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:598:1: entryRuleDelaySinceActivy returns [EObject current=null] : iv_ruleDelaySinceActivy= ruleDelaySinceActivy EOF ;
+    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:576:1: entryRuleDelaySinceActivy returns [EObject current=null] : iv_ruleDelaySinceActivy= ruleDelaySinceActivy EOF ;
     public final EObject entryRuleDelaySinceActivy() throws RecognitionException {
         EObject current = null;
 
@@ -1409,17 +1376,17 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:599:2: (iv_ruleDelaySinceActivy= ruleDelaySinceActivy EOF )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:600:2: iv_ruleDelaySinceActivy= ruleDelaySinceActivy EOF
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:577:2: (iv_ruleDelaySinceActivy= ruleDelaySinceActivy EOF )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:578:2: iv_ruleDelaySinceActivy= ruleDelaySinceActivy EOF
             {
              newCompositeNode(grammarAccess.getDelaySinceActivyRule()); 
-            pushFollow(FOLLOW_ruleDelaySinceActivy_in_entryRuleDelaySinceActivy1197);
+            pushFollow(FOLLOW_ruleDelaySinceActivy_in_entryRuleDelaySinceActivy1163);
             iv_ruleDelaySinceActivy=ruleDelaySinceActivy();
 
             state._fsp--;
 
              current =iv_ruleDelaySinceActivy; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleDelaySinceActivy1207); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleDelaySinceActivy1173); 
 
             }
 
@@ -1437,7 +1404,7 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleDelaySinceActivy"
-    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:607:1: ruleDelaySinceActivy returns [EObject current=null] : (otherlv_0= 'after' ( (otherlv_1= RULE_ID ) ) (otherlv_2= 'is done since' ( (lv_days_3_0= RULE_INT ) ) otherlv_4= 'days' )? ) ;
+    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:585:1: ruleDelaySinceActivy returns [EObject current=null] : (otherlv_0= 'after' ( (otherlv_1= RULE_ID ) ) (otherlv_2= 'is done since' ( (lv_days_3_0= RULE_INT ) ) otherlv_4= 'days' )? ) ;
     public final EObject ruleDelaySinceActivy() throws RecognitionException {
         EObject current = null;
 
@@ -1450,28 +1417,28 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:610:28: ( (otherlv_0= 'after' ( (otherlv_1= RULE_ID ) ) (otherlv_2= 'is done since' ( (lv_days_3_0= RULE_INT ) ) otherlv_4= 'days' )? ) )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:611:1: (otherlv_0= 'after' ( (otherlv_1= RULE_ID ) ) (otherlv_2= 'is done since' ( (lv_days_3_0= RULE_INT ) ) otherlv_4= 'days' )? )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:588:28: ( (otherlv_0= 'after' ( (otherlv_1= RULE_ID ) ) (otherlv_2= 'is done since' ( (lv_days_3_0= RULE_INT ) ) otherlv_4= 'days' )? ) )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:589:1: (otherlv_0= 'after' ( (otherlv_1= RULE_ID ) ) (otherlv_2= 'is done since' ( (lv_days_3_0= RULE_INT ) ) otherlv_4= 'days' )? )
             {
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:611:1: (otherlv_0= 'after' ( (otherlv_1= RULE_ID ) ) (otherlv_2= 'is done since' ( (lv_days_3_0= RULE_INT ) ) otherlv_4= 'days' )? )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:611:3: otherlv_0= 'after' ( (otherlv_1= RULE_ID ) ) (otherlv_2= 'is done since' ( (lv_days_3_0= RULE_INT ) ) otherlv_4= 'days' )?
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:589:1: (otherlv_0= 'after' ( (otherlv_1= RULE_ID ) ) (otherlv_2= 'is done since' ( (lv_days_3_0= RULE_INT ) ) otherlv_4= 'days' )? )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:589:3: otherlv_0= 'after' ( (otherlv_1= RULE_ID ) ) (otherlv_2= 'is done since' ( (lv_days_3_0= RULE_INT ) ) otherlv_4= 'days' )?
             {
-            otherlv_0=(Token)match(input,25,FOLLOW_25_in_ruleDelaySinceActivy1244); 
+            otherlv_0=(Token)match(input,24,FOLLOW_24_in_ruleDelaySinceActivy1210); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getDelaySinceActivyAccess().getAfterKeyword_0());
                 
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:615:1: ( (otherlv_1= RULE_ID ) )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:616:1: (otherlv_1= RULE_ID )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:593:1: ( (otherlv_1= RULE_ID ) )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:594:1: (otherlv_1= RULE_ID )
             {
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:616:1: (otherlv_1= RULE_ID )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:617:3: otherlv_1= RULE_ID
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:594:1: (otherlv_1= RULE_ID )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:595:3: otherlv_1= RULE_ID
             {
 
             			if (current==null) {
             	            current = createModelElement(grammarAccess.getDelaySinceActivyRule());
             	        }
                     
-            otherlv_1=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleDelaySinceActivy1264); 
+            otherlv_1=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleDelaySinceActivy1230); 
 
             		newLeafNode(otherlv_1, grammarAccess.getDelaySinceActivyAccess().getPrerequisiteExploitationActivityCrossReference_1_0()); 
             	
@@ -1481,28 +1448,28 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:628:2: (otherlv_2= 'is done since' ( (lv_days_3_0= RULE_INT ) ) otherlv_4= 'days' )?
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:606:2: (otherlv_2= 'is done since' ( (lv_days_3_0= RULE_INT ) ) otherlv_4= 'days' )?
             int alt9=2;
             int LA9_0 = input.LA(1);
 
-            if ( (LA9_0==26) ) {
+            if ( (LA9_0==25) ) {
                 alt9=1;
             }
             switch (alt9) {
                 case 1 :
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:628:4: otherlv_2= 'is done since' ( (lv_days_3_0= RULE_INT ) ) otherlv_4= 'days'
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:606:4: otherlv_2= 'is done since' ( (lv_days_3_0= RULE_INT ) ) otherlv_4= 'days'
                     {
-                    otherlv_2=(Token)match(input,26,FOLLOW_26_in_ruleDelaySinceActivy1277); 
+                    otherlv_2=(Token)match(input,25,FOLLOW_25_in_ruleDelaySinceActivy1243); 
 
                         	newLeafNode(otherlv_2, grammarAccess.getDelaySinceActivyAccess().getIsDoneSinceKeyword_2_0());
                         
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:632:1: ( (lv_days_3_0= RULE_INT ) )
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:633:1: (lv_days_3_0= RULE_INT )
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:610:1: ( (lv_days_3_0= RULE_INT ) )
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:611:1: (lv_days_3_0= RULE_INT )
                     {
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:633:1: (lv_days_3_0= RULE_INT )
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:634:3: lv_days_3_0= RULE_INT
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:611:1: (lv_days_3_0= RULE_INT )
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:612:3: lv_days_3_0= RULE_INT
                     {
-                    lv_days_3_0=(Token)match(input,RULE_INT,FOLLOW_RULE_INT_in_ruleDelaySinceActivy1294); 
+                    lv_days_3_0=(Token)match(input,RULE_INT,FOLLOW_RULE_INT_in_ruleDelaySinceActivy1260); 
 
                     			newLeafNode(lv_days_3_0, grammarAccess.getDelaySinceActivyAccess().getDaysINTTerminalRuleCall_2_1_0()); 
                     		
@@ -1522,7 +1489,7 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
 
                     }
 
-                    otherlv_4=(Token)match(input,23,FOLLOW_23_in_ruleDelaySinceActivy1311); 
+                    otherlv_4=(Token)match(input,22,FOLLOW_22_in_ruleDelaySinceActivy1277); 
 
                         	newLeafNode(otherlv_4, grammarAccess.getDelaySinceActivyAccess().getDaysKeyword_2_2());
                         
@@ -1553,7 +1520,7 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleGrainIs"
-    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:662:1: entryRuleGrainIs returns [EObject current=null] : iv_ruleGrainIs= ruleGrainIs EOF ;
+    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:640:1: entryRuleGrainIs returns [EObject current=null] : iv_ruleGrainIs= ruleGrainIs EOF ;
     public final EObject entryRuleGrainIs() throws RecognitionException {
         EObject current = null;
 
@@ -1561,17 +1528,17 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:663:2: (iv_ruleGrainIs= ruleGrainIs EOF )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:664:2: iv_ruleGrainIs= ruleGrainIs EOF
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:641:2: (iv_ruleGrainIs= ruleGrainIs EOF )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:642:2: iv_ruleGrainIs= ruleGrainIs EOF
             {
              newCompositeNode(grammarAccess.getGrainIsRule()); 
-            pushFollow(FOLLOW_ruleGrainIs_in_entryRuleGrainIs1349);
+            pushFollow(FOLLOW_ruleGrainIs_in_entryRuleGrainIs1315);
             iv_ruleGrainIs=ruleGrainIs();
 
             state._fsp--;
 
              current =iv_ruleGrainIs; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleGrainIs1359); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleGrainIs1325); 
 
             }
 
@@ -1589,7 +1556,7 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleGrainIs"
-    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:671:1: ruleGrainIs returns [EObject current=null] : (otherlv_0= 'grain is' ( (lv_state_1_0= RULE_STRING ) ) ) ;
+    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:649:1: ruleGrainIs returns [EObject current=null] : (otherlv_0= 'grain is' ( (lv_state_1_0= RULE_STRING ) ) ) ;
     public final EObject ruleGrainIs() throws RecognitionException {
         EObject current = null;
 
@@ -1599,23 +1566,23 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:674:28: ( (otherlv_0= 'grain is' ( (lv_state_1_0= RULE_STRING ) ) ) )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:675:1: (otherlv_0= 'grain is' ( (lv_state_1_0= RULE_STRING ) ) )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:652:28: ( (otherlv_0= 'grain is' ( (lv_state_1_0= RULE_STRING ) ) ) )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:653:1: (otherlv_0= 'grain is' ( (lv_state_1_0= RULE_STRING ) ) )
             {
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:675:1: (otherlv_0= 'grain is' ( (lv_state_1_0= RULE_STRING ) ) )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:675:3: otherlv_0= 'grain is' ( (lv_state_1_0= RULE_STRING ) )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:653:1: (otherlv_0= 'grain is' ( (lv_state_1_0= RULE_STRING ) ) )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:653:3: otherlv_0= 'grain is' ( (lv_state_1_0= RULE_STRING ) )
             {
-            otherlv_0=(Token)match(input,27,FOLLOW_27_in_ruleGrainIs1396); 
+            otherlv_0=(Token)match(input,26,FOLLOW_26_in_ruleGrainIs1362); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getGrainIsAccess().getGrainIsKeyword_0());
                 
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:679:1: ( (lv_state_1_0= RULE_STRING ) )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:680:1: (lv_state_1_0= RULE_STRING )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:657:1: ( (lv_state_1_0= RULE_STRING ) )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:658:1: (lv_state_1_0= RULE_STRING )
             {
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:680:1: (lv_state_1_0= RULE_STRING )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:681:3: lv_state_1_0= RULE_STRING
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:658:1: (lv_state_1_0= RULE_STRING )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:659:3: lv_state_1_0= RULE_STRING
             {
-            lv_state_1_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleGrainIs1413); 
+            lv_state_1_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleGrainIs1379); 
 
             			newLeafNode(lv_state_1_0, grammarAccess.getGrainIsAccess().getStateSTRINGTerminalRuleCall_1_0()); 
             		
@@ -1656,7 +1623,7 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleDate"
-    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:705:1: entryRuleDate returns [EObject current=null] : iv_ruleDate= ruleDate EOF ;
+    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:683:1: entryRuleDate returns [EObject current=null] : iv_ruleDate= ruleDate EOF ;
     public final EObject entryRuleDate() throws RecognitionException {
         EObject current = null;
 
@@ -1664,17 +1631,17 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:706:2: (iv_ruleDate= ruleDate EOF )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:707:2: iv_ruleDate= ruleDate EOF
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:684:2: (iv_ruleDate= ruleDate EOF )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:685:2: iv_ruleDate= ruleDate EOF
             {
              newCompositeNode(grammarAccess.getDateRule()); 
-            pushFollow(FOLLOW_ruleDate_in_entryRuleDate1454);
+            pushFollow(FOLLOW_ruleDate_in_entryRuleDate1420);
             iv_ruleDate=ruleDate();
 
             state._fsp--;
 
              current =iv_ruleDate; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleDate1464); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleDate1430); 
 
             }
 
@@ -1692,7 +1659,7 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleDate"
-    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:714:1: ruleDate returns [EObject current=null] : ( ( (lv_day_0_0= RULE_INT ) ) ( (lv_month_1_0= ruleMonth ) ) ) ;
+    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:692:1: ruleDate returns [EObject current=null] : ( ( (lv_day_0_0= RULE_INT ) ) ( (lv_month_1_0= ruleMonth ) ) ) ;
     public final EObject ruleDate() throws RecognitionException {
         EObject current = null;
 
@@ -1703,19 +1670,19 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:717:28: ( ( ( (lv_day_0_0= RULE_INT ) ) ( (lv_month_1_0= ruleMonth ) ) ) )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:718:1: ( ( (lv_day_0_0= RULE_INT ) ) ( (lv_month_1_0= ruleMonth ) ) )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:695:28: ( ( ( (lv_day_0_0= RULE_INT ) ) ( (lv_month_1_0= ruleMonth ) ) ) )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:696:1: ( ( (lv_day_0_0= RULE_INT ) ) ( (lv_month_1_0= ruleMonth ) ) )
             {
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:718:1: ( ( (lv_day_0_0= RULE_INT ) ) ( (lv_month_1_0= ruleMonth ) ) )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:718:2: ( (lv_day_0_0= RULE_INT ) ) ( (lv_month_1_0= ruleMonth ) )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:696:1: ( ( (lv_day_0_0= RULE_INT ) ) ( (lv_month_1_0= ruleMonth ) ) )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:696:2: ( (lv_day_0_0= RULE_INT ) ) ( (lv_month_1_0= ruleMonth ) )
             {
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:718:2: ( (lv_day_0_0= RULE_INT ) )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:719:1: (lv_day_0_0= RULE_INT )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:696:2: ( (lv_day_0_0= RULE_INT ) )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:697:1: (lv_day_0_0= RULE_INT )
             {
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:719:1: (lv_day_0_0= RULE_INT )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:720:3: lv_day_0_0= RULE_INT
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:697:1: (lv_day_0_0= RULE_INT )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:698:3: lv_day_0_0= RULE_INT
             {
-            lv_day_0_0=(Token)match(input,RULE_INT,FOLLOW_RULE_INT_in_ruleDate1506); 
+            lv_day_0_0=(Token)match(input,RULE_INT,FOLLOW_RULE_INT_in_ruleDate1472); 
 
             			newLeafNode(lv_day_0_0, grammarAccess.getDateAccess().getDayINTTerminalRuleCall_0_0()); 
             		
@@ -1735,16 +1702,16 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:736:2: ( (lv_month_1_0= ruleMonth ) )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:737:1: (lv_month_1_0= ruleMonth )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:714:2: ( (lv_month_1_0= ruleMonth ) )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:715:1: (lv_month_1_0= ruleMonth )
             {
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:737:1: (lv_month_1_0= ruleMonth )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:738:3: lv_month_1_0= ruleMonth
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:715:1: (lv_month_1_0= ruleMonth )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:716:3: lv_month_1_0= ruleMonth
             {
              
             	        newCompositeNode(grammarAccess.getDateAccess().getMonthMonthEnumRuleCall_1_0()); 
             	    
-            pushFollow(FOLLOW_ruleMonth_in_ruleDate1532);
+            pushFollow(FOLLOW_ruleMonth_in_ruleDate1498);
             lv_month_1_0=ruleMonth();
 
             state._fsp--;
@@ -1787,7 +1754,7 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleMonth"
-    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:762:1: ruleMonth returns [Enumerator current=null] : ( (enumLiteral_0= 'jan' ) | (enumLiteral_1= 'feb' ) | (enumLiteral_2= 'mar' ) | (enumLiteral_3= 'apr' ) | (enumLiteral_4= 'may' ) | (enumLiteral_5= 'jun' ) | (enumLiteral_6= 'jul' ) | (enumLiteral_7= 'aug' ) | (enumLiteral_8= 'sept' ) | (enumLiteral_9= 'oct' ) | (enumLiteral_10= 'nov' ) | (enumLiteral_11= 'dec' ) ) ;
+    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:740:1: ruleMonth returns [Enumerator current=null] : ( (enumLiteral_0= 'jan' ) | (enumLiteral_1= 'feb' ) | (enumLiteral_2= 'mar' ) | (enumLiteral_3= 'apr' ) | (enumLiteral_4= 'may' ) | (enumLiteral_5= 'jun' ) | (enumLiteral_6= 'jul' ) | (enumLiteral_7= 'aug' ) | (enumLiteral_8= 'sept' ) | (enumLiteral_9= 'oct' ) | (enumLiteral_10= 'nov' ) | (enumLiteral_11= 'dec' ) ) ;
     public final Enumerator ruleMonth() throws RecognitionException {
         Enumerator current = null;
 
@@ -1806,68 +1773,68 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
 
          enterRule(); 
         try {
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:764:28: ( ( (enumLiteral_0= 'jan' ) | (enumLiteral_1= 'feb' ) | (enumLiteral_2= 'mar' ) | (enumLiteral_3= 'apr' ) | (enumLiteral_4= 'may' ) | (enumLiteral_5= 'jun' ) | (enumLiteral_6= 'jul' ) | (enumLiteral_7= 'aug' ) | (enumLiteral_8= 'sept' ) | (enumLiteral_9= 'oct' ) | (enumLiteral_10= 'nov' ) | (enumLiteral_11= 'dec' ) ) )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:765:1: ( (enumLiteral_0= 'jan' ) | (enumLiteral_1= 'feb' ) | (enumLiteral_2= 'mar' ) | (enumLiteral_3= 'apr' ) | (enumLiteral_4= 'may' ) | (enumLiteral_5= 'jun' ) | (enumLiteral_6= 'jul' ) | (enumLiteral_7= 'aug' ) | (enumLiteral_8= 'sept' ) | (enumLiteral_9= 'oct' ) | (enumLiteral_10= 'nov' ) | (enumLiteral_11= 'dec' ) )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:742:28: ( ( (enumLiteral_0= 'jan' ) | (enumLiteral_1= 'feb' ) | (enumLiteral_2= 'mar' ) | (enumLiteral_3= 'apr' ) | (enumLiteral_4= 'may' ) | (enumLiteral_5= 'jun' ) | (enumLiteral_6= 'jul' ) | (enumLiteral_7= 'aug' ) | (enumLiteral_8= 'sept' ) | (enumLiteral_9= 'oct' ) | (enumLiteral_10= 'nov' ) | (enumLiteral_11= 'dec' ) ) )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:743:1: ( (enumLiteral_0= 'jan' ) | (enumLiteral_1= 'feb' ) | (enumLiteral_2= 'mar' ) | (enumLiteral_3= 'apr' ) | (enumLiteral_4= 'may' ) | (enumLiteral_5= 'jun' ) | (enumLiteral_6= 'jul' ) | (enumLiteral_7= 'aug' ) | (enumLiteral_8= 'sept' ) | (enumLiteral_9= 'oct' ) | (enumLiteral_10= 'nov' ) | (enumLiteral_11= 'dec' ) )
             {
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:765:1: ( (enumLiteral_0= 'jan' ) | (enumLiteral_1= 'feb' ) | (enumLiteral_2= 'mar' ) | (enumLiteral_3= 'apr' ) | (enumLiteral_4= 'may' ) | (enumLiteral_5= 'jun' ) | (enumLiteral_6= 'jul' ) | (enumLiteral_7= 'aug' ) | (enumLiteral_8= 'sept' ) | (enumLiteral_9= 'oct' ) | (enumLiteral_10= 'nov' ) | (enumLiteral_11= 'dec' ) )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:743:1: ( (enumLiteral_0= 'jan' ) | (enumLiteral_1= 'feb' ) | (enumLiteral_2= 'mar' ) | (enumLiteral_3= 'apr' ) | (enumLiteral_4= 'may' ) | (enumLiteral_5= 'jun' ) | (enumLiteral_6= 'jul' ) | (enumLiteral_7= 'aug' ) | (enumLiteral_8= 'sept' ) | (enumLiteral_9= 'oct' ) | (enumLiteral_10= 'nov' ) | (enumLiteral_11= 'dec' ) )
             int alt10=12;
             switch ( input.LA(1) ) {
-            case 28:
+            case 27:
                 {
                 alt10=1;
                 }
                 break;
-            case 29:
+            case 28:
                 {
                 alt10=2;
                 }
                 break;
-            case 30:
+            case 29:
                 {
                 alt10=3;
                 }
                 break;
-            case 31:
+            case 30:
                 {
                 alt10=4;
                 }
                 break;
-            case 32:
+            case 31:
                 {
                 alt10=5;
                 }
                 break;
-            case 33:
+            case 32:
                 {
                 alt10=6;
                 }
                 break;
-            case 34:
+            case 33:
                 {
                 alt10=7;
                 }
                 break;
-            case 35:
+            case 34:
                 {
                 alt10=8;
                 }
                 break;
-            case 36:
+            case 35:
                 {
                 alt10=9;
                 }
                 break;
-            case 37:
+            case 36:
                 {
                 alt10=10;
                 }
                 break;
-            case 38:
+            case 37:
                 {
                 alt10=11;
                 }
                 break;
-            case 39:
+            case 38:
                 {
                 alt10=12;
                 }
@@ -1881,12 +1848,12 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
 
             switch (alt10) {
                 case 1 :
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:765:2: (enumLiteral_0= 'jan' )
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:743:2: (enumLiteral_0= 'jan' )
                     {
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:765:2: (enumLiteral_0= 'jan' )
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:765:4: enumLiteral_0= 'jan'
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:743:2: (enumLiteral_0= 'jan' )
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:743:4: enumLiteral_0= 'jan'
                     {
-                    enumLiteral_0=(Token)match(input,28,FOLLOW_28_in_ruleMonth1582); 
+                    enumLiteral_0=(Token)match(input,27,FOLLOW_27_in_ruleMonth1548); 
 
                             current = grammarAccess.getMonthAccess().getJanEnumLiteralDeclaration_0().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_0, grammarAccess.getMonthAccess().getJanEnumLiteralDeclaration_0()); 
@@ -1898,12 +1865,12 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:771:6: (enumLiteral_1= 'feb' )
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:749:6: (enumLiteral_1= 'feb' )
                     {
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:771:6: (enumLiteral_1= 'feb' )
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:771:8: enumLiteral_1= 'feb'
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:749:6: (enumLiteral_1= 'feb' )
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:749:8: enumLiteral_1= 'feb'
                     {
-                    enumLiteral_1=(Token)match(input,29,FOLLOW_29_in_ruleMonth1599); 
+                    enumLiteral_1=(Token)match(input,28,FOLLOW_28_in_ruleMonth1565); 
 
                             current = grammarAccess.getMonthAccess().getFebEnumLiteralDeclaration_1().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_1, grammarAccess.getMonthAccess().getFebEnumLiteralDeclaration_1()); 
@@ -1915,12 +1882,12 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 3 :
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:777:6: (enumLiteral_2= 'mar' )
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:755:6: (enumLiteral_2= 'mar' )
                     {
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:777:6: (enumLiteral_2= 'mar' )
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:777:8: enumLiteral_2= 'mar'
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:755:6: (enumLiteral_2= 'mar' )
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:755:8: enumLiteral_2= 'mar'
                     {
-                    enumLiteral_2=(Token)match(input,30,FOLLOW_30_in_ruleMonth1616); 
+                    enumLiteral_2=(Token)match(input,29,FOLLOW_29_in_ruleMonth1582); 
 
                             current = grammarAccess.getMonthAccess().getMarEnumLiteralDeclaration_2().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_2, grammarAccess.getMonthAccess().getMarEnumLiteralDeclaration_2()); 
@@ -1932,12 +1899,12 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 4 :
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:783:6: (enumLiteral_3= 'apr' )
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:761:6: (enumLiteral_3= 'apr' )
                     {
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:783:6: (enumLiteral_3= 'apr' )
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:783:8: enumLiteral_3= 'apr'
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:761:6: (enumLiteral_3= 'apr' )
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:761:8: enumLiteral_3= 'apr'
                     {
-                    enumLiteral_3=(Token)match(input,31,FOLLOW_31_in_ruleMonth1633); 
+                    enumLiteral_3=(Token)match(input,30,FOLLOW_30_in_ruleMonth1599); 
 
                             current = grammarAccess.getMonthAccess().getAprEnumLiteralDeclaration_3().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_3, grammarAccess.getMonthAccess().getAprEnumLiteralDeclaration_3()); 
@@ -1949,12 +1916,12 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 5 :
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:789:6: (enumLiteral_4= 'may' )
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:767:6: (enumLiteral_4= 'may' )
                     {
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:789:6: (enumLiteral_4= 'may' )
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:789:8: enumLiteral_4= 'may'
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:767:6: (enumLiteral_4= 'may' )
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:767:8: enumLiteral_4= 'may'
                     {
-                    enumLiteral_4=(Token)match(input,32,FOLLOW_32_in_ruleMonth1650); 
+                    enumLiteral_4=(Token)match(input,31,FOLLOW_31_in_ruleMonth1616); 
 
                             current = grammarAccess.getMonthAccess().getMayEnumLiteralDeclaration_4().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_4, grammarAccess.getMonthAccess().getMayEnumLiteralDeclaration_4()); 
@@ -1966,12 +1933,12 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 6 :
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:795:6: (enumLiteral_5= 'jun' )
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:773:6: (enumLiteral_5= 'jun' )
                     {
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:795:6: (enumLiteral_5= 'jun' )
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:795:8: enumLiteral_5= 'jun'
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:773:6: (enumLiteral_5= 'jun' )
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:773:8: enumLiteral_5= 'jun'
                     {
-                    enumLiteral_5=(Token)match(input,33,FOLLOW_33_in_ruleMonth1667); 
+                    enumLiteral_5=(Token)match(input,32,FOLLOW_32_in_ruleMonth1633); 
 
                             current = grammarAccess.getMonthAccess().getJunEnumLiteralDeclaration_5().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_5, grammarAccess.getMonthAccess().getJunEnumLiteralDeclaration_5()); 
@@ -1983,12 +1950,12 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 7 :
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:801:6: (enumLiteral_6= 'jul' )
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:779:6: (enumLiteral_6= 'jul' )
                     {
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:801:6: (enumLiteral_6= 'jul' )
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:801:8: enumLiteral_6= 'jul'
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:779:6: (enumLiteral_6= 'jul' )
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:779:8: enumLiteral_6= 'jul'
                     {
-                    enumLiteral_6=(Token)match(input,34,FOLLOW_34_in_ruleMonth1684); 
+                    enumLiteral_6=(Token)match(input,33,FOLLOW_33_in_ruleMonth1650); 
 
                             current = grammarAccess.getMonthAccess().getJulEnumLiteralDeclaration_6().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_6, grammarAccess.getMonthAccess().getJulEnumLiteralDeclaration_6()); 
@@ -2000,12 +1967,12 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 8 :
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:807:6: (enumLiteral_7= 'aug' )
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:785:6: (enumLiteral_7= 'aug' )
                     {
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:807:6: (enumLiteral_7= 'aug' )
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:807:8: enumLiteral_7= 'aug'
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:785:6: (enumLiteral_7= 'aug' )
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:785:8: enumLiteral_7= 'aug'
                     {
-                    enumLiteral_7=(Token)match(input,35,FOLLOW_35_in_ruleMonth1701); 
+                    enumLiteral_7=(Token)match(input,34,FOLLOW_34_in_ruleMonth1667); 
 
                             current = grammarAccess.getMonthAccess().getAugEnumLiteralDeclaration_7().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_7, grammarAccess.getMonthAccess().getAugEnumLiteralDeclaration_7()); 
@@ -2017,12 +1984,12 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 9 :
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:813:6: (enumLiteral_8= 'sept' )
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:791:6: (enumLiteral_8= 'sept' )
                     {
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:813:6: (enumLiteral_8= 'sept' )
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:813:8: enumLiteral_8= 'sept'
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:791:6: (enumLiteral_8= 'sept' )
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:791:8: enumLiteral_8= 'sept'
                     {
-                    enumLiteral_8=(Token)match(input,36,FOLLOW_36_in_ruleMonth1718); 
+                    enumLiteral_8=(Token)match(input,35,FOLLOW_35_in_ruleMonth1684); 
 
                             current = grammarAccess.getMonthAccess().getSeptEnumLiteralDeclaration_8().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_8, grammarAccess.getMonthAccess().getSeptEnumLiteralDeclaration_8()); 
@@ -2034,12 +2001,12 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 10 :
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:819:6: (enumLiteral_9= 'oct' )
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:797:6: (enumLiteral_9= 'oct' )
                     {
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:819:6: (enumLiteral_9= 'oct' )
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:819:8: enumLiteral_9= 'oct'
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:797:6: (enumLiteral_9= 'oct' )
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:797:8: enumLiteral_9= 'oct'
                     {
-                    enumLiteral_9=(Token)match(input,37,FOLLOW_37_in_ruleMonth1735); 
+                    enumLiteral_9=(Token)match(input,36,FOLLOW_36_in_ruleMonth1701); 
 
                             current = grammarAccess.getMonthAccess().getOctEnumLiteralDeclaration_9().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_9, grammarAccess.getMonthAccess().getOctEnumLiteralDeclaration_9()); 
@@ -2051,12 +2018,12 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 11 :
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:825:6: (enumLiteral_10= 'nov' )
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:803:6: (enumLiteral_10= 'nov' )
                     {
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:825:6: (enumLiteral_10= 'nov' )
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:825:8: enumLiteral_10= 'nov'
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:803:6: (enumLiteral_10= 'nov' )
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:803:8: enumLiteral_10= 'nov'
                     {
-                    enumLiteral_10=(Token)match(input,38,FOLLOW_38_in_ruleMonth1752); 
+                    enumLiteral_10=(Token)match(input,37,FOLLOW_37_in_ruleMonth1718); 
 
                             current = grammarAccess.getMonthAccess().getNovEnumLiteralDeclaration_10().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_10, grammarAccess.getMonthAccess().getNovEnumLiteralDeclaration_10()); 
@@ -2068,12 +2035,12 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 12 :
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:831:6: (enumLiteral_11= 'dec' )
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:809:6: (enumLiteral_11= 'dec' )
                     {
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:831:6: (enumLiteral_11= 'dec' )
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:831:8: enumLiteral_11= 'dec'
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:809:6: (enumLiteral_11= 'dec' )
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:809:8: enumLiteral_11= 'dec'
                     {
-                    enumLiteral_11=(Token)match(input,39,FOLLOW_39_in_ruleMonth1769); 
+                    enumLiteral_11=(Token)match(input,38,FOLLOW_38_in_ruleMonth1735); 
 
                             current = grammarAccess.getMonthAccess().getDecEnumLiteralDeclaration_11().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_11, grammarAccess.getMonthAccess().getDecEnumLiteralDeclaration_11()); 
@@ -2105,7 +2072,7 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleComp"
-    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:841:1: ruleComp returns [Enumerator current=null] : ( (enumLiteral_0= '>' ) | (enumLiteral_1= '<' ) ) ;
+    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:819:1: ruleComp returns [Enumerator current=null] : ( (enumLiteral_0= '>' ) | (enumLiteral_1= '<' ) ) ;
     public final Enumerator ruleComp() throws RecognitionException {
         Enumerator current = null;
 
@@ -2114,17 +2081,17 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
 
          enterRule(); 
         try {
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:843:28: ( ( (enumLiteral_0= '>' ) | (enumLiteral_1= '<' ) ) )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:844:1: ( (enumLiteral_0= '>' ) | (enumLiteral_1= '<' ) )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:821:28: ( ( (enumLiteral_0= '>' ) | (enumLiteral_1= '<' ) ) )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:822:1: ( (enumLiteral_0= '>' ) | (enumLiteral_1= '<' ) )
             {
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:844:1: ( (enumLiteral_0= '>' ) | (enumLiteral_1= '<' ) )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:822:1: ( (enumLiteral_0= '>' ) | (enumLiteral_1= '<' ) )
             int alt11=2;
             int LA11_0 = input.LA(1);
 
-            if ( (LA11_0==40) ) {
+            if ( (LA11_0==39) ) {
                 alt11=1;
             }
-            else if ( (LA11_0==41) ) {
+            else if ( (LA11_0==40) ) {
                 alt11=2;
             }
             else {
@@ -2135,12 +2102,12 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
             }
             switch (alt11) {
                 case 1 :
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:844:2: (enumLiteral_0= '>' )
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:822:2: (enumLiteral_0= '>' )
                     {
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:844:2: (enumLiteral_0= '>' )
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:844:4: enumLiteral_0= '>'
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:822:2: (enumLiteral_0= '>' )
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:822:4: enumLiteral_0= '>'
                     {
-                    enumLiteral_0=(Token)match(input,40,FOLLOW_40_in_ruleComp1814); 
+                    enumLiteral_0=(Token)match(input,39,FOLLOW_39_in_ruleComp1780); 
 
                             current = grammarAccess.getCompAccess().getMoreThanEnumLiteralDeclaration_0().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_0, grammarAccess.getCompAccess().getMoreThanEnumLiteralDeclaration_0()); 
@@ -2152,12 +2119,12 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:850:6: (enumLiteral_1= '<' )
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:828:6: (enumLiteral_1= '<' )
                     {
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:850:6: (enumLiteral_1= '<' )
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:850:8: enumLiteral_1= '<'
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:828:6: (enumLiteral_1= '<' )
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:828:8: enumLiteral_1= '<'
                     {
-                    enumLiteral_1=(Token)match(input,41,FOLLOW_41_in_ruleComp1831); 
+                    enumLiteral_1=(Token)match(input,40,FOLLOW_40_in_ruleComp1797); 
 
                             current = grammarAccess.getCompAccess().getLessThanEnumLiteralDeclaration_1().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_1, grammarAccess.getCompAccess().getLessThanEnumLiteralDeclaration_1()); 
@@ -2189,7 +2156,7 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleTempUnit"
-    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:860:1: ruleTempUnit returns [Enumerator current=null] : ( (enumLiteral_0= '\\u00B0C' ) | (enumLiteral_1= '\\u00B0F' ) ) ;
+    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:838:1: ruleTempUnit returns [Enumerator current=null] : ( (enumLiteral_0= '\\u00B0C' ) | (enumLiteral_1= '\\u00B0F' ) ) ;
     public final Enumerator ruleTempUnit() throws RecognitionException {
         Enumerator current = null;
 
@@ -2198,17 +2165,17 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
 
          enterRule(); 
         try {
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:862:28: ( ( (enumLiteral_0= '\\u00B0C' ) | (enumLiteral_1= '\\u00B0F' ) ) )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:863:1: ( (enumLiteral_0= '\\u00B0C' ) | (enumLiteral_1= '\\u00B0F' ) )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:840:28: ( ( (enumLiteral_0= '\\u00B0C' ) | (enumLiteral_1= '\\u00B0F' ) ) )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:841:1: ( (enumLiteral_0= '\\u00B0C' ) | (enumLiteral_1= '\\u00B0F' ) )
             {
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:863:1: ( (enumLiteral_0= '\\u00B0C' ) | (enumLiteral_1= '\\u00B0F' ) )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:841:1: ( (enumLiteral_0= '\\u00B0C' ) | (enumLiteral_1= '\\u00B0F' ) )
             int alt12=2;
             int LA12_0 = input.LA(1);
 
-            if ( (LA12_0==42) ) {
+            if ( (LA12_0==41) ) {
                 alt12=1;
             }
-            else if ( (LA12_0==43) ) {
+            else if ( (LA12_0==42) ) {
                 alt12=2;
             }
             else {
@@ -2219,12 +2186,12 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
             }
             switch (alt12) {
                 case 1 :
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:863:2: (enumLiteral_0= '\\u00B0C' )
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:841:2: (enumLiteral_0= '\\u00B0C' )
                     {
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:863:2: (enumLiteral_0= '\\u00B0C' )
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:863:4: enumLiteral_0= '\\u00B0C'
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:841:2: (enumLiteral_0= '\\u00B0C' )
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:841:4: enumLiteral_0= '\\u00B0C'
                     {
-                    enumLiteral_0=(Token)match(input,42,FOLLOW_42_in_ruleTempUnit1876); 
+                    enumLiteral_0=(Token)match(input,41,FOLLOW_41_in_ruleTempUnit1842); 
 
                             current = grammarAccess.getTempUnitAccess().getCelsiusEnumLiteralDeclaration_0().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_0, grammarAccess.getTempUnitAccess().getCelsiusEnumLiteralDeclaration_0()); 
@@ -2236,12 +2203,12 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:869:6: (enumLiteral_1= '\\u00B0F' )
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:847:6: (enumLiteral_1= '\\u00B0F' )
                     {
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:869:6: (enumLiteral_1= '\\u00B0F' )
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:869:8: enumLiteral_1= '\\u00B0F'
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:847:6: (enumLiteral_1= '\\u00B0F' )
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:847:8: enumLiteral_1= '\\u00B0F'
                     {
-                    enumLiteral_1=(Token)match(input,43,FOLLOW_43_in_ruleTempUnit1893); 
+                    enumLiteral_1=(Token)match(input,42,FOLLOW_42_in_ruleTempUnit1859); 
 
                             current = grammarAccess.getTempUnitAccess().getFarenheitEnumLiteralDeclaration_1().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_1, grammarAccess.getTempUnitAccess().getFarenheitEnumLiteralDeclaration_1()); 
@@ -2273,7 +2240,7 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleFrequency"
-    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:879:1: ruleFrequency returns [Enumerator current=null] : ( (enumLiteral_0= 'once' ) | (enumLiteral_1= 'daily' ) | (enumLiteral_2= 'weekly' ) | (enumLiteral_3= 'monthly' ) | (enumLiteral_4= 'quaterly' ) | (enumLiteral_5= 'yearly' ) ) ;
+    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:857:1: ruleFrequency returns [Enumerator current=null] : ( (enumLiteral_0= 'once' ) | (enumLiteral_1= 'daily' ) | (enumLiteral_2= 'weekly' ) | (enumLiteral_3= 'monthly' ) | (enumLiteral_4= 'quaterly' ) | (enumLiteral_5= 'yearly' ) ) ;
     public final Enumerator ruleFrequency() throws RecognitionException {
         Enumerator current = null;
 
@@ -2286,38 +2253,38 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
 
          enterRule(); 
         try {
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:881:28: ( ( (enumLiteral_0= 'once' ) | (enumLiteral_1= 'daily' ) | (enumLiteral_2= 'weekly' ) | (enumLiteral_3= 'monthly' ) | (enumLiteral_4= 'quaterly' ) | (enumLiteral_5= 'yearly' ) ) )
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:882:1: ( (enumLiteral_0= 'once' ) | (enumLiteral_1= 'daily' ) | (enumLiteral_2= 'weekly' ) | (enumLiteral_3= 'monthly' ) | (enumLiteral_4= 'quaterly' ) | (enumLiteral_5= 'yearly' ) )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:859:28: ( ( (enumLiteral_0= 'once' ) | (enumLiteral_1= 'daily' ) | (enumLiteral_2= 'weekly' ) | (enumLiteral_3= 'monthly' ) | (enumLiteral_4= 'quaterly' ) | (enumLiteral_5= 'yearly' ) ) )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:860:1: ( (enumLiteral_0= 'once' ) | (enumLiteral_1= 'daily' ) | (enumLiteral_2= 'weekly' ) | (enumLiteral_3= 'monthly' ) | (enumLiteral_4= 'quaterly' ) | (enumLiteral_5= 'yearly' ) )
             {
-            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:882:1: ( (enumLiteral_0= 'once' ) | (enumLiteral_1= 'daily' ) | (enumLiteral_2= 'weekly' ) | (enumLiteral_3= 'monthly' ) | (enumLiteral_4= 'quaterly' ) | (enumLiteral_5= 'yearly' ) )
+            // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:860:1: ( (enumLiteral_0= 'once' ) | (enumLiteral_1= 'daily' ) | (enumLiteral_2= 'weekly' ) | (enumLiteral_3= 'monthly' ) | (enumLiteral_4= 'quaterly' ) | (enumLiteral_5= 'yearly' ) )
             int alt13=6;
             switch ( input.LA(1) ) {
-            case 44:
+            case 43:
                 {
                 alt13=1;
                 }
                 break;
-            case 45:
+            case 44:
                 {
                 alt13=2;
                 }
                 break;
-            case 46:
+            case 45:
                 {
                 alt13=3;
                 }
                 break;
-            case 47:
+            case 46:
                 {
                 alt13=4;
                 }
                 break;
-            case 48:
+            case 47:
                 {
                 alt13=5;
                 }
                 break;
-            case 49:
+            case 48:
                 {
                 alt13=6;
                 }
@@ -2331,12 +2298,12 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
 
             switch (alt13) {
                 case 1 :
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:882:2: (enumLiteral_0= 'once' )
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:860:2: (enumLiteral_0= 'once' )
                     {
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:882:2: (enumLiteral_0= 'once' )
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:882:4: enumLiteral_0= 'once'
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:860:2: (enumLiteral_0= 'once' )
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:860:4: enumLiteral_0= 'once'
                     {
-                    enumLiteral_0=(Token)match(input,44,FOLLOW_44_in_ruleFrequency1938); 
+                    enumLiteral_0=(Token)match(input,43,FOLLOW_43_in_ruleFrequency1904); 
 
                             current = grammarAccess.getFrequencyAccess().getOnceEnumLiteralDeclaration_0().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_0, grammarAccess.getFrequencyAccess().getOnceEnumLiteralDeclaration_0()); 
@@ -2348,12 +2315,12 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:888:6: (enumLiteral_1= 'daily' )
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:866:6: (enumLiteral_1= 'daily' )
                     {
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:888:6: (enumLiteral_1= 'daily' )
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:888:8: enumLiteral_1= 'daily'
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:866:6: (enumLiteral_1= 'daily' )
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:866:8: enumLiteral_1= 'daily'
                     {
-                    enumLiteral_1=(Token)match(input,45,FOLLOW_45_in_ruleFrequency1955); 
+                    enumLiteral_1=(Token)match(input,44,FOLLOW_44_in_ruleFrequency1921); 
 
                             current = grammarAccess.getFrequencyAccess().getDailyEnumLiteralDeclaration_1().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_1, grammarAccess.getFrequencyAccess().getDailyEnumLiteralDeclaration_1()); 
@@ -2365,12 +2332,12 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 3 :
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:894:6: (enumLiteral_2= 'weekly' )
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:872:6: (enumLiteral_2= 'weekly' )
                     {
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:894:6: (enumLiteral_2= 'weekly' )
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:894:8: enumLiteral_2= 'weekly'
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:872:6: (enumLiteral_2= 'weekly' )
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:872:8: enumLiteral_2= 'weekly'
                     {
-                    enumLiteral_2=(Token)match(input,46,FOLLOW_46_in_ruleFrequency1972); 
+                    enumLiteral_2=(Token)match(input,45,FOLLOW_45_in_ruleFrequency1938); 
 
                             current = grammarAccess.getFrequencyAccess().getWeeklyEnumLiteralDeclaration_2().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_2, grammarAccess.getFrequencyAccess().getWeeklyEnumLiteralDeclaration_2()); 
@@ -2382,12 +2349,12 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 4 :
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:900:6: (enumLiteral_3= 'monthly' )
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:878:6: (enumLiteral_3= 'monthly' )
                     {
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:900:6: (enumLiteral_3= 'monthly' )
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:900:8: enumLiteral_3= 'monthly'
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:878:6: (enumLiteral_3= 'monthly' )
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:878:8: enumLiteral_3= 'monthly'
                     {
-                    enumLiteral_3=(Token)match(input,47,FOLLOW_47_in_ruleFrequency1989); 
+                    enumLiteral_3=(Token)match(input,46,FOLLOW_46_in_ruleFrequency1955); 
 
                             current = grammarAccess.getFrequencyAccess().getMonthlyEnumLiteralDeclaration_3().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_3, grammarAccess.getFrequencyAccess().getMonthlyEnumLiteralDeclaration_3()); 
@@ -2399,12 +2366,12 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 5 :
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:906:6: (enumLiteral_4= 'quaterly' )
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:884:6: (enumLiteral_4= 'quaterly' )
                     {
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:906:6: (enumLiteral_4= 'quaterly' )
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:906:8: enumLiteral_4= 'quaterly'
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:884:6: (enumLiteral_4= 'quaterly' )
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:884:8: enumLiteral_4= 'quaterly'
                     {
-                    enumLiteral_4=(Token)match(input,48,FOLLOW_48_in_ruleFrequency2006); 
+                    enumLiteral_4=(Token)match(input,47,FOLLOW_47_in_ruleFrequency1972); 
 
                             current = grammarAccess.getFrequencyAccess().getQuaterlyEnumLiteralDeclaration_4().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_4, grammarAccess.getFrequencyAccess().getQuaterlyEnumLiteralDeclaration_4()); 
@@ -2416,12 +2383,12 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 6 :
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:912:6: (enumLiteral_5= 'yearly' )
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:890:6: (enumLiteral_5= 'yearly' )
                     {
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:912:6: (enumLiteral_5= 'yearly' )
-                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:912:8: enumLiteral_5= 'yearly'
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:890:6: (enumLiteral_5= 'yearly' )
+                    // ../org.gemoc.agro.activities/src-gen/org/gemoc/agro/parser/antlr/internal/InternalActivitiesDSL.g:890:8: enumLiteral_5= 'yearly'
                     {
-                    enumLiteral_5=(Token)match(input,49,FOLLOW_49_in_ruleFrequency2023); 
+                    enumLiteral_5=(Token)match(input,48,FOLLOW_48_in_ruleFrequency1989); 
 
                             current = grammarAccess.getFrequencyAccess().getYearlyEnumLiteralDeclaration_5().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_5, grammarAccess.getFrequencyAccess().getYearlyEnumLiteralDeclaration_5()); 
@@ -2458,88 +2425,86 @@ public class InternalActivitiesDSLParser extends AbstractInternalAntlrParser {
 
     public static final BitSet FOLLOW_ruleModel_in_entryRuleModel75 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRuleModel85 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_11_in_ruleModel122 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleModel139 = new BitSet(new long[]{0x0000000000003002L});
-    public static final BitSet FOLLOW_ruleCulture_in_ruleModel165 = new BitSet(new long[]{0x0000000000003002L});
-    public static final BitSet FOLLOW_ruleResourceKind_in_ruleModel187 = new BitSet(new long[]{0x0000000000001002L});
-    public static final BitSet FOLLOW_ruleResourceKind_in_entryRuleResourceKind224 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleResourceKind234 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_12_in_ruleResourceKind271 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleResourceKind288 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleCulture_in_entryRuleCulture329 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleCulture339 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_13_in_ruleCulture376 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleCulture393 = new BitSet(new long[]{0x0000000000004000L});
-    public static final BitSet FOLLOW_14_in_ruleCulture410 = new BitSet(new long[]{0x0000000000018000L});
-    public static final BitSet FOLLOW_ruleExploitationActivity_in_ruleCulture431 = new BitSet(new long[]{0x0000000000018000L});
-    public static final BitSet FOLLOW_15_in_ruleCulture444 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleExploitationActivity_in_entryRuleExploitationActivity480 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleExploitationActivity490 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_16_in_ruleExploitationActivity527 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleExploitationActivity544 = new BitSet(new long[]{0x0003F000000A0002L});
-    public static final BitSet FOLLOW_ruleFrequency_in_ruleExploitationActivity570 = new BitSet(new long[]{0x00000000000A0002L});
-    public static final BitSet FOLLOW_17_in_ruleExploitationActivity584 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_ruleDate_in_ruleExploitationActivity605 = new BitSet(new long[]{0x0000000000040000L});
-    public static final BitSet FOLLOW_18_in_ruleExploitationActivity617 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_ruleDate_in_ruleExploitationActivity638 = new BitSet(new long[]{0x0000000000080002L});
-    public static final BitSet FOLLOW_19_in_ruleExploitationActivity653 = new BitSet(new long[]{0x000000000B400000L});
-    public static final BitSet FOLLOW_rulePredicate_in_ruleExploitationActivity674 = new BitSet(new long[]{0x0000000000300000L});
-    public static final BitSet FOLLOW_20_in_ruleExploitationActivity687 = new BitSet(new long[]{0x000000000B400000L});
-    public static final BitSet FOLLOW_rulePredicate_in_ruleExploitationActivity708 = new BitSet(new long[]{0x0000000000300000L});
-    public static final BitSet FOLLOW_21_in_ruleExploitationActivity722 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rulePredicate_in_entryRulePredicate760 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRulePredicate770 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleNoRain_in_rulePredicate817 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleTempOfTheDay_in_rulePredicate844 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleDelaySinceActivy_in_rulePredicate871 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleGrainIs_in_rulePredicate898 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleNoRain_in_entryRuleNoRain933 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleNoRain943 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_22_in_ruleNoRain980 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_RULE_INT_in_ruleNoRain997 = new BitSet(new long[]{0x0000000000800000L});
-    public static final BitSet FOLLOW_23_in_ruleNoRain1014 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleTempOfTheDay_in_entryRuleTempOfTheDay1050 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleTempOfTheDay1060 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_24_in_ruleTempOfTheDay1097 = new BitSet(new long[]{0x0000030000000000L});
-    public static final BitSet FOLLOW_ruleComp_in_ruleTempOfTheDay1118 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_RULE_INT_in_ruleTempOfTheDay1135 = new BitSet(new long[]{0x00000C0000000000L});
-    public static final BitSet FOLLOW_ruleTempUnit_in_ruleTempOfTheDay1161 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleDelaySinceActivy_in_entryRuleDelaySinceActivy1197 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleDelaySinceActivy1207 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_25_in_ruleDelaySinceActivy1244 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleDelaySinceActivy1264 = new BitSet(new long[]{0x0000000004000002L});
-    public static final BitSet FOLLOW_26_in_ruleDelaySinceActivy1277 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_RULE_INT_in_ruleDelaySinceActivy1294 = new BitSet(new long[]{0x0000000000800000L});
-    public static final BitSet FOLLOW_23_in_ruleDelaySinceActivy1311 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleGrainIs_in_entryRuleGrainIs1349 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleGrainIs1359 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_27_in_ruleGrainIs1396 = new BitSet(new long[]{0x0000000000000040L});
-    public static final BitSet FOLLOW_RULE_STRING_in_ruleGrainIs1413 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleDate_in_entryRuleDate1454 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleDate1464 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_INT_in_ruleDate1506 = new BitSet(new long[]{0x000000FFF0000000L});
-    public static final BitSet FOLLOW_ruleMonth_in_ruleDate1532 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_28_in_ruleMonth1582 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_29_in_ruleMonth1599 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_30_in_ruleMonth1616 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_31_in_ruleMonth1633 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_32_in_ruleMonth1650 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_33_in_ruleMonth1667 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_34_in_ruleMonth1684 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_35_in_ruleMonth1701 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_36_in_ruleMonth1718 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_37_in_ruleMonth1735 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_38_in_ruleMonth1752 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_39_in_ruleMonth1769 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_40_in_ruleComp1814 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_41_in_ruleComp1831 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_42_in_ruleTempUnit1876 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_43_in_ruleTempUnit1893 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_44_in_ruleFrequency1938 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_45_in_ruleFrequency1955 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_46_in_ruleFrequency1972 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_47_in_ruleFrequency1989 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_48_in_ruleFrequency2006 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_49_in_ruleFrequency2023 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleCulture_in_ruleModel131 = new BitSet(new long[]{0x0000000000001802L});
+    public static final BitSet FOLLOW_ruleResourceKind_in_ruleModel153 = new BitSet(new long[]{0x0000000000000802L});
+    public static final BitSet FOLLOW_ruleResourceKind_in_entryRuleResourceKind190 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleResourceKind200 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_11_in_ruleResourceKind237 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleResourceKind254 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleCulture_in_entryRuleCulture295 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleCulture305 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_12_in_ruleCulture342 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleCulture359 = new BitSet(new long[]{0x0000000000002000L});
+    public static final BitSet FOLLOW_13_in_ruleCulture376 = new BitSet(new long[]{0x000000000000C000L});
+    public static final BitSet FOLLOW_ruleExploitationActivity_in_ruleCulture397 = new BitSet(new long[]{0x000000000000C000L});
+    public static final BitSet FOLLOW_14_in_ruleCulture410 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleExploitationActivity_in_entryRuleExploitationActivity446 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleExploitationActivity456 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_15_in_ruleExploitationActivity493 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleExploitationActivity510 = new BitSet(new long[]{0x0001F80000050002L});
+    public static final BitSet FOLLOW_ruleFrequency_in_ruleExploitationActivity536 = new BitSet(new long[]{0x0000000000050002L});
+    public static final BitSet FOLLOW_16_in_ruleExploitationActivity550 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_ruleDate_in_ruleExploitationActivity571 = new BitSet(new long[]{0x0000000000020000L});
+    public static final BitSet FOLLOW_17_in_ruleExploitationActivity583 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_ruleDate_in_ruleExploitationActivity604 = new BitSet(new long[]{0x0000000000040002L});
+    public static final BitSet FOLLOW_18_in_ruleExploitationActivity619 = new BitSet(new long[]{0x0000000005A00000L});
+    public static final BitSet FOLLOW_rulePredicate_in_ruleExploitationActivity640 = new BitSet(new long[]{0x0000000000180000L});
+    public static final BitSet FOLLOW_19_in_ruleExploitationActivity653 = new BitSet(new long[]{0x0000000005A00000L});
+    public static final BitSet FOLLOW_rulePredicate_in_ruleExploitationActivity674 = new BitSet(new long[]{0x0000000000180000L});
+    public static final BitSet FOLLOW_20_in_ruleExploitationActivity688 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rulePredicate_in_entryRulePredicate726 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRulePredicate736 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleNoRain_in_rulePredicate783 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleTempOfTheDay_in_rulePredicate810 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleDelaySinceActivy_in_rulePredicate837 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleGrainIs_in_rulePredicate864 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleNoRain_in_entryRuleNoRain899 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleNoRain909 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_21_in_ruleNoRain946 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_RULE_INT_in_ruleNoRain963 = new BitSet(new long[]{0x0000000000400000L});
+    public static final BitSet FOLLOW_22_in_ruleNoRain980 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleTempOfTheDay_in_entryRuleTempOfTheDay1016 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleTempOfTheDay1026 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_23_in_ruleTempOfTheDay1063 = new BitSet(new long[]{0x0000018000000000L});
+    public static final BitSet FOLLOW_ruleComp_in_ruleTempOfTheDay1084 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_RULE_INT_in_ruleTempOfTheDay1101 = new BitSet(new long[]{0x0000060000000000L});
+    public static final BitSet FOLLOW_ruleTempUnit_in_ruleTempOfTheDay1127 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleDelaySinceActivy_in_entryRuleDelaySinceActivy1163 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleDelaySinceActivy1173 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_24_in_ruleDelaySinceActivy1210 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleDelaySinceActivy1230 = new BitSet(new long[]{0x0000000002000002L});
+    public static final BitSet FOLLOW_25_in_ruleDelaySinceActivy1243 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_RULE_INT_in_ruleDelaySinceActivy1260 = new BitSet(new long[]{0x0000000000400000L});
+    public static final BitSet FOLLOW_22_in_ruleDelaySinceActivy1277 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleGrainIs_in_entryRuleGrainIs1315 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleGrainIs1325 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_26_in_ruleGrainIs1362 = new BitSet(new long[]{0x0000000000000040L});
+    public static final BitSet FOLLOW_RULE_STRING_in_ruleGrainIs1379 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleDate_in_entryRuleDate1420 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleDate1430 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_INT_in_ruleDate1472 = new BitSet(new long[]{0x0000007FF8000000L});
+    public static final BitSet FOLLOW_ruleMonth_in_ruleDate1498 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_27_in_ruleMonth1548 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_28_in_ruleMonth1565 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_29_in_ruleMonth1582 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_30_in_ruleMonth1599 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_31_in_ruleMonth1616 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_32_in_ruleMonth1633 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_33_in_ruleMonth1650 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_34_in_ruleMonth1667 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_35_in_ruleMonth1684 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_36_in_ruleMonth1701 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_37_in_ruleMonth1718 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_38_in_ruleMonth1735 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_39_in_ruleComp1780 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_40_in_ruleComp1797 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_41_in_ruleTempUnit1842 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_42_in_ruleTempUnit1859 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_43_in_ruleFrequency1904 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_44_in_ruleFrequency1921 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_45_in_ruleFrequency1938 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_46_in_ruleFrequency1955 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_47_in_ruleFrequency1972 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_48_in_ruleFrequency1989 = new BitSet(new long[]{0x0000000000000002L});
 
 }

@@ -24,87 +24,87 @@ package org.gemoc.agro.activitiesDSL;
 public interface TempOfTheDay extends Predicate
 {
   /**
-   * Returns the value of the '<em><b>Comparison</b></em>' attribute.
-   * The literals are from the enumeration {@link org.gemoc.agro.activitiesDSL.Comp}.
-   * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Comparison</b></em>' attribute.
+	 * The literals are from the enumeration {@link org.gemoc.agro.activitiesDSL.Comp}.
+	 * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Comparison</em>' attribute isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Comparison</em>' attribute.
-   * @see org.gemoc.agro.activitiesDSL.Comp
-   * @see #setComparison(Comp)
-   * @see org.gemoc.agro.activitiesDSL.ActivitiesDSLPackage#getTempOfTheDay_Comparison()
-   * @model
-   * @generated
-   */
+	 * @return the value of the '<em>Comparison</em>' attribute.
+	 * @see org.gemoc.agro.activitiesDSL.Comp
+	 * @see #setComparison(Comp)
+	 * @see org.gemoc.agro.activitiesDSL.ActivitiesDSLPackage#getTempOfTheDay_Comparison()
+	 * @model
+	 * @generated
+	 */
   Comp getComparison();
 
   /**
-   * Sets the value of the '{@link org.gemoc.agro.activitiesDSL.TempOfTheDay#getComparison <em>Comparison</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.gemoc.agro.activitiesDSL.TempOfTheDay#getComparison <em>Comparison</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Comparison</em>' attribute.
-   * @see org.gemoc.agro.activitiesDSL.Comp
-   * @see #getComparison()
-   * @generated
-   */
+	 * @param value the new value of the '<em>Comparison</em>' attribute.
+	 * @see org.gemoc.agro.activitiesDSL.Comp
+	 * @see #getComparison()
+	 * @generated
+	 */
   void setComparison(Comp value);
 
   /**
-   * Returns the value of the '<em><b>Lower Temp Bound</b></em>' attribute.
-   * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Lower Temp Bound</b></em>' attribute.
+	 * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Lower Temp Bound</em>' attribute isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Lower Temp Bound</em>' attribute.
-   * @see #setLowerTempBound(int)
-   * @see org.gemoc.agro.activitiesDSL.ActivitiesDSLPackage#getTempOfTheDay_LowerTempBound()
-   * @model
-   * @generated
-   */
+	 * @return the value of the '<em>Lower Temp Bound</em>' attribute.
+	 * @see #setLowerTempBound(int)
+	 * @see org.gemoc.agro.activitiesDSL.ActivitiesDSLPackage#getTempOfTheDay_LowerTempBound()
+	 * @model
+	 * @generated
+	 */
   int getLowerTempBound();
 
   /**
-   * Sets the value of the '{@link org.gemoc.agro.activitiesDSL.TempOfTheDay#getLowerTempBound <em>Lower Temp Bound</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.gemoc.agro.activitiesDSL.TempOfTheDay#getLowerTempBound <em>Lower Temp Bound</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Lower Temp Bound</em>' attribute.
-   * @see #getLowerTempBound()
-   * @generated
-   */
+	 * @param value the new value of the '<em>Lower Temp Bound</em>' attribute.
+	 * @see #getLowerTempBound()
+	 * @generated
+	 */
   void setLowerTempBound(int value);
 
   /**
-   * Returns the value of the '<em><b>Unit</b></em>' attribute.
-   * The literals are from the enumeration {@link org.gemoc.agro.activitiesDSL.TempUnit}.
-   * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Unit</b></em>' attribute.
+	 * The literals are from the enumeration {@link org.gemoc.agro.activitiesDSL.TempUnit}.
+	 * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Unit</em>' attribute isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Unit</em>' attribute.
-   * @see org.gemoc.agro.activitiesDSL.TempUnit
-   * @see #setUnit(TempUnit)
-   * @see org.gemoc.agro.activitiesDSL.ActivitiesDSLPackage#getTempOfTheDay_Unit()
-   * @model
-   * @generated
-   */
+	 * @return the value of the '<em>Unit</em>' attribute.
+	 * @see org.gemoc.agro.activitiesDSL.TempUnit
+	 * @see #setUnit(TempUnit)
+	 * @see org.gemoc.agro.activitiesDSL.ActivitiesDSLPackage#getTempOfTheDay_Unit()
+	 * @model
+	 * @generated
+	 */
   TempUnit getUnit();
 
   /**
-   * Sets the value of the '{@link org.gemoc.agro.activitiesDSL.TempOfTheDay#getUnit <em>Unit</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.gemoc.agro.activitiesDSL.TempOfTheDay#getUnit <em>Unit</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Unit</em>' attribute.
-   * @see org.gemoc.agro.activitiesDSL.TempUnit
-   * @see #getUnit()
-   * @generated
-   */
+	 * @param value the new value of the '<em>Unit</em>' attribute.
+	 * @see org.gemoc.agro.activitiesDSL.TempUnit
+	 * @see #getUnit()
+	 * @generated
+	 */
   void setUnit(TempUnit value);
 
 } // TempOfTheDay

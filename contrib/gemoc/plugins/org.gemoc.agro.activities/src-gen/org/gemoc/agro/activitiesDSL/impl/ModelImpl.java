@@ -4,7 +4,6 @@ package org.gemoc.agro.activitiesDSL.impl;
 
 import java.util.Collection;
 
-import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
 
 import org.eclipse.emf.common.util.EList;
@@ -12,7 +11,6 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
-import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
@@ -30,7 +28,6 @@ import org.gemoc.agro.activitiesDSL.ResourceKind;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link org.gemoc.agro.activitiesDSL.impl.ModelImpl#getName <em>Name</em>}</li>
  *   <li>{@link org.gemoc.agro.activitiesDSL.impl.ModelImpl#getCultures <em>Cultures</em>}</li>
  *   <li>{@link org.gemoc.agro.activitiesDSL.impl.ModelImpl#getResourceKinds <em>Resource Kinds</em>}</li>
  * </ul>
@@ -41,239 +38,162 @@ import org.gemoc.agro.activitiesDSL.ResourceKind;
 public class ModelImpl extends MinimalEObjectImpl.Container implements Model
 {
   /**
-   * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getCultures() <em>Cultures</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getName()
-   * @generated
-   * @ordered
-   */
-  protected static final String NAME_EDEFAULT = null;
-
-  /**
-   * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getName()
-   * @generated
-   * @ordered
-   */
-  protected String name = NAME_EDEFAULT;
-
-  /**
-   * The cached value of the '{@link #getCultures() <em>Cultures</em>}' containment reference list.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getCultures()
-   * @generated
-   * @ordered
-   */
+	 * @see #getCultures()
+	 * @generated
+	 * @ordered
+	 */
   protected EList<Culture> cultures;
 
   /**
-   * The cached value of the '{@link #getResourceKinds() <em>Resource Kinds</em>}' containment reference list.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getResourceKinds() <em>Resource Kinds</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getResourceKinds()
-   * @generated
-   * @ordered
-   */
+	 * @see #getResourceKinds()
+	 * @generated
+	 * @ordered
+	 */
   protected EList<ResourceKind> resourceKinds;
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   protected ModelImpl()
   {
-    super();
-  }
+		super();
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   protected EClass eStaticClass()
   {
-    return ActivitiesDSLPackage.Literals.MODEL;
-  }
+		return ActivitiesDSLPackage.Literals.MODEL;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
-  public String getName()
-  {
-    return name;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public void setName(String newName)
-  {
-    String oldName = name;
-    name = newName;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, ActivitiesDSLPackage.MODEL__NAME, oldName, name));
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public EList<Culture> getCultures()
   {
-    if (cultures == null)
-    {
-      cultures = new EObjectContainmentEList<Culture>(Culture.class, this, ActivitiesDSLPackage.MODEL__CULTURES);
-    }
-    return cultures;
-  }
+		if (cultures == null) {
+			cultures = new EObjectContainmentEList<Culture>(Culture.class, this, ActivitiesDSLPackage.MODEL__CULTURES);
+		}
+		return cultures;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public EList<ResourceKind> getResourceKinds()
   {
-    if (resourceKinds == null)
-    {
-      resourceKinds = new EObjectContainmentEList<ResourceKind>(ResourceKind.class, this, ActivitiesDSLPackage.MODEL__RESOURCE_KINDS);
-    }
-    return resourceKinds;
-  }
+		if (resourceKinds == null) {
+			resourceKinds = new EObjectContainmentEList<ResourceKind>(ResourceKind.class, this, ActivitiesDSLPackage.MODEL__RESOURCE_KINDS);
+		}
+		return resourceKinds;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
   {
-    switch (featureID)
-    {
-      case ActivitiesDSLPackage.MODEL__CULTURES:
-        return ((InternalEList<?>)getCultures()).basicRemove(otherEnd, msgs);
-      case ActivitiesDSLPackage.MODEL__RESOURCE_KINDS:
-        return ((InternalEList<?>)getResourceKinds()).basicRemove(otherEnd, msgs);
-    }
-    return super.eInverseRemove(otherEnd, featureID, msgs);
-  }
+		switch (featureID) {
+			case ActivitiesDSLPackage.MODEL__CULTURES:
+				return ((InternalEList<?>)getCultures()).basicRemove(otherEnd, msgs);
+			case ActivitiesDSLPackage.MODEL__RESOURCE_KINDS:
+				return ((InternalEList<?>)getResourceKinds()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType)
   {
-    switch (featureID)
-    {
-      case ActivitiesDSLPackage.MODEL__NAME:
-        return getName();
-      case ActivitiesDSLPackage.MODEL__CULTURES:
-        return getCultures();
-      case ActivitiesDSLPackage.MODEL__RESOURCE_KINDS:
-        return getResourceKinds();
-    }
-    return super.eGet(featureID, resolve, coreType);
-  }
+		switch (featureID) {
+			case ActivitiesDSLPackage.MODEL__CULTURES:
+				return getCultures();
+			case ActivitiesDSLPackage.MODEL__RESOURCE_KINDS:
+				return getResourceKinds();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @SuppressWarnings("unchecked")
   @Override
   public void eSet(int featureID, Object newValue)
   {
-    switch (featureID)
-    {
-      case ActivitiesDSLPackage.MODEL__NAME:
-        setName((String)newValue);
-        return;
-      case ActivitiesDSLPackage.MODEL__CULTURES:
-        getCultures().clear();
-        getCultures().addAll((Collection<? extends Culture>)newValue);
-        return;
-      case ActivitiesDSLPackage.MODEL__RESOURCE_KINDS:
-        getResourceKinds().clear();
-        getResourceKinds().addAll((Collection<? extends ResourceKind>)newValue);
-        return;
-    }
-    super.eSet(featureID, newValue);
-  }
+		switch (featureID) {
+			case ActivitiesDSLPackage.MODEL__CULTURES:
+				getCultures().clear();
+				getCultures().addAll((Collection<? extends Culture>)newValue);
+				return;
+			case ActivitiesDSLPackage.MODEL__RESOURCE_KINDS:
+				getResourceKinds().clear();
+				getResourceKinds().addAll((Collection<? extends ResourceKind>)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public void eUnset(int featureID)
   {
-    switch (featureID)
-    {
-      case ActivitiesDSLPackage.MODEL__NAME:
-        setName(NAME_EDEFAULT);
-        return;
-      case ActivitiesDSLPackage.MODEL__CULTURES:
-        getCultures().clear();
-        return;
-      case ActivitiesDSLPackage.MODEL__RESOURCE_KINDS:
-        getResourceKinds().clear();
-        return;
-    }
-    super.eUnset(featureID);
-  }
+		switch (featureID) {
+			case ActivitiesDSLPackage.MODEL__CULTURES:
+				getCultures().clear();
+				return;
+			case ActivitiesDSLPackage.MODEL__RESOURCE_KINDS:
+				getResourceKinds().clear();
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public boolean eIsSet(int featureID)
   {
-    switch (featureID)
-    {
-      case ActivitiesDSLPackage.MODEL__NAME:
-        return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-      case ActivitiesDSLPackage.MODEL__CULTURES:
-        return cultures != null && !cultures.isEmpty();
-      case ActivitiesDSLPackage.MODEL__RESOURCE_KINDS:
-        return resourceKinds != null && !resourceKinds.isEmpty();
-    }
-    return super.eIsSet(featureID);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public String toString()
-  {
-    if (eIsProxy()) return super.toString();
-
-    StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (name: ");
-    result.append(name);
-    result.append(')');
-    return result.toString();
-  }
+		switch (featureID) {
+			case ActivitiesDSLPackage.MODEL__CULTURES:
+				return cultures != null && !cultures.isEmpty();
+			case ActivitiesDSLPackage.MODEL__RESOURCE_KINDS:
+				return resourceKinds != null && !resourceKinds.isEmpty();
+		}
+		return super.eIsSet(featureID);
+	}
 
 } //ModelImpl
