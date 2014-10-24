@@ -1,22 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?eclipse version="3.4"?>
 <plugin>
-   <extension
+   <!--extension
          point="org.eclipse.emf.ecore.uri_mapping">
       <mapping
             source="pathmap://FML"
-            target="platform://plugin/org.eclipse.papyrus.farming/model">
+            target="platform:/plugin/org.eclipse.papyrus.farming/model">
       </mapping>
-   </extension>
+   </extension-->
    
    <extension
          point="org.eclipse.papyrus.uml.extensionpoints.UMLProfile">
       <profile
             description="UML profile for farming"
             name="FML"
-            path="pathmap://FML/FML.profile.uml"
+            path="platform:/plugin/org.eclipse.papyrus.farming/model/FML.profile.uml"
             provider="CEA List">
       </profile>
    </extension>
+<extension point="org.eclipse.papyrus.views.properties.context">
+      <context contextModel="properties/FML.ctx">
+      </context>
+   </extension>
+<extension
+      point="org.eclipse.papyrus.infra.services.labelprovider.labelProvider">
+   <labelProvider
+         priority="1"
+         provider="org.eclipse.papyrus.farming.provider.DateLabelProvider">
+   </labelProvider>
+</extension>
 
 </plugin>
