@@ -5,7 +5,7 @@ This contains an implementation of the "Exploitation" use case through technolog
 
 Three DSLs are defined and used in an integrated way to provide tooling and analysis capabilities over an exploitation.
 
-!images/agrodsl-meta.png
+!images/agrodsl-meta.png!
 
 
 h2. Activities DSL
@@ -14,20 +14,20 @@ Its purpose is to capture a static definition of the rules related to some cultu
 and what might trigger an activity. It also provides a textual syntax (based on Xtext) which makes it 
 easier to specific the requirements and to compose expressions.
 
-!images/agro-activitiesecore.png
+!images/agro-activitiesecore.png!
 
 h2. Exploitation DSL
 
 It is used to capture the structure of a given exploitation. Its break down in fields, the available resources and how
 the workgroups are setup in the exploitation.
 
-!images/agro-exploitationecore.png
+!images/agro-exploitationecore.png!
 
 h2. Simulation DSL
 
 It is used to capture simulation settings and result : a calendar of the activities scheduling.
 
-!images/agro-simulationecore.png
+!images/agro-simulationecore.png!
 
 
 h1. Syntaxes
@@ -42,8 +42,8 @@ can use the shapes size and colors to convey information which helps the analysi
 - *gauges* are used to represent the ratio of the watered fields (W) fodder fields (F) and non watered non fodder fields (N) which is 
 assigned to a given workgroup.
 
-!images/agrodsl-exploitation.png
+!images/agrodsl-exploitation.png!
 
 Both syntaxes are used togethers, the exploitation diagram represents the activities so that what each of the exploitation workshops is assigned to do.
 
-!images/agrodsl-instances.png
+!images/agrodsl-instances.png!
