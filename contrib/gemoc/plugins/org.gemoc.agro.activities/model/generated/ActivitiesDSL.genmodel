@@ -38,7 +38,6 @@
       <genEnumLiterals ecoreEnumLiteral="ActivitiesDSL.ecore#//Frequency/yearly"/>
     </genEnums>
     <genClasses ecoreClass="ActivitiesDSL.ecore#//Model">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ActivitiesDSL.ecore#//Model/name"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ActivitiesDSL.ecore#//Model/cultures"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ActivitiesDSL.ecore#//Model/resourceKinds"/>
     </genClasses>

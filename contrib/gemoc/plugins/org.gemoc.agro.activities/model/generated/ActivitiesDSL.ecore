@@ -3,7 +3,6 @@
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="activitiesDSL" nsURI="http://www.gemoc.org/agro/ActivitiesDSL"
     nsPrefix="activitiesDSL">
   <eClassifiers xsi:type="ecore:EClass" name="Model">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="cultures" upperBound="-1"
         eType="#//Culture" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="resourceKinds" upperBound="-1"

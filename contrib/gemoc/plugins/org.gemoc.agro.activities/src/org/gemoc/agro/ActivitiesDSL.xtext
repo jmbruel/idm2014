@@ -3,7 +3,6 @@ grammar org.gemoc.agro.ActivitiesDSL with org.eclipse.xtext.common.Terminals
 generate activitiesDSL "http://www.gemoc.org/agro/ActivitiesDSL"
 
 Model:
-	'name' name=ID
 	cultures+=Culture*
 	resourceKinds+=ResourceKind*;
 
