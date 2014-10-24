@@ -28,3 +28,32 @@
 [/file]
 
 [/template]
+
+
+
+[template public generateHTMLReport(exp : Exploitation)]
+[comment @main/]
+
+[file (exp.name + '.html', false, 'UTF-8')]
+<html>
+	<body>
+		<h1>Exploitation [exp.name/]</h1>        
+		<ul>
+		[for (d : WorkGroup | self.groups)]
+	      <li> Work Group [name/] :
+			Cultures 
+			<ul>
+  				[for (ac : Culture | d.cultures)]
+				<li>
+ 				[ac.name/] 
+				</li>
+  				[/for]
+			</ul>
+          </li> 
+		[/for]
+		</ul>
+	</body>
+</html>
+[/file]
+
+[/template]
