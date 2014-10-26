@@ -2,41 +2,11 @@
 <contexts:Context xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:constraints="http://www.eclipse.org/papyrus/constraints/0.9" xmlns:contexts="http://www.eclipse.org/papyrus/properties/contexts/0.9" name="FML">
   <dependencies href="ppe:/context/org.eclipse.papyrus.uml.properties/Model/UML/UML.ctx#/"/>
   <tabs label="FML" id="fml" priority="100">
-    <sections name="Single Resource" sectionFile="ui/SingleResource.xwt">
-      <widget href="ui/SingleResource.xwt#/"/>
-    </sections>
-    <sections name="Multiple Resource" sectionFile="ui/MultipleResource.xwt">
-      <widget href="ui/MultipleResource.xwt#/"/>
-    </sections>
     <sections name="Single Material" sectionFile="ui/SingleMaterial.xwt">
       <widget href="ui/SingleMaterial.xwt#/"/>
     </sections>
     <sections name="Multiple Material" sectionFile="ui/MultipleMaterial.xwt">
       <widget href="ui/MultipleMaterial.xwt#/"/>
-    </sections>
-    <sections name="Single Field" sectionFile="ui/SingleField.xwt">
-      <widget href="ui/SingleField.xwt#/"/>
-    </sections>
-    <sections name="Multiple Field" sectionFile="ui/MultipleField.xwt">
-      <widget href="ui/MultipleField.xwt#/"/>
-    </sections>
-    <sections name="Single BovineWS" sectionFile="ui/SingleBovineWS.xwt">
-      <widget href="ui/SingleBovineWS.xwt#/"/>
-    </sections>
-    <sections name="Multiple BovineWS" sectionFile="ui/MultipleBovineWS.xwt">
-      <widget href="ui/MultipleBovineWS.xwt#/"/>
-    </sections>
-    <sections name="Single Workshop" sectionFile="ui/SingleWorkshop.xwt">
-      <widget href="ui/SingleWorkshop.xwt#/"/>
-    </sections>
-    <sections name="Multiple Workshop" sectionFile="ui/MultipleWorkshop.xwt">
-      <widget href="ui/MultipleWorkshop.xwt#/"/>
-    </sections>
-    <sections name="Single CropSurface" sectionFile="ui/SingleCropSurface.xwt">
-      <widget href="ui/SingleCropSurface.xwt#/"/>
-    </sections>
-    <sections name="Multiple CropSurface" sectionFile="ui/MultipleCropSurface.xwt">
-      <widget href="ui/MultipleCropSurface.xwt#/"/>
     </sections>
     <sections name="Single Human" sectionFile="ui/SingleHuman.xwt">
       <widget href="ui/SingleHuman.xwt#/"/>
@@ -50,11 +20,23 @@
     <sections name="Multiple WorkGroup" sectionFile="ui/MultipleWorkGroup.xwt">
       <widget href="ui/MultipleWorkGroup.xwt#/"/>
     </sections>
+    <sections name="Single Action" sectionFile="ui/SingleAction.xwt">
+      <widget href="ui/SingleAction.xwt#/"/>
+    </sections>
+    <sections name="Multiple Action" sectionFile="ui/MultipleAction.xwt">
+      <widget href="ui/MultipleAction.xwt#/"/>
+    </sections>
     <sections name="Single OvineWS" sectionFile="ui/SingleOvineWS.xwt">
       <widget href="ui/SingleOvineWS.xwt#/"/>
     </sections>
     <sections name="Multiple OvineWS" sectionFile="ui/MultipleOvineWS.xwt">
       <widget href="ui/MultipleOvineWS.xwt#/"/>
+    </sections>
+    <sections name="Single Workshop" sectionFile="ui/SingleWorkshop.xwt">
+      <widget href="ui/SingleWorkshop.xwt#/"/>
+    </sections>
+    <sections name="Multiple Workshop" sectionFile="ui/MultipleWorkshop.xwt">
+      <widget href="ui/MultipleWorkshop.xwt#/"/>
     </sections>
     <sections name="Single CropWS" sectionFile="ui/SingleCropWS.xwt">
       <widget href="ui/SingleCropWS.xwt#/"/>
@@ -68,23 +50,11 @@
     <sections name="Multiple FodderSurface" sectionFile="ui/MultipleFodderSurface.xwt">
       <widget href="ui/MultipleFodderSurface.xwt#/"/>
     </sections>
-    <sections name="Single Farm" sectionFile="ui/SingleFarm.xwt">
-      <widget href="ui/SingleFarm.xwt#/"/>
+    <sections name="Single Resource" sectionFile="ui/SingleResource.xwt">
+      <widget href="ui/SingleResource.xwt#/"/>
     </sections>
-    <sections name="Multiple Farm" sectionFile="ui/MultipleFarm.xwt">
-      <widget href="ui/MultipleFarm.xwt#/"/>
-    </sections>
-    <sections name="Single Date" sectionFile="ui/SingleDate.xwt">
-      <widget href="ui/SingleDate.xwt#/"/>
-    </sections>
-    <sections name="Multiple Date" sectionFile="ui/MultipleDate.xwt">
-      <widget href="ui/MultipleDate.xwt#/"/>
-    </sections>
-    <sections name="Single Activity" sectionFile="ui/SingleActivity.xwt">
-      <widget href="ui/SingleActivity.xwt#/"/>
-    </sections>
-    <sections name="Multiple Activity" sectionFile="ui/MultipleActivity.xwt">
-      <widget href="ui/MultipleActivity.xwt#/"/>
+    <sections name="Multiple Resource" sectionFile="ui/MultipleResource.xwt">
+      <widget href="ui/MultipleResource.xwt#/"/>
     </sections>
     <sections name="Single Surface" sectionFile="ui/SingleSurface.xwt">
       <widget href="ui/SingleSurface.xwt#/"/>
@@ -92,224 +62,254 @@
     <sections name="Multiple Surface" sectionFile="ui/MultipleSurface.xwt">
       <widget href="ui/MultipleSurface.xwt#/"/>
     </sections>
+    <sections name="Single Date" sectionFile="ui/SingleDate.xwt">
+      <widget href="ui/SingleDate.xwt#/"/>
+    </sections>
+    <sections name="Multiple Date" sectionFile="ui/MultipleDate.xwt">
+      <widget href="ui/MultipleDate.xwt#/"/>
+    </sections>
+    <sections name="Single Field" sectionFile="ui/SingleField.xwt">
+      <widget href="ui/SingleField.xwt#/"/>
+    </sections>
+    <sections name="Multiple Field" sectionFile="ui/MultipleField.xwt">
+      <widget href="ui/MultipleField.xwt#/"/>
+    </sections>
+    <sections name="Single BovineWS" sectionFile="ui/SingleBovineWS.xwt">
+      <widget href="ui/SingleBovineWS.xwt#/"/>
+    </sections>
+    <sections name="Multiple BovineWS" sectionFile="ui/MultipleBovineWS.xwt">
+      <widget href="ui/MultipleBovineWS.xwt#/"/>
+    </sections>
+    <sections name="Single Farm" sectionFile="ui/SingleFarm.xwt">
+      <widget href="ui/SingleFarm.xwt#/"/>
+    </sections>
+    <sections name="Multiple Farm" sectionFile="ui/MultipleFarm.xwt">
+      <widget href="ui/MultipleFarm.xwt#/"/>
+    </sections>
+    <sections name="Single CropSurface" sectionFile="ui/SingleCropSurface.xwt">
+      <widget href="ui/SingleCropSurface.xwt#/"/>
+    </sections>
+    <sections name="Multiple CropSurface" sectionFile="ui/MultipleCropSurface.xwt">
+      <widget href="ui/MultipleCropSurface.xwt#/"/>
+    </sections>
   </tabs>
-  <views name="Single Resource" sections="//@tabs.0/@sections.0" automaticContext="true" datacontexts="//@dataContexts.0/@elements.3">
-    <constraints xsi:type="constraints:SimpleConstraint" name="isSingleResource">
-      <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
-      <properties xsi:type="constraints:ValueProperty" name="stereotypeName" value="FML::Resource"/>
-    </constraints>
-  </views>
-  <views elementMultiplicity="-1" name="Multiple Resource" sections="//@tabs.0/@sections.1" automaticContext="true" datacontexts="//@dataContexts.0/@elements.3">
-    <constraints xsi:type="constraints:SimpleConstraint" name="isMultipleResource">
-      <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
-      <properties xsi:type="constraints:ValueProperty" name="stereotypeName" value="FML::Resource"/>
-    </constraints>
-  </views>
-  <views name="Single Material" sections="//@tabs.0/@sections.2" automaticContext="true" datacontexts="//@dataContexts.0/@elements.4">
+  <views name="Single Material" sections="//@tabs.0/@sections.0" automaticContext="true" datacontexts="//@dataContexts.0/@elements.12">
     <constraints xsi:type="constraints:SimpleConstraint" name="isSingleMaterial">
       <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
       <properties xsi:type="constraints:ValueProperty" name="stereotypeName" value="FML::Material"/>
     </constraints>
   </views>
-  <views elementMultiplicity="-1" name="Multiple Material" sections="//@tabs.0/@sections.3" automaticContext="true" datacontexts="//@dataContexts.0/@elements.4">
+  <views elementMultiplicity="-1" name="Multiple Material" sections="//@tabs.0/@sections.1" automaticContext="true" datacontexts="//@dataContexts.0/@elements.12">
     <constraints xsi:type="constraints:SimpleConstraint" name="isMultipleMaterial">
       <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
       <properties xsi:type="constraints:ValueProperty" name="stereotypeName" value="FML::Material"/>
     </constraints>
   </views>
-  <views name="Single Field" sections="//@tabs.0/@sections.4" automaticContext="true" datacontexts="//@dataContexts.0/@elements.8">
-    <constraints xsi:type="constraints:SimpleConstraint" name="isSingleField">
-      <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
-      <properties xsi:type="constraints:ValueProperty" name="stereotypeName" value="FML::Field"/>
-    </constraints>
-  </views>
-  <views elementMultiplicity="-1" name="Multiple Field" sections="//@tabs.0/@sections.5" automaticContext="true" datacontexts="//@dataContexts.0/@elements.8">
-    <constraints xsi:type="constraints:SimpleConstraint" name="isMultipleField">
-      <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
-      <properties xsi:type="constraints:ValueProperty" name="stereotypeName" value="FML::Field"/>
-    </constraints>
-  </views>
-  <views name="Single BovineWS" sections="//@tabs.0/@sections.6" automaticContext="true" datacontexts="//@dataContexts.0/@elements.2">
-    <constraints xsi:type="constraints:SimpleConstraint" name="isSingleBovineWS">
-      <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
-      <properties xsi:type="constraints:ValueProperty" name="stereotypeName" value="FML::BovineWS"/>
-    </constraints>
-  </views>
-  <views elementMultiplicity="-1" name="Multiple BovineWS" sections="//@tabs.0/@sections.7" automaticContext="true" datacontexts="//@dataContexts.0/@elements.2">
-    <constraints xsi:type="constraints:SimpleConstraint" name="isMultipleBovineWS">
-      <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
-      <properties xsi:type="constraints:ValueProperty" name="stereotypeName" value="FML::BovineWS"/>
-    </constraints>
-  </views>
-  <views name="Single Workshop" sections="//@tabs.0/@sections.8" automaticContext="true" datacontexts="//@dataContexts.0/@elements.14">
-    <constraints xsi:type="constraints:SimpleConstraint" name="isSingleWorkshop">
-      <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
-      <properties xsi:type="constraints:ValueProperty" name="stereotypeName" value="FML::Workshop"/>
-    </constraints>
-  </views>
-  <views elementMultiplicity="-1" name="Multiple Workshop" sections="//@tabs.0/@sections.9" automaticContext="true" datacontexts="//@dataContexts.0/@elements.14">
-    <constraints xsi:type="constraints:SimpleConstraint" name="isMultipleWorkshop">
-      <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
-      <properties xsi:type="constraints:ValueProperty" name="stereotypeName" value="FML::Workshop"/>
-    </constraints>
-  </views>
-  <views name="Single CropSurface" sections="//@tabs.0/@sections.10" automaticContext="true" datacontexts="//@dataContexts.0/@elements.5">
-    <constraints xsi:type="constraints:SimpleConstraint" name="isSingleCropSurface">
-      <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
-      <properties xsi:type="constraints:ValueProperty" name="stereotypeName" value="FML::CropSurface"/>
-    </constraints>
-  </views>
-  <views elementMultiplicity="-1" name="Multiple CropSurface" sections="//@tabs.0/@sections.11" automaticContext="true" datacontexts="//@dataContexts.0/@elements.5">
-    <constraints xsi:type="constraints:SimpleConstraint" name="isMultipleCropSurface">
-      <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
-      <properties xsi:type="constraints:ValueProperty" name="stereotypeName" value="FML::CropSurface"/>
-    </constraints>
-  </views>
-  <views name="Single Human" sections="//@tabs.0/@sections.12" automaticContext="true" datacontexts="//@dataContexts.0/@elements.7">
+  <views name="Single Human" sections="//@tabs.0/@sections.2" automaticContext="true" datacontexts="//@dataContexts.0/@elements.1">
     <constraints xsi:type="constraints:SimpleConstraint" name="isSingleHuman">
       <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
       <properties xsi:type="constraints:ValueProperty" name="stereotypeName" value="FML::Human"/>
     </constraints>
   </views>
-  <views elementMultiplicity="-1" name="Multiple Human" sections="//@tabs.0/@sections.13" automaticContext="true" datacontexts="//@dataContexts.0/@elements.7">
+  <views elementMultiplicity="-1" name="Multiple Human" sections="//@tabs.0/@sections.3" automaticContext="true" datacontexts="//@dataContexts.0/@elements.1">
     <constraints xsi:type="constraints:SimpleConstraint" name="isMultipleHuman">
       <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
       <properties xsi:type="constraints:ValueProperty" name="stereotypeName" value="FML::Human"/>
     </constraints>
   </views>
-  <views name="Single WorkGroup" sections="//@tabs.0/@sections.14" automaticContext="true" datacontexts="//@dataContexts.0/@elements.13">
+  <views name="Single WorkGroup" sections="//@tabs.0/@sections.4" automaticContext="true" datacontexts="//@dataContexts.0/@elements.0">
     <constraints xsi:type="constraints:SimpleConstraint" name="isSingleWorkGroup">
       <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
       <properties xsi:type="constraints:ValueProperty" name="stereotypeName" value="FML::WorkGroup"/>
     </constraints>
   </views>
-  <views elementMultiplicity="-1" name="Multiple WorkGroup" sections="//@tabs.0/@sections.15" automaticContext="true" datacontexts="//@dataContexts.0/@elements.13">
+  <views elementMultiplicity="-1" name="Multiple WorkGroup" sections="//@tabs.0/@sections.5" automaticContext="true" datacontexts="//@dataContexts.0/@elements.0">
     <constraints xsi:type="constraints:SimpleConstraint" name="isMultipleWorkGroup">
       <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
       <properties xsi:type="constraints:ValueProperty" name="stereotypeName" value="FML::WorkGroup"/>
     </constraints>
   </views>
-  <views name="Single OvineWS" sections="//@tabs.0/@sections.16" automaticContext="true" datacontexts="//@dataContexts.0/@elements.12">
+  <views name="Single Action" sections="//@tabs.0/@sections.6" automaticContext="true" datacontexts="//@dataContexts.0/@elements.11">
+    <constraints xsi:type="constraints:SimpleConstraint" name="isSingleAction">
+      <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
+      <properties xsi:type="constraints:ValueProperty" name="stereotypeName" value="FML::Action"/>
+    </constraints>
+  </views>
+  <views elementMultiplicity="-1" name="Multiple Action" sections="//@tabs.0/@sections.7" automaticContext="true" datacontexts="//@dataContexts.0/@elements.11">
+    <constraints xsi:type="constraints:SimpleConstraint" name="isMultipleAction">
+      <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
+      <properties xsi:type="constraints:ValueProperty" name="stereotypeName" value="FML::Action"/>
+    </constraints>
+  </views>
+  <views name="Single OvineWS" sections="//@tabs.0/@sections.8" automaticContext="true" datacontexts="//@dataContexts.0/@elements.2">
     <constraints xsi:type="constraints:SimpleConstraint" name="isSingleOvineWS">
       <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
       <properties xsi:type="constraints:ValueProperty" name="stereotypeName" value="FML::OvineWS"/>
     </constraints>
   </views>
-  <views elementMultiplicity="-1" name="Multiple OvineWS" sections="//@tabs.0/@sections.17" automaticContext="true" datacontexts="//@dataContexts.0/@elements.12">
+  <views elementMultiplicity="-1" name="Multiple OvineWS" sections="//@tabs.0/@sections.9" automaticContext="true" datacontexts="//@dataContexts.0/@elements.2">
     <constraints xsi:type="constraints:SimpleConstraint" name="isMultipleOvineWS">
       <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
       <properties xsi:type="constraints:ValueProperty" name="stereotypeName" value="FML::OvineWS"/>
     </constraints>
   </views>
-  <views name="Single CropWS" sections="//@tabs.0/@sections.18" automaticContext="true" datacontexts="//@dataContexts.0/@elements.10">
+  <views name="Single Workshop" sections="//@tabs.0/@sections.10" automaticContext="true" datacontexts="//@dataContexts.0/@elements.9">
+    <constraints xsi:type="constraints:SimpleConstraint" name="isSingleWorkshop">
+      <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
+      <properties xsi:type="constraints:ValueProperty" name="stereotypeName" value="FML::Workshop"/>
+    </constraints>
+  </views>
+  <views elementMultiplicity="-1" name="Multiple Workshop" sections="//@tabs.0/@sections.11" automaticContext="true" datacontexts="//@dataContexts.0/@elements.9">
+    <constraints xsi:type="constraints:SimpleConstraint" name="isMultipleWorkshop">
+      <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
+      <properties xsi:type="constraints:ValueProperty" name="stereotypeName" value="FML::Workshop"/>
+    </constraints>
+  </views>
+  <views name="Single CropWS" sections="//@tabs.0/@sections.12" automaticContext="true" datacontexts="//@dataContexts.0/@elements.14">
     <constraints xsi:type="constraints:SimpleConstraint" name="isSingleCropWS">
       <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
       <properties xsi:type="constraints:ValueProperty" name="stereotypeName" value="FML::CropWS"/>
     </constraints>
   </views>
-  <views elementMultiplicity="-1" name="Multiple CropWS" sections="//@tabs.0/@sections.19" automaticContext="true" datacontexts="//@dataContexts.0/@elements.10">
+  <views elementMultiplicity="-1" name="Multiple CropWS" sections="//@tabs.0/@sections.13" automaticContext="true" datacontexts="//@dataContexts.0/@elements.14">
     <constraints xsi:type="constraints:SimpleConstraint" name="isMultipleCropWS">
       <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
       <properties xsi:type="constraints:ValueProperty" name="stereotypeName" value="FML::CropWS"/>
     </constraints>
   </views>
-  <views name="Single FodderSurface" sections="//@tabs.0/@sections.20" automaticContext="true" datacontexts="//@dataContexts.0/@elements.6">
+  <views name="Single FodderSurface" sections="//@tabs.0/@sections.14" automaticContext="true" datacontexts="//@dataContexts.0/@elements.13">
     <constraints xsi:type="constraints:SimpleConstraint" name="isSingleFodderSurface">
       <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
       <properties xsi:type="constraints:ValueProperty" name="stereotypeName" value="FML::FodderSurface"/>
     </constraints>
   </views>
-  <views elementMultiplicity="-1" name="Multiple FodderSurface" sections="//@tabs.0/@sections.21" automaticContext="true" datacontexts="//@dataContexts.0/@elements.6">
+  <views elementMultiplicity="-1" name="Multiple FodderSurface" sections="//@tabs.0/@sections.15" automaticContext="true" datacontexts="//@dataContexts.0/@elements.13">
     <constraints xsi:type="constraints:SimpleConstraint" name="isMultipleFodderSurface">
       <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
       <properties xsi:type="constraints:ValueProperty" name="stereotypeName" value="FML::FodderSurface"/>
     </constraints>
   </views>
-  <views name="Single Farm" sections="//@tabs.0/@sections.22" automaticContext="true" datacontexts="//@dataContexts.0/@elements.11">
-    <constraints xsi:type="constraints:SimpleConstraint" name="isSingleFarm">
+  <views name="Single Resource" sections="//@tabs.0/@sections.16" automaticContext="true" datacontexts="//@dataContexts.0/@elements.10">
+    <constraints xsi:type="constraints:SimpleConstraint" name="isSingleResource">
       <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
-      <properties xsi:type="constraints:ValueProperty" name="stereotypeName" value="FML::Farm"/>
+      <properties xsi:type="constraints:ValueProperty" name="stereotypeName" value="FML::Resource"/>
     </constraints>
   </views>
-  <views elementMultiplicity="-1" name="Multiple Farm" sections="//@tabs.0/@sections.23" automaticContext="true" datacontexts="//@dataContexts.0/@elements.11">
-    <constraints xsi:type="constraints:SimpleConstraint" name="isMultipleFarm">
+  <views elementMultiplicity="-1" name="Multiple Resource" sections="//@tabs.0/@sections.17" automaticContext="true" datacontexts="//@dataContexts.0/@elements.10">
+    <constraints xsi:type="constraints:SimpleConstraint" name="isMultipleResource">
       <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
-      <properties xsi:type="constraints:ValueProperty" name="stereotypeName" value="FML::Farm"/>
+      <properties xsi:type="constraints:ValueProperty" name="stereotypeName" value="FML::Resource"/>
     </constraints>
   </views>
-  <views name="Single Date" sections="//@tabs.0/@sections.24" automaticContext="true" datacontexts="//@dataContexts.0/@elements.0">
-    <constraints xsi:type="constraints:SimpleConstraint" name="isSingleDate">
-      <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
-      <properties xsi:type="constraints:ValueProperty" name="stereotypeName" value="FML::Date"/>
-    </constraints>
-  </views>
-  <views elementMultiplicity="-1" name="Multiple Date" sections="//@tabs.0/@sections.25" automaticContext="true" datacontexts="//@dataContexts.0/@elements.0">
-    <constraints xsi:type="constraints:SimpleConstraint" name="isMultipleDate">
-      <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
-      <properties xsi:type="constraints:ValueProperty" name="stereotypeName" value="FML::Date"/>
-    </constraints>
-  </views>
-  <views name="Single Activity" sections="//@tabs.0/@sections.26" automaticContext="true" datacontexts="//@dataContexts.0/@elements.9">
-    <constraints xsi:type="constraints:SimpleConstraint" name="isSingleActivity">
-      <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
-      <properties xsi:type="constraints:ValueProperty" name="stereotypeName" value="FML::Activity"/>
-    </constraints>
-  </views>
-  <views elementMultiplicity="-1" name="Multiple Activity" sections="//@tabs.0/@sections.27" automaticContext="true" datacontexts="//@dataContexts.0/@elements.9">
-    <constraints xsi:type="constraints:SimpleConstraint" name="isMultipleActivity">
-      <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
-      <properties xsi:type="constraints:ValueProperty" name="stereotypeName" value="FML::Activity"/>
-    </constraints>
-  </views>
-  <views name="Single Surface" sections="//@tabs.0/@sections.28" automaticContext="true" datacontexts="//@dataContexts.0/@elements.1">
+  <views name="Single Surface" sections="//@tabs.0/@sections.18" automaticContext="true" datacontexts="//@dataContexts.0/@elements.6">
     <constraints xsi:type="constraints:SimpleConstraint" name="isSingleSurface">
       <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
       <properties xsi:type="constraints:ValueProperty" name="stereotypeName" value="FML::Surface"/>
     </constraints>
   </views>
-  <views elementMultiplicity="-1" name="Multiple Surface" sections="//@tabs.0/@sections.29" automaticContext="true" datacontexts="//@dataContexts.0/@elements.1">
+  <views elementMultiplicity="-1" name="Multiple Surface" sections="//@tabs.0/@sections.19" automaticContext="true" datacontexts="//@dataContexts.0/@elements.6">
     <constraints xsi:type="constraints:SimpleConstraint" name="isMultipleSurface">
       <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
       <properties xsi:type="constraints:ValueProperty" name="stereotypeName" value="FML::Surface"/>
     </constraints>
   </views>
+  <views name="Single Date" sections="//@tabs.0/@sections.20" automaticContext="true" datacontexts="//@dataContexts.0/@elements.4">
+    <constraints xsi:type="constraints:SimpleConstraint" name="isSingleDate">
+      <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
+      <properties xsi:type="constraints:ValueProperty" name="stereotypeName" value="FML::Date"/>
+    </constraints>
+  </views>
+  <views elementMultiplicity="-1" name="Multiple Date" sections="//@tabs.0/@sections.21" automaticContext="true" datacontexts="//@dataContexts.0/@elements.4">
+    <constraints xsi:type="constraints:SimpleConstraint" name="isMultipleDate">
+      <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
+      <properties xsi:type="constraints:ValueProperty" name="stereotypeName" value="FML::Date"/>
+    </constraints>
+  </views>
+  <views name="Single Field" sections="//@tabs.0/@sections.22" automaticContext="true" datacontexts="//@dataContexts.0/@elements.7">
+    <constraints xsi:type="constraints:SimpleConstraint" name="isSingleField">
+      <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
+      <properties xsi:type="constraints:ValueProperty" name="stereotypeName" value="FML::Field"/>
+    </constraints>
+  </views>
+  <views elementMultiplicity="-1" name="Multiple Field" sections="//@tabs.0/@sections.23" automaticContext="true" datacontexts="//@dataContexts.0/@elements.7">
+    <constraints xsi:type="constraints:SimpleConstraint" name="isMultipleField">
+      <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
+      <properties xsi:type="constraints:ValueProperty" name="stereotypeName" value="FML::Field"/>
+    </constraints>
+  </views>
+  <views name="Single BovineWS" sections="//@tabs.0/@sections.24" automaticContext="true" datacontexts="//@dataContexts.0/@elements.3">
+    <constraints xsi:type="constraints:SimpleConstraint" name="isSingleBovineWS">
+      <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
+      <properties xsi:type="constraints:ValueProperty" name="stereotypeName" value="FML::BovineWS"/>
+    </constraints>
+  </views>
+  <views elementMultiplicity="-1" name="Multiple BovineWS" sections="//@tabs.0/@sections.25" automaticContext="true" datacontexts="//@dataContexts.0/@elements.3">
+    <constraints xsi:type="constraints:SimpleConstraint" name="isMultipleBovineWS">
+      <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
+      <properties xsi:type="constraints:ValueProperty" name="stereotypeName" value="FML::BovineWS"/>
+    </constraints>
+  </views>
+  <views name="Single Farm" sections="//@tabs.0/@sections.26" automaticContext="true" datacontexts="//@dataContexts.0/@elements.5">
+    <constraints xsi:type="constraints:SimpleConstraint" name="isSingleFarm">
+      <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
+      <properties xsi:type="constraints:ValueProperty" name="stereotypeName" value="FML::Farm"/>
+    </constraints>
+  </views>
+  <views elementMultiplicity="-1" name="Multiple Farm" sections="//@tabs.0/@sections.27" automaticContext="true" datacontexts="//@dataContexts.0/@elements.5">
+    <constraints xsi:type="constraints:SimpleConstraint" name="isMultipleFarm">
+      <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
+      <properties xsi:type="constraints:ValueProperty" name="stereotypeName" value="FML::Farm"/>
+    </constraints>
+  </views>
+  <views name="Single CropSurface" sections="//@tabs.0/@sections.28" automaticContext="true" datacontexts="//@dataContexts.0/@elements.8">
+    <constraints xsi:type="constraints:SimpleConstraint" name="isSingleCropSurface">
+      <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
+      <properties xsi:type="constraints:ValueProperty" name="stereotypeName" value="FML::CropSurface"/>
+    </constraints>
+  </views>
+  <views elementMultiplicity="-1" name="Multiple CropSurface" sections="//@tabs.0/@sections.29" automaticContext="true" datacontexts="//@dataContexts.0/@elements.8">
+    <constraints xsi:type="constraints:SimpleConstraint" name="isMultipleCropSurface">
+      <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
+      <properties xsi:type="constraints:ValueProperty" name="stereotypeName" value="FML::CropSurface"/>
+    </constraints>
+  </views>
   <dataContexts name="FML">
+    <elements name="WorkGroup">
+      <supertypes href="ppe:/context/org.eclipse.papyrus.uml.properties/Model/UML/UML.ctx#//@dataContexts.0/@elements.45"/>
+    </elements>
+    <elements name="Human" supertypes="//@dataContexts.0/@elements.10"/>
+    <elements name="OvineWS" supertypes="//@dataContexts.0/@elements.9"/>
+    <elements name="BovineWS" supertypes="//@dataContexts.0/@elements.9"/>
     <elements name="Date">
       <properties name="day" type="Integer"/>
       <properties name="month" type="Enumeration"/>
+    </elements>
+    <elements name="Farm">
+      <supertypes href="ppe:/context/org.eclipse.papyrus.uml.properties/Model/UML/UML.ctx#//@dataContexts.0/@elements.45"/>
     </elements>
     <elements name="Surface">
       <properties name="irrigated" type="Boolean"/>
       <supertypes href="ppe:/context/org.eclipse.papyrus.uml.properties/Model/UML/UML.ctx#//@dataContexts.0/@elements.45"/>
     </elements>
-    <elements name="BovineWS" supertypes="//@dataContexts.0/@elements.14"/>
-    <elements name="Resource"/>
-    <elements name="Material" supertypes="//@dataContexts.0/@elements.3"/>
-    <elements name="CropSurface" supertypes="//@dataContexts.0/@elements.1"/>
-    <elements name="FodderSurface" supertypes="//@dataContexts.0/@elements.1"/>
-    <elements name="Human" supertypes="//@dataContexts.0/@elements.3"/>
     <elements name="Field">
       <properties name="size" type="Integer"/>
       <supertypes href="ppe:/context/org.eclipse.papyrus.uml.properties/Model/UML/UML.ctx#//@dataContexts.0/@elements.45"/>
     </elements>
-    <elements name="Activity">
+    <elements name="CropSurface" supertypes="//@dataContexts.0/@elements.6"/>
+    <elements name="Workshop">
+      <supertypes href="ppe:/context/org.eclipse.papyrus.uml.properties/Model/UML/UML.ctx#//@dataContexts.0/@elements.110"/>
+    </elements>
+    <elements name="Resource"/>
+    <elements name="Action">
       <properties name="startDateMin" type="Reference"/>
       <properties name="endDateMax" type="Reference"/>
       <properties name="frequency" type="Enumeration"/>
       <properties name="duration" type="Integer"/>
-      <supertypes href="ppe:/context/org.eclipse.papyrus.uml.properties/Model/UML/UML.ctx#//@dataContexts.0/@elements.110"/>
+      <supertypes href="ppe:/context/org.eclipse.papyrus.uml.properties/Model/UML/UML.ctx#//@dataContexts.0/@elements.105"/>
     </elements>
-    <elements name="CropWS" supertypes="//@dataContexts.0/@elements.14"/>
-    <elements name="Farm">
-      <supertypes href="ppe:/context/org.eclipse.papyrus.uml.properties/Model/UML/UML.ctx#//@dataContexts.0/@elements.45"/>
-    </elements>
-    <elements name="OvineWS" supertypes="//@dataContexts.0/@elements.14"/>
-    <elements name="WorkGroup">
-      <supertypes href="ppe:/context/org.eclipse.papyrus.uml.properties/Model/UML/UML.ctx#//@dataContexts.0/@elements.45"/>
-    </elements>
-    <elements name="Workshop">
-      <supertypes href="ppe:/context/org.eclipse.papyrus.uml.properties/Model/UML/UML.ctx#//@dataContexts.0/@elements.45"/>
-    </elements>
+    <elements name="Material" supertypes="//@dataContexts.0/@elements.10"/>
+    <elements name="FodderSurface" supertypes="//@dataContexts.0/@elements.6"/>
+    <elements name="CropWS" supertypes="//@dataContexts.0/@elements.9"/>
     <modelElementFactory href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@modelElementFactories.2"/>
   </dataContexts>
 </contexts:Context>
