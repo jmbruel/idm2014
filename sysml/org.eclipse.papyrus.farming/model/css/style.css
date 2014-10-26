@@ -1,0 +1,7 @@
+Class > Compartment[kind="operations"],
+Class > Compartment[kind="nestedclassifiers"] {
+    visible:false;
+}
+Stereotype > Compartment[kind="operations"] {
+    visible:false;
+}

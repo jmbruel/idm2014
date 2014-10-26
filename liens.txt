@@ -9,6 +9,5 @@ Benoît Combemale, Didier Vojtisek. Ellipses 2012.
 - [[[Sirius]]] https://www.eclipse.org/proposals/modeling.sirius/
 - [[[VLE]]] http://www.vle-project.org/wiki/
 - [[[Selic07]]] Selic, B. A systematic approach to domain-specific language design using UML. In Proceedings of the 10th IEEE International Symposium on Object and Component- Oriented Real-Time Distributed Computing (Washington, DC, USA, 2007), ISORC ’07, IEEE Computer Society, pp. 2–9.
-- [[[Tatibouet14]]] Jérémie Tatibouët.
-Approche Systématique basée sur fUML pour Formaliser la Sémantiqu
-e d’Exécution des Profils UML. ThèseUniversité Paris Sud, octobre 2014.
+- [[[Tatibouet14]]] Jérémie Tatibouët. Approche Systématique basée sur fUML pour Formaliser la Sémantique d’Exécution des Profils UML. ThèseUniversité Paris Sud, octobre 2014.
+- [[[Tuto-Profile]]] https://www.eclipse.org/papyrus/usersTutorials/resources/PapyrusUserGuideSeries_AboutUMLProfile_v1.0.0_d20120606.pdf[A tutorial on designing and using UML profiles with Papyrus (2012-06-06)]

@@ -1,0 +1,328 @@
+= Profile-based approach
+:experimental:
+ifndef::definitions[]
+include::../../definitions.txt[]
+endif::definitions[]
+
+ifndef::slides[]
+Contribution by {sd}, {fn}, {jmb}.
+endif::slides[]
+
+ifdef::slides[]
+
+- What is a profile?
+- General process
+- Concrete example
+
+:leveloffset: 0
+
+endif::slides[]
+
+== What is a profile ?
+
+* Abstract syntax for a new language
+** Set of stereotypes
+** Set of OCL constraints
+
+ifdef::slides[== What is a profile ?]
+
+image::profile-JT.png[width="80%",align=center]
+
+== General process
+
+ifndef::slides[]
+The idea behing this approach is that there will be some benefits
+in the use of the {uml} standard. Hence the DSL will be based on {UML}
+by using the profile mechanisms.
+endif::slides[]
+
+[[Selic07-fig]]
+ifndef::slides[.A profil based approach (taken from <<Tatibouet14>> and inspired by <<Selic07>>)]
+image::profil-BS.png[width="80%",align=center]
+
+ifndef::slides[]
+As illustrated in <<Selic07-fig,this figure>>, here is the processus
+we can follow:
+endif::slides[]
+
+ifdef::slides[== General process]
+
+Step #1::
+ Starting from the expected DSL (most of the time a `model^sc^` or a graphical
+  représentation) and a description of the domain model (`model^mde^`)
+
+ifndef::slides[.Inputs: description of the domain model]
+image::input.png[width="30%",align=center]
+
+ifdef::slides[== General process]
+
+Step #2::
+	A domain model^mde^ is more precisely defined (e.g. a class diagram such as <<mm1>>)
+
+ifndef::slides[.From model^sc^ to model^mde^]
+image::step1.png[width="80%",align=center]
+
+ifdef::slides[== Structural metamodel]
+
+[[mm1]]
+ifndef::slides[.Main concepts of the domain model]
+image::image001.png[width="80%",align=center]
+
+ifdef::slides[== Functional metamodel]
+
+[[mm2]]
+ifndef::slides[.Concepts of the domain model linked to `activities`]
+image::image002.png[width="80%",align=center]
+
+ifdef::slides[== General process]
+
+Step #3::
+	The concepts (e.g., `Farm` in <<mm1>>) are mapped to the
+more suitable {uml} elements (e.g., `Class` in <<profile1>>)
+
+ifndef::slides[.Mapping domain concepts to UML metamodel]
+image::step2.png[width="80%",align=center]
+
+ifdef::slides[== General process]
+
+[[profile1]]
+ifndef::slides[.Mapping concepts with UML metamodel to define a profile]
+image::image003.png[width="60%",align=center]
+
+ifdef::slides[== General process]
+
+Step #4::
+	If the concepts directly match {uml} concepts (or if there is a way to slightly modify
+  them so that they match) then it is possible to define a profile. (see e.g., <<profile1>>)
+
+Step #5::
+	Else another solution (e.g., defining a metamodel from scratch) should be studied.
+
+ifdef::slides[image::crossing.jpg[width="60%",align=center]]
+
+
+ifdef::slides[== Working on the concrete syntax]
+
+Step #6::
+	It is time then to "customize" the DSML to make it as close as possible as
+	the user domain representation.
+
+ifndef::slides[.Customizin the DSML]
+image::dsml.jpg[width="80%",align=center]
+
+ifdef::slides[== Additional definitions]
+
+[[profile2]]
+ifndef::slides[.Improving the profile]
+image::image004.png[width="80%",align=center]
+
+ifdef::slides[== Defining the domain model]
+
+[NOTE]
+====
+There are different ways of defining the domain model:
+
+- the *domain expert provides the domain model* (e.g., {uml} class diagram)
+- the {uml} *expert translate the concepts* from the stakeholders into a domain
+model
+- the {uml} expert and the domain expert build a model^mde^ as close as possible
+of the expected DSL and the {uml} expert extract the core concepts in a domain
+model
+====
+
+== Iterative process
+
+The above process is iterative. The constructs are introduced by step.
+The profile is experimented in a `model^sc^` importing the profile so that the user can validate
+that the concepts are captured adequatly.
+This is were the {uml} expert can use tuning possibilities.
+
+== Improvements
+
+The next steps can consist in:
+
+* defining a *dedicated diagram*
+* providing a *wizard* for the new language
+* defining a *specific property view* (menu:File[New ... Property View Configuration]
+  and then right click on the generated property)
+* Working on the concrete syntax:
+** customizing the styles (look & feel)
+** customizing menu:New[Child]
+** customizing the Model explorer
+** packaging together the profile, the property view, the palette, etc.
+
+ifdef::slides[== Improvements]
+
+[TIP]
+=====
+
+- Papyrus provides a `DSML Configuration plugin` to help on these steps.
+- There is also the possibility of defining a `Feature` that group together
+a set of profiles
++
+image::wizard.png[width="80%",align=center]
+=====
+
+== Example of work on the concrete syntax
+
+Let us illustrate the need for a specific concrete syntax.
+
+ifdef::slides[]
+
+* (starting from Structural and Functional Domain Models)
+* (and from the profile)
+* using the profile in examples
+** Farm structure
+** Activities descriptions
+
+endif::slides[]
+
+ifndef::slides[:leveloffset: +1]
+
+== Structural Domain Model
+
+image::FarmingDomainModelStucture.png[width="80%",align=center]
+
+== Functional Domain Model
+
+image::FarmingDomainModelFunctional.png[width="80%",align=center]
+
+== Structural profile
+
+image::FarmingProfileStructure.png[width="80%",align=center]
+
+== Functional profile
+
+image::FarmingProfileFunctional.png[width="80%",align=center]
+
+== Using the profile: Farm structure
+
+image::FarmStructure.png[width="80%",align=center]
+
+== Using the profile: Papyrus context
+
+image::ModelingInterface.jpg[width="80%",align=center]
+
+== Crop Workshops description
+
+image::CropWS.png[width="80%",align=center]
+
+== Activity description (UML Activity Diagram)
+
+image::CornActivity.png[width="80%",align=center]
+
+== Activity description (UML Activity Diagram)
+
+image::WheatActivity.png[width="80%",align=center]
+
+== Customizing the Model Explorer
+
+image::ModelingInterfaceZoomModelExplorer.jpg[width="80%",align=center]
+
+== Customizing the Palette (structure)
+
+image::ModelingInterfaceZoomPalette1.jpg[width="80%",align=center]
+
+== Customizing the Palette (activities)
+
+image::ModelingInterfaceZoomPalette2.jpg[width="80%",align=center]
+
+== Customizing the Palette (property view, structural element)
+
+image::ModelingInterfaceZoomPropertiesView1.jpg[width="80%",align=center]
+
+== Customizing the Palette (property view activity element)
+
+image::ModelingInterfaceZoomPropertiesView3.jpg[width="80%",align=center]
+
+== Animation and external tools coupling
+
+image::moka1.png[]
+
+ifdef::slides[== Animation and external tools coupling]
+
+image::moka2.png[]
+
+ifdef::slides[== Animation and external tools coupling]
+
+image::moka3.png[]
+
+ifndef::slides[:leveloffset: -2]
+
+== Conclusion
+
+ifdef::slides[:leveloffset: -1]
+
+=== Profile definition
+
+- in terms of stereotypes (extending metaclasses)
+- adding specific properties to the stereotype (e.g., `period` in <<Selic07-fig,this figure>>)
+- adding OCL constraints
+
+=== Main differences
+
+[%step]
+* Using `ecore`
+** the process consists in starting from scratch, from an empty
+metamodel
+** the domain model is then define *by construction*
+* In the `UML profile` approach
+** we start with an existing (complete) metamodel
+** and the profiling activity consist in *restricting* it to specific elements
+** the assumption is that their is a benefit in having both
+additional concepts and tooling, notably in terms of
+*** *extensibility* mecanisms
+*** *scalability*
+
+=== (honest) Feedbacks
+
+[%step]
+* Easy tuning and customizing possibilities
+* Almost like doing regular UML modeling
+* UML good knowledge required
+* Not trivial
+* Great work from CEA (3.5 days of work)
+* Need close loop with the client (agile manifesto)
+
+=== DSML from scratch: the "Wysiwyg approach"
+
+ifndef::slides[.Free and easy to edit from scratch]
+image::word.png[width="40%",align=center]
+
+[%step]
+* *No constraint* on what we type
+* *Immediate visualization* of the result
+* Possibility to have templates
+* More and mode styles and quality
+
+=== DSML as UML profiles: the "LaTeX approach"
+
+ifndef::slides[.Formal and constrained typing]
+image::dsl.png[width="50%",align=center]
+
+[%step]
+* Constrained language
+* No immediate visualisation of the result
+* Naturally *based on templates*
+* Rich in *libraries* and styles
+* Possibilities to see what you get on (almost) real-time
+* Collaborative and user-friendliness improvements
+
+=== Converging
+
+[%step]
+- DSML *vs* Profile-based => wrong approach
+- DSML or Profile-based => good question
+- Both {sirius} and {papyrus} part of {polarsys}!
+
+image::polarsys-logo.png[width="70%",float=right,align=left]
+
+ifdef::slides[]
+
+:leveloffset: +1
+
+== Thank you for your attention!
+
+image::questions.jpg[width:80%]
+
+endif::slides[]

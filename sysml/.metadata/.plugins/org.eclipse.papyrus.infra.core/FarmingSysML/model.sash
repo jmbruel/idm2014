@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<di:SashWindowsMngr xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:di="http://www.eclipse.org/papyrus/0.7.0/sashdi">
+  <sashModel currentSelection="//@sashModel/@windows.0/@children.0">
+    <windows>
+      <children xsi:type="di:TabFolder">
+        <children>
+          <emfPageIdentifier href="platform:/resource/FarmingSysML/model.notation#_fnwk0Fx9EeSczYGQxeDv3g"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="platform:/resource/FarmingSysML/model.notation#_Pjsj8FyAEeSczYGQxeDv3g"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="platform:/resource/FarmingSysML/model.notation#_Zx9nYFyDEeSczYGQxeDv3g"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="platform:/resource/FarmingSysML/model.notation#_QhePQFyKEeSczYGQxeDv3g"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="platform:/resource/FarmingSysML/model.notation#_ENopoFyLEeSczYGQxeDv3g"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="platform:/resource/FarmingSysML/model.notation#_bh3BQFyPEeSrlcDChGCFNQ"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="platform:/resource/FarmingSysML/model.notation#_feKHAFz4EeSwLvK6w8P-DQ"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="platform:/resource/FarmingSysML/model.notation#_KVUPkFz5EeSwLvK6w8P-DQ"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="platform:/resource/FarmingSysML/model.notation#_Ju3osFz7EeSwLvK6w8P-DQ"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="platform:/resource/FarmingSysML/model.notation#_p1S1wFz_EeSwLvK6w8P-DQ"/>
+        </children>
+      </children>
+    </windows>
+  </sashModel>
+</di:SashWindowsMngr>

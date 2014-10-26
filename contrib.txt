@@ -31,9 +31,9 @@ CF. <<Selic07-fig,cette figure>>.
 
 === DSL
 
-ifdef::slides[:leveloffset: +1]
-ifndef::slides[:leveloffset: +2]
+ifdef::slides[:leveloffset: 1]
+ifndef::slides[:leveloffset: 2]
 
-include::contrib/papyrus/README.txt[]
+include::contrib/papyrus/README.adoc[]
 
 ifndef::slides[:leveloffset: -2]
