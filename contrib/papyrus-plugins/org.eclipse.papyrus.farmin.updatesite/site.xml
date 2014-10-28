@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/org.eclipse.papyrus.farming.feature_1.0.0.201410271122.jar" id="org.eclipse.papyrus.farming.feature" version="1.0.0.201410271122"/>
+</site>
