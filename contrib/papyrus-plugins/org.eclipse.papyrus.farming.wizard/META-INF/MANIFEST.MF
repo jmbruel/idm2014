@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Wizard
-Bundle-SymbolicName: org.eclipse.papyrus.farming.wizard
+Bundle-SymbolicName: org.eclipse.papyrus.farming.wizard;singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Bundle-Activator: org.eclipse.papyrus.farming.wizard.Activator
 Require-Bundle: org.eclipse.ui,

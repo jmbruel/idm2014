@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+  <extension
+         point="org.eclipse.papyrus.infra.core.papyrusDiagram">
+      <diagramCategory
+            class="org.eclipse.papyrus.farming.wizard.CreateFarmMLModelCommand"
+            description="FarmML diagrams"
+            icon="platform:/plugin/org.eclipse.papyrus.farming.wizard/icon/FarmML.png"
+            id="farmML"
+            label="farmML">
+             </diagramCategory>
+   </extension>
+ <extension
+         point="org.eclipse.ui.newWizards">
+      <wizard
+            canFinishEarly="false"
+            category="org.eclipse.papyrus.wizards.category"
+            class="org.eclipse.papyrus.farming.wizard.NewFarmMLModelWizard"
+            finalPerspective="org.eclipse.papyrus.infra.core.perspective"
+            icon="icon/farm.png"
+            id="org.eclipse.papyrus.wizards.createrobotmlmodel"
+            name="FarmML Model">
+         <selection
+               class="org.eclipse.core.resources.IResource">
+         </selection>
+      </wizard>
+      <wizard
+            category="org.eclipse.papyrus.wizards.category"
+            class="org.eclipse.papyrus.farming.wizard.NewFarmMLProjectWizard"
+            finalPerspective="org.eclipse.papyrus.infra.core.perspective"
+            icon="icon/NewprjFarmML.png"
+            id="org.eclipse.papyrus.wizards.createfarmmlwizard"
+            name="FarmML Project"
+            project="true">
+         <description>
+            New FarmML Project
+         </description>
+      </wizard>
+   </extension>
+</plugin>

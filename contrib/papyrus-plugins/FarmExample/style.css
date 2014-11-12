@@ -1,5 +1,10 @@
 Class {elementIcon:false;}
 
 * {
-	shapeVisibility: false;
+	shapeVisibility: true;
+}
+
+Stereotype {elementIcon:true;}
+[appliedStereotypes~="FarmML::Action"] {
+	
 }

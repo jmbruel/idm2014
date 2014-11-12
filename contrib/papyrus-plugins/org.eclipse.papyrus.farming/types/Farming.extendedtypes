@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extendedtypes:ExtendedElementTypeSet
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:applystereotypeactionconfiguration="http://www.eclipse.org/papyrus/infra/extendedtypes/uml/applystereotypeaction/1.0"
+    xmlns:extendedtypes="http://www.eclipse.org/papyrus/infra/extendedtypes/1.0"
+    name="FarmingTypes"
+    identifier="org.eclipse.papyrus.farming.types">
+  <elementType
+      xsi:type="extendedtypes:AspectSemanticTypeConfiguration"
+      name="WorkshopType"
+      identifier="org.eclipse.papyrus.farming.Workshop">
+    <specializedTypesID>org.eclipse.papyrus.uml.Activity</specializedTypesID>
+    <actionConfiguration
+        xsi:type="applystereotypeactionconfiguration:ApplyStereotypeActionConfiguration"
+        name="">
+      <stereotypesToApply
+          stereotypeQualifiedName="FarmML::Workshop"
+          updateName="true">
+        <requiredProfiles>FarmML</requiredProfiles>
+      </stereotypesToApply>
+    </actionConfiguration>
+  </elementType>
+  <elementType
+       xsi:type="extendedtypes:AspectSemanticTypeConfiguration"
+      name="FarmType"
+      identifier="org.eclipse.papyrus.farming.Farm">
+    <specializedTypesID>org.eclipse.papyrus.uml.Class</specializedTypesID>
+    <actionConfiguration
+        xsi:type="applystereotypeactionconfiguration:ApplyStereotypeActionConfiguration"
+        name="">
+      <stereotypesToApply
+          stereotypeQualifiedName="FarmML::Farm"
+          updateName="true">
+        <requiredProfiles>FarmML</requiredProfiles>
+      </stereotypesToApply>
+    </actionConfiguration>
+     </elementType>
+</extendedtypes:ExtendedElementTypeSet>

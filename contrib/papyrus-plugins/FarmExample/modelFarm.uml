@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ActionLanguage="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile" xmlns:FML="http:///schemas/FML/_G9w0AFzwEeSEvpGJs06ERQ/13" xmlns:Symbols="http://PapyrusInternal/schemas/Symbols/_eij2kEBcEeKj6r7ThQagKA/2" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_sYse0YZLEeKyw49uR6nx3g http:///schemas/FML/_G9w0AFzwEeSEvpGJs06ERQ/13 platform:/plugin/org.eclipse.papyrus.farming/model/FML.profile.uml#_G9yCIFzwEeSEvpGJs06ERQ http://PapyrusInternal/schemas/Symbols/_eij2kEBcEeKj6r7ThQagKA/2 pathmap://PAPYRUS_INTERNAL_PROFILES/PapyrusInternal.profile.uml#_eikdoEBcEeKj6r7ThQagKA">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:FarmML="http://Papyrus/FarmML" xmlns:Symbols="http://PapyrusInternal/schemas/Symbols/_eij2kEBcEeKj6r7ThQagKA/2" xmlns:css="http://www.eclipse.org/papyrus/infra/gmfdiag/css" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile http://PapyrusInternal/schemas/Symbols/_eij2kEBcEeKj6r7ThQagKA/2 pathmap://PAPYRUS_INTERNAL_PROFILES/PapyrusInternal.profile.uml#_eikdoEBcEeKj6r7ThQagKA">
   <uml:Model xmi:id="_6UdkoFqTEeSKw-gEQqWmtA" name="model">
     <packagedElement xmi:type="uml:Class" xmi:id="_EnwoQFt3EeSDStJKQVpT0w" name="MyFarm" classifierBehavior="_1ZZH4Fz7EeS1YeUa88OQJw">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_3N7jkFt6EeSDStJKQVpT0w" name="cornSurface" visibility="public" type="_RDAoAFt3EeSDStJKQVpT0w">
@@ -103,81 +103,6 @@
     <packagedElement xmi:type="uml:Class" xmi:id="_Y1xu0Ft5EeSDStJKQVpT0w" name="SorghumField"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_j_l74Ft5EeSDStJKQVpT0w" name="FodderField"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_f4N6AFt9EeSDStJKQVpT0w" name="CornField"/>
-    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_ND_wcFqVEeSeJ73siFRo-g">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_flCEsFzwEeS1YeUa88OQJw" source="PapyrusVersion">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_flCEsVzwEeS1YeUa88OQJw" key="Version" value="0.0.14"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_flCEslzwEeS1YeUa88OQJw" key="Comment" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_flCEs1zwEeS1YeUa88OQJw" key="Copyright" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_flCEtFzwEeS1YeUa88OQJw" key="Date" value="2014-10-26"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_flCEtVzwEeS1YeUa88OQJw" key="Author" value=""/>
-      </eAnnotations>
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XqI8wFtmEeSDStJKQVpT0w" source="PapyrusVersion">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XqI8wVtmEeSDStJKQVpT0w" key="Version" value="0.0.12"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XqI8wltmEeSDStJKQVpT0w" key="Comment" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XqI8w1tmEeSDStJKQVpT0w" key="Copyright" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XqI8xFtmEeSDStJKQVpT0w" key="Date" value="2014-10-24"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XqI8xVtmEeSDStJKQVpT0w" key="Author" value=""/>
-      </eAnnotations>
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2zes8FteEeS2jYrLGrrNfg" source="PapyrusVersion">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2zes8VteEeS2jYrLGrrNfg" key="Version" value="0.0.10"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2zes8lteEeS2jYrLGrrNfg" key="Comment" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2zes81teEeS2jYrLGrrNfg" key="Copyright" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2zes9FteEeS2jYrLGrrNfg" key="Date" value="2014-10-24"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2zes9VteEeS2jYrLGrrNfg" key="Author" value=""/>
-      </eAnnotations>
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ZPdOYFteEeS4qLSMM0ua4g" source="PapyrusVersion">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ZPd1cFteEeS4qLSMM0ua4g" key="Version" value="0.0.9"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ZPd1cVteEeS4qLSMM0ua4g" key="Comment" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ZPd1clteEeS4qLSMM0ua4g" key="Copyright" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ZPd1c1teEeS4qLSMM0ua4g" key="Date" value="2014-10-24"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ZPd1dFteEeS4qLSMM0ua4g" key="Author" value=""/>
-      </eAnnotations>
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hi62MFtaEeSBjrAL6cZ-1A" source="PapyrusVersion">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_hi7dQFtaEeSBjrAL6cZ-1A" key="Version" value="0.0.8"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_hi7dQVtaEeSBjrAL6cZ-1A" key="Comment" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_hi7dQltaEeSBjrAL6cZ-1A" key="Copyright" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_hi7dQ1taEeSBjrAL6cZ-1A" key="Date" value="2014-10-24"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_hi7dRFtaEeSBjrAL6cZ-1A" key="Author" value=""/>
-      </eAnnotations>
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VBoNAFqjEeS0YqU5PQOmMw" source="PapyrusVersion">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VBoNAVqjEeS0YqU5PQOmMw" key="Version" value="0.0.7"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VBoNAlqjEeS0YqU5PQOmMw" key="Comment" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VBoNA1qjEeS0YqU5PQOmMw" key="Copyright" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VBoNBFqjEeS0YqU5PQOmMw" key="Date" value="2014-10-23"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VBoNBVqjEeS0YqU5PQOmMw" key="Author" value=""/>
-      </eAnnotations>
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_A8-oYFqiEeSVsq2zhAmckA" source="PapyrusVersion">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_A8-oYVqiEeSVsq2zhAmckA" key="Version" value="0.0.6"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_A8-oYlqiEeSVsq2zhAmckA" key="Comment" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_A8-oY1qiEeSVsq2zhAmckA" key="Copyright" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_A8-oZFqiEeSVsq2zhAmckA" key="Date" value="2014-10-23"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_A8-oZVqiEeSVsq2zhAmckA" key="Author" value=""/>
-      </eAnnotations>
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_7Y7mcFqgEeSbd9yJGwMOKA" source="PapyrusVersion">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7Y7mcVqgEeSbd9yJGwMOKA" key="Version" value="0.0.5"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7Y7mclqgEeSbd9yJGwMOKA" key="Comment" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7Y7mc1qgEeSbd9yJGwMOKA" key="Copyright" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7Y7mdFqgEeSbd9yJGwMOKA" key="Date" value="2014-10-23"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7Y7mdVqgEeSbd9yJGwMOKA" key="Author" value=""/>
-      </eAnnotations>
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NE0P0FqVEeSeJ73siFRo-g" source="PapyrusVersion">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NE0P0VqVEeSeJ73siFRo-g" key="Version" value="0.0.4"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NE0P0lqVEeSeJ73siFRo-g" key="Comment" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NE0P01qVEeSeJ73siFRo-g" key="Copyright" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NE0P1FqVEeSeJ73siFRo-g" key="Date" value="2014-10-23"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NE0P1VqVEeSeJ73siFRo-g" key="Author" value=""/>
-      </eAnnotations>
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NEtiIFqVEeSeJ73siFRo-g" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="platform:/plugin/org.eclipse.papyrus.farming/model/FML.profile.uml#_G9yCIFzwEeSEvpGJs06ERQ"/>
-      </eAnnotations>
-      <appliedProfile xmi:type="uml:Profile" href="platform:/plugin/org.eclipse.papyrus.farming/model/FML.profile.uml#_v95fAFhaEeS2s4tLeOdjEw"/>
-    </profileApplication>
-    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_-w030Ft7EeSDStJKQVpT0w">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-y4GQFt7EeSDStJKQVpT0w" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_sYse0YZLEeKyw49uR6nx3g"/>
-      </eAnnotations>
-      <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
-    </profileApplication>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_ju67QFt8EeSDStJKQVpT0w">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jvwBsFt8EeSDStJKQVpT0w" source="PapyrusVersion">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jvwBsVt8EeSDStJKQVpT0w" key="Version" value="0.0.1"/>
@@ -191,64 +116,73 @@
       </eAnnotations>
       <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_INTERNAL_PROFILES/PapyrusInternal.profile.uml#_16oYAD-SEeKj6r7ThQagKA"/>
     </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_skGBAGWUEeS6AOmgLNXC5g">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_snxnIGWUEeS6AOmgLNXC5g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://Papyrus/FarmML#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="platform:/plugin/org.eclipse.papyrus.farming/model/FML.profile.uml#_v95fAFhaEeS2s4tLeOdjEw"/>
+    </profileApplication>
   </uml:Model>
-  <FML:Farm xmi:id="_E07hkFt3EeSDStJKQVpT0w" base_Class="_EnwoQFt3EeSDStJKQVpT0w"/>
-  <ActionLanguage:TextualRepresentation xmi:id="_-y7JkFt7EeSDStJKQVpT0w" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
-  <FML:CropSurface xmi:id="_RDa3sFt3EeSDStJKQVpT0w" base_Class="_RDAoAFt3EeSDStJKQVpT0w" irrigated="true"/>
-  <Symbols:TypeSymbolDefinition xmi:id="_J_jSsFt_EeSDStJKQVpT0w" base_Type="_RDAoAFt3EeSDStJKQVpT0w" symbolPath="platform:/resource/FarmExample/image/Corn.jpg"/>
-  <FML:FodderSurface xmi:id="_dy4z8Ft3EeSDStJKQVpT0w" base_Class="_dyd9MFt3EeSDStJKQVpT0w"/>
-  <Symbols:TypeSymbolDefinition xmi:id="_lYCt0Ft_EeSDStJKQVpT0w" base_Type="_dyd9MFt3EeSDStJKQVpT0w" symbolPath="platform:/resource/FarmExample/image/fodder.jpg"/>
-  <FML:Field xmi:id="_8fPXEFt4EeSDStJKQVpT0w" base_Class="_8ekBoFt4EeSDStJKQVpT0w" size="12"/>
-  <Symbols:TypeSymbolDefinition xmi:id="_JJEokFt9EeSDStJKQVpT0w" base_Type="_8ekBoFt4EeSDStJKQVpT0w" symbolPath="platform:/resource/FarmExample/image/wheat.jpg"/>
-  <FML:CropSurface xmi:id="_TlC1AFt5EeSDStJKQVpT0w" base_Class="_Tkur8Ft5EeSDStJKQVpT0w"/>
-  <Symbols:TypeSymbolDefinition xmi:id="_eB1VQFt_EeSDStJKQVpT0w" base_Type="_Tkur8Ft5EeSDStJKQVpT0w" symbolPath="platform:/resource/FarmExample/image/SorghumHeads.jpg"/>
-  <FML:Field xmi:id="_Y2aA8Ft5EeSDStJKQVpT0w" base_Class="_Y1xu0Ft5EeSDStJKQVpT0w" size="5"/>
-  <Symbols:TypeSymbolDefinition xmi:id="_luQVwFt8EeSDStJKQVpT0w" base_Type="_Y1xu0Ft5EeSDStJKQVpT0w" symbolPath="platform:/resource/FarmExample/image/SorghumHeads.jpg"/>
-  <FML:Field xmi:id="_kANm8Ft5EeSDStJKQVpT0w" base_Class="_j_l74Ft5EeSDStJKQVpT0w" size="10"/>
-  <Symbols:TypeSymbolDefinition xmi:id="_eDnTYFt-EeSDStJKQVpT0w" base_Type="_j_l74Ft5EeSDStJKQVpT0w" symbolPath="platform:/resource/FarmExample/image/fodder.jpg"/>
-  <FML:Field xmi:id="_f4RkYFt9EeSDStJKQVpT0w" base_Class="_f4N6AFt9EeSDStJKQVpT0w" size="5"/>
-  <Symbols:TypeSymbolDefinition xmi:id="_f4TZkFt9EeSDStJKQVpT0w" base_Type="_f4N6AFt9EeSDStJKQVpT0w" symbolPath="platform:/resource/FarmExample/image/Corn.jpg"/>
-  <FML:CropWS xmi:id="_6aYVgFz7EeS1YeUa88OQJw" base_Activity="_1ZZH4Fz7EeS1YeUa88OQJw"/>
-  <FML:CropWS xmi:id="_py1CgFz9EeSa8sqmQ2vwPw" base_Activity="_pxdJgFz9EeSa8sqmQ2vwPw"/>
-  <FML:CropWS xmi:id="_vipFAFz9EeSa8sqmQ2vwPw" base_Activity="_vibpoFz9EeSa8sqmQ2vwPw"/>
-  <FML:CropWS xmi:id="_-L_7EFz9EeSa8sqmQ2vwPw" base_Activity="_-L7poFz9EeSa8sqmQ2vwPw"/>
-  <FML:Action xmi:id="_DufoYF0AEeSa8sqmQ2vwPw" base_Action="_Dt5LcF0AEeSa8sqmQ2vwPw">
-    <startDateMin xmi:type="FML:Date" xmi:id="_kqO0MF0BEeSa8sqmQ2vwPw" day="1"/>
-    <endDateMax xmi:type="FML:Date" xmi:id="_nOe5oF0BEeSa8sqmQ2vwPw" day="28" month="feb"/>
-  </FML:Action>
-  <FML:Action xmi:id="_FLOsIF0AEeSa8sqmQ2vwPw" base_Action="_FK2RoF0AEeSa8sqmQ2vwPw">
-    <startDateMin xmi:type="FML:Date" xmi:id="_sQ6B8F0SEeSa8sqmQ2vwPw" day="15" month="mar"/>
-    <endDateMax xmi:type="FML:Date" xmi:id="_uHo6EF0SEeSa8sqmQ2vwPw" day="15" month="apr"/>
-  </FML:Action>
-  <FML:Action xmi:id="_GNtc0F0AEeSa8sqmQ2vwPw" frequency="weekly" base_Action="_GNNtkF0AEeSa8sqmQ2vwPw">
-    <startDateMin xmi:type="FML:Date" xmi:id="_HzaUsF0TEeSa8sqmQ2vwPw" day="15" month="jun"/>
-    <endDateMax xmi:type="FML:Date" xmi:id="_LREuYF0TEeSa8sqmQ2vwPw" day="15" month="aug"/>
-  </FML:Action>
-  <FML:Action xmi:id="_RpLakF0AEeSa8sqmQ2vwPw" base_Action="_Ro34kF0AEeSa8sqmQ2vwPw">
-    <startDateMin xmi:type="FML:Date" xmi:id="_fdwqIF0TEeSa8sqmQ2vwPw" day="15" month="mar"/>
-    <endDateMax xmi:type="FML:Date" xmi:id="_guWvUF0TEeSa8sqmQ2vwPw" day="15" month="jun"/>
-  </FML:Action>
-  <FML:Action xmi:id="_S85FMF0AEeSa8sqmQ2vwPw" base_Action="_S8mKQF0AEeSa8sqmQ2vwPw">
-    <startDateMin xmi:type="FML:Date" xmi:id="_pFgngF0TEeSa8sqmQ2vwPw" day="1" month="sep"/>
-    <endDateMax xmi:type="FML:Date" xmi:id="_qy-18F0TEeSa8sqmQ2vwPw" day="30" month="sep"/>
-  </FML:Action>
+  <FarmML:Farm xmi:id="_E07hkFt3EeSDStJKQVpT0w" base_Class="_EnwoQFt3EeSDStJKQVpT0w"/>
+
+  <FarmML:CropWS xmi:id="_6aYVgFz7EeS1YeUa88OQJw" base_Activity="_1ZZH4Fz7EeS1YeUa88OQJw"/>
+  <FarmML:Action xmi:id="_DufoYF0AEeSa8sqmQ2vwPw" base_Action="_Dt5LcF0AEeSa8sqmQ2vwPw">
+    <startDateMin xmi:type="FarmML:Date" xmi:id="_kqO0MF0BEeSa8sqmQ2vwPw" day="1"/>
+    <endDateMax xmi:type="FarmML:Date" xmi:id="_nOe5oF0BEeSa8sqmQ2vwPw" day="28" month="feb"/>
+  </FarmML:Action>
+  <FarmML:Action xmi:id="_FLOsIF0AEeSa8sqmQ2vwPw" base_Action="_FK2RoF0AEeSa8sqmQ2vwPw">
+    <startDateMin xmi:type="FarmML:Date" xmi:id="_sQ6B8F0SEeSa8sqmQ2vwPw" day="15" month="mar"/>
+    <endDateMax xmi:type="FarmML:Date" xmi:id="_uHo6EF0SEeSa8sqmQ2vwPw" day="15" month="apr"/>
+  </FarmML:Action>
+  <FarmML:Action xmi:id="_GNtc0F0AEeSa8sqmQ2vwPw" frequency="weekly" base_Action="_GNNtkF0AEeSa8sqmQ2vwPw">
+    <startDateMin xmi:type="FarmML:Date" xmi:id="_HzaUsF0TEeSa8sqmQ2vwPw" day="15" month="jun"/>
+    <endDateMax xmi:type="FarmML:Date" xmi:id="_LREuYF0TEeSa8sqmQ2vwPw" day="15" month="aug"/>
+  </FarmML:Action>
+  <FarmML:Action xmi:id="_RpLakF0AEeSa8sqmQ2vwPw" base_Action="_Ro34kF0AEeSa8sqmQ2vwPw">
+    <startDateMin xmi:type="FarmML:Date" xmi:id="_fdwqIF0TEeSa8sqmQ2vwPw" day="15" month="mar"/>
+    <endDateMax xmi:type="FarmML:Date" xmi:id="_guWvUF0TEeSa8sqmQ2vwPw" day="15" month="jun"/>
+  </FarmML:Action>
+  <FarmML:Action xmi:id="_S85FMF0AEeSa8sqmQ2vwPw" base_Action="_S8mKQF0AEeSa8sqmQ2vwPw">
+    <startDateMin xmi:type="FarmML:Date" xmi:id="_pFgngF0TEeSa8sqmQ2vwPw" day="1" month="sep"/>
+    <endDateMax xmi:type="FarmML:Date" xmi:id="_qy-18F0TEeSa8sqmQ2vwPw" day="30" month="sep"/>
+  </FarmML:Action>
+  <FarmML:Action xmi:id="_53IcgF0REeSa8sqmQ2vwPw" base_Action="_527oMF0REeSa8sqmQ2vwPw">
+    <startDateMin xmi:type="FarmML:Date" xmi:id="_QYmzcF0UEeSa8sqmQ2vwPw" day="1" month="oct"/>
+    <endDateMax xmi:type="FarmML:Date" xmi:id="_Rzh5UF0UEeSa8sqmQ2vwPw" day="31" month="oct"/>
+  </FarmML:Action>
+  <FarmML:Action xmi:id="_53JqoF0REeSa8sqmQ2vwPw" base_Action="_52_SkF0REeSa8sqmQ2vwPw">
+    <startDateMin xmi:type="FarmML:Date" xmi:id="_vCfG0F0UEeSa8sqmQ2vwPw" day="1" month="jun"/>
+    <endDateMax xmi:type="FarmML:Date" xmi:id="_xBRuwF0UEeSa8sqmQ2vwPw" day="30" month="jun"/>
+  </FarmML:Action>
+  <FarmML:Action xmi:id="_53K4wF0REeSa8sqmQ2vwPw" base_Action="_53Bu0F0REeSa8sqmQ2vwPw">
+    <startDateMin xmi:type="FarmML:Date" xmi:id="_YZ6M4F0TEeSa8sqmQ2vwPw" day="1" month="sep"/>
+    <endDateMax xmi:type="FarmML:Date" xmi:id="_Z6LFwF0TEeSa8sqmQ2vwPw" day="30" month="sep"/>
+  </FarmML:Action>
+  <FarmML:Action xmi:id="_53N8EF0REeSa8sqmQ2vwPw" base_Action="_5282UF0REeSa8sqmQ2vwPw">
+    <startDateMin xmi:type="FarmML:Date" xmi:id="_lT46kF0UEeSa8sqmQ2vwPw" day="2" month="feb"/>
+    <endDateMax xmi:type="FarmML:Date" xmi:id="_nQysIF0UEeSa8sqmQ2vwPw" day="28" month="feb"/>
+  </FarmML:Action>
+  <css:ModelStyleSheets xmi:id="_l2SJsGQqEeSENZSu_2dIcQ"/>
+  <FarmML:CropWS xmi:id="_py1CgFz9EeSa8sqmQ2vwPw" base_Activity="_pxdJgFz9EeSa8sqmQ2vwPw"/>
   <Symbols:TypeSymbolDefinition xmi:id="_EzhuEF0REeSa8sqmQ2vwPw" base_Type="_pxdJgFz9EeSa8sqmQ2vwPw" symbolPath="platform:/resource/FarmExample/image/Corn.jpg"/>
-  <FML:Action xmi:id="_53IcgF0REeSa8sqmQ2vwPw" base_Action="_527oMF0REeSa8sqmQ2vwPw">
-    <startDateMin xmi:type="FML:Date" xmi:id="_QYmzcF0UEeSa8sqmQ2vwPw" day="1" month="oct"/>
-    <endDateMax xmi:type="FML:Date" xmi:id="_Rzh5UF0UEeSa8sqmQ2vwPw" day="31" month="oct"/>
-  </FML:Action>
-  <FML:Action xmi:id="_53JqoF0REeSa8sqmQ2vwPw" base_Action="_52_SkF0REeSa8sqmQ2vwPw">
-    <startDateMin xmi:type="FML:Date" xmi:id="_vCfG0F0UEeSa8sqmQ2vwPw" day="1" month="jun"/>
-    <endDateMax xmi:type="FML:Date" xmi:id="_xBRuwF0UEeSa8sqmQ2vwPw" day="30" month="jun"/>
-  </FML:Action>
-  <FML:Action xmi:id="_53K4wF0REeSa8sqmQ2vwPw" base_Action="_53Bu0F0REeSa8sqmQ2vwPw">
-    <startDateMin xmi:type="FML:Date" xmi:id="_YZ6M4F0TEeSa8sqmQ2vwPw" day="1" month="sep"/>
-    <endDateMax xmi:type="FML:Date" xmi:id="_Z6LFwF0TEeSa8sqmQ2vwPw" day="30" month="sep"/>
-  </FML:Action>
-  <FML:Action xmi:id="_53N8EF0REeSa8sqmQ2vwPw" base_Action="_5282UF0REeSa8sqmQ2vwPw">
-    <startDateMin xmi:type="FML:Date" xmi:id="_lT46kF0UEeSa8sqmQ2vwPw" day="1" month="feb"/>
-    <endDateMax xmi:type="FML:Date" xmi:id="_nQysIF0UEeSa8sqmQ2vwPw" day="28" month="feb"/>
-  </FML:Action>
+  <FarmML:CropWS xmi:id="_vipFAFz9EeSa8sqmQ2vwPw" base_Activity="_vibpoFz9EeSa8sqmQ2vwPw"/>
   <Symbols:TypeSymbolDefinition xmi:id="__4VJ8F0REeSa8sqmQ2vwPw" base_Type="_vibpoFz9EeSa8sqmQ2vwPw" symbolPath="platform:/resource/FarmExample/image/Wheat.jpg"/>
+  <FarmML:CropWS xmi:id="_-L_7EFz9EeSa8sqmQ2vwPw" base_Activity="_-L7poFz9EeSa8sqmQ2vwPw"/>
   <Symbols:TypeSymbolDefinition xmi:id="_KzEcYF0WEeSa8sqmQ2vwPw" base_Type="_-L7poFz9EeSa8sqmQ2vwPw" symbolPath="platform:/resource/FarmExample/image/SorghumHeads.jpg"/>
+  <FarmML:CropSurface xmi:id="_RDa3sFt3EeSDStJKQVpT0w" base_Class="_RDAoAFt3EeSDStJKQVpT0w" irrigated="true"/>
+  <Symbols:TypeSymbolDefinition xmi:id="_J_jSsFt_EeSDStJKQVpT0w" base_Type="_RDAoAFt3EeSDStJKQVpT0w" symbolPath="platform:/resource/FarmExample/image/Corn.jpg"/>
+  <FarmML:FodderSurface xmi:id="_dy4z8Ft3EeSDStJKQVpT0w" base_Class="_dyd9MFt3EeSDStJKQVpT0w"/>
+  <Symbols:TypeSymbolDefinition xmi:id="_lYCt0Ft_EeSDStJKQVpT0w" base_Type="_dyd9MFt3EeSDStJKQVpT0w" symbolPath="platform:/resource/FarmExample/image/fodder.jpg"/>
+  <FarmML:Field xmi:id="_8fPXEFt4EeSDStJKQVpT0w" base_Class="_8ekBoFt4EeSDStJKQVpT0w" size="12"/>
+  <Symbols:TypeSymbolDefinition xmi:id="_JJEokFt9EeSDStJKQVpT0w" base_Type="_8ekBoFt4EeSDStJKQVpT0w" symbolPath="platform:/resource/FarmExample/image/wheat.jpg"/>
+  <FarmML:CropSurface xmi:id="_TlC1AFt5EeSDStJKQVpT0w" base_Class="_Tkur8Ft5EeSDStJKQVpT0w"/>
+  <Symbols:TypeSymbolDefinition xmi:id="_eB1VQFt_EeSDStJKQVpT0w" base_Type="_Tkur8Ft5EeSDStJKQVpT0w" symbolPath="platform:/resource/FarmExample/image/SorghumHeads.jpg"/>
+  <FarmML:Field xmi:id="_Y2aA8Ft5EeSDStJKQVpT0w" base_Class="_Y1xu0Ft5EeSDStJKQVpT0w" size="5"/>
+  <Symbols:TypeSymbolDefinition xmi:id="_luQVwFt8EeSDStJKQVpT0w" base_Type="_Y1xu0Ft5EeSDStJKQVpT0w" symbolPath="platform:/resource/FarmExample/image/SorghumHeads.jpg"/>
+  <FarmML:Field xmi:id="_kANm8Ft5EeSDStJKQVpT0w" base_Class="_j_l74Ft5EeSDStJKQVpT0w" size="10"/>
+  <Symbols:TypeSymbolDefinition xmi:id="_eDnTYFt-EeSDStJKQVpT0w" base_Type="_j_l74Ft5EeSDStJKQVpT0w" symbolPath="platform:/resource/FarmExample/image/fodder.jpg"/>
+  <FarmML:Field xmi:id="_f4RkYFt9EeSDStJKQVpT0w" base_Class="_f4N6AFt9EeSDStJKQVpT0w" size="5"/>
+  <Symbols:TypeSymbolDefinition xmi:id="_f4TZkFt9EeSDStJKQVpT0w" base_Type="_f4N6AFt9EeSDStJKQVpT0w" symbolPath="platform:/resource/FarmExample/image/Corn.jpg"/>
+  <FarmML:Farm xmi:id="_xS7HoGWUEeS6AOmgLNXC5g"/>
+  <FarmML:Farm xmi:id="_NsZpMGWWEeSP79mDGwL_dw"/>
 </xmi:XMI>

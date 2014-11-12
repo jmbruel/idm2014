@@ -2,6 +2,7 @@
 <configuration:PapyrusConfiguration xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:configuration="http://www.eclipse.org/papyrus/infra/viewpoints/configuration" xmi:id="_0kyH4PL_EeONXPQ2mbw9vA">
   <viewpoints xsi:type="configuration:PapyrusViewpoint" xmi:id="_0kyu8fL_EeONXPQ2mbw9vA" name="Default Papyrus Viewpoint">
     <modelKinds xsi:type="configuration:PapyrusTable" xmi:id="_GO0mAGQlEeSOpYHrx9vmxQ" name="FarmML Action Table" icon="platform:/plugin/org.eclipse.papyrus.farming.actions.table/icon/table_FarmML_Action.gif" implementationID="" configuration="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration">
+      <profiles href="http://Papyrus/FarmML#/"/>
       <modelRules xmi:id="_TMOQkGQlEeSOpYHrx9vmxQ">
         <element href="http://www.eclipse.org/uml2/5.0.0/UML#//Activity"/>
       </modelRules>

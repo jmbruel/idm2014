@@ -5,3 +5,14 @@ Class > Compartment[kind="nestedclassifiers"] {
 Stereotype > Compartment[kind="operations"] {
     visible:false;
 }
+Association > Label:sourceRole {
+	maskLabel: name ;
+}
+
+Association > Label:targetRole {
+	maskLabel: name ;
+}
+
+Property  {
+	maskLabel: name type multiplicity ;
+}

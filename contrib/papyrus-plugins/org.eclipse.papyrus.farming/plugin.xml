@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?eclipse version="3.4"?>
 <plugin>
-   <!--extension
+   <extension
          point="org.eclipse.emf.ecore.uri_mapping">
       <mapping
-            source="pathmap://FML"
+            source="pathmap://FarmML"
             target="platform:/plugin/org.eclipse.papyrus.farming/model">
       </mapping>
-   </extension-->
+   </extension>
    
    <extension
          point="org.eclipse.papyrus.uml.extensionpoints.UMLProfile">
       <profile
             description="UML profile for farming"
-            name="FML"
+            iconpath="icons/16x16/farm.png"
+            name="FarmML"
             path="platform:/plugin/org.eclipse.papyrus.farming/model/FML.profile.uml"
             provider="CEA List">
       </profile>
@@ -29,7 +30,7 @@
          provider="org.eclipse.papyrus.farming.provider.DateLabelProvider">
    </labelProvider>
 </extension>
-<extension
+<!--extension
          point="org.eclipse.papyrus.uml.diagram.common.paletteDefinition">
       <paletteDefinition
             ID="Palette_FarmActivities"
@@ -62,5 +63,28 @@
                id="org.eclipse.papyrus.uml.diagram.composite">
          </editor>
       </paletteDefinition>
+   </extension-->
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated FML -->
+      <package
+            uri="http://Papyrus/FarmML"
+            class="org.eclipse.papyrus.farming.farmml.FarmMLPackage"
+            genModel="model/FML.genmodel"/>
    </extension>
+   <extension
+         point="org.eclipse.uml2.uml.generated_package">
+      <profile
+            location="platform:/plugin/org.eclipse.papyrus.farming/model/FML.profile.uml#_v95fAFhaEeS2s4tLeOdjEw"
+            uri="http://Papyrus/FarmML">
+      </profile>
+   </extension>
+   <extension
+         point="org.eclipse.papyrus.infra.extendedtypes.extendedElementTypeSet">
+      <extendedTypesSet
+            id="org.eclipse.papyrus.farming.types"
+            path="types/Farming.extendedtypes">
+      </extendedTypesSet>
+   </extension>
+  
+
 </plugin>

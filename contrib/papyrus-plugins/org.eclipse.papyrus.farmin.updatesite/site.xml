@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/org.eclipse.papyrus.farming.feature_1.0.0.201410271122.jar" id="org.eclipse.papyrus.farming.feature" version="1.0.0.201410271122"/>
+   <description name="FarmML Modeling tools and VLE code generators">
+      FarmML Modeling tools and VLE code generators
+   </description>
+   <feature url="features/org.eclipse.papyrus.farming.feature_1.0.1.201411061452.jar" id="org.eclipse.papyrus.farming.feature" version="1.0.1.201411061452">
+      <category name="FarmML"/>
+   </feature>
+   <category-def name="FarmML" label="FarmML"/>
 </site>

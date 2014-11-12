@@ -52,10 +52,10 @@ public class CreateFarmMLModelCommand extends ModelCreationCommandBase {
 		((org.eclipse.uml2.uml.Package) owner).setName(getModelName());
 
 		// Retrieve robotml profile and apply with Sub-profile
-		org.eclipse.uml2.uml.Package robotml = PackageUtil.loadPackage(URI.createURI(FARMML_PROFILE_URI), owner.eResource().getResourceSet());
+		org.eclipse.uml2.uml.Package farmtml = PackageUtil.loadPackage(URI.createURI(FARMML_PROFILE_URI), owner.eResource().getResourceSet());
 		
-		if ((robotml != null) && (robotml instanceof Profile)) {
-			PackageUtil.applyProfile(((org.eclipse.uml2.uml.Package) owner), (org.eclipse.uml2.uml.Profile) robotml, true);
+		if ((farmtml != null) && (farmtml instanceof Profile)) {
+			PackageUtil.applyProfile(((org.eclipse.uml2.uml.Package) owner), (org.eclipse.uml2.uml.Profile) farmtml, true);
 			
 		}
 	}
