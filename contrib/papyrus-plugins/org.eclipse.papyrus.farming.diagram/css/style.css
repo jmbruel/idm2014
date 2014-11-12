@@ -1,0 +1,6 @@
+Property {maskLabel:name; elementIcon:false;}
+Property[type] {maskLabel:name type; }
+Class {elementIcon:false;}
+* {
+	shapeVisibility: true;
+}

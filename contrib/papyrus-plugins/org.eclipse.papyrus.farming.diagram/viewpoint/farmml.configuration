@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration:PapyrusConfiguration xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:configuration="http://www.eclipse.org/papyrus/infra/viewpoints/configuration" xmi:id="_0kyH4PL_EeONXPQ2mbw9vA" defaultStakeholder="_0kyu8PL_EeONXPQ2mbw9vA">
+  <stakeholders xmi:id="_0kyu8PL_EeONXPQ2mbw9vA" name="FarmML Modeler"/>
+  <viewpoints xsi:type="configuration:PapyrusViewpoint" xmi:id="_0kyu8fL_EeONXPQ2mbw9vA" name="Default Papyrus Viewpoint">
+    <modelKinds xsi:type="configuration:PapyrusDiagram" xmi:id="_0kzWAPL_EeONXPQ2mbw9vA" name="Farm Structure Diagram" icon="platform:/plugin/org.eclipse.papyrus.farming/icons/16x16/farm.png" implementationID="CompositeStructure" categories="_0kz9GPL_EeONXPQ2mbw9vA" customPalette="platform:/plugin/org.eclipse.papyrus.farming.diagram/palettes/Palette_farmStructure.xml" customStyle="platform:/plugin/org.eclipse.papyrus.farming.diagram/css/style.css">
+      <profiles href="http://Papyrus/FarmML#/"/>
+      <modelRules xmi:id="_0kzWAfL_EeONXPQ2mbw9vA">
+        <element href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
+      </modelRules>
+      <owningRules xmi:id="_0kzWAvL_EeONXPQ2mbw9vA">
+        <element href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
+        <newModelPath xmi:id="_OxqQAGW1EeSb-cGXVA4VBQ" creationType="org.eclipse.papyrus.farming.Farm">
+          <feature href="http://www.eclipse.org/uml2/5.0.0/UML#//Package/packagedElement"/>
+        </newModelPath>
+      </owningRules>
+      <childRules xmi:id="_0kzWA_L_EeONXPQ2mbw9vA"/>
+      <paletteRules xmi:id="_0kzWBPL_EeONXPQ2mbw9vA" permit="false" element="composite.group.*"/>
+    </modelKinds>
+    <modelKinds xsi:type="configuration:PapyrusDiagram" xmi:id="_hnObIGThEeS0VelLgL_ZMA" name="Farm Activities Diagram" icon="platform:/plugin/org.eclipse.papyrus.farming/icons/16x16/activity.png" implementationID="PapyrusUMLActivityDiagram" categories="_0kz9GPL_EeONXPQ2mbw9vA" customPalette="platform:/plugin/org.eclipse.papyrus.farming.diagram/palettes/Palette_farmActivities.xml" customStyle="platform:/plugin/org.eclipse.papyrus.farming.diagram/css/style.css">
+      <profiles href="http://Papyrus/FarmML#/"/>
+      <modelRules xmi:id="_hnObIWThEeS0VelLgL_ZMA">
+        <element href="http://www.eclipse.org/uml2/5.0.0/UML#//Activity"/>
+        <stereotypes href="http://Papyrus/FarmML#//Workshop"/>
+      </modelRules>
+      <modelRules xmi:id="_eZ-F0GWuEeS_Ye0-6jiQKg">
+        <element href="http://www.eclipse.org/uml2/5.0.0/UML#//Activity"/>
+        <stereotypes href="http://Papyrus/FarmML#//BovineWS"/>
+      </modelRules>
+      <modelRules xmi:id="_i4b1MGWuEeS_Ye0-6jiQKg">
+        <element href="http://www.eclipse.org/uml2/5.0.0/UML#//Activity"/>
+        <stereotypes href="http://Papyrus/FarmML#//CropWS"/>
+      </modelRules>
+      <owningRules xmi:id="_hnObImThEeS0VelLgL_ZMA">
+        <element href="http://www.eclipse.org/uml2/5.0.0/UML#//Activity"/>
+      </owningRules>
+      <owningRules xmi:id="_KxR64GWhEeS_Ye0-6jiQKg">
+        <element href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        <newModelPath xmi:id="_VMPd4GWhEeS_Ye0-6jiQKg" creationType="org.eclipse.papyrus.farming.Workshop">
+          <feature href="http://www.eclipse.org/uml2/5.0.0/UML#//BehavioredClassifier/classifierBehavior"/>
+        </newModelPath>
+      </owningRules>
+      <owningRules xmi:id="_luAAAGWhEeS_Ye0-6jiQKg">
+        <element href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        <newModelPath xmi:id="_qe7_cGWhEeS_Ye0-6jiQKg" creationType="org.eclipse.papyrus.farming.Workshop">
+          <feature href="http://www.eclipse.org/uml2/5.0.0/UML#//BehavioredClassifier/ownedBehavior"/>
+        </newModelPath>
+      </owningRules>
+      <owningRules xmi:id="_yXvHsGWhEeS_Ye0-6jiQKg">
+        <element href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
+        <newModelPath xmi:id="_0BkzUGWhEeS_Ye0-6jiQKg" creationType="org.eclipse.papyrus.farming.Workshop">
+          <feature href="http://www.eclipse.org/uml2/5.0.0/UML#//Package/packagedElement"/>
+        </newModelPath>
+      </owningRules>
+      <childRules xmi:id="_hnObI2ThEeS0VelLgL_ZMA"/>
+      <paletteRules xmi:id="_hnObJGThEeS0VelLgL_ZMA" permit="false" element="activity.group.*"/>
+    </modelKinds>
+  </viewpoints>
+  <metamodel href="http://www.eclipse.org/uml2/5.0.0/UML#/"/>
+  <categories xmi:id="_0kz9GPL_EeONXPQ2mbw9vA" name="farmML"/>
+</configuration:PapyrusConfiguration>

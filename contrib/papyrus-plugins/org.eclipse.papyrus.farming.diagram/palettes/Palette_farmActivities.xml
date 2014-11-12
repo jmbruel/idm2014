@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<paletteDefinition>
+	<content>
+		<drawer iconpath="/icons/drawer.gif" id="Drawer__1414158216001"
+			name="WorkshopActivity">
+			<aspectTool description="Create a CropWorkshop"
+				iconpath="platform:/plugin/org.eclipse.papyrus.farming/icons/16x16/cropWS.png"
+				id="createActivity1CreationTool_1414158236132" name="CropWorkshop"
+				refToolId="createActivity1CreationTool">
+				<postAction id="org.eclipse.papyrus.applystereotypeactionprovider">
+					<stereotypesToApply>
+						<stereotype stereotypeName="FarmML::CropWS" />
+					</stereotypesToApply>
+				</postAction>
+			</aspectTool>
+			<aspectTool description="Create an BovineWS"
+				iconpath="platform:/plugin/org.eclipse.papyrus.farming/icons/16x16/bovineWS.png"
+				id="createActivity1CreationTool_1414315055981" name="BovineWorkshop"
+				refToolId="createActivity1CreationTool">
+				<postAction id="org.eclipse.papyrus.applystereotypeactionprovider">
+					<stereotypesToApply>
+						<stereotype stereotypeName="FarmML::BovineWS" />
+					</stereotypesToApply>
+				</postAction>
+			</aspectTool>
+			<aspectTool description="Create an OvineWS"
+				iconpath="platform:/plugin/org.eclipse.papyrus.farming/icons/16x16/ovineWS.png"
+				id="createActivity1CreationTool_1414315144924" name="OvineWorkshop"
+				refToolId="createActivity1CreationTool">
+				<postAction id="org.eclipse.papyrus.applystereotypeactionprovider">
+					<stereotypesToApply>
+						<stereotype stereotypeName="FarmML::OvineWS" />
+					</stereotypesToApply>
+				</postAction>
+			</aspectTool>
+			<aspectTool description="Create an Action"
+				iconpath="platform:/plugin/org.eclipse.papyrus.farming/icons/16x16/activity.png"
+				id="createOpaqueAction1CreationTool_1414315384746" name="Action"
+				refToolId="createOpaqueAction1CreationTool">
+				<postAction id="org.eclipse.papyrus.applystereotypeactionprovider">
+					<stereotypesToApply>
+						<stereotype stereotypeName="FarmML::Action" />
+					</stereotypesToApply>
+				</postAction>
+			</aspectTool>
+			<aspectTool description="Create an Initial node"
+				iconpath="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/InitialNode.gif"
+				id="createInitialnode1CreationTool_1414319928542" name="Initial node"
+				refToolId="createInitialnode1CreationTool" />
+			<aspectTool description="Create an Activity final node"
+				iconpath="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/ActivityFinalNode.gif"
+				id="createActivityfinal2CreationTool_1414319933479" name="Activity final"
+				refToolId="createActivityfinal2CreationTool" />
+			<aspectTool description="Create an ActivationRule"
+				iconpath="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/ControlFlow.gif"
+				id="createControlFlow1CreationTool_1414320025622" name="ActivationRule"
+				refToolId="createControlFlow1CreationTool" />
+		</drawer>
+	</content>
+</paletteDefinition>
