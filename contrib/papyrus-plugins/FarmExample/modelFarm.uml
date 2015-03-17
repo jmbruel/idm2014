@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:FarmML="http://Papyrus/FarmML" xmlns:Symbols="http://PapyrusInternal/schemas/Symbols/_eij2kEBcEeKj6r7ThQagKA/2" xmlns:css="http://www.eclipse.org/papyrus/infra/gmfdiag/css" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile http://PapyrusInternal/schemas/Symbols/_eij2kEBcEeKj6r7ThQagKA/2 pathmap://PAPYRUS_INTERNAL_PROFILES/PapyrusInternal.profile.uml#_eikdoEBcEeKj6r7ThQagKA">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:FarmML="http://Papyrus/FarmML" xmlns:Symbols="http://PapyrusInternal/schemas/Symbols/_eij2kEBcEeKj6r7ThQagKA/2" xmlns:css="http://www.eclipse.org/papyrus/infra/gmfdiag/css" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://PapyrusInternal/schemas/Symbols/_eij2kEBcEeKj6r7ThQagKA/2 pathmap://PAPYRUS_INTERNAL_PROFILES/PapyrusInternal.profile.uml#_eikdoEBcEeKj6r7ThQagKA">
   <uml:Model xmi:id="_6UdkoFqTEeSKw-gEQqWmtA" name="model">
     <packagedElement xmi:type="uml:Class" xmi:id="_EnwoQFt3EeSDStJKQVpT0w" name="MyFarm" classifierBehavior="_1ZZH4Fz7EeS1YeUa88OQJw">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_3N7jkFt6EeSDStJKQVpT0w" name="cornSurface" visibility="public" type="_RDAoAFt3EeSDStJKQVpT0w">
@@ -124,10 +124,9 @@
     </profileApplication>
   </uml:Model>
   <FarmML:Farm xmi:id="_E07hkFt3EeSDStJKQVpT0w" base_Class="_EnwoQFt3EeSDStJKQVpT0w"/>
-
   <FarmML:CropWS xmi:id="_6aYVgFz7EeS1YeUa88OQJw" base_Activity="_1ZZH4Fz7EeS1YeUa88OQJw"/>
   <FarmML:Action xmi:id="_DufoYF0AEeSa8sqmQ2vwPw" base_Action="_Dt5LcF0AEeSa8sqmQ2vwPw">
-    <startDateMin xmi:type="FarmML:Date" xmi:id="_kqO0MF0BEeSa8sqmQ2vwPw" day="1"/>
+    <startDateMin xmi:type="FarmML:Date" xmi:id="_cieM4Gs5EeSzoLRPTDtzsQ"/>
     <endDateMax xmi:type="FarmML:Date" xmi:id="_nOe5oF0BEeSa8sqmQ2vwPw" day="28" month="feb"/>
   </FarmML:Action>
   <FarmML:Action xmi:id="_FLOsIF0AEeSa8sqmQ2vwPw" base_Action="_FK2RoF0AEeSa8sqmQ2vwPw">
@@ -183,6 +182,4 @@
   <Symbols:TypeSymbolDefinition xmi:id="_eDnTYFt-EeSDStJKQVpT0w" base_Type="_j_l74Ft5EeSDStJKQVpT0w" symbolPath="platform:/resource/FarmExample/image/fodder.jpg"/>
   <FarmML:Field xmi:id="_f4RkYFt9EeSDStJKQVpT0w" base_Class="_f4N6AFt9EeSDStJKQVpT0w" size="5"/>
   <Symbols:TypeSymbolDefinition xmi:id="_f4TZkFt9EeSDStJKQVpT0w" base_Type="_f4N6AFt9EeSDStJKQVpT0w" symbolPath="platform:/resource/FarmExample/image/Corn.jpg"/>
-  <FarmML:Farm xmi:id="_xS7HoGWUEeS6AOmgLNXC5g"/>
-  <FarmML:Farm xmi:id="_NsZpMGWWEeSP79mDGwL_dw"/>
 </xmi:XMI>

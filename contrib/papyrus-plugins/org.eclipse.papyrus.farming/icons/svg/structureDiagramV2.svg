@@ -13,8 +13,11 @@
    height="128"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.5 r10040"
-   sodipodi:docname="activity.svg">
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="structureDiagramV2.svg"
+   inkscape:export-filename="C:\Users\sd226317\git\idm2014\contrib\papyrus-plugins\org.eclipse.papyrus.farming\icons\svg\structureDiagramV2.png"
+   inkscape:export-xdpi="13.138558"
+   inkscape:export-ydpi="13.138558">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -24,14 +27,14 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.8"
-     inkscape:cx="-123.8402"
-     inkscape:cy="107.89392"
+     inkscape:zoom="3.959798"
+     inkscape:cx="31.241059"
+     inkscape:cy="38.588638"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
-     showgrid="true"
-     inkscape:window-width="2560"
-     inkscape:window-height="1378"
+     showgrid="false"
+     inkscape:window-width="2048"
+     inkscape:window-height="1090"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1">
@@ -60,21 +63,28 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(0,-924.36218)">
-    <g
-       id="g3778"
-       transform="matrix(0.85937497,0,0,0.85956419,9.8594732,137.94198)">
-      <path
-         sodipodi:nodetypes="cccc"
-         inkscape:connector-curvature="0"
-         id="path2997"
-         d="M 7.1598606,1045.2023 C 24.78341,1055.7764 38.882249,1055.7764 74.129348,1020.5294 56.505799,1009.9552 42.406959,995.85638 31.83283,978.23283 -3.4142689,1013.4799 -3.4142689,1027.5788 7.1598606,1045.2023 z"
-         style="fill:none;stroke:#333333;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none" />
-      <path
-         sodipodi:nodetypes="ccccccccsc"
-         inkscape:connector-curvature="0"
-         id="path3767"
-         d="m 105.85174,925.36219 c -10.574133,10.57413 -7.049423,14.09883 -7.049423,21.14825 -63.444778,63.44476 -66.969487,66.96946 -70.494197,77.54366 10.574129,-3.5247 14.098839,-7.0495 77.54362,-70.49424 7.04942,0 10.57413,3.52471 21.14826,-7.04942 z m 3.52471,10.57413 7.04942,7.04941 c -3.52471,3.52471 -5.63954,5.63954 -9.16425,2.11483 -3.52471,-3.52471 -1.40988,-5.63954 2.11483,-9.16424 z"
-         style="fill:#0099ba;stroke:none" />
-    </g>
+    <path
+       style="fill:#333333;stroke:none"
+       d="m 16.515229,969.68451 0,39.99999 39,0 0,-19.99999 10,0 0,19.99999 16,0 0,-39.99999 -8,0 0,10 -27,0 0,-10 z"
+       id="path2999"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccccccc" />
+    <path
+       style="fill:#0099ba;stroke:none"
+       d="m 48.515229,974.68451 12,-15 13,15 13,0 -25,-25 -33,0 -20.0000002,25 z"
+       id="path2997"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccccc" />
+    <text
+       xml:space="preserve"
+       style="font-size:64px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
+       x="83.085045"
+       y="1046.5538"
+       id="text3143"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3145"
+         x="83.085045"
+         y="1046.5538">d</tspan></text>
   </g>
 </svg>

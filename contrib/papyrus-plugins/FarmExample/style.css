@@ -1,7 +1,7 @@
 Class {elementIcon:false;}
 
 * {
-	shapeVisibility: true;
+	shapeVisibility: false;
 }
 
 Stereotype {elementIcon:true;}

@@ -23,7 +23,7 @@
 				</postAction>
 			</aspectTool>
 			<aspectTool description="Create new FodderSurface"
-				iconpath="platform:/plugin/org.eclipse.papyrus.farming/icons/16x16/surface.png"
+				iconpath="platform:/plugin/org.eclipse.papyrus.farming/icons/16x16/FodderSurface.png"
 				id="composite.tool.class_1414144101984" name="FodderSurface"
 				refToolId="composite.tool.class">
 				<postAction id="org.eclipse.papyrus.applystereotypeactionprovider">
@@ -33,7 +33,7 @@
 				</postAction>
 			</aspectTool>
 			<aspectTool description="Create new Field"
-				iconpath="platform:/plugin/org.eclipse.papyrus.farming/icons/16x16/surface.png"
+				iconpath="platform:/plugin/org.eclipse.papyrus.farming/icons/16x16/field.png"
 				id="composite.tool.class_1414144131397" name="Field" refToolId="composite.tool.class">
 				<postAction id="org.eclipse.papyrus.applystereotypeactionprovider">
 					<stereotypesToApply>

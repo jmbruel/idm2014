@@ -11,6 +11,8 @@ import org.eclipse.uml2.uml.Action;
 import org.eclipse.uml2.uml.ActivityEdge;
 import org.eclipse.uml2.uml.ControlFlow;
 import org.eclipse.uml2.uml.Element;
+import org.eclipse.uml2.uml.OpaqueExpression;
+import org.eclipse.uml2.uml.ValueSpecification;
 
 public class UMLCustomFeatureCellManager extends UMLFeatureCellManager {
 
@@ -56,7 +58,11 @@ public class UMLCustomFeatureCellManager extends UMLFeatureCellManager {
 		List<ActivityEdge> ctrlFlows = action.getIncomings();
 		List<Object> returnedValues = new ArrayList<Object>();
 		for (ActivityEdge current : ctrlFlows) {
-			returnedValues.add(current.getGuard());
+			ValueSpecification valSpec = current.getGuard();
+			if(valSpec instanceof OpaqueExpression){
+				returnedValues.addAll(((OpaqueExpression) valSpec).getBodies());
+			}
+//			returnedValues.add(current.getGuard().get);
 		}
 		// TODO Auto-generated method stub
 		return returnedValues;
@@ -64,8 +70,11 @@ public class UMLCustomFeatureCellManager extends UMLFeatureCellManager {
 
 	@Override
 	public boolean isCellEditable(Object columnElement, Object rowElement) {
+		
 		// TODO Auto-generated method stub
 		return false;
+		
+		//+doSetValue
 	}
 
 }

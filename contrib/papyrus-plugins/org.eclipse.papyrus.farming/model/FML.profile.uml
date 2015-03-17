@@ -1931,7 +1931,7 @@
         </eAnnotations>
         <content xsi:nil="true"/>
       </icon>
-      <icon xmi:type="uml:Image" xmi:id="_qMdqoFt1EeSEvpGJs06ERQ" location="platform:/plugin/org.eclipse.papyrus.farming/icons/128x128/farm.png">
+      <icon xmi:type="uml:Image" xmi:id="_qMdqoFt1EeSEvpGJs06ERQ" location="platform:/plugin/org.eclipse.papyrus.farming/icons/svg/farm.svg">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_qMdqoVt1EeSEvpGJs06ERQ" source="image_papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qMdqolt1EeSEvpGJs06ERQ" key="image_kind_key" value="shape"/>
         </eAnnotations>
@@ -1947,14 +1947,9 @@
       <ownedAttribute xmi:type="uml:Property" xmi:id="_XU3NQFnaEeS4UoAZf5z0yg" name="size">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
       </ownedAttribute>
-      <icon xmi:type="uml:Image" xmi:id="_gf88UFtlEeSEvpGJs06ERQ" location="platform:/plugin/org.eclipse.papyrus.farming/icons/16x16/surface.png">
+      <icon xmi:type="uml:Image" xmi:id="_gf88UFtlEeSEvpGJs06ERQ" location="platform:/plugin/org.eclipse.papyrus.farming/icons/16x16/field.png">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gf88UVtlEeSEvpGJs06ERQ" source="image_papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gf88UltlEeSEvpGJs06ERQ" key="image_kind_key" value="icon"/>
-        </eAnnotations>
-      </icon>
-      <icon xmi:type="uml:Image" xmi:id="_ZdRwgFt1EeSEvpGJs06ERQ" location="platform:/plugin/org.eclipse.papyrus.farming/icons/128x128/field.png">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ZdRwgVt1EeSEvpGJs06ERQ" source="image_papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ZdRwglt1EeSEvpGJs06ERQ" key="image_kind_key" value="icon"/>
         </eAnnotations>
       </icon>
     </packagedElement>
@@ -1970,7 +1965,7 @@
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_vhBkUlqgEeSEvpGJs06ERQ" key="image_kind_key" value="icon"/>
         </eAnnotations>
       </icon>
-      <icon xmi:type="uml:Image" xmi:id="_6BqowFt1EeSEvpGJs06ERQ" location="platform:/plugin/org.eclipse.papyrus.farming/icons/128x128/surface.png">
+      <icon xmi:type="uml:Image" xmi:id="_6BqowFt1EeSEvpGJs06ERQ" location="platform:/plugin/org.eclipse.papyrus.farming/icons/svg/surface.svg">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6BqowVt1EeSEvpGJs06ERQ" source="image_papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6Bqowlt1EeSEvpGJs06ERQ" key="image_kind_key" value="shape"/>
         </eAnnotations>
@@ -1989,7 +1984,7 @@
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_rSM98ltlEeSEvpGJs06ERQ" key="image_kind_key" value="icon"/>
         </eAnnotations>
       </icon>
-      <icon xmi:type="uml:Image" xmi:id="_ecjG4Ft1EeSEvpGJs06ERQ" location="platform:/plugin/org.eclipse.papyrus.farming/icons/128x128/cropsurface.png">
+      <icon xmi:type="uml:Image" xmi:id="_ecjG4Ft1EeSEvpGJs06ERQ" location="platform:/plugin/org.eclipse.papyrus.farming/icons/svg/cropSurface.svg">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ecjG4Vt1EeSEvpGJs06ERQ" source="image_papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ecjG4lt1EeSEvpGJs06ERQ" key="image_kind_key" value="shape"/>
         </eAnnotations>
@@ -1997,12 +1992,12 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_gDVT4FnHEeS4UoAZf5z0yg" name="FodderSurface">
       <generalization xmi:type="uml:Generalization" xmi:id="_icN20FnHEeS4UoAZf5z0yg" general="_aN-5IFheEeS2s4tLeOdjEw"/>
-      <icon xmi:type="uml:Image" xmi:id="_wTGsAFtlEeSEvpGJs06ERQ" format="" location="platform:/plugin/org.eclipse.papyrus.farming/icons/16x16/surface.png">
+      <icon xmi:type="uml:Image" xmi:id="_wTGsAFtlEeSEvpGJs06ERQ" format="" location="platform:/plugin/org.eclipse.papyrus.farming/icons/16x16/FodderSurface.png">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wTGsAVtlEeSEvpGJs06ERQ" source="image_papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wTGsAltlEeSEvpGJs06ERQ" key="image_kind_key" value="icon"/>
         </eAnnotations>
       </icon>
-      <icon xmi:type="uml:Image" xmi:id="_iSQNIFt1EeSEvpGJs06ERQ" location="platform:/plugin/org.eclipse.papyrus.farming/icons/128x128/fodderSurface.png">
+      <icon xmi:type="uml:Image" xmi:id="_iSQNIFt1EeSEvpGJs06ERQ" location="platform:/plugin/org.eclipse.papyrus.farming/icons/svg/FodderSurface.svg">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iSQNIVt1EeSEvpGJs06ERQ" source="image_papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_iSQNIlt1EeSEvpGJs06ERQ" key="image_kind_key" value="shape"/>
         </eAnnotations>
@@ -2030,7 +2025,7 @@
         </eAnnotations>
         <content xsi:nil="true"/>
       </icon>
-      <icon xmi:type="uml:Image" xmi:id="_R1F3IFt1EeSEvpGJs06ERQ" location="platform:/plugin/org.eclipse.papyrus.farming/icons/128x128/material.png">
+      <icon xmi:type="uml:Image" xmi:id="_R1F3IFt1EeSEvpGJs06ERQ" location="platform:/plugin/org.eclipse.papyrus.farming/icons/svg/material.svg">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_R1F3IVt1EeSEvpGJs06ERQ" source="image_papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_R1F3Ilt1EeSEvpGJs06ERQ" key="image_kind_key" value="shape"/>
         </eAnnotations>
@@ -2044,7 +2039,7 @@
         </eAnnotations>
         <content xsi:nil="true"/>
       </icon>
-      <icon xmi:type="uml:Image" xmi:id="_ogcccFtvEeSEvpGJs06ERQ" location="platform:/plugin/org.eclipse.papyrus.farming/icons/128x128/farmer.png">
+      <icon xmi:type="uml:Image" xmi:id="_ogcccFtvEeSEvpGJs06ERQ" location="platform:/plugin/org.eclipse.papyrus.farming/icons/svg/farmer.svg">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ogcccVtvEeSEvpGJs06ERQ" source="image_papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ogcccltvEeSEvpGJs06ERQ" key="image_kind_key" value="shape"/>
         </eAnnotations>
@@ -2063,7 +2058,7 @@
         </eAnnotations>
         <content xsi:nil="true"/>
       </icon>
-      <icon xmi:type="uml:Image" xmi:id="_WLgdwFt1EeSEvpGJs06ERQ" location="platform:/plugin/org.eclipse.papyrus.farming/icons/16x16/workshop.png">
+      <icon xmi:type="uml:Image" xmi:id="_WLgdwFt1EeSEvpGJs06ERQ" location="platform:/plugin/org.eclipse.papyrus.farming/icons/svg/workshop.svg">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WLgdwVt1EeSEvpGJs06ERQ" source="image_papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WLgdwlt1EeSEvpGJs06ERQ" key="image_kind_key" value="shape"/>
         </eAnnotations>
@@ -2077,7 +2072,7 @@
         </eAnnotations>
         <content xsi:nil="true"/>
       </icon>
-      <icon xmi:type="uml:Image" xmi:id="_IWq04Ft1EeSEvpGJs06ERQ" location="platform:/plugin/org.eclipse.papyrus.farming/icons/128x128/ovineWS.png">
+      <icon xmi:type="uml:Image" xmi:id="_IWq04Ft1EeSEvpGJs06ERQ" location="platform:/plugin/org.eclipse.papyrus.farming/icons/svg/ovineWS.svg">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_IWq04Vt1EeSEvpGJs06ERQ" source="image_papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_IWq04lt1EeSEvpGJs06ERQ" key="image_kind_key" value="shape"/>
         </eAnnotations>
@@ -2091,7 +2086,7 @@
         </eAnnotations>
         <content xsi:nil="true"/>
       </icon>
-      <icon xmi:type="uml:Image" xmi:id="_LPn_AFt1EeSEvpGJs06ERQ" location="platform:/plugin/org.eclipse.papyrus.farming/icons/128x128/bovineWS.png">
+      <icon xmi:type="uml:Image" xmi:id="_LPn_AFt1EeSEvpGJs06ERQ" location="platform:/plugin/org.eclipse.papyrus.farming/icons/svg/bovineWS.svg">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_LPn_AVt1EeSEvpGJs06ERQ" source="image_papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_LPn_Alt1EeSEvpGJs06ERQ" key="image_kind_key" value="shape"/>
         </eAnnotations>
@@ -2105,7 +2100,7 @@
         </eAnnotations>
         <content xsi:nil="true"/>
       </icon>
-      <icon xmi:type="uml:Image" xmi:id="_NoWJ4Ft1EeSEvpGJs06ERQ" location="platform:/plugin/org.eclipse.papyrus.farming/icons/128x128/cropWS.png">
+      <icon xmi:type="uml:Image" xmi:id="_NoWJ4Ft1EeSEvpGJs06ERQ" location="platform:/plugin/org.eclipse.papyrus.farming/icons/svg/cropWS.svg">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NoWJ4Vt1EeSEvpGJs06ERQ" source="image_papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NoWJ4lt1EeSEvpGJs06ERQ" key="image_kind_key" value="shape"/>
         </eAnnotations>
@@ -2127,7 +2122,7 @@
         </eAnnotations>
         <content xsi:nil="true"/>
       </icon>
-      <icon xmi:type="uml:Image" xmi:id="_UxkMIFtxEeSEvpGJs06ERQ" format="" location="platform:/plugin/org.eclipse.papyrus.farming/icons/128x128/activity.png">
+      <icon xmi:type="uml:Image" xmi:id="_UxkMIFtxEeSEvpGJs06ERQ" format="" location="platform:/plugin/org.eclipse.papyrus.farming/icons/svg/activity.svg">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UxkMIVtxEeSEvpGJs06ERQ" source="image_papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UxkMIltxEeSEvpGJs06ERQ" key="image_kind_key" value="shape"/>
         </eAnnotations>

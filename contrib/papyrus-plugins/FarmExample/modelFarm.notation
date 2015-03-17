@@ -25,7 +25,7 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3OPFklt6EeSDStJKQVpT0w"/>
           </children>
           <element xmi:type="uml:Property" href="modelFarm.uml#_3N7jkFt6EeSDStJKQVpT0w"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3N-m4Vt6EeSDStJKQVpT0w" x="34" y="27" width="218"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3N-m4Vt6EeSDStJKQVpT0w" x="34" y="27" width="187"/>
         </children>
         <children xmi:type="notation:Shape" xmi:id="_389z0Ft6EeSDStJKQVpT0w" type="3070">
           <children xmi:type="notation:DecorationNode" xmi:id="_38-a4Ft6EeSDStJKQVpT0w" type="5126"/>
@@ -34,7 +34,7 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_38_B8lt6EeSDStJKQVpT0w"/>
           </children>
           <element xmi:type="uml:Property" href="modelFarm.uml#_385iYFt6EeSDStJKQVpT0w"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_389z0Vt6EeSDStJKQVpT0w" x="34" y="143" width="218"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_389z0Vt6EeSDStJKQVpT0w" x="34" y="143" width="187"/>
         </children>
         <children xmi:type="notation:Shape" xmi:id="_5I2_MFt6EeSDStJKQVpT0w" type="3070">
           <children xmi:type="notation:DecorationNode" xmi:id="_5I3mQFt6EeSDStJKQVpT0w" type="5126"/>
@@ -43,24 +43,24 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5I4NUlt6EeSDStJKQVpT0w"/>
           </children>
           <element xmi:type="uml:Property" href="modelFarm.uml#_5I0i8Ft6EeSDStJKQVpT0w"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5I2_MVt6EeSDStJKQVpT0w" x="34" y="230" width="210"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5I2_MVt6EeSDStJKQVpT0w" x="34" y="230" width="187"/>
         </children>
         <styles xmi:type="notation:TitleStyle" xmi:id="_En2H0Vt3EeSDStJKQVpT0w"/>
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_En2H0lt3EeSDStJKQVpT0w"/>
       </children>
       <element xmi:type="uml:Class" href="modelFarm.uml#_EnwoQFt3EeSDStJKQVpT0w"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_En05sFt3EeSDStJKQVpT0w" x="59" y="64" width="304" height="365"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_En05sFt3EeSDStJKQVpT0w" x="59" y="64" width="254" height="365"/>
     </children>
     <children xmi:type="notation:Shape" xmi:id="_RDDrUFt3EeSDStJKQVpT0w" type="2073" fillColor="10011046">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uTlUMFt5EeSDStJKQVpT0w" source="PapyrusCSSForceValue">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_uTnJYFt5EeSDStJKQVpT0w" key="visible" value="true"/>
       </eAnnotations>
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RDdT8Ft3EeSDStJKQVpT0w" source="Stereotype_Annotation">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PSa7MGQqEeSENZSu_2dIcQ" key="StereotypeWithQualifiedNameList" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PSbiQGQqEeSENZSu_2dIcQ" key="StereotypeList" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PSbiQWQqEeSENZSu_2dIcQ" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PSbiQmQqEeSENZSu_2dIcQ" key="PropStereoDisplay" value="FML::CropSurface.irrigated"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PSbiQ2QqEeSENZSu_2dIcQ" key="StereotypePropertyLocation" value="Compartment"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ar6XwG8GEeSKe5VpATcu9A" key="StereotypeWithQualifiedNameList" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ar6-0G8GEeSKe5VpATcu9A" key="StereotypeList" value="FarmML::CropSurface"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ar8M8G8GEeSKe5VpATcu9A" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ar80AG8GEeSKe5VpATcu9A" key="PropStereoDisplay" value="FML::CropSurface.irrigated"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ar9bEG8GEeSKe5VpATcu9A" key="StereotypePropertyLocation" value="Compartment"/>
       </eAnnotations>
       <children xmi:type="notation:DecorationNode" xmi:id="_RDE5cFt3EeSDStJKQVpT0w" type="5156">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uTnwcFt5EeSDStJKQVpT0w" source="PapyrusCSSForceValue">
@@ -95,7 +95,7 @@
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RDE5c1t3EeSDStJKQVpT0w"/>
       </children>
       <element xmi:type="uml:Class" href="modelFarm.uml#_RDAoAFt3EeSDStJKQVpT0w"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RDDrUVt3EeSDStJKQVpT0w" x="441" y="62" width="263" height="185"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RDDrUVt3EeSDStJKQVpT0w" x="381" y="63" width="221" height="185"/>
     </children>
     <children xmi:type="notation:Shape" xmi:id="_dygZcFt3EeSDStJKQVpT0w" type="2073" fillColor="8047085">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dy6CEFt3EeSDStJKQVpT0w" source="Stereotype_Annotation">
@@ -117,24 +117,24 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mg73Qlt5EeSDStJKQVpT0w"/>
           </children>
           <element xmi:type="uml:Property" href="modelFarm.uml#_mg2XsFt5EeSDStJKQVpT0w"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mg6CEVt5EeSDStJKQVpT0w" x="27" y="40" width="202"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mg6CEVt5EeSDStJKQVpT0w" x="18" y="42" width="170"/>
         </children>
         <styles xmi:type="notation:TitleStyle" xmi:id="_dyhnkVt3EeSDStJKQVpT0w"/>
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dyhnklt3EeSDStJKQVpT0w"/>
       </children>
       <element xmi:type="uml:Class" href="modelFarm.uml#_dyd9MFt3EeSDStJKQVpT0w"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dygZcVt3EeSDStJKQVpT0w" x="445" y="590" width="261" height="182"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dygZcVt3EeSDStJKQVpT0w" x="382" y="590" width="221" height="182"/>
     </children>
     <children xmi:type="notation:Shape" xmi:id="_8ensAFt4EeSDStJKQVpT0w" type="2073">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sXCSgFt6EeSDStJKQVpT0w" source="PapyrusCSSForceValue">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_sXEuwFt6EeSDStJKQVpT0w" key="fillColor" value="true"/>
       </eAnnotations>
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8fSaYFt4EeSDStJKQVpT0w" source="Stereotype_Annotation">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PS-U0GQqEeSENZSu_2dIcQ" key="StereotypeWithQualifiedNameList" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PS-U0WQqEeSENZSu_2dIcQ" key="StereotypeList" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PS-U0mQqEeSENZSu_2dIcQ" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PS-U02QqEeSENZSu_2dIcQ" key="PropStereoDisplay" value="FML::Field.size"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PS-U1GQqEeSENZSu_2dIcQ" key="StereotypePropertyLocation" value="Compartment"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6fvgUG8HEeSKe5VpATcu9A" key="StereotypeWithQualifiedNameList" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6fwHYG8HEeSKe5VpATcu9A" key="StereotypeList" value="FarmML::Field"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6fwucG8HEeSKe5VpATcu9A" key="PropStereoDisplay" value="FML::Field.size,FarmML::Field.size"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6fxVgG8HEeSKe5VpATcu9A" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6fx8kG8HEeSKe5VpATcu9A" key="StereotypePropertyLocation" value="Compartment"/>
       </eAnnotations>
       <children xmi:type="notation:DecorationNode" xmi:id="_8eo6IFt4EeSDStJKQVpT0w" type="5156"/>
       <children xmi:type="notation:BasicCompartment" xmi:id="_8ephMFt4EeSDStJKQVpT0w" visible="false" type="7073">
@@ -149,18 +149,18 @@
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8fBUolt4EeSDStJKQVpT0w"/>
       </children>
       <element xmi:type="uml:Class" href="modelFarm.uml#_8ekBoFt4EeSDStJKQVpT0w"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8ensAVt4EeSDStJKQVpT0w" x="1060" y="55" width="217" height="194"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8ensAVt4EeSDStJKQVpT0w" x="883" y="62" width="170" height="194"/>
     </children>
     <children xmi:type="notation:Shape" xmi:id="_TkxIMFt5EeSDStJKQVpT0w" type="2073" fillColor="10011046">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uTdYYFt5EeSDStJKQVpT0w" source="PapyrusCSSForceValue">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_uTfNkFt5EeSDStJKQVpT0w" key="visible" value="true"/>
       </eAnnotations>
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_TlEDIFt5EeSDStJKQVpT0w" source="Stereotype_Annotation">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PTMXQGQqEeSENZSu_2dIcQ" key="StereotypeWithQualifiedNameList" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PTM-UGQqEeSENZSu_2dIcQ" key="StereotypeList" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PTM-UWQqEeSENZSu_2dIcQ" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PTM-UmQqEeSENZSu_2dIcQ" key="PropStereoDisplay" value="FML::CropSurface.irrigated"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PTM-U2QqEeSENZSu_2dIcQ" key="StereotypePropertyLocation" value="Compartment"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_b1ufgG8GEeSKe5VpATcu9A" key="StereotypeWithQualifiedNameList" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_b1vGkG8GEeSKe5VpATcu9A" key="StereotypeList" value="FarmML::CropSurface"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_b1vtoG8GEeSKe5VpATcu9A" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_b1wUsG8GEeSKe5VpATcu9A" key="PropStereoDisplay" value="FML::CropSurface.irrigated"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_b1w7wG8GEeSKe5VpATcu9A" key="StereotypePropertyLocation" value="Compartment"/>
       </eAnnotations>
       <children xmi:type="notation:DecorationNode" xmi:id="_TkxvQFt5EeSDStJKQVpT0w" type="5156">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uTiQ4Ft5EeSDStJKQVpT0w" source="PapyrusCSSForceValue">
@@ -198,24 +198,24 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5lQx41t7EeSDStJKQVpT0w"/>
           </children>
           <element xmi:type="uml:Property" href="modelFarm.uml#_5lMgcFt7EeSDStJKQVpT0w"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5lPjwVt7EeSDStJKQVpT0w" x="30" y="96" width="206" height="49"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5lPjwVt7EeSDStJKQVpT0w" x="30" y="96" width="179" height="49"/>
         </children>
         <styles xmi:type="notation:TitleStyle" xmi:id="_TkxvQlt5EeSDStJKQVpT0w"/>
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TkxvQ1t5EeSDStJKQVpT0w"/>
       </children>
       <element xmi:type="uml:Class" href="modelFarm.uml#_Tkur8Ft5EeSDStJKQVpT0w"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TkxIMVt5EeSDStJKQVpT0w" x="441" y="273" width="267" height="291"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TkxIMVt5EeSDStJKQVpT0w" x="381" y="274" width="221" height="291"/>
     </children>
     <children xmi:type="notation:Shape" xmi:id="_Y11ZMFt5EeSDStJKQVpT0w" type="2073">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sXF84Ft6EeSDStJKQVpT0w" source="PapyrusCSSForceValue">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_sXHyEFt6EeSDStJKQVpT0w" key="fillColor" value="true"/>
       </eAnnotations>
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Y2cdMFt5EeSDStJKQVpT0w" source="Stereotype_Annotation">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PTbn0GQqEeSENZSu_2dIcQ" key="StereotypeWithQualifiedNameList" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PTbn0WQqEeSENZSu_2dIcQ" key="StereotypeList" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PTbn0mQqEeSENZSu_2dIcQ" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PTcO4GQqEeSENZSu_2dIcQ" key="PropStereoDisplay" value="FML::Field.size"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PTcO4WQqEeSENZSu_2dIcQ" key="StereotypePropertyLocation" value="Compartment"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5cnPYG8HEeSKe5VpATcu9A" key="StereotypeWithQualifiedNameList" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5cn2cG8HEeSKe5VpATcu9A" key="StereotypeList" value="FarmML::Field"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5codgG8HEeSKe5VpATcu9A" key="PropStereoDisplay" value="FML::Field.size,FarmML::Field.size"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5cproG8HEeSKe5VpATcu9A" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5cqSsG8HEeSKe5VpATcu9A" key="StereotypePropertyLocation" value="Compartment"/>
       </eAnnotations>
       <children xmi:type="notation:DecorationNode" xmi:id="_Y12nUFt5EeSDStJKQVpT0w" type="5156"/>
       <children xmi:type="notation:BasicCompartment" xmi:id="_Y13OYFt5EeSDStJKQVpT0w" visible="false" type="7073">
@@ -230,18 +230,18 @@
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Y2Po4lt5EeSDStJKQVpT0w"/>
       </children>
       <element xmi:type="uml:Class" href="modelFarm.uml#_Y1xu0Ft5EeSDStJKQVpT0w"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Y11ZMVt5EeSDStJKQVpT0w" x="790" y="60" width="217" height="194"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Y11ZMVt5EeSDStJKQVpT0w" x="659" y="62" width="170" height="194"/>
     </children>
     <children xmi:type="notation:Shape" xmi:id="_j_qNUFt5EeSDStJKQVpT0w" type="2073">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sXJAMFt6EeSDStJKQVpT0w" source="PapyrusCSSForceValue">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_sXKOUFt6EeSDStJKQVpT0w" key="fillColor" value="true"/>
       </eAnnotations>
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_kAQDMFt5EeSDStJKQVpT0w" source="Stereotype_Annotation">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PTq4YGQqEeSENZSu_2dIcQ" key="StereotypeWithQualifiedNameList" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PTq4YWQqEeSENZSu_2dIcQ" key="StereotypeList" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PTq4YmQqEeSENZSu_2dIcQ" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PTq4Y2QqEeSENZSu_2dIcQ" key="PropStereoDisplay" value="FML::Field.size"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PTrfcGQqEeSENZSu_2dIcQ" key="StereotypePropertyLocation" value="Compartment"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__zcEAG8GEeSKe5VpATcu9A" key="StereotypeWithQualifiedNameList" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__zcrEG8GEeSKe5VpATcu9A" key="StereotypeList" value="FarmML::Field"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__zdSIG8GEeSKe5VpATcu9A" key="Stereotype_Presentation_Kind" value="ImageStereotype"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__zd5MG8GEeSKe5VpATcu9A" key="PropStereoDisplay" value="FML::Field.size,FarmML::Field.size"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__zfHUG8GEeSKe5VpATcu9A" key="StereotypePropertyLocation" value="Compartment"/>
       </eAnnotations>
       <children xmi:type="notation:DecorationNode" xmi:id="_j_rbcFt5EeSDStJKQVpT0w" type="5156"/>
       <children xmi:type="notation:BasicCompartment" xmi:id="_j_sCgFt5EeSDStJKQVpT0w" visible="false" type="7073">
@@ -256,18 +256,18 @@
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kACn0Ft5EeSDStJKQVpT0w"/>
       </children>
       <element xmi:type="uml:Class" href="modelFarm.uml#_j_l74Ft5EeSDStJKQVpT0w"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_j_qNUVt5EeSDStJKQVpT0w" x="792" y="285" width="217" height="194"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_j_qNUVt5EeSDStJKQVpT0w" x="657" y="277" width="170" height="194"/>
     </children>
     <children xmi:type="notation:Shape" xmi:id="_f4PvMFt9EeSDStJKQVpT0w" type="2073">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_f4PvMVt9EeSDStJKQVpT0w" source="PapyrusCSSForceValue">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_f4PvMlt9EeSDStJKQVpT0w" key="fillColor" value="true"/>
       </eAnnotations>
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_f4PvM1t9EeSDStJKQVpT0w" source="Stereotype_Annotation">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PT460GQqEeSENZSu_2dIcQ" key="StereotypeWithQualifiedNameList" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PT460WQqEeSENZSu_2dIcQ" key="StereotypeList" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PT460mQqEeSENZSu_2dIcQ" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PT4602QqEeSENZSu_2dIcQ" key="PropStereoDisplay" value="FML::Field.size"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PT461GQqEeSENZSu_2dIcQ" key="StereotypePropertyLocation" value="Compartment"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7pZ3EG8HEeSKe5VpATcu9A" key="StereotypeWithQualifiedNameList" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7paeIG8HEeSKe5VpATcu9A" key="StereotypeList" value="FarmML::Field"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7pbFMG8HEeSKe5VpATcu9A" key="PropStereoDisplay" value="FML::Field.size,FarmML::Field.size"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7pbsQG8HEeSKe5VpATcu9A" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7pcTUG8HEeSKe5VpATcu9A" key="StereotypePropertyLocation" value="Compartment"/>
       </eAnnotations>
       <children xmi:type="notation:DecorationNode" xmi:id="_f4PvOVt9EeSDStJKQVpT0w" type="5156"/>
       <children xmi:type="notation:BasicCompartment" xmi:id="_f4PvOlt9EeSDStJKQVpT0w" visible="false" type="7073">
@@ -287,7 +287,7 @@
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_f4PvSVt9EeSDStJKQVpT0w"/>
       </children>
       <element xmi:type="uml:Class" href="modelFarm.uml#_f4N6AFt9EeSDStJKQVpT0w"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_f4PvSlt9EeSDStJKQVpT0w" x="1060" y="288" width="217" height="194"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_f4PvSlt9EeSDStJKQVpT0w" x="881" y="277" width="170" height="194"/>
     </children>
     <styles xmi:type="notation:StringValueStyle" xmi:id="_wO5SwVqnEeS0YqU5PQOmMw" name="diagram_compatibility_version" stringValue="1.0.0"/>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_wO5SwlqnEeS0YqU5PQOmMw"/>
@@ -295,7 +295,7 @@
       <owner xmi:type="uml:Model" href="modelFarm.uml#_6UdkoFqTEeSKw-gEQqWmtA"/>
       <configuration xmi:type="configuration:PapyrusDiagram" href="platform:/plugin/org.eclipse.papyrus.farming.diagram/viewpoint/farmml.configuration#_0kzWAPL_EeONXPQ2mbw9vA"/>
     </styles>
-    <styles xmi:type="notation:EObjectListValueStyle" xmi:id="_5xe74FtuEeSDStJKQVpT0w" name="css_stylesheets"/>
+    <styles xmi:type="notation:EObjectListValueStyle" xmi:id="_5xe74FtuEeSDStJKQVpT0w" name="css_stylesheets" eObjectListValue="_x-x8AF0YEeSa8sqmQ2vwPw"/>
     <element xmi:type="uml:Model" href="modelFarm.uml#_6UdkoFqTEeSKw-gEQqWmtA"/>
   </notation:Diagram>
   <css:ModelStyleSheets xmi:id="_6_gzUFrAEeSF_dM1vx5IBA"/>
@@ -305,11 +305,11 @@
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_O-0_EFz-EeSa8sqmQ2vwPw" key="fillColor" value="true"/>
       </eAnnotations>
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8saCgFz7EeS1YeUa88OQJw" source="Stereotype_Annotation">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PUwdgGQqEeSENZSu_2dIcQ" key="StereotypeWithQualifiedNameList" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PUwdgWQqEeSENZSu_2dIcQ" key="StereotypeList" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PUwdgmQqEeSENZSu_2dIcQ" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PUwdg2QqEeSENZSu_2dIcQ" key="PropStereoDisplay" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PUwdhGQqEeSENZSu_2dIcQ" key="StereotypePropertyLocation" value="Compartment"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MDwbkG8GEeSKe5VpATcu9A" key="StereotypeWithQualifiedNameList" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MDxpsG8GEeSKe5VpATcu9A" key="StereotypeList" value="FarmML::CropWS"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MDy30G8GEeSKe5VpATcu9A" key="Stereotype_Presentation_Kind" value="ImageStereotype"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MDze4G8GEeSKe5VpATcu9A" key="PropStereoDisplay" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MD0F8G8GEeSKe5VpATcu9A" key="StereotypePropertyLocation" value="Compartment"/>
       </eAnnotations>
       <children xmi:type="notation:DecorationNode" xmi:id="_2vKoAlz7EeS1YeUa88OQJw" type="5001"/>
       <children xmi:type="notation:DecorationNode" xmi:id="_2vKoBFz7EeS1YeUa88OQJw" type="7001">
@@ -329,17 +329,17 @@
       </children>
       <children xmi:type="notation:DecorationNode" xmi:id="_2vKoEFz7EeS1YeUa88OQJw" type="7004">
         <children xmi:type="notation:Shape" xmi:id="_pxm6gFz9EeSa8sqmQ2vwPw" type="3083">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8lF6cGDpEeSw5Ns97_TPaQ" source="PapyrusHyperLink_Page" references="_T4ZWEFz-EeSa8sqmQ2vwPw">
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8lF6cWDpEeSw5Ns97_TPaQ" key="tooltip_text" value="CornActivityDiagram"/>
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8lGhgGDpEeSw5Ns97_TPaQ" key="pageName" value="PapyrusHyperLink_Page"/>
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8lGhgWDpEeSw5Ns97_TPaQ" key="is_default_navigation" value="false"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Ajrp0GpUEeSQDstBM4OcaA" source="PapyrusHyperLink_Page" references="_T4ZWEFz-EeSa8sqmQ2vwPw">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Ajrp0WpUEeSQDstBM4OcaA" key="tooltip_text" value="CornActivityDiagram"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Ajrp0mpUEeSQDstBM4OcaA" key="pageName" value="PapyrusHyperLink_Page"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Ajrp02pUEeSQDstBM4OcaA" key="is_default_navigation" value="true"/>
           </eAnnotations>
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_py-zgFz9EeSa8sqmQ2vwPw" source="Stereotype_Annotation">
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PUKAkGQqEeSENZSu_2dIcQ" key="StereotypeWithQualifiedNameList" value=""/>
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PUKAkWQqEeSENZSu_2dIcQ" key="StereotypeList" value=""/>
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PUKnoGQqEeSENZSu_2dIcQ" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PUKnoWQqEeSENZSu_2dIcQ" key="PropStereoDisplay" value=""/>
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PUKnomQqEeSENZSu_2dIcQ" key="StereotypePropertyLocation" value="Compartment"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_OxM5QG8GEeSKe5VpATcu9A" key="StereotypeWithQualifiedNameList" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_OxOHYG8GEeSKe5VpATcu9A" key="StereotypeList" value="FarmML::CropWS"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_OxOucG8GEeSKe5VpATcu9A" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_OxPVgG8GEeSKe5VpATcu9A" key="PropStereoDisplay" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_OxQjoG8GEeSKe5VpATcu9A" key="StereotypePropertyLocation" value="Compartment"/>
           </eAnnotations>
           <children xmi:type="notation:DecorationNode" xmi:id="_pxoIoFz9EeSa8sqmQ2vwPw" type="5142"/>
           <children xmi:type="notation:DecorationNode" xmi:id="_pxovsFz9EeSa8sqmQ2vwPw" type="5143"/>
@@ -369,17 +369,17 @@
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__VWIwFz9EeSa8sqmQ2vwPw" source="PapyrusCSSForceValue">
             <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__VWv0Fz9EeSa8sqmQ2vwPw" key="visible" value="true"/>
           </eAnnotations>
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BGrPQGDqEeSw5Ns97_TPaQ" source="PapyrusHyperLink_Page" references="_0gThwF0REeSa8sqmQ2vwPw">
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BGrPQWDqEeSw5Ns97_TPaQ" key="tooltip_text" value="WheatActivityDiagram"/>
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BGrPQmDqEeSw5Ns97_TPaQ" key="pageName" value="PapyrusHyperLink_Page"/>
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BGrPQ2DqEeSw5Ns97_TPaQ" key="is_default_navigation" value="false"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_CDJ4gGpUEeSQDstBM4OcaA" source="PapyrusHyperLink_Page" references="_0gThwF0REeSa8sqmQ2vwPw">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_CDKfkGpUEeSQDstBM4OcaA" key="tooltip_text" value="WheatActivityDiagram"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_CDKfkWpUEeSQDstBM4OcaA" key="pageName" value="PapyrusHyperLink_Page"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_CDKfkmpUEeSQDstBM4OcaA" key="is_default_navigation" value="true"/>
           </eAnnotations>
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8y5aIFz9EeSa8sqmQ2vwPw" source="Stereotype_Annotation">
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PUZ4MGQqEeSENZSu_2dIcQ" key="StereotypeWithQualifiedNameList" value=""/>
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PUZ4MWQqEeSENZSu_2dIcQ" key="StereotypeList" value=""/>
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PUZ4MmQqEeSENZSu_2dIcQ" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PUZ4M2QqEeSENZSu_2dIcQ" key="PropStereoDisplay" value=""/>
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PUafQGQqEeSENZSu_2dIcQ" key="StereotypePropertyLocation" value="Compartment"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_P-snIG8GEeSKe5VpATcu9A" key="StereotypeWithQualifiedNameList" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_P-t1QG8GEeSKe5VpATcu9A" key="StereotypeList" value="FarmML::CropWS"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_P-ucUG8GEeSKe5VpATcu9A" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_P-vDYG8GEeSKe5VpATcu9A" key="PropStereoDisplay" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_P-wRgG8GEeSKe5VpATcu9A" key="StereotypePropertyLocation" value="Compartment"/>
           </eAnnotations>
           <children xmi:type="notation:DecorationNode" xmi:id="_vimBsFz9EeSa8sqmQ2vwPw" type="5142">
             <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__VX98Fz9EeSa8sqmQ2vwPw" source="PapyrusCSSForceValue">
@@ -430,11 +430,11 @@
             <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__VQpMFz9EeSa8sqmQ2vwPw" key="visible" value="true"/>
           </eAnnotations>
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_LgsrUFz-EeSa8sqmQ2vwPw" source="Stereotype_Annotation">
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PUmFcGQqEeSENZSu_2dIcQ" key="StereotypeWithQualifiedNameList" value=""/>
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PUmFcWQqEeSENZSu_2dIcQ" key="StereotypeList" value=""/>
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PUmsgGQqEeSENZSu_2dIcQ" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PUmsgWQqEeSENZSu_2dIcQ" key="PropStereoDisplay" value=""/>
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PUmsgmQqEeSENZSu_2dIcQ" key="StereotypePropertyLocation" value="Compartment"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_QuV7YG8GEeSKe5VpATcu9A" key="StereotypeWithQualifiedNameList" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_QuXJgG8GEeSKe5VpATcu9A" key="StereotypeList" value="FarmML::CropWS"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_QuXwkG8GEeSKe5VpATcu9A" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_QuYXoG8GEeSKe5VpATcu9A" key="PropStereoDisplay" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_QuZlwG8GEeSKe5VpATcu9A" key="StereotypePropertyLocation" value="Compartment"/>
           </eAnnotations>
           <children xmi:type="notation:DecorationNode" xmi:id="_-L9e0Fz9EeSa8sqmQ2vwPw" type="5142">
             <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__VR3UFz9EeSa8sqmQ2vwPw" source="PapyrusCSSForceValue">
@@ -502,11 +502,11 @@
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_iakrcF0REeSa8sqmQ2vwPw" key="fillColor" value="true"/>
       </eAnnotations>
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_E0Hj8F0REeSa8sqmQ2vwPw" source="Stereotype_Annotation">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JjYswGWTEeSQycEGDDWnaQ" key="StereotypeWithQualifiedNameList" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JjYswWWTEeSQycEGDDWnaQ" key="StereotypeList" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JjYswmWTEeSQycEGDDWnaQ" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JjYsw2WTEeSQycEGDDWnaQ" key="PropStereoDisplay" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JjYsxGWTEeSQycEGDDWnaQ" key="StereotypePropertyLocation" value="Compartment"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UkDosG8GEeSKe5VpATcu9A" key="StereotypeWithQualifiedNameList" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UkEPwG8GEeSKe5VpATcu9A" key="StereotypeList" value="FarmML::CropWS"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UkE20G8GEeSKe5VpATcu9A" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UkGE8G8GEeSKe5VpATcu9A" key="PropStereoDisplay" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UkGsAG8GEeSKe5VpATcu9A" key="StereotypePropertyLocation" value="Compartment"/>
       </eAnnotations>
       <children xmi:type="notation:DecorationNode" xmi:id="_T4ZWElz-EeSa8sqmQ2vwPw" type="5001"/>
       <children xmi:type="notation:DecorationNode" xmi:id="_T4ZWFFz-EeSa8sqmQ2vwPw" type="7001">
@@ -530,11 +530,11 @@
             <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_224nUF0AEeSa8sqmQ2vwPw" key="visible" value="true"/>
           </eAnnotations>
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DuirsF0AEeSa8sqmQ2vwPw" source="Stereotype_Annotation">
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_tlcfMGpIEeS_lvsaFy_h3A" key="StereotypeWithQualifiedNameList" value=""/>
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_tldtUGpIEeS_lvsaFy_h3A" key="StereotypeList" value="FarmML::Action"/>
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_tleUYGpIEeS_lvsaFy_h3A" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_tlfigGpIEeS_lvsaFy_h3A" key="PropStereoDisplay" value="FML::Action.startDateMin,FML::Action.endDateMax,FarmML::Action.startDateMin,FarmML::Action.endDateMax"/>
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_tlgJkGpIEeS_lvsaFy_h3A" key="StereotypePropertyLocation" value="Comment"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jE4-oGpVEeSO_f2OZgTUaQ" key="StereotypeWithQualifiedNameList" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jE6MwGpVEeSO_f2OZgTUaQ" key="StereotypeList" value="FarmML::Action"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jE7a4GpVEeSO_f2OZgTUaQ" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jE8pAGpVEeSO_f2OZgTUaQ" key="PropStereoDisplay" value="FML::Action.startDateMin,FML::Action.endDateMax,FarmML::Action.startDateMin,FarmML::Action.endDateMax"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jE9QEGpVEeSO_f2OZgTUaQ" key="StereotypePropertyLocation" value="Comment"/>
           </eAnnotations>
           <children xmi:type="notation:DecorationNode" xmi:id="_DuK4QF0AEeSa8sqmQ2vwPw" type="5003">
             <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2251cF0AEeSa8sqmQ2vwPw" source="PapyrusCSSForceValue">
@@ -543,7 +543,7 @@
           </children>
           <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_DuJqIV0AEeSa8sqmQ2vwPw"/>
           <element xmi:type="uml:OpaqueAction" href="modelFarm.uml#_Dt5LcF0AEeSa8sqmQ2vwPw"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DuJqIl0AEeSa8sqmQ2vwPw" x="211" y="35" width="163"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DuJqIl0AEeSa8sqmQ2vwPw" x="211" y="4" width="163"/>
         </children>
         <children xmi:type="notation:Shape" xmi:id="_FK8YQF0AEeSa8sqmQ2vwPw" type="3007" fontHeight="12">
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_22rL8F0AEeSa8sqmQ2vwPw" source="PapyrusCSSForceValue">
@@ -625,21 +625,6 @@
           <element xmi:type="uml:OpaqueAction" href="modelFarm.uml#_S8mKQF0AEeSa8sqmQ2vwPw"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_S8rCwl0AEeSa8sqmQ2vwPw" x="210" y="464" width="163" height="64"/>
         </children>
-        <children xmi:type="notation:Shape" xmi:id="_tsmQEGpIEeS_lvsaFy_h3A" type="AppliedStereotypesComment">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_tuOnwGpIEeS_lvsaFy_h3A" source="Stereotype_Annotation">
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_tuQc8GpIEeS_lvsaFy_h3A" key="StereotypeWithQualifiedNameList" value=""/>
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_tuQc8WpIEeS_lvsaFy_h3A" key="StereotypeList" value=""/>
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_tuQc8mpIEeS_lvsaFy_h3A" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_tuQc82pIEeS_lvsaFy_h3A" key="PropStereoDisplay" value="FML::Action.startDateMin,FML::Action.endDateMax,FarmML::Action.startDateMin,FarmML::Action.endDateMax"/>
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_tuREAGpIEeS_lvsaFy_h3A" key="StereotypePropertyLocation" value="Compartment"/>
-          </eAnnotations>
-          <styles xmi:type="notation:TitleStyle" xmi:id="_tsmQEWpIEeS_lvsaFy_h3A" showTitle="true"/>
-          <styles xmi:type="notation:EObjectValueStyle" xmi:id="_tsoFQGpIEeS_lvsaFy_h3A" name="BASE_ELEMENT">
-            <eObjectValue xmi:type="uml:OpaqueAction" href="modelFarm.uml#_Dt5LcF0AEeSa8sqmQ2vwPw"/>
-          </styles>
-          <element xsi:nil="true"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tsmQEmpIEeS_lvsaFy_h3A" x="411" y="35"/>
-        </children>
         <children xmi:type="notation:Shape" xmi:id="_u0wyAGpIEeS_lvsaFy_h3A" type="AppliedStereotypesComment">
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_u1cHcGpIEeS_lvsaFy_h3A" source="Stereotype_Annotation">
             <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_u1dVkGpIEeS_lvsaFy_h3A" key="StereotypeWithQualifiedNameList" value=""/>
@@ -700,6 +685,21 @@
           <element xsi:nil="true"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_y4RqwmpIEeS_lvsaFy_h3A" x="24" y="302"/>
         </children>
+        <children xmi:type="notation:Shape" xmi:id="_jFWRoGpVEeSO_f2OZgTUaQ" type="AppliedStereotypesComment">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jHdxgGpVEeSO_f2OZgTUaQ" source="Stereotype_Annotation">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jHfmsGpVEeSO_f2OZgTUaQ" key="StereotypeWithQualifiedNameList" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jHfmsWpVEeSO_f2OZgTUaQ" key="StereotypeList" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jHfmsmpVEeSO_f2OZgTUaQ" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jHfms2pVEeSO_f2OZgTUaQ" key="PropStereoDisplay" value="FML::Action.startDateMin,FML::Action.endDateMax,FarmML::Action.startDateMin,FarmML::Action.endDateMax"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jHfmtGpVEeSO_f2OZgTUaQ" key="StereotypePropertyLocation" value="Compartment"/>
+          </eAnnotations>
+          <styles xmi:type="notation:TitleStyle" xmi:id="_jFWRoWpVEeSO_f2OZgTUaQ" showTitle="true"/>
+          <styles xmi:type="notation:EObjectValueStyle" xmi:id="_jFW4sGpVEeSO_f2OZgTUaQ" name="BASE_ELEMENT">
+            <eObjectValue xmi:type="uml:OpaqueAction" href="modelFarm.uml#_Dt5LcF0AEeSa8sqmQ2vwPw"/>
+          </styles>
+          <element xsi:nil="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jFWRompVEeSO_f2OZgTUaQ" x="403" y="4"/>
+        </children>
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_T4ZWIVz-EeSa8sqmQ2vwPw"/>
       </children>
       <styles xmi:type="notation:IntValueStyle" xmi:id="_Yu_W8F0REeSa8sqmQ2vwPw" name="shapeDirection" intValue="2"/>
@@ -722,7 +722,7 @@
         <layoutConstraint xmi:type="notation:Location" xmi:id="_-5J0oF0AEeSa8sqmQ2vwPw" y="20"/>
       </children>
       <children xmi:type="notation:DecorationNode" xmi:id="_-5KbsF0AEeSa8sqmQ2vwPw" type="6009">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_-5LCwF0AEeSa8sqmQ2vwPw" x="11" y="-137"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_-5LCwF0AEeSa8sqmQ2vwPw" x="29" y="-133"/>
       </children>
       <children xmi:type="notation:DecorationNode" xmi:id="_-5Lp0F0AEeSa8sqmQ2vwPw" type="6011">
         <layoutConstraint xmi:type="notation:Location" xmi:id="_-5MQ4F0AEeSa8sqmQ2vwPw" y="-20"/>
@@ -771,16 +771,6 @@
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_aEtCIF0QEeSa8sqmQ2vwPw" id="(0.4166666666666667,0.7551020408163265)"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_aEtpMF0QEeSa8sqmQ2vwPw" id="(0.4642857142857143,0.10204081632653061)"/>
     </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_tsosUGpIEeS_lvsaFy_h3A" type="AppliedStereotypesCommentLink" source="_DuJqIF0AEeSa8sqmQ2vwPw" target="_tsmQEGpIEeS_lvsaFy_h3A">
-      <styles xmi:type="notation:FontStyle" xmi:id="_tsosUWpIEeS_lvsaFy_h3A"/>
-      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_tsp6cGpIEeS_lvsaFy_h3A" name="BASE_ELEMENT">
-        <eObjectValue xmi:type="uml:OpaqueAction" href="modelFarm.uml#_Dt5LcF0AEeSa8sqmQ2vwPw"/>
-      </styles>
-      <element xsi:nil="true"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_tsosUmpIEeS_lvsaFy_h3A" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_tspTYGpIEeS_lvsaFy_h3A"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_tspTYWpIEeS_lvsaFy_h3A"/>
-    </edges>
     <edges xmi:type="notation:Connector" xmi:id="_u0xZEGpIEeS_lvsaFy_h3A" type="AppliedStereotypesCommentLink" source="_FK8YQF0AEeSa8sqmQ2vwPw" target="_u0wyAGpIEeS_lvsaFy_h3A">
       <styles xmi:type="notation:FontStyle" xmi:id="_u0xZEWpIEeS_lvsaFy_h3A"/>
       <styles xmi:type="notation:EObjectValueStyle" xmi:id="_u0ynMGpIEeS_lvsaFy_h3A" name="BASE_ELEMENT">
@@ -821,6 +811,16 @@
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_y4SR0GpIEeS_lvsaFy_h3A"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_y4SR0WpIEeS_lvsaFy_h3A"/>
     </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_jFYG0GpVEeSO_f2OZgTUaQ" type="AppliedStereotypesCommentLink" source="_DuJqIF0AEeSa8sqmQ2vwPw" target="_jFWRoGpVEeSO_f2OZgTUaQ">
+      <styles xmi:type="notation:FontStyle" xmi:id="_jFYG0WpVEeSO_f2OZgTUaQ"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_jFZU8GpVEeSO_f2OZgTUaQ" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:OpaqueAction" href="modelFarm.uml#_Dt5LcF0AEeSa8sqmQ2vwPw"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_jFYG0mpVEeSO_f2OZgTUaQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_jFYt4GpVEeSO_f2OZgTUaQ"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_jFYt4WpVEeSO_f2OZgTUaQ"/>
+    </edges>
   </notation:Diagram>
   <notation:Diagram xmi:id="_0gThwF0REeSa8sqmQ2vwPw" type="PapyrusUMLActivityDiagram" name="WheatActivityDiagram" measurementUnit="Pixel">
     <children xmi:type="notation:Shape" xmi:id="_0gThwV0REeSa8sqmQ2vwPw" type="2001">
@@ -828,11 +828,11 @@
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8XC0gF0REeSa8sqmQ2vwPw" key="fillColor" value="true"/>
       </eAnnotations>
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__4zrEF0REeSa8sqmQ2vwPw" source="Stereotype_Annotation">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_uj538F0VEeSa8sqmQ2vwPw" key="StereotypeWithQualifiedNameList" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_uj7GEF0VEeSa8sqmQ2vwPw" key="StereotypeList" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_uj7GEV0VEeSa8sqmQ2vwPw" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_uj7tIF0VEeSa8sqmQ2vwPw" key="PropStereoDisplay" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_uj8UMF0VEeSa8sqmQ2vwPw" key="StereotypePropertyLocation" value="Compartment"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Wv_UwG8GEeSKe5VpATcu9A" key="StereotypeWithQualifiedNameList" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Wv_70G8GEeSKe5VpATcu9A" key="StereotypeList" value="FarmML::CropWS"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WwBJ8G8GEeSKe5VpATcu9A" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WwBxAG8GEeSKe5VpATcu9A" key="PropStereoDisplay" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WwC_IG8GEeSKe5VpATcu9A" key="StereotypePropertyLocation" value="Compartment"/>
       </eAnnotations>
       <children xmi:type="notation:DecorationNode" xmi:id="_0gThwl0REeSa8sqmQ2vwPw" type="5001"/>
       <children xmi:type="notation:DecorationNode" xmi:id="_0gThxF0REeSa8sqmQ2vwPw" type="7001">
@@ -1059,7 +1059,7 @@
         <layoutConstraint xmi:type="notation:Location" xmi:id="_53HOZF0REeSa8sqmQ2vwPw" y="20"/>
       </children>
       <children xmi:type="notation:DecorationNode" xmi:id="_53HOZV0REeSa8sqmQ2vwPw" type="6009">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_53HOZl0REeSa8sqmQ2vwPw" x="35" y="-148"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_53HOZl0REeSa8sqmQ2vwPw" x="21" y="-135"/>
       </children>
       <children xmi:type="notation:DecorationNode" xmi:id="_53HOZ10REeSa8sqmQ2vwPw" type="6011">
         <layoutConstraint xmi:type="notation:Location" xmi:id="_53HOaF0REeSa8sqmQ2vwPw" x="-68" y="-16"/>
@@ -1131,173 +1131,6 @@
     </edges>
   </notation:Diagram>
   <css:StyleSheetReference xmi:id="_x-x8AF0YEeSa8sqmQ2vwPw" path="/FarmExample/style.css"/>
-  <nattable:Table xmi:id="_OsHbIGNkEeSOpYHrx9vmxQ" name="TableOfViews0" currentRowAxisProvider="_OsICNWNkEeSOpYHrx9vmxQ" currentColumnAxisProvider="_OsICMGNkEeSOpYHrx9vmxQ">
-    <context xmi:type="uml:Activity" href="modelFarm.uml#_pxdJgFz9EeSa8sqmQ2vwPw"/>
-    <owner xmi:type="uml:Activity" href="modelFarm.uml#_pxdJgFz9EeSa8sqmQ2vwPw"/>
-    <prototype xmi:type="configuration:PapyrusSyncTable" href="platform:/plugin/org.eclipse.papyrus.infra.viewpoints.policy/builtin/default.configuration#_7wNb1dxhEeOqHvRyiN87hA"/>
-    <tableConfiguration xmi:type="nattableconfiguration:TableConfiguration" href="platform:/plugin/org.eclipse.papyrus.infra.nattable.views.config/resources/viewpage.nattableconfiguration#/"/>
-    <columnAxisProvidersHistory xmi:type="nattableaxisprovider:SlaveObjectAxisProvider" xmi:id="_OsICMGNkEeSOpYHrx9vmxQ" description="Provides the features of the views" name="Papyrus Views feature provider">
-      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_OsICMWNkEeSOpYHrx9vmxQ" element="nattable_editor_pages:/name">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.infra.nattable.views.config/resources/viewpage.nattableconfiguration#//@columnHeaderAxisConfiguration/@axisManagers.0"/>
-      </axis>
-      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_OsICMmNkEeSOpYHrx9vmxQ" element="nattable_editor_pages:/context">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.infra.nattable.views.config/resources/viewpage.nattableconfiguration#//@columnHeaderAxisConfiguration/@axisManagers.0"/>
-      </axis>
-      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_OsICM2NkEeSOpYHrx9vmxQ" element="nattable_editor_pages:/isOpen">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.infra.nattable.views.config/resources/viewpage.nattableconfiguration#//@columnHeaderAxisConfiguration/@axisManagers.0"/>
-      </axis>
-      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_OsICNGNkEeSOpYHrx9vmxQ" element="nattable_editor_pages:/type">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.infra.nattable.views.config/resources/viewpage.nattableconfiguration#//@columnHeaderAxisConfiguration/@axisManagers.0"/>
-      </axis>
-    </columnAxisProvidersHistory>
-    <rowAxisProvidersHistory xmi:type="nattableaxisprovider:MasterObjectAxisProvider" xmi:id="_OsICNWNkEeSOpYHrx9vmxQ"/>
-  </nattable:Table>
-  <nattable:Table xmi:id="_ROHd0GNkEeSOpYHrx9vmxQ" name="GenericTable0" currentRowAxisProvider="_ROHd0mNkEeSOpYHrx9vmxQ" currentColumnAxisProvider="_ROHd0WNkEeSOpYHrx9vmxQ">
-    <context xmi:type="uml:Activity" href="modelFarm.uml#_pxdJgFz9EeSa8sqmQ2vwPw"/>
-    <owner xmi:type="uml:Activity" href="modelFarm.uml#_pxdJgFz9EeSa8sqmQ2vwPw"/>
-    <prototype xmi:type="configuration:PapyrusSyncTable" href="platform:/plugin/org.eclipse.papyrus.infra.viewpoints.policy/builtin/default.configuration#_7wNb2NxhEeOqHvRyiN87hA"/>
-    <tableConfiguration xmi:type="nattableconfiguration:TableConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#/"/>
-    <columnAxisProvidersHistory xmi:type="nattableaxisprovider:SlaveObjectAxisProvider" xmi:id="_ROHd0WNkEeSOpYHrx9vmxQ" description="This axis provider provides available columns according to the rows of the table (features of the object displayed on the other axis)" name="UML Feature axis provider">
-      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_nrp9cGQKEeSOpYHrx9vmxQ" element="property_of_stereotype:/FML::Action::startDateMin">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#//@columnHeaderAxisConfiguration/@axisManagers.1"/>
-      </axis>
-      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_nrp9c2QKEeSOpYHrx9vmxQ" element="property_of_stereotype:/FML::Action::endDateMax">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#//@columnHeaderAxisConfiguration/@axisManagers.1"/>
-      </axis>
-      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_nrp9cWQKEeSOpYHrx9vmxQ" element="property_of_stereotype:/FML::Action::frequency">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#//@columnHeaderAxisConfiguration/@axisManagers.1"/>
-      </axis>
-      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_nrp9cmQKEeSOpYHrx9vmxQ" element="property_of_stereotype:/FML::Action::duration">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#//@columnHeaderAxisConfiguration/@axisManagers.1"/>
-      </axis>
-      <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_HJ5cAGTGEeSM4qcCU-Kbvg">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#//@columnHeaderAxisConfiguration/@axisManagers.0"/>
-        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//ActivityNode/incoming"/>
-      </axis>
-    </columnAxisProvidersHistory>
-    <rowAxisProvidersHistory xmi:type="nattableaxisprovider:MasterObjectAxisProvider" xmi:id="_ROHd0mNkEeSOpYHrx9vmxQ" description="This axis provider contains the object dropped by the user into the table" name="DroppedElementAxisProvider" disconnectSlave="true">
-      <axis xmi:type="nattableaxis:EObjectAxis" xmi:id="_iy8mgGNkEeSOpYHrx9vmxQ">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#//@rowHeaderAxisConfiguration/@axisManagers.0"/>
-        <element xmi:type="uml:OpaqueAction" href="modelFarm.uml#_Dt5LcF0AEeSa8sqmQ2vwPw"/>
-      </axis>
-      <axis xmi:type="nattableaxis:EObjectAxis" xmi:id="_nrdwMGQKEeSOpYHrx9vmxQ">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#//@rowHeaderAxisConfiguration/@axisManagers.0"/>
-        <element xmi:type="uml:OpaqueAction" href="modelFarm.uml#_FK2RoF0AEeSa8sqmQ2vwPw"/>
-      </axis>
-      <axis xmi:type="nattableaxis:EObjectAxis" xmi:id="_nreXQGQKEeSOpYHrx9vmxQ">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#//@rowHeaderAxisConfiguration/@axisManagers.0"/>
-        <element xmi:type="uml:OpaqueAction" href="modelFarm.uml#_GNNtkF0AEeSa8sqmQ2vwPw"/>
-      </axis>
-      <axis xmi:type="nattableaxis:EObjectAxis" xmi:id="_nreXQWQKEeSOpYHrx9vmxQ">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#//@rowHeaderAxisConfiguration/@axisManagers.0"/>
-        <element xmi:type="uml:OpaqueAction" href="modelFarm.uml#_Ro34kF0AEeSa8sqmQ2vwPw"/>
-      </axis>
-      <axis xmi:type="nattableaxis:EObjectAxis" xmi:id="_nreXQmQKEeSOpYHrx9vmxQ">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#//@rowHeaderAxisConfiguration/@axisManagers.0"/>
-        <element xmi:type="uml:OpaqueAction" href="modelFarm.uml#_S8mKQF0AEeSa8sqmQ2vwPw"/>
-      </axis>
-    </rowAxisProvidersHistory>
-  </nattable:Table>
-  <nattable:Table xmi:id="_wzym0GQvEeSDaJMctJ0HEw" name="ActionTable0" currentRowAxisProvider="_wzzN42QvEeSDaJMctJ0HEw" currentColumnAxisProvider="_wzym0WQvEeSDaJMctJ0HEw">
-    <context xmi:type="uml:Activity" href="modelFarm.uml#_pxdJgFz9EeSa8sqmQ2vwPw"/>
-    <owner xmi:type="uml:Activity" href="modelFarm.uml#_pxdJgFz9EeSa8sqmQ2vwPw"/>
-    <prototype xmi:type="configuration:PapyrusTable" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actiontable.configuration#_GO0mAGQlEeSOpYHrx9vmxQ"/>
-    <tableConfiguration xmi:type="nattableconfiguration:TableConfiguration" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#/"/>
-    <columnAxisProvidersHistory xmi:type="nattableaxisprovider:SlaveObjectAxisProvider" xmi:id="_wzym0WQvEeSDaJMctJ0HEw" description="Provides the columns of the tables with the default configuration" name="Actions Feature Columns Provider">
-      <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_wzym0mQvEeSDaJMctJ0HEw" alias="Name">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#//@columnHeaderAxisConfiguration/@axisManagers.0"/>
-        <element xmi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
-      </axis>
-      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_wzym02QvEeSDaJMctJ0HEw" alias="startDateMin" element="property_of_stereotype:/FarmML::Action::startDateMin">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#//@rowHeaderAxisConfiguration/@axisManagers.0"/>
-      </axis>
-      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_wzzN4GQvEeSDaJMctJ0HEw" alias="endDateMax" element="property_of_stereotype:/FarmML::Action::endDateMax">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#//@rowHeaderAxisConfiguration/@axisManagers.0"/>
-      </axis>
-      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_wzzN4WQvEeSDaJMctJ0HEw" alias="frequency" element="property_of_stereotype:/FarmML::Action::frequency">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#//@rowHeaderAxisConfiguration/@axisManagers.0"/>
-      </axis>
-      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_wzzN4mQvEeSDaJMctJ0HEw" alias="duration" element="property_of_stereotype:/FarmML::Action::duration">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#//@rowHeaderAxisConfiguration/@axisManagers.0"/>
-      </axis>
-    </columnAxisProvidersHistory>
-    <rowAxisProvidersHistory xmi:type="nattableaxisprovider:MasterObjectAxisProvider" xmi:id="_wzzN42QvEeSDaJMctJ0HEw" description="Provides the Actions directly owned by the context of the table" name="Actions Axis Provider" disconnectSlave="true"/>
-  </nattable:Table>
-  <nattable:Table xmi:id="_ZQwk4GQwEeSPT6xyCIoWlw" name="ActionTable1" currentRowAxisProvider="_ZQwk52QwEeSPT6xyCIoWlw" currentColumnAxisProvider="_ZQwk4WQwEeSPT6xyCIoWlw">
-    <context xmi:type="uml:Activity" href="modelFarm.uml#_pxdJgFz9EeSa8sqmQ2vwPw"/>
-    <owner xmi:type="uml:Activity" href="modelFarm.uml#_pxdJgFz9EeSa8sqmQ2vwPw"/>
-    <prototype xmi:type="configuration:PapyrusTable" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actiontable.configuration#_GO0mAGQlEeSOpYHrx9vmxQ"/>
-    <tableConfiguration xmi:type="nattableconfiguration:TableConfiguration" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#/"/>
-    <columnAxisProvidersHistory xmi:type="nattableaxisprovider:SlaveObjectAxisProvider" xmi:id="_ZQwk4WQwEeSPT6xyCIoWlw" description="Provides the columns of the tables with the default configuration" name="Actions Feature Columns Provider">
-      <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_ZQwk4mQwEeSPT6xyCIoWlw" alias="Name">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#//@columnHeaderAxisConfiguration/@axisManagers.0"/>
-        <element xmi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
-      </axis>
-      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_ZQwk42QwEeSPT6xyCIoWlw" alias="startDateMin" element="property_of_stereotype:/FarmML::Action::startDateMin">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#//@rowHeaderAxisConfiguration/@axisManagers.0"/>
-      </axis>
-      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_ZQwk5GQwEeSPT6xyCIoWlw" alias="endDateMax" element="property_of_stereotype:/FarmML::Action::endDateMax">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#//@rowHeaderAxisConfiguration/@axisManagers.0"/>
-      </axis>
-      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_ZQwk5WQwEeSPT6xyCIoWlw" alias="frequency" element="property_of_stereotype:/FarmML::Action::frequency">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#//@rowHeaderAxisConfiguration/@axisManagers.0"/>
-      </axis>
-      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_ZQwk5mQwEeSPT6xyCIoWlw" alias="duration" element="property_of_stereotype:/FarmML::Action::duration">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#//@rowHeaderAxisConfiguration/@axisManagers.0"/>
-      </axis>
-    </columnAxisProvidersHistory>
-    <rowAxisProvidersHistory xmi:type="nattableaxisprovider:MasterObjectAxisProvider" xmi:id="_ZQwk52QwEeSPT6xyCIoWlw" description="Provides the Actions directly owned by the context of the table" name="Actions Axis Provider" disconnectSlave="true"/>
-  </nattable:Table>
-  <nattable:Table xmi:id="_zSEKoGQwEeSn1viNf-_pHQ" name="ActionTable2" currentRowAxisProvider="_zSEKp2QwEeSn1viNf-_pHQ" currentColumnAxisProvider="_zSEKoWQwEeSn1viNf-_pHQ">
-    <context xmi:type="uml:Activity" href="modelFarm.uml#_pxdJgFz9EeSa8sqmQ2vwPw"/>
-    <owner xmi:type="uml:Activity" href="modelFarm.uml#_pxdJgFz9EeSa8sqmQ2vwPw"/>
-    <prototype xmi:type="configuration:PapyrusTable" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actiontable.configuration#_GO0mAGQlEeSOpYHrx9vmxQ"/>
-    <tableConfiguration xmi:type="nattableconfiguration:TableConfiguration" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#/"/>
-    <columnAxisProvidersHistory xmi:type="nattableaxisprovider:SlaveObjectAxisProvider" xmi:id="_zSEKoWQwEeSn1viNf-_pHQ" description="Provides the columns of the tables with the default configuration" name="Actions Feature Columns Provider">
-      <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_zSEKomQwEeSn1viNf-_pHQ" alias="Name">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#//@columnHeaderAxisConfiguration/@axisManagers.0"/>
-        <element xmi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
-      </axis>
-      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_zSEKo2QwEeSn1viNf-_pHQ" alias="startDateMin" element="property_of_stereotype:/FarmML::Action::startDateMin">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#//@rowHeaderAxisConfiguration/@axisManagers.0"/>
-      </axis>
-      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_zSEKpGQwEeSn1viNf-_pHQ" alias="endDateMax" element="property_of_stereotype:/FarmML::Action::endDateMax">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#//@rowHeaderAxisConfiguration/@axisManagers.0"/>
-      </axis>
-      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_zSEKpWQwEeSn1viNf-_pHQ" alias="frequency" element="property_of_stereotype:/FarmML::Action::frequency">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#//@rowHeaderAxisConfiguration/@axisManagers.0"/>
-      </axis>
-      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_zSEKpmQwEeSn1viNf-_pHQ" alias="duration" element="property_of_stereotype:/FarmML::Action::duration">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#//@rowHeaderAxisConfiguration/@axisManagers.0"/>
-      </axis>
-    </columnAxisProvidersHistory>
-    <rowAxisProvidersHistory xmi:type="nattableaxisprovider:MasterObjectAxisProvider" xmi:id="_zSEKp2QwEeSn1viNf-_pHQ" description="Provides the Actions directly owned by the context of the table" name="Actions Axis Provider" disconnectSlave="true"/>
-  </nattable:Table>
-  <nattable:Table xmi:id="_IMumsGQxEeSG_t6Z5cPxwg" name="ActionTable3" currentRowAxisProvider="_IMumt2QxEeSG_t6Z5cPxwg" currentColumnAxisProvider="_IMumsWQxEeSG_t6Z5cPxwg">
-    <context xmi:type="uml:Activity" href="modelFarm.uml#_pxdJgFz9EeSa8sqmQ2vwPw"/>
-    <owner xmi:type="uml:Activity" href="modelFarm.uml#_pxdJgFz9EeSa8sqmQ2vwPw"/>
-    <prototype xmi:type="configuration:PapyrusTable" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actiontable.configuration#_GO0mAGQlEeSOpYHrx9vmxQ"/>
-    <tableConfiguration xmi:type="nattableconfiguration:TableConfiguration" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#/"/>
-    <columnAxisProvidersHistory xmi:type="nattableaxisprovider:SlaveObjectAxisProvider" xmi:id="_IMumsWQxEeSG_t6Z5cPxwg" description="Provides the columns of the tables with the default configuration" name="Actions Feature Columns Provider">
-      <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_IMumsmQxEeSG_t6Z5cPxwg" alias="Name">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#//@columnHeaderAxisConfiguration/@axisManagers.0"/>
-        <element xmi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
-      </axis>
-      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_IMums2QxEeSG_t6Z5cPxwg" alias="startDateMin" element="property_of_stereotype:/FarmML::Action::startDateMin">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#//@rowHeaderAxisConfiguration/@axisManagers.0"/>
-      </axis>
-      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_IMumtGQxEeSG_t6Z5cPxwg" alias="endDateMax" element="property_of_stereotype:/FarmML::Action::endDateMax">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#//@rowHeaderAxisConfiguration/@axisManagers.0"/>
-      </axis>
-      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_IMumtWQxEeSG_t6Z5cPxwg" alias="frequency" element="property_of_stereotype:/FarmML::Action::frequency">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#//@rowHeaderAxisConfiguration/@axisManagers.0"/>
-      </axis>
-      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_IMumtmQxEeSG_t6Z5cPxwg" alias="duration" element="property_of_stereotype:/FarmML::Action::duration">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#//@rowHeaderAxisConfiguration/@axisManagers.0"/>
-      </axis>
-    </columnAxisProvidersHistory>
-    <rowAxisProvidersHistory xmi:type="nattableaxisprovider:MasterObjectAxisProvider" xmi:id="_IMumt2QxEeSG_t6Z5cPxwg" description="Provides the Actions directly owned by the context of the table" name="Actions Axis Provider" disconnectSlave="true"/>
-  </nattable:Table>
   <notation:Diagram xmi:id="_64DPIGQxEeS6R6SxaA862g" type="PapyrusUMLActivityDiagram" name="ActivityDiagram" measurementUnit="Pixel">
     <children xmi:type="notation:Shape" xmi:id="_64DPIWQxEeS6R6SxaA862g" type="2001">
       <children xmi:type="notation:DecorationNode" xmi:id="_64DPImQxEeS6R6SxaA862g" type="5001"/>
@@ -1331,138 +1164,19 @@
     </styles>
     <element xmi:type="uml:Activity" href="modelFarm.uml#_pxdJgFz9EeSa8sqmQ2vwPw"/>
   </notation:Diagram>
-  <nattable:Table xmi:id="_8Z1K8GQxEeS6R6SxaA862g" name="ActionTable4" currentRowAxisProvider="_8Z1K92QxEeS6R6SxaA862g" currentColumnAxisProvider="_8Z1K8WQxEeS6R6SxaA862g">
-    <context xmi:type="uml:Activity" href="modelFarm.uml#_pxdJgFz9EeSa8sqmQ2vwPw"/>
-    <owner xmi:type="uml:Activity" href="modelFarm.uml#_pxdJgFz9EeSa8sqmQ2vwPw"/>
-    <prototype xmi:type="configuration:PapyrusTable" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actiontable.configuration#_GO0mAGQlEeSOpYHrx9vmxQ"/>
-    <tableConfiguration xmi:type="nattableconfiguration:TableConfiguration" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#/"/>
-    <columnAxisProvidersHistory xmi:type="nattableaxisprovider:SlaveObjectAxisProvider" xmi:id="_8Z1K8WQxEeS6R6SxaA862g" description="Provides the columns of the tables with the default configuration" name="Actions Feature Columns Provider">
-      <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_8Z1K8mQxEeS6R6SxaA862g" alias="Name">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#//@columnHeaderAxisConfiguration/@axisManagers.0"/>
-        <element xmi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
-      </axis>
-      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_8Z1K82QxEeS6R6SxaA862g" alias="startDateMin" element="property_of_stereotype:/FarmML::Action::startDateMin">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#//@rowHeaderAxisConfiguration/@axisManagers.0"/>
-      </axis>
-      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_8Z1K9GQxEeS6R6SxaA862g" alias="endDateMax" element="property_of_stereotype:/FarmML::Action::endDateMax">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#//@rowHeaderAxisConfiguration/@axisManagers.0"/>
-      </axis>
-      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_8Z1K9WQxEeS6R6SxaA862g" alias="frequency" element="property_of_stereotype:/FarmML::Action::frequency">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#//@rowHeaderAxisConfiguration/@axisManagers.0"/>
-      </axis>
-      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_8Z1K9mQxEeS6R6SxaA862g" alias="duration" element="property_of_stereotype:/FarmML::Action::duration">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#//@rowHeaderAxisConfiguration/@axisManagers.0"/>
-      </axis>
-    </columnAxisProvidersHistory>
-    <rowAxisProvidersHistory xmi:type="nattableaxisprovider:MasterObjectAxisProvider" xmi:id="_8Z1K92QxEeS6R6SxaA862g" description="Provides the Actions directly owned by the context of the table" name="Actions Axis Provider" disconnectSlave="true"/>
-  </nattable:Table>
-  <nattable:Table xmi:id="_zAb9MGQyEeSONdrg8GhUEw" name="ActionTable5" currentRowAxisProvider="_zAb9N2QyEeSONdrg8GhUEw" currentColumnAxisProvider="_zAb9MWQyEeSONdrg8GhUEw">
-    <context xmi:type="uml:Activity" href="modelFarm.uml#_pxdJgFz9EeSa8sqmQ2vwPw"/>
-    <owner xmi:type="uml:Activity" href="modelFarm.uml#_pxdJgFz9EeSa8sqmQ2vwPw"/>
-    <prototype xmi:type="configuration:PapyrusTable" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actiontable.configuration#_GO0mAGQlEeSOpYHrx9vmxQ"/>
-    <tableConfiguration xmi:type="nattableconfiguration:TableConfiguration" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#/"/>
-    <columnAxisProvidersHistory xmi:type="nattableaxisprovider:SlaveObjectAxisProvider" xmi:id="_zAb9MWQyEeSONdrg8GhUEw" description="Provides the columns of the tables with the default configuration" name="Actions Feature Columns Provider">
-      <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_zAb9MmQyEeSONdrg8GhUEw" alias="Name">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#//@columnHeaderAxisConfiguration/@axisManagers.0"/>
-        <element xmi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
-      </axis>
-      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_zAb9M2QyEeSONdrg8GhUEw" alias="startDateMin" element="property_of_stereotype:/FarmML::Action::startDateMin">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#//@rowHeaderAxisConfiguration/@axisManagers.0"/>
-      </axis>
-      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_zAb9NGQyEeSONdrg8GhUEw" alias="endDateMax" element="property_of_stereotype:/FarmML::Action::endDateMax">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#//@rowHeaderAxisConfiguration/@axisManagers.0"/>
-      </axis>
-      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_zAb9NWQyEeSONdrg8GhUEw" alias="frequency" element="property_of_stereotype:/FarmML::Action::frequency">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#//@rowHeaderAxisConfiguration/@axisManagers.0"/>
-      </axis>
-      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_zAb9NmQyEeSONdrg8GhUEw" alias="duration" element="property_of_stereotype:/FarmML::Action::duration">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#//@rowHeaderAxisConfiguration/@axisManagers.0"/>
-      </axis>
-    </columnAxisProvidersHistory>
-    <rowAxisProvidersHistory xmi:type="nattableaxisprovider:MasterObjectAxisProvider" xmi:id="_zAb9N2QyEeSONdrg8GhUEw" description="Provides the Actions directly owned by the context of the table" name="Actions Axis Provider" disconnectSlave="true"/>
-  </nattable:Table>
-  <nattable:Table xmi:id="_tnsE8GQ0EeSM4qcCU-Kbvg" name="ActionTable6" currentRowAxisProvider="_tnsE92Q0EeSM4qcCU-Kbvg" currentColumnAxisProvider="_tnsE8WQ0EeSM4qcCU-Kbvg">
-    <context xmi:type="uml:Activity" href="modelFarm.uml#_pxdJgFz9EeSa8sqmQ2vwPw"/>
-    <owner xmi:type="uml:Activity" href="modelFarm.uml#_pxdJgFz9EeSa8sqmQ2vwPw"/>
-    <prototype xmi:type="configuration:PapyrusTable" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actiontable.configuration#_GO0mAGQlEeSOpYHrx9vmxQ"/>
-    <tableConfiguration xmi:type="nattableconfiguration:TableConfiguration" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#/"/>
-    <columnAxisProvidersHistory xmi:type="nattableaxisprovider:SlaveObjectAxisProvider" xmi:id="_tnsE8WQ0EeSM4qcCU-Kbvg" description="Provides the columns of the tables with the default configuration" name="Actions Feature Columns Provider">
-      <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_tnsE8mQ0EeSM4qcCU-Kbvg" alias="Name">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#//@columnHeaderAxisConfiguration/@axisManagers.0"/>
-        <element xmi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
-      </axis>
-      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_tnsE82Q0EeSM4qcCU-Kbvg" alias="startDateMin" element="property_of_stereotype:/FarmML::Action::startDateMin">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#//@rowHeaderAxisConfiguration/@axisManagers.0"/>
-      </axis>
-      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_tnsE9GQ0EeSM4qcCU-Kbvg" alias="endDateMax" element="property_of_stereotype:/FarmML::Action::endDateMax">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#//@rowHeaderAxisConfiguration/@axisManagers.0"/>
-      </axis>
-      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_tnsE9WQ0EeSM4qcCU-Kbvg" alias="frequency" element="property_of_stereotype:/FarmML::Action::frequency">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#//@rowHeaderAxisConfiguration/@axisManagers.0"/>
-      </axis>
-      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_tnsE9mQ0EeSM4qcCU-Kbvg" alias="duration" element="property_of_stereotype:/FarmML::Action::duration">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#//@rowHeaderAxisConfiguration/@axisManagers.0"/>
-      </axis>
-    </columnAxisProvidersHistory>
-    <rowAxisProvidersHistory xmi:type="nattableaxisprovider:MasterObjectAxisProvider" xmi:id="_tnsE92Q0EeSM4qcCU-Kbvg" description="Provides the Actions directly owned by the context of the table" name="Actions Axis Provider" disconnectSlave="true"/>
-  </nattable:Table>
-  <nattable:Table xmi:id="_78O3cGTKEeSmkZf_VN1a5Q" name="ActionTable7" currentRowAxisProvider="_78O3d2TKEeSmkZf_VN1a5Q" currentColumnAxisProvider="_78O3cWTKEeSmkZf_VN1a5Q">
-    <context xmi:type="uml:Activity" href="modelFarm.uml#_pxdJgFz9EeSa8sqmQ2vwPw"/>
-    <owner xmi:type="uml:Activity" href="modelFarm.uml#_pxdJgFz9EeSa8sqmQ2vwPw"/>
-    <prototype xmi:type="configuration:PapyrusTable" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actiontable.configuration#_GO0mAGQlEeSOpYHrx9vmxQ"/>
-    <tableConfiguration xmi:type="nattableconfiguration:TableConfiguration" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#/"/>
-    <columnAxisProvidersHistory xmi:type="nattableaxisprovider:SlaveObjectAxisProvider" xmi:id="_78O3cWTKEeSmkZf_VN1a5Q" description="Provides the columns of the tables with the default configuration" name="Actions Feature Columns Provider">
-      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_78O3cmTKEeSmkZf_VN1a5Q" alias="startDateMin" element="property_of_stereotype:/FarmML::Action::startDateMin">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#//@rowHeaderAxisConfiguration/@axisManagers.0"/>
-      </axis>
-      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_78O3c2TKEeSmkZf_VN1a5Q" alias="endDateMax" element="property_of_stereotype:/FarmML::Action::endDateMax">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#//@rowHeaderAxisConfiguration/@axisManagers.0"/>
-      </axis>
-      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_78O3dGTKEeSmkZf_VN1a5Q" alias="frequency" element="property_of_stereotype:/FarmML::Action::frequency">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#//@rowHeaderAxisConfiguration/@axisManagers.0"/>
-      </axis>
-      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_78O3dWTKEeSmkZf_VN1a5Q" alias="duration" element="property_of_stereotype:/FarmML::Action::duration">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#//@rowHeaderAxisConfiguration/@axisManagers.0"/>
-      </axis>
-      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_78O3dmTKEeSmkZf_VN1a5Q" alias="activationRule" element="uml_custom_feature:/guard"/>
-    </columnAxisProvidersHistory>
-    <rowAxisProvidersHistory xmi:type="nattableaxisprovider:MasterObjectAxisProvider" xmi:id="_78O3d2TKEeSmkZf_VN1a5Q" description="Provides the Actions directly owned by the context of the table" name="Actions Axis Provider" disconnectSlave="true"/>
-  </nattable:Table>
-  <nattable:Table xmi:id="_DhYD4GTLEeSmkZf_VN1a5Q" name="ActionTable8" currentRowAxisProvider="_DhYq9WTLEeSmkZf_VN1a5Q" currentColumnAxisProvider="_DhYD4WTLEeSmkZf_VN1a5Q">
-    <context xmi:type="uml:Activity" href="modelFarm.uml#_pxdJgFz9EeSa8sqmQ2vwPw"/>
-    <owner xmi:type="uml:Activity" href="modelFarm.uml#_pxdJgFz9EeSa8sqmQ2vwPw"/>
-    <prototype xmi:type="configuration:PapyrusTable" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actiontable.configuration#_GO0mAGQlEeSOpYHrx9vmxQ"/>
-    <tableConfiguration xmi:type="nattableconfiguration:TableConfiguration" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#/"/>
-    <columnAxisProvidersHistory xmi:type="nattableaxisprovider:SlaveObjectAxisProvider" xmi:id="_DhYD4WTLEeSmkZf_VN1a5Q" description="Provides the columns of the tables with the default configuration" name="Actions Feature Columns Provider">
-      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_DhYq8GTLEeSmkZf_VN1a5Q" alias="startDateMin" element="property_of_stereotype:/FarmML::Action::startDateMin">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#//@rowHeaderAxisConfiguration/@axisManagers.0"/>
-      </axis>
-      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_DhYq8WTLEeSmkZf_VN1a5Q" alias="endDateMax" element="property_of_stereotype:/FarmML::Action::endDateMax">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#//@rowHeaderAxisConfiguration/@axisManagers.0"/>
-      </axis>
-      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_DhYq8mTLEeSmkZf_VN1a5Q" alias="frequency" element="property_of_stereotype:/FarmML::Action::frequency">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#//@rowHeaderAxisConfiguration/@axisManagers.0"/>
-      </axis>
-      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_DhYq82TLEeSmkZf_VN1a5Q" alias="duration" element="property_of_stereotype:/FarmML::Action::duration">
-        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#//@rowHeaderAxisConfiguration/@axisManagers.0"/>
-      </axis>
-      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_DhYq9GTLEeSmkZf_VN1a5Q" alias="activationRule" element="uml_custom_feature:/guard"/>
-    </columnAxisProvidersHistory>
-    <rowAxisProvidersHistory xmi:type="nattableaxisprovider:MasterObjectAxisProvider" xmi:id="_DhYq9WTLEeSmkZf_VN1a5Q" description="Provides the Actions directly owned by the context of the table" name="Actions Axis Provider" disconnectSlave="true"/>
-  </nattable:Table>
-  <nattable:Table xmi:id="_R6qEUGTQEeSOiZAoWYcflg" name="ActionTable9" currentRowAxisProvider="_R6qEV2TQEeSOiZAoWYcflg" currentColumnAxisProvider="_R6qEUWTQEeSOiZAoWYcflg">
+  <nattable:Table xmi:id="_R6qEUGTQEeSOiZAoWYcflg" name="CornActivityActionTable" currentRowAxisProvider="_R6qEV2TQEeSOiZAoWYcflg" currentColumnAxisProvider="_R6qEUWTQEeSOiZAoWYcflg">
     <context xmi:type="uml:Activity" href="modelFarm.uml#_pxdJgFz9EeSa8sqmQ2vwPw"/>
     <owner xmi:type="uml:Activity" href="modelFarm.uml#_pxdJgFz9EeSa8sqmQ2vwPw"/>
     <prototype xmi:type="configuration:PapyrusTable" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actiontable.configuration#_GO0mAGQlEeSOpYHrx9vmxQ"/>
     <tableConfiguration xmi:type="nattableconfiguration:TableConfiguration" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#/"/>
     <columnAxisProvidersHistory xmi:type="nattableaxisprovider:SlaveObjectAxisProvider" xmi:id="_R6qEUWTQEeSOiZAoWYcflg" description="Provides the columns of the tables with the default configuration" name="Actions Feature Columns Provider">
-      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_R6qEUmTQEeSOiZAoWYcflg" alias="activationRule" element="uml_custom_feature:/guard">
+      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_R6qEUmTQEeSOiZAoWYcflg" alias="activation Rule" element="uml_custom_feature:/guard">
         <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#//@rowHeaderAxisConfiguration/@axisManagers.0"/>
       </axis>
-      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_R6qEU2TQEeSOiZAoWYcflg" alias="startDateMin" element="property_of_stereotype:/FarmML::Action::startDateMin">
+      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_R6qEU2TQEeSOiZAoWYcflg" alias="start Date Min" element="property_of_stereotype:/FarmML::Action::startDateMin">
         <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#//@rowHeaderAxisConfiguration/@axisManagers.0"/>
       </axis>
-      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_R6qEVGTQEeSOiZAoWYcflg" alias="endDateMax" element="property_of_stereotype:/FarmML::Action::endDateMax">
+      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_R6qEVGTQEeSOiZAoWYcflg" alias="end Date Max" element="property_of_stereotype:/FarmML::Action::endDateMax">
         <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#//@rowHeaderAxisConfiguration/@axisManagers.0"/>
       </axis>
       <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_R6qEVWTQEeSOiZAoWYcflg" alias="frequency" element="property_of_stereotype:/FarmML::Action::frequency">
@@ -1486,4 +1200,60 @@
       </axisManagerConfigurations>
     </localColumnHeaderAxisConfiguration>
   </nattable:Table>
+  <nattable:Table xmi:id="_JE85kGpPEeSo_8s-iNh3Ww" name="WheatActivityActionTable" currentRowAxisProvider="_JE9goWpPEeSo_8s-iNh3Ww" currentColumnAxisProvider="_JE85kWpPEeSo_8s-iNh3Ww">
+    <context xmi:type="uml:Activity" href="modelFarm.uml#_vibpoFz9EeSa8sqmQ2vwPw"/>
+    <owner xmi:type="uml:Activity" href="modelFarm.uml#_vibpoFz9EeSa8sqmQ2vwPw"/>
+    <prototype xmi:type="configuration:PapyrusTable" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actiontable.configuration#_GO0mAGQlEeSOpYHrx9vmxQ"/>
+    <tableConfiguration xmi:type="nattableconfiguration:TableConfiguration" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#/"/>
+    <columnAxisProvidersHistory xmi:type="nattableaxisprovider:SlaveObjectAxisProvider" xmi:id="_JE85kWpPEeSo_8s-iNh3Ww" description="Provides the columns of the tables with the default configuration" name="Actions Feature Columns Provider">
+      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_JE85kmpPEeSo_8s-iNh3Ww" alias="activationRule" element="uml_custom_feature:/guard">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#//@rowHeaderAxisConfiguration/@axisManagers.0"/>
+      </axis>
+      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_JE85k2pPEeSo_8s-iNh3Ww" alias="startDateMin" element="property_of_stereotype:/FarmML::Action::startDateMin">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#//@rowHeaderAxisConfiguration/@axisManagers.0"/>
+      </axis>
+      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_JE85lGpPEeSo_8s-iNh3Ww" alias="endDateMax" element="property_of_stereotype:/FarmML::Action::endDateMax">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#//@rowHeaderAxisConfiguration/@axisManagers.0"/>
+      </axis>
+      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_JE85lWpPEeSo_8s-iNh3Ww" alias="frequency" element="property_of_stereotype:/FarmML::Action::frequency">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#//@rowHeaderAxisConfiguration/@axisManagers.0"/>
+      </axis>
+      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_JE9goGpPEeSo_8s-iNh3Ww" alias="duration" element="property_of_stereotype:/FarmML::Action::duration">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.farming.actions.table/config/actions.nattableconfiguration#//@rowHeaderAxisConfiguration/@axisManagers.0"/>
+      </axis>
+    </columnAxisProvidersHistory>
+    <rowAxisProvidersHistory xmi:type="nattableaxisprovider:MasterObjectAxisProvider" xmi:id="_JE9goWpPEeSo_8s-iNh3Ww" description="Provides the Actions directly owned by the context of the table" name="Actions Axis Provider" disconnectSlave="true"/>
+  </nattable:Table>
+  <notation:Diagram xmi:id="_LDWGoGpUEeSQDstBM4OcaA" type="PapyrusUMLActivityDiagram" name="SorghumActivitiesDiagram" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="_LDWtsGpUEeSQDstBM4OcaA" type="2001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_LDWtsWpUEeSQDstBM4OcaA" type="5001"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_LDWts2pUEeSQDstBM4OcaA" type="7001">
+        <styles xmi:type="notation:SortingStyle" xmi:id="_LDWttGpUEeSQDstBM4OcaA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_LDWttWpUEeSQDstBM4OcaA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LDWttmpUEeSQDstBM4OcaA"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_LDWtt2pUEeSQDstBM4OcaA" type="7002">
+        <styles xmi:type="notation:SortingStyle" xmi:id="_LDWtuGpUEeSQDstBM4OcaA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_LDWtuWpUEeSQDstBM4OcaA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LDWtumpUEeSQDstBM4OcaA"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_LDWtu2pUEeSQDstBM4OcaA" type="7003">
+        <styles xmi:type="notation:SortingStyle" xmi:id="_LDWtvGpUEeSQDstBM4OcaA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_LDWtvWpUEeSQDstBM4OcaA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LDWtvmpUEeSQDstBM4OcaA"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_LDWtv2pUEeSQDstBM4OcaA" type="7004">
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LDWtwGpUEeSQDstBM4OcaA"/>
+      </children>
+      <element xmi:type="uml:Activity" href="modelFarm.uml#_-L7poFz9EeSa8sqmQ2vwPw"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LDWtwWpUEeSQDstBM4OcaA"/>
+    </children>
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_LDWtwmpUEeSQDstBM4OcaA" name="diagram_compatibility_version" stringValue="1.0.0"/>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_LDWtw2pUEeSQDstBM4OcaA"/>
+    <styles xmi:type="style:PapyrusViewStyle" xmi:id="_LDWtxGpUEeSQDstBM4OcaA">
+      <owner xmi:type="uml:Activity" href="modelFarm.uml#_-L7poFz9EeSa8sqmQ2vwPw"/>
+      <configuration xmi:type="configuration:PapyrusDiagram" href="platform:/plugin/org.eclipse.papyrus.farming.diagram/viewpoint/farmml.configuration#_hnObIGThEeS0VelLgL_ZMA"/>
+    </styles>
+    <element xmi:type="uml:Activity" href="modelFarm.uml#_-L7poFz9EeSa8sqmQ2vwPw"/>
+  </notation:Diagram>
 </xmi:XMI>
