@@ -12,3 +12,5 @@ Contact: mailto:jbruel@gmail.com[JM Bruel]
 
 Continuous Integration now works (last status: image:https://travis-ci.org/jmbruel/idm2014.svg?branch=master["Build Status", link="https://travis-ci.org/jmbruel/idm2014"])
 and the outputs are available link:http://jmbruel.github.io/idm2014/[here].
+
+Please see https://github.com/gemoc/farmingmodeling for more details.
